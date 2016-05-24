@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="tech,iOS,xcode,development,compile,config," />
 
 
 
@@ -84,15 +84,48 @@
 
 
 
-<meta name="description" content="A place for logging something">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nickcheng.LOG">
-<meta property="og:url" content="http://nickcheng.com/index.html">
+<meta name="description" content="为了让自己的应用显得更专业, 我决定把项目的 Build 号整成自动增加的. 为了免除我的操心, 我就让他在我每次编译的时候把 Build 号加一. 就好像这个样子.
+
+设置方法很容易. 先在项目的 “Build Phases” 里添加一项.
+
+选择添加 “Run Script” 
+
+然后你可以在红框位置把名字给改了. 不过这不重要, 重要的是橙框里的内容!
+
+脚本如下:
+123buildNumb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xcode 5 编译自动增加版本号">
+<meta property="og:url" content="http://nickcheng.com/2014/06/10/auto-increase-version-number-in-xcode-5/index.html">
 <meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="A place for logging something">
+<meta property="og:description" content="为了让自己的应用显得更专业, 我决定把项目的 Build 号整成自动增加的. 为了免除我的操心, 我就让他在我每次编译的时候把 Build 号加一. 就好像这个样子.
+
+设置方法很容易. 先在项目的 “Build Phases” 里添加一项.
+
+选择添加 “Run Script” 
+
+然后你可以在红框位置把名字给改了. 不过这不重要, 重要的是橙框里的内容!
+
+脚本如下:
+123buildNumb">
+<meta property="og:image" content="http://nickcheng-blog.u.qiniudn.com/20140610/build-number.png">
+<meta property="og:image" content="http://nickcheng-blog.u.qiniudn.com/20140610/1.png">
+<meta property="og:image" content="http://nickcheng-blog.u.qiniudn.com/20140610/2.png">
+<meta property="og:image" content="http://nickcheng-blog.u.qiniudn.com/20140610/3.png">
+<meta property="og:updated_time" content="2016-05-24T13:15:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nickcheng.LOG">
-<meta name="twitter:description" content="A place for logging something">
+<meta name="twitter:title" content="Xcode 5 编译自动增加版本号">
+<meta name="twitter:description" content="为了让自己的应用显得更专业, 我决定把项目的 Build 号整成自动增加的. 为了免除我的操心, 我就让他在我每次编译的时候把 Build 号加一. 就好像这个样子.
+
+设置方法很容易. 先在项目的 “Build Phases” 里添加一项.
+
+选择添加 “Run Script” 
+
+然后你可以在红框位置把名字给改了. 不过这不重要, 重要的是橙框里的内容!
+
+脚本如下:
+123buildNumb">
+<meta name="twitter:image" content="http://nickcheng-blog.u.qiniudn.com/20140610/build-number.png">
 
 
 
@@ -110,7 +143,7 @@
   };
 </script>
 
-  <title> Nickcheng.LOG </title>
+  <title> Xcode 5 编译自动增加版本号 | Nickcheng.LOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -131,9 +164,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,9 +241,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -232,225 +263,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2015/04/28/write-markdown-in-sublime/" itemprop="url">
-                  Sublime 下写 Markdown 的暂时方案
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2015-04-28T15:47:00+09:00" content="2015-04-28">
-              2015-04-28
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>一直都没有找到太合适的写 Markdown 的工具. 虽然尝试过不少, 但仍然没有一个真正习惯的. 其实自己纠结的无非是下面几点:</p>
-<ul>
-<li>GFM 语法. 其中关键是代码块的支持</li>
-<li>带目录树的 Sidebar</li>
-<li>暗色颜色主题</li>
-</ul>
-<p>最早接触 Markdown 用的是 Mou, 用着用着就觉得功能差太多了, 基本满足不了我.</p>
-<p>然后一直间断的用 Ulysses, 从 Ulysses III 到现在改名的 Ulysses for Mac 2.0 他家的三栏是我最喜欢的, 但是他自己独有的一些语法还是让我这个习惯于 GFM 语法的人无法适应. 听说 Ulysses 未来有计划支持 GFM, 那么就等它支持的时候再来试试吧.</p>
-<p>脱胎于 Mou 的 Macdown 倒是功能上提升了不少, 而且开源也方便爱好者扩展, 很看好. 但是一直没有支持 Sidebar 目录树的计划. 我自己有一个半截的 Fork, 但一直还没来得及完成, =_=|||</p>
-<p>其他一些如 IA Writer, Write Room, Writer Pro 等都不太满意, 就不细说了.</p>
-<p>于是最终还是转回到改造常用的 Text Editor. 这个重任就落在 Sublime Text 身上了.</p>
-<p>Sublime 的丰富的插件让这一切得以可行, 最终我的配置大概如下:</p>
-<p><strong><a href="https://github.com/nvtkaszpir/MarkdownLight" target="_blank" rel="external">修改过颜色配置的 Markdown Light</a></strong></p>
-<p>这家默认的颜色都是亮色调的, 所以我用了这个模仿 Dracula 主题配色的 Fork</p>
-<p><strong><a href="https://github.com/zenorocha/dracula-theme" target="_blank" rel="external">Dracula Theme</a></strong></p>
-<p>用到了这个主题的语法配色, 主要是为了让打开其他类型的文件能有统一的体验</p>
-<p><strong><a href="https://github.com/wesbos/cobalt2" target="_blank" rel="external">cobalt2</a></strong></p>
-<p>这个是使用的编辑器主题. 主要目的是边栏美化</p>
-<p>所以最后我的配置文件中样式相关的部分是这样的, 字体搭配属于附赠:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",</span><br><span class="line">"theme": "Cobalt2.sublime-theme",</span><br><span class="line">"font_face": "InputMonoCompressed Thin",</span><br><span class="line">"font_size": 16.0,</span><br></pre></td></tr></table></figure>
-<p>不得不提的还有 GitHub 家的 Atom Editor. 可能还是因为发展时间短, 他还是很多小细节的地方不是那么到位, 而且非 Native 的架构用起来的性能还是要比 Sublime 差上一些, 所以暂时还无法委以重任.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2014/08/28/renew-dropbox-pro/" itemprop="url">
-                  继续使用 Dropbox Pro
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2014-08-28T09:03:00+09:00" content="2014-08-28">
-              2014-08-28
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>因为工作和生活中都大量用到 Dropbox, 而且 Dropbox 也真的是很好用的服务, 所以之前买了一年的 Dropbox Pro 帐户. </p>
-<p>怎知今年 WWDC 的时候看到了 Apple 要推出的 iCloud Drive. 价格便宜, 容量又大. 就心想不如等到 iCloud Drive 推出的时候, 就迁移过去好了. 虽然稍微费点儿劲, 但自己日常工作在 iCloud 上还是比较自然的. 虽然对 Apple 的云服务品质有些小质疑, 但还是有那么一丝信心的. 于是新的一年就没有续全年的 Dropbox Pro, 而是只买了三个月, 等待 iCloud Drive 发布.</p>
-<p>又怎知, 昨天 Dropbox 宣布 Pro 帐户的容量升级到 1TB. 这下我之前要转 iCloud Drive 的借口全都敌不过这个诱惑了. 毕竟是自己已经用了很久的服务了, 服务品质很满意, 而且自己日常许多工具链都依赖它.</p>
-<p>好吧, 老老实实续一年 Dropbox Pro. iCloud Drive 就先观察着.</p>
-<ul>
-<li>Dropbox Pro: <a href="https://www.dropbox.com/upgrade" target="_blank" rel="external">https://www.dropbox.com/upgrade</a></li>
-<li>注册 Dropbox: <a href="https://db.tt/ceJU2JX" target="_blank" rel="external">https://db.tt/ceJU2JX</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2014/06/10/auto-increase-version-number-in-xcode-5/" itemprop="url">
-                  Xcode 5 编译自动增加版本号
-                </a>
+                Xcode 5 编译自动增加版本号
               
             
           </h1>
@@ -490,9 +303,7 @@
       
 
       
-        
-          
-            <p>为了让自己的应用显得更专业, 我决定把项目的 Build 号整成自动增加的. 为了免除我的操心, 我就让他在我每次编译的时候把 Build 号加一. 就好像这个样子.</p>
+        <p>为了让自己的应用显得更专业, 我决定把项目的 Build 号整成自动增加的. 为了免除我的操心, 我就让他在我每次编译的时候把 Build 号加一. 就好像这个样子.</p>
 <p><img src="http://nickcheng-blog.u.qiniudn.com/20140610/build-number.png" alt="Build Number"></p>
 <p>设置方法很容易. 先在项目的 “Build Phases” 里添加一项.</p>
 <p><img src="http://nickcheng-blog.u.qiniudn.com/20140610/1.png" alt="Step 1"></p>
@@ -506,131 +317,93 @@
 <p>最后一点要注意的就是这个新添加项的位置. 上图可以看到, 我是放在 “Link Binary…” 和 “Copy Bundle…” 中间的.</p>
 <p>到这里你就可以试试编译, 看看效果了.</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/wechat_pay10_qr.png" alt="nickcheng WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/alipay_qr.png" alt="nickcheng Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
     </div>
+  </div>
 
-    <div>
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2003/04/14/opening/" itemprop="url">
-                  开业......
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2003-04-14T23:43:16+09:00" content="2003-04-14">
-              2003-04-14
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/tech/" rel="tag">#tech</a>
           
-            
+            <a href="/tags/ios/" rel="tag">#iOS</a>
           
-
+            <a href="/tags/xcode/" rel="tag">#xcode</a>
           
-
+            <a href="/tags/development/" rel="tag">#development</a>
           
+            <a href="/tags/compile/" rel="tag">#compile</a>
           
-
+            <a href="/tags/config/" rel="tag">#config</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>看到了什么?自己的Blog……</p>
-<p>以前没有用过这个冬冬,试试看吧,关键是坚持……</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2003/04/14/opening/" rel="next" title="开业......">
+                <i class="fa fa-chevron-left"></i> 开业......
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2014/08/28/renew-dropbox-pro/" rel="prev" title="继续使用 Dropbox Pro">
+                继续使用 Dropbox Pro <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -638,6 +411,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -657,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -721,6 +507,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -817,6 +614,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
