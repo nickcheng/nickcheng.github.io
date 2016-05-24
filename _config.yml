@@ -7,14 +7,14 @@ title: Nickcheng.LOG
 subtitle: 
 description: A place for logging something
 author: nickcheng
-language:
+language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://nickcheng.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:title_en/
 permalink_defaults:
 
 # Directory
