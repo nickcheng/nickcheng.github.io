@@ -1,0 +1,637 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="tech,iOS,apple,app,black,kuaiyong,gangster," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="作为一名 iOS Developer, 既然知道了 “快用苹果助手” 的流氓行为, 那么就有必要揭露一下, 让他暴露在阳光下!
+简单白话一下, “快用苹果助手” 就是利用非法手段跳过了苹果的 iTunes 把应用装到了你的 iPhone 上. 初期他会给你些”甜头”, 把一些付费的应用免费装到你的手机上; 以后会干什么那就不好说了. 希望不会装些垃圾软件, 广告软件, 窃听软件, 偷偷盗用你支付宝">
+<meta property="og:type" content="article">
+<meta property="og:title" content="揭露流氓-"快用苹果助手"">
+<meta property="og:url" content="http://nickcheng.com/2013/04/23/expose-a-gangster-kuaiyong/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="作为一名 iOS Developer, 既然知道了 “快用苹果助手” 的流氓行为, 那么就有必要揭露一下, 让他暴露在阳光下!
+简单白话一下, “快用苹果助手” 就是利用非法手段跳过了苹果的 iTunes 把应用装到了你的 iPhone 上. 初期他会给你些”甜头”, 把一些付费的应用免费装到你的手机上; 以后会干什么那就不好说了. 希望不会装些垃圾软件, 广告软件, 窃听软件, 偷偷盗用你支付宝">
+<meta property="og:image" content="http://i.imgur.com/zBdnQ1w.png">
+<meta property="og:image" content="http://i.imgur.com/Nrao9IV.png">
+<meta property="og:image" content="http://i.imgur.com/3L08lkk.png">
+<meta property="og:image" content="http://i.imgur.com/a4AwCnX.png">
+<meta property="og:updated_time" content="2016-05-25T12:00:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="揭露流氓-"快用苹果助手"">
+<meta name="twitter:description" content="作为一名 iOS Developer, 既然知道了 “快用苹果助手” 的流氓行为, 那么就有必要揭露一下, 让他暴露在阳光下!
+简单白话一下, “快用苹果助手” 就是利用非法手段跳过了苹果的 iTunes 把应用装到了你的 iPhone 上. 初期他会给你些”甜头”, 把一些付费的应用免费装到你的手机上; 以后会干什么那就不好说了. 希望不会装些垃圾软件, 广告软件, 窃听软件, 偷偷盗用你支付宝">
+<meta name="twitter:image" content="http://i.imgur.com/zBdnQ1w.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> 揭露流氓-"快用苹果助手" | Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                揭露流氓-"快用苹果助手"
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2013-04-23T13:45:00+09:00" content="2013-04-23">
+              2013-04-23
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>作为一名 iOS Developer, 既然知道了 “快用苹果助手” 的流氓行为, 那么就有必要揭露一下, 让他暴露在阳光下!</p>
+<p>简单白话一下, “快用苹果助手” 就是利用非法手段跳过了苹果的 iTunes 把应用装到了你的 iPhone 上. 初期他会给你些”甜头”, 把一些付费的应用免费装到你的手机上; 以后会干什么那就不好说了. 希望不会装些垃圾软件, 广告软件, 窃听软件, 偷偷盗用你支付宝… 谁知道呢</p>
+<p>前两天 36kr 发了篇揭露”快用”流氓行径的文章, 不过这两天就看不到了, Google 上能搜到, 不过点过去就直接 404 了. 希望 36kr 不是被公关了… </p>
+<p><img src="http://i.imgur.com/zBdnQ1w.png" alt="image"></p>
+<p><img src="http://i.imgur.com/Nrao9IV.png" alt="image"></p>
+<p>还好能找到些快照, 我贴一下:</p>
+<blockquote>
+<p>“快用苹果助手”是如何实现不越狱即可安装正版APP的？</p>
+<p>最近一款名为”快用苹果助手”的苹果 PC 套件在行业内引起了较大讨论。除了可以将 iOS 设备连接电脑瞬间变身 U 盘外，快用最大的特点在于可帮助非越狱 iOS 设备安装正版付费应用，一度网友被称为”iPhone 神器”。</p>
+<p>有关快用的运行原理也在知乎上引起了大家的讨论。知乎上的一位 APP 开发者朱棋圣也正因为自己的应用”围棋之眼”曾经被”快用苹果助手”收录过，因此从技术上跟踪了快用的整个流程，了解到其盗版原理并且拍下视频作为证据。据朱棋圣分析：</p>
+<p>快用先采用企业级 (Enterprise) 开发者证书重新签名要盗版应用的 IPA，然后通过 Apple 的 itms 协议分发应用（见How to Distribute your iOS Apps Over the Air，这样可以通过 Web 浏览器直接下载应用)。最后，解决闪退是通过同步购买者信息 (也就是原来购买的正版签名文件）。</p>
+<p>简而言之，就是”快用苹果助手”采用了自己去 APP Store 上购买的权限，然后通过技术手段分享给普通用户，这一技术此前曾在国外流行过一阵。据知乎网友高笑楠透露，目前快用已在铺设自己的服务硬件在机场、商场等地，相当于一个硬件版的 App Store。而快用官方也正在和开发者合作签订授权，希望成为继 iTunes Store 之外的另一大应用平台。</p>
+<p>目前快用已经收录了超过 10 万款应用的授权。有开发者表示，将授权分享给其他用户，虽然方便了用户但却给开发者带来了毁灭性的打击，甚至有可能将 iOS 的生态圈变成 Android 那样开放，但同样的混乱。</p>
+<p>文章来自36氪</p>
+</blockquote>
+<p>快照来源: <a href="http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter" target="_blank" rel="external">http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter</a></p>
+<p>相关的讨论在知乎上也有展开: <a href="http://www.zhihu.com/question/20731947" target="_blank" rel="external">iOS 开发者对「快用苹果助手」这款软件怎么评价？</a> 文中也有提到具体的<a href="http://e-intuit.hk/kuaiyong-piracy.html" target="_blank" rel="external">技术实现</a>. </p>
+<p>按理说, 这种灰色的技术, 一经披露就没有壁垒可言了. 你夹着尾巴闷头挣个灰色收入得了, 但可能人家急于变现, 反而很高调, 还和别人吵架呢</p>
+<p><img src="http://i.imgur.com/3L08lkk.png" alt="image"></p>
+<p>图片来源: <a href="https://twitter.com/hanmo93/status/325196664375758850" target="_blank" rel="external">https://twitter.com/hanmo93/status/325196664375758850</a></p>
+<p>底气很足啊. 当然, 有后台老大的!</p>
+<p><img src="http://i.imgur.com/a4AwCnX.png" alt="image"></p>
+<p>网页地址: <a href="http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html" target="_blank" rel="external">http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html</a></p>
+<p>来源: <a href="https://twitter.com/Ratoo/status/325660911555723264" target="_blank" rel="external">https://twitter.com/Ratoo/status/325660911555723264</a></p>
+<p>注解一下, 这个”北京悠然天地科技有限公司”就是经营”快用苹果助手”的公司. 看起来是背后有人撑腰, 还来忽悠政府. 可怜政府为了税收背了这个黑锅啊…</p>
+<p>最近国外的媒体也盯上他们了, 丢人已经丢出国了! <a href="http://appadvice.com/appnn/2013/04/team-of-chinese-hackers-launch-pirated-app-store-for-ios" target="_blank" rel="external">Team Of Chinese Hackers Launches Pirated ‘App Store’ For iOS</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/wechat_pay10_qr.png" alt="nickcheng WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/alipay_qr.png" alt="nickcheng Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tech/" rel="tag">#tech</a>
+          
+            <a href="/tags/ios/" rel="tag">#iOS</a>
+          
+            <a href="/tags/apple/" rel="tag">#apple</a>
+          
+            <a href="/tags/app/" rel="tag">#app</a>
+          
+            <a href="/tags/black/" rel="tag">#black</a>
+          
+            <a href="/tags/kuaiyong/" rel="tag">#kuaiyong</a>
+          
+            <a href="/tags/gangster/" rel="tag">#gangster</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/04/23/a-bug-caused-by-the-update-of-afnetworking/" rel="next" title="AFNetworking 更新导致的 bug">
+                <i class="fa fa-chevron-left"></i> AFNetworking 更新导致的 bug
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/10/20/unique-icons-for-your-app-in-different-state-in-xcode5-debug-release/" rel="prev" title="在 Xcode 5 下让你的应用在不同状态(debug, release)有不同的图标">
+                在 Xcode 5 下让你的应用在不同状态(debug, release)有不同的图标 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

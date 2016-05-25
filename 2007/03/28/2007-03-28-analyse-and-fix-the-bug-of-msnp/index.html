@@ -1,0 +1,612 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="tech," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="最近自己准备用python实现一个msn的机器人, google了一下, 找到了msnp.py这个项目. 项目的地址在
+http://msnp.sourceforge.net
+看了一下最后更新日期, 也已经是2004年1月的事情. 不知道现在还是不是好使! 那就试试吧! 于是按照教程写了一个简单的例子, 于是问题也出现了:P
+自己先用帐号A登了一个msn, 然后用另外一个帐号B试例子(两个帐号互为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分析修正msnp.py小问题的全过程">
+<meta property="og:url" content="http://nickcheng.com/2007/03/28/2007-03-28-analyse-and-fix-the-bug-of-msnp/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="最近自己准备用python实现一个msn的机器人, google了一下, 找到了msnp.py这个项目. 项目的地址在
+http://msnp.sourceforge.net
+看了一下最后更新日期, 也已经是2004年1月的事情. 不知道现在还是不是好使! 那就试试吧! 于是按照教程写了一个简单的例子, 于是问题也出现了:P
+自己先用帐号A登了一个msn, 然后用另外一个帐号B试例子(两个帐号互为">
+<meta property="og:updated_time" content="2016-05-25T12:07:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="分析修正msnp.py小问题的全过程">
+<meta name="twitter:description" content="最近自己准备用python实现一个msn的机器人, google了一下, 找到了msnp.py这个项目. 项目的地址在
+http://msnp.sourceforge.net
+看了一下最后更新日期, 也已经是2004年1月的事情. 不知道现在还是不是好使! 那就试试吧! 于是按照教程写了一个简单的例子, 于是问题也出现了:P
+自己先用帐号A登了一个msn, 然后用另外一个帐号B试例子(两个帐号互为">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> 分析修正msnp.py小问题的全过程 | Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                分析修正msnp.py小问题的全过程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2007-03-28T23:36:34+09:00" content="2007-03-28">
+              2007-03-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近自己准备用python实现一个msn的机器人, google了一下, 找到了<a href="http://msnp.sourceforge.net" target="_blank" rel="external">msnp.py</a>这个项目. 项目的地址在</p>
+<p><a href="http://msnp.sourceforge.net" target="_blank" rel="external">http://msnp.sourceforge.net</a></p>
+<p>看了一下最后更新日期, 也已经是2004年1月的事情. 不知道现在还是不是好使! 那就试试吧! 于是按照<a href="http://msnp.sourceforge.net/tutorial.html" target="_blank" rel="external">教程</a>写了一个简单的例子, 于是问题也出现了:P</p>
+<p>自己先用帐号A登了一个msn, 然后用另外一个帐号B试例子(两个帐号互为好友). 运行例子. 过了4,5秒后, 从A帐号上看到B帐号登录了, 但就在这同时, 例子程序出现了异常!</p>
+<p>从异常信息来看, 是在msnp项目的command.py文件中出现了异常. 异常发生在一个类型转换语句上. 于是开始跟踪, 调试……结果被我发现了问题的所在!</p>
+<p>首先从程序的表征上来看. 程序的异常是紧接着登录发生的, 而从msn上的帐号A来看, B是有成功登录的(当然, 异常发生后帐号B就掉线了). 所以可以大致断定异常发生在登录操作之后, 而且离的比较近. 这个推断可以缩短我们的调试时间:)</p>
+<p>然后是通用的跟踪调试了! 根据异常信息, 在报错的语句前加print来打印中间结果. 令人惊讶的时候print出来的结果竟然没有一点异常, 但是异常还是在那个地方发生了! 这是个费解的情况, 看来print中间结果这条路是不好走了. 于是我又祭起了Winpdb这个家伙, 开始单步执行我的程序, 并跟踪到command.py中. 终于, 在其中的一步中, 我从cmd窗口中看到了print的异常结果–一个XML格式的Notification消息. 问题就是这里了!</p>
+<p>一般来说, msn登录时候的往返协议消息都是有一定格式的, msnp就是按照这个格式来解析往返的消息. 而根据推断, 这个XML格式的Notification消息应该是在登录过程中没有按照这个格式来发的消息. 从Notification消息的内容来看, 这个消息应该是用来显示msn登录后弹出的那个含有邮件信息和新闻的窗口的. 这个窗口在msn登录后会自动弹出, 而且也在登录过程中.</p>
+<p>有了上面的推断, 我就改动了command.py的内容. 我在Command类的parse方法中最前面加入了如下1行:</p>
+<pre><code>if str[0] == &apos;&lt;&apos;: return
+</code></pre><p>修改之后再次运行我的例子……哈哈, 这次成功登录后没有异常发生了! 看来我的推断是正确的!</p>
+<p>继续玩我的msn机器人……</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/wechat_pay10_qr.png" alt="nickcheng WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/alipay_qr.png" alt="nickcheng Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tech/" rel="tag">#tech</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2007/03/23/2007-03-23-dream-of-prague/" rel="next" title="布拉格之梦">
+                <i class="fa fa-chevron-left"></i> 布拉格之梦
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2007/03/29/2007-03-29-install-and-config-subversion-143-in-apache-224/" rel="prev" title="在Apache2.2.4下安装配置Subversion1.4.3">
+                在Apache2.2.4下安装配置Subversion1.4.3 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

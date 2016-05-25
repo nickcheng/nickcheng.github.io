@@ -1,0 +1,1522 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="A place for logging something">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nickcheng.LOG">
+<meta property="og:url" content="http://nickcheng.com/page/36/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="A place for logging something">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nickcheng.LOG">
+<meta name="twitter:description" content="A place for logging something">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/11/19/2004-11-19-how-zindex-working/" itemprop="url">
+                  HTML元素的Z-index属性是如何工作的
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-19T21:23:00+09:00" content="2004-11-19">
+              2004-11-19
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>摘要</p>
+<p>在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.  </p>
+<p>窗口类元素  </p>
+<pre><code>• &lt;OBJECT&gt; 标志元素  
+• ActiveX 控件  
+• Plug-ins  
+• 动态 HTML (DHTML) Scriptlets  
+• SELECT 元素  
+• Internet Explorer 5.01 以及早期版本中的IFRAMEs
+</code></pre><p><strong>注意</strong> </p>
+<p>ActiveX 控件是按照窗口类来实现的, 但实际上还有一部分是非窗口类的. 默认的, Microsoft Visual Basic 和Microsoft Foundation Class (MFC) 控件是窗口类的, 但是Active Template Library (ATL) 空间是非窗口类的.  </p>
+<p>非窗口类元素  </p>
+<pre><code>• 非窗口的ActiveX控件  
+• Internet Explorer 5.5和以后版本的IFRAMEs  
+• 大多数DHTML元素, 比如hyperlinks和 tables  
+</code></pre><p>更多信息  </p>
+<p>所有的窗口类元素在呈现时都会覆盖在非窗口类元素上面, 而不管他们的容器是什么样的. 然而在窗口类元素之间也是象非窗口类元素一样都是按照z-index属性来排列的.  </p>
+<p>所有的非窗口类元素都是呈现在相同的MSHTML平面上, 而窗口类元素是呈现在单独的MSHTML平面上. 你可以利用z-index在同一个平面内随意操作元素, 但是不要把不通平面的元素混为一谈. 你可以分别重新排列不同平面上元素的z-index, 但是窗口类的平面是总在非窗口类平面之上的.  </p>
+<p>在Internet Explorer 5中Z-index是怎么工作的  </p>
+<p>Internet Explorer 5中, IFRAMEs是窗口类控件, 并且他按照z-index属性的顺序和其他窗口类控件排列在一起, 比如SELECT元素. 如果IFRAME的z-index值比SELECT元素的大, 那么IFRAME将会呈现在SELECT元素之上, 反之亦然. 如果z-index值相同, 那就要看元素在页面上的位置; 也就是说, 最后放上去的元素将会在前面的元素之上.  </p>
+<p>下面的代码说明这一点:</p>
+<pre><code>&lt;HTML&gt;  
+&lt;HEAD&gt;  
+&lt;TITLE&gt;Z-Index&lt;/TITLE&gt;  
+&lt;script&gt;  
+function setindex()  
+{  
+div1.style.zIndex=text1.value;  
+select1.style.zIndex=text2.value;  
+getindexes();  
+}  
+
+function getindexes(){  
+text1.value=div1.style.zIndex;  
+text2.value=select1.style.zIndex;  
+text3.value=5;  
+}  
+&lt;/script&gt;  
+&lt;/HEAD&gt;  
+&lt;BODY onload=&quot;getindexes()&quot;&gt;  
+
+Div  
+&lt;input type=&quot;text&quot; value=&quot;&quot; id=text1 name=text1 &gt;&lt;p&gt;  
+
+Select  
+&lt;input type=&quot;text&quot; value=&quot;&quot; id=text2 name=text2&gt;&lt;p&gt;  
+
+IFrame  
+&lt;input type=&quot;text&quot; value=&quot;&quot; id=text3 name=text3&gt;&lt;p&gt;  
+&lt;input type=&quot;button&quot; value=&quot;Set Z-Index&quot; id=button1 name=button1 onclick=&quot;setindex()&quot;&gt;  
+&lt;DIV id=div1 name=div1 style=&quot;width:200;height:200;background-color:lightblue;  
+position:absolute;left:350;top:250;z-index:&quot;&gt;DIV&lt;/DIV&gt;  
+&lt;select id=select1 name=select1 style=&quot;;position:absolute;left:300;top:400;width=300;z-index:&quot;  
+size=1 &gt;  
+&lt;option&gt;Option1  
+&lt;option&gt;Option2  
+&lt;option&gt;Option3  
+&lt;/select&gt;  
+&lt;IFRAME id=iframe1 name=iframe1 src=&quot;&quot; scroll=none style=&quot;width:100;height:115;position:absolute;  
+left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;  
+&lt;/BODY&gt;  
+&lt;/HTML&gt;
+</code></pre><p>IFRAME 的z-index被设置成一个不变的值5. 当你输入一个比任何元素都大的值的时候DIV元素还是一直在最下面, 因为他是非窗口类的, 其他的元素都会在DIV元素之上. 当你把SELECT元素的z-index值设的比5大的时候, SELECT元素就会在IFRAME之上. 当你把SELECT元素的z-index值设的比5小的时候, 它就会在IFRAME之下了.  </p>
+<p>当你把SELECT元素的z- index值设为5, IFRAME会在SELECT元素之上, 因为IFRAME是最后的元素, 因此, 它就会比SELECT优先. 如果SELECT元素在IFRAME后面, 那么在z-index值相同的时候, 它就会在IFRAME之上了.  </p>
+<p>在Internet Explorer 5.5中Z-index是如何工作的  </p>
+<p>在Internet Explorer 5.5中, z-index 被带到了一个新的水平. IFRAMEs不再是窗口类元素. 更多的相关信息请到以下地址查阅”Windowless IFRAME Elements”标题:  </p>
+<p><a href="http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames" target="_blank" rel="external">http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames</a>  </p>
+<p>这使得SELECT元素变成了唯一的窗口类元素. 如果你在Internet Explorer 5.5中使用前面的代码, 当你把SELECT 元素的z-index值设的比5大的时候, 它会在IFRAME之上. 当你把SELECT 元素的z-index值设的比5小的时候, IFRAME会覆盖SELECT元, 即使他们都是非窗口类元素. 这就是IFRAME的独特性: 它按照z-index顺序和非窗口类元素排列在一起, 并且还可以按照z-index和窗口类元素排列在一起, 比如在这里和SELECT元素一起.  </p>
+<p>当你把DIV 元素的z-index值设置的比IFRAME大时 (比如6), DIV会覆盖IFRAME. 这符合我们上面的描述: IFRAMEs是非窗口的, 并且它按照z-index的顺序和其他非窗口类元素排列在一起. 当你设的z-index值和IFRAME相等时 (比如5), 它还是会在DIV之上, 这是因为元素的顺序在起作用. 当你把DIV 元素的z-index值设置为6, 同时使SELECT元素和IFRAME的z-index值为5, 那么SELECT元素将会一直在DIV之上, 因为它是窗口类的元素.  </p>
+<p>然而, IFRAME会在SELECT之上是因为它在顺序上是最后. 为了避免这样, SELECT元素的z-index值必须比IFRAME大, 或者SELECT元素必须排在最后来保证在z-index值一样的情况下它会在IFRAME 之上. Because of this, z-indexing similar content can be difficult. To work around this, use the following methods:  </p>
+<ul>
+<li>使用样式表的Style属性在需要的时候隐藏和显示元素.  </li>
+<li>Use DHTML Scriptlets. Although behaviors are usually preferred, this is one instance where scriptlets are preferred.  </li>
+<li><p>在Internet Explorer 5.5中, 你可以使用popup对象, 使用它你可以在任何元素之上显示丰富的内容. 这在菜单和工具提示功能上非常有用. 想了解更多, 请在下面的地址查阅”popup Object”:  </p>
+<p>  <a href="http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp" target="_blank" rel="external">http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp</a>  </p>
+</li>
+<li><p>使用非窗口类的ActiveX控件来代替窗口类对象. 不幸的是, 所有ActiveX控件都没有非窗口类的实现.  </p>
+</li>
+</ul>
+<p>参考  </p>
+<p>想了解更多基于IE的Web开发解决方案, 请访问以下Web站点:  </p>
+<p><a href="http://msdn.microsoft.com/workshop/entry.asp" target="_blank" rel="external">http://msdn.microsoft.com/workshop/entry.asp</a>  </p>
+<p><a href="http://msdn.microsoft.com/ie/" target="_blank" rel="external">http://msdn.microsoft.com/ie/</a>  </p>
+<p><a href="http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn" target="_blank" rel="external">http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn</a>  </p>
+<hr>
+<p>应用于  </p>
+<ul>
+<li>Microsoft Internet Explorer 6.0 Service Pack 1  </li>
+<li>Microsoft Internet Explorer 5.5 Service Pack 2 and Internet Tools  </li>
+<li>Microsoft Internet Explorer 5.0  </li>
+</ul>
+<p>关键字: kbbug kbdhtml kbfaq kbieobj kbinfo KB177378</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/11/16/2004-11-16-clear-up-some-trojen/" itemprop="url">
+                  清除几个木马
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-16T20:13:00+09:00" content="2004-11-16">
+              2004-11-16
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天回到家里上网, 刚打开Maxthon就弹出一个广告窗口, 这个问题已经好长时间了, 因为一直没时间, 所以也没有去整它. 刚好今天没事儿, 呵呵, 小木马, 你死定了!  </p>
+<p>首先打开msconfig, 瓦赛, 这么多得启动项, 都是什么啊!  </p>
+<p>winup.exe 这是什么东西? Google一下, 这可好, 原来是个象3721一样得烂东西, 不知道什么时候跑到我机器里了, 好! 废了他!  </p>
+<blockquote>
+<ul>
+<li>在IE的工具里点”管理加载项”,禁用Downloadvalue Class , EyeOnIe Class ,URLMonitor Class  </li>
+<li>在system32中运行一下henbangkiller.exe 再删除 winhtp.dll hap.dll xpieknl.dll winup.exe  </li>
+<li>在注册表中删除HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run下的 winup 键HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run下的 updata键</li>
+</ul>
+</blockquote>
+<p>这下他可不会再出来麻烦我了！  </p>
+<p>不过我看到在msconfig里面还有一个可疑的东西：msstart.exe 不对吧，MS会弄一个这么个东东？系统都启动了，还来一个start？有问题！  </p>
+<p>继续Google，哈哈，果然，这个也是个木马！杀之!  </p>
+<p>先在任务管理器里干掉msstart的进程, 然后再到system32目录下delete掉msstart.exe这个文件, 看你再嚣张!  </p>
+<p>不过我害怕还有不知道的木马, 所以现在我要去下一个Spy Sweeper查查我的机器</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/11/06/2004-11-06-about-authrities-of-aspnet-user/" itemprop="url">
+                  关于ASPNET用户的权限
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-06T05:04:00+09:00" content="2004-11-06">
+              2004-11-06
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在ASP.NET下开发Web应用程序的时候, 尤其是和读写文件有关的情况下, 常常会发生ASPNET用户对某一个目录没有相应权限的问题, 这一点在NTFS分区中尤为明显.  </p>
+<p>我们一般的解决方法就是在这个目录上点击右键, 然后在”属性”中选择”安全”, 然后添加ASPNET用户到当前用户列表中.  </p>
+<p>这样的方法固然可以, 不过如果有多个目录的话,就需要反复的操作, 显得繁琐了一些, 所以我们可以通过另一个方法来实现同样的效果, 而且更高效.  </p>
+<p>我们可以在”管理工具”中, 选择”系统工具”-“本地用户和组”-“组”, 双击”Administrator”, 然后把ASPNET用户添加到组中. 这样一来, ASPNET用户就拥有了Administrator组的所有权限, 自然也就拥有了对所有目录的读写权限.  </p>
+<p>不过使用这个方法前要考虑一下可能出现的安全问题和隐患:)</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/11/06/2004-11-06-problem-of-session-quote/" itemprop="url">
+                  Session引用的问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-06T05:02:00+09:00" content="2004-11-06">
+              2004-11-06
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>// 如果按照以下这样的方式得到Session中存储的对象, 得到的其实是一个引用  
+// 如果对myDataSet中的值进行修改, Session中的值也会相应的更改  
+// ...  
+myDataSet = (DataSet)Session[&quot;dataset&quot;];  
+// ...  
+
+// 所以我们在此要使用Copy()方法, 来得到对象的一个副本  
+// 这样一来, 我们在更改myDataSet中的值的时候, Session中的值就不会更改了  
+// ...  
+myDataSet = ((DataSet)Session[&quot;dataset&quot;]).Copy();  
+// ...
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/11/06/2004-11-06-solve-the-bad-cr-in-datagrid/" itemprop="url">
+                  DataGrid控件中内容不换行的处理
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-06T04:55:00+09:00" content="2004-11-06">
+              2004-11-06
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>// ...  
+// 定义DataGrid  
+protected DataGrid myDataGrid;  
+// ...  
+
+// ...  
+// 响应DataGrid的ItemCreated事件  
+myDataGrid.ItemCreated += new System.Web.UI.WebControls.DataGridItemEventHandler(this.DataGrid_ItemCreated);  
+// ...  
+
+// ...  
+// 响应ItemCreated的具体方法  
+// 本方法在每一行被创建的时候响应  
+private void DataGrid_ItemCreated(object sender, System.Web.UI.WebControls.DataGridItemEventArgs e)  
+{ // 在这里, e.Item返回的是当前创建行的对象  
+for(int i = 0; i &lt; e.Item.Cells.Count; i++)  
+{ // e.Item.Cells[x]是当前行中的单元格  
+e.Item.Cells[i].Wrap = false;  
+}  
+}
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/07/30/2004-07-30-havent-update-blog-for-a-long-time/" itemprop="url">
+                  好久没有更新Blog了
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-07-30T23:11:00+09:00" content="2004-07-30">
+              2004-07-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>真的是好久都没有更新过了, 主要的原因就是自己没有电脑, 而且没有时间经常上网  </p>
+<p>上个周末去姑姑家里搬来了一台赛扬400(古董?), 嘿嘿, 就凑合着先用了! 目前住的地方还没有宽带, 所以俺还只能是拨号, 巨贵啊(6元/小时)! 像这篇文章, 我还是事先在notepad里写好, 然后趁上网下东西的时候粘上来的 节俭啊!  </p>
+<p>准备这个周末买电脑去, 因为显示器打算买个17液晶的, 但是目前的预算暂时差一点, 所以, 就准备先把除显示器之外的东西买了, 显示器先用姑姑这个15的CRT 希望国庆的时候能用上液晶…  </p>
+<p>最近准备把原来总结的一些技术文章贴上来, 也算是充实一下吧…  </p>
+<p>希望以后能有更多的机会更新Blog……</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/07/25/2004-07-25-in-the-days-without-computer-20040725/" itemprop="url">
+                  还在没有电脑的日子。。。。。。
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-07-25T10:41:00+09:00" content="2004-07-25">
+              2004-07-25
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>没有自己电脑的日子真是难过…  </p>
+<p>我决定了!在买电脑以前就不更新这里了……  </p>
+<p>期待我买电脑啊……</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/06/25/2004-06-25-return-to-peking/" itemprop="url">
+                  Return to Peking......
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-06-25T18:56:00+09:00" content="2004-06-25">
+              2004-06-25
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>俺已经正式毕业了!从学校又回到北京了！又开始了朝九晚五的生活！  </p>
+<p>在学校的最后两个星期过的很快，事情也作了很多！论文，答辩，吃饭，演出……呵呵…虽然一直觉得自己在离开的时候没有什么舍不得的,但是在那最后的演出上,朋友唱出”不要告别”的时候,我还是很有感觉的,这首歌我在下面一直从头到尾的唱完了,心里也有点堵……  </p>
+<p>我是我们班最晚返回学校,最早离开学校的的!说起来我这个人也是挺不够意思的!大学四年,到最后,我都没有和全班人一起坐在一起吃个饭!其实我还是很期待散伙饭的!不过实在是没有时间了!哥们儿们,对不住了!</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/06/16/2004-06-16-memo-20040616/" itemprop="url">
+                  随便写写~~~~~~
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-06-16T13:57:00+09:00" content="2004-06-16">
+              2004-06-16
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天终于把答辩给搞定了，论文也交给了老师，算是通过了…下午就要照像了，呵呵……要滚蛋了…  </p>
+<p>中午上网，又看了一些东西，有些还挺长，还没有来的及全看，就先留个记号。  </p>
+<p>在车东的网站看到了一篇关于搜索引擎研究的文章，里面讲的很多东西都是很有价值的，做网站的看看会很有帮助的！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/06/15/2004-06-15-one-more-blog-system-in-asp-lbs/" itemprop="url">
+                  ASP下的BLOG系统又有了一个新成员！
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-06-15T00:32:00+09:00" content="2004-06-15">
+              2004-06-15
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一直以来，我都以为ASP下的Blog程序只有一个，就是我现在使用的duoluo的DLog，不过见天才看到还有一个挺有名气的Blog系统，叫L-Blog，具体的情况大家可以到<a href="http://www.loveyuki.com/" target="_blank" rel="external">http://www.loveyuki.com/</a> 来看看。而且SiC老大（MyIE2的一位老大）又在这个的基础上自己做了一番改进，叫做LBS，这个系统一直还在更新着，有兴趣的朋友可以看看去，目前的版本已经到了0xC9了  </p>
+<p>虽然现在已经有了这么多Blog的程序，但是自己也想写一个Blog程序。ASP.NET下的，呵呵，肯定不敢和著名的.TEXT比了！不过如果自己的写一个的话，相信在技术上会有很大的进步的！不过，目前的状态还不太适合自己写程序，首先，连自己的电脑还没有，首要目标还是先买台电脑</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/35/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/35/">35</a><span class="page-number current">36</span><a class="page-number" href="/page/37/">37</a><span class="space">&hellip;</span><a class="page-number" href="/page/45/">45</a><a class="extend next" rel="next" href="/page/37/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

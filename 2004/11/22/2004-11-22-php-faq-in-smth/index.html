@@ -1,0 +1,633 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="tech," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Q: 为什么使用Apache服务器时，浏览器中不能显示中文内容？  
+A: 新版的Apache(2.0.x以上)将服务器的默认语言设置成了西欧语言，因此出现这种情况。解决办法是，修改httpd.conf，查找AddDefaultCharset，将该行改为：AddDefaultCharset GB2312然后重新启动Apache服务器。  
+Tips: 
+httpd.conf 的位置：
+linux下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="smth中关于PHP的faq">
+<meta property="og:url" content="http://nickcheng.com/2004/11/22/2004-11-22-php-faq-in-smth/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="Q: 为什么使用Apache服务器时，浏览器中不能显示中文内容？  
+A: 新版的Apache(2.0.x以上)将服务器的默认语言设置成了西欧语言，因此出现这种情况。解决办法是，修改httpd.conf，查找AddDefaultCharset，将该行改为：AddDefaultCharset GB2312然后重新启动Apache服务器。  
+Tips: 
+httpd.conf 的位置：
+linux下">
+<meta property="og:updated_time" content="2016-05-25T12:07:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="smth中关于PHP的faq">
+<meta name="twitter:description" content="Q: 为什么使用Apache服务器时，浏览器中不能显示中文内容？  
+A: 新版的Apache(2.0.x以上)将服务器的默认语言设置成了西欧语言，因此出现这种情况。解决办法是，修改httpd.conf，查找AddDefaultCharset，将该行改为：AddDefaultCharset GB2312然后重新启动Apache服务器。  
+Tips: 
+httpd.conf 的位置：
+linux下">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> smth中关于PHP的faq | Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                smth中关于PHP的faq
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-22T19:47:00+09:00" content="2004-11-22">
+              2004-11-22
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Q: 为什么使用Apache服务器时，浏览器中不能显示中文内容？  </p>
+<p>A: 新版的Apache(2.0.x以上)将服务器的默认语言设置成了西欧语言，因此出现这种情况。解决办法是，修改<code>httpd.conf</code>，查找<code>AddDefaultCharset</code>，将该行改为：<code>AddDefaultCharset GB2312</code>然后重新启动Apache服务器。  </p>
+<p>Tips: </p>
+<p>httpd.conf 的位置：</p>
+<p>linux下位于/etc/httpd或者/usr/local/apache2/conf，  </p>
+<p>windows下面位于安装目录的conf目录下面。  </p>
+<p>浏览器浏览过西欧语言的该页面以后，就会记住该页面的语言设置，所以有时候即使你修改了服务器设置，从浏览器中看到的默认语言还是西欧语言。这种情况只要清空浏览器的历史记录和缓存即可。  </p>
+<p>Q: 网页上提交表单之后，PHP为什么不能获取提交的内容？  </p>
+<p>A: 新版的PHP已经废弃了原来的表单内容处理方式，即不再把提交的表单的内容直接复制到一个同名变量中。解决办法有四个：  </p>
+<ol>
+<li>修改php.ini，查找 register_globals，将其值修改为 On。这样就可以像原来一样，例如，提交的表单中包括一个名为”username”的变量，那么在php中就可以直接使用$username来访问该变量。但是，除非你要使用一段旧的代码而考虑到兼容性问题，否则不建议使用该方法。  </li>
+<li>使用 $HTTP_GET_VARS、$HTTP_POST_VARS数组来访问，例如写成$HTTP_POST_VARS[“username”]的形式。不过该方法也不建议采用。  </li>
+<li>(推荐)使用 $_POST、$_GET等数组来访问，例如写成 $_POST[“username”]的形式。建议采用这种方法。  </li>
+<li>(推荐)使用 import_request_variables 函数。该函数将提交内容导入到变量中。例如 import_request<em>variables(“gp”, “rvar</em>“);第一个参数可以选择g,p,c，分别表示导入 GET,POST,COOKIE 变量；第二个参数为导入后的变量前缀。执行上面的语句后即可使用 $rvar_username 来访问提交的 username 变量。  </li>
+</ol>
+<p>Tips: 第三项中提到的预设变量有: $GLOBALS, $_SERVER, $_GET, $_POST, $_COOKIE,<br>$_FILES, $_ENV, $_REQUEST, $_SESSION等。详细信息请参考PHP手册。  </p>
+<p>Q: 为什么在Windows+Apache+PHP不能正常使用Session?  </p>
+<p>A: PHP将session保存到服务器的一个目录中。由于PHP原本是为UNIX设计的，因此该目录默认为 /tmp。因此在Windows下使用session时，需要将该目录修改为正确的目录。  </p>
+<p>修改方法是：打开php.ini文件，查找变量session.save_path，然后将它的值(默认是/tmp)修改为你的计算机上存在的目录，例如C:\WINNT\Temp。  </p>
+<p>Q: 请推荐一些好用的论坛程序以及下载方式。<br>A: ASP环境：动网论坛(dvbbs)<br>PHP环境：vbb论坛，phpBB论坛，一般都需要mysql数据库支持<br>Perl环境：LB5000论坛，不需要数据库支持<br>下载方法，请到www.google.com之类的搜索引擎上用论坛名称作为关键字来搜索。  </p>
+<p>Q: 如何粘贴附件<br>A: </p>
+<ol>
+<li>使用web方式发文可以粘贴附件，  </li>
+<li>使用带有zmodem功能的term工具，在发文输入标题时按u键并选择文件。<br>新版本的fterm等均可以，下载地址见<a href="http://www.smth.edu.cn/" target="_blank" rel="external">http://www.smth.edu.cn</a><br>Tips: 附件限3个&amp;2M以内，如果您的附件超过了该限制请分批上载。<br>附件上载之后请不要编辑文章，否则会覆盖掉文件地址（可以自行删除重发）<br>附件上传功能是为了方便版面讨论，不得上载违法违规文件，上载前注意杀毒。<br>对所上载文件发文者有义务解释清楚其用途。违者视情节删文或封禁发文权限。  </li>
+</ol>
+<p>Q: 如何下载附件<br>A:</p>
+<ol>
+<li>使用web方式浏览时可以点击附件链接下载  </li>
+<li>使用term的zmodem功能下载。具体方法请看相关term的使用说明。</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/wechat_pay10_qr.png" alt="nickcheng WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/alipay_qr.png" alt="nickcheng Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tech/" rel="tag">#tech</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2004/11/21/2004-11-21-some-explains-of-windows-service/" rel="next" title="Windows服务的一些解释">
+                <i class="fa fa-chevron-left"></i> Windows服务的一些解释
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2004/11/22/2004-11-22-vision-of-natural-language-processing/" rel="prev" title="关于语言信息处理技术的展望">
+                关于语言信息处理技术的展望 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

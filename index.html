@@ -542,7 +542,7 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -554,8 +554,8 @@
             
               
                 
-                <a class="post-title-link" href="/2003/04/14/opening/" itemprop="url">
-                  开业......
+                <a class="post-title-link" href="/2014/04/20/use-custom-dns-in-appletv2-v61/" itemprop="url">
+                  Apple TV 2 OS v6.1 使用自定义 DNS
                 </a>
               
             
@@ -568,8 +568,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2003-04-14T23:43:16+09:00" content="2003-04-14">
-              2003-04-14
+            <time itemprop="dateCreated" datetime="2014-04-20T15:53:00+09:00" content="2014-04-20">
+              2014-04-20
             </time>
           </span>
 
@@ -598,8 +598,680 @@
       
         
           
-            <p>看到了什么?自己的Blog……</p>
-<p>以前没有用过这个冬冬,试试看吧,关键是坚持……</p>
+            <p>一直想把家里的 Apple TV2 重新启用给老婆看视频. 之前搞的时候一直没有找到合适的 DNS 地址, 今天偶然在 ip.cn 看到几个, 于是打算来试试看.</p>
+<p><a href="http://ip.cn/dns.html" target="_blank" rel="external">Apple TV DNS 服务器 IP 地址</a>:</p>
+<ul>
+<li>南方电信: 180.153.225.136</li>
+<li>北方联通: 115.28.40.136    </li>
+<li>香港: 111.68.8.179       </li>
+<li>国外: 182.16.230.98</li>
+</ul>
+<p>一般来说, 按照上面设置好 Apple TV 的 DNS 以后, 返回主界面打开 “预告片”, 就能看到 DNS 提供的内容了. 但是我却看到的是 “预告片不可用” 的提示字样.</p>
+<p>网上搜了一圈, 原来是苹果全面启用了 HTTPS 的缘故导致. 现在需要先利用苹果的配置工具来给 Apple TV 刷个配置, 然后才能使用.</p>
+<p>我在网上找到了教程和对应的文件, 有需要的可以自取, 按教程操作即可:</p>
+<ul>
+<li><a href="http://nickcheng-blog.u.qiniudn.com/20140420/readme.pdf" target="_blank" rel="external">教程</a></li>
+<li><a href="http://nickcheng-blog.u.qiniudn.com/20140420/appletv-fix.mobileconfig" target="_blank" rel="external">配置文件</a></li>
+</ul>
+<p>参考链接:</p>
+<ul>
+<li><a href="http://nasyun.com/thread-1825-1-1.html" target="_blank" rel="external">【紧急更新】apple tv 3dns劫持被封解决方案：T大新版本ATV3劫持证书起死回生大法！</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2013/10/20/unique-icons-for-your-app-in-different-state-in-xcode5-debug-release/" itemprop="url">
+                  在 Xcode 5 下让你的应用在不同状态(debug, release)有不同的图标
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2013-10-20T09:33:00+09:00" content="2013-10-20">
+              2013-10-20
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>应用在发布到 App Store 之前, 大家都会把应用通过 Ad Hoc 形式发给内部人员进行小范围的测试, 我们把应用的这个状态称为 Staging. 这些人员大多都没有参与过应用, 目的是用来模拟真实用户的操作行为和流程, 以此来找到一些更不容易发现的 Bug.</p>
+<p>前段时间我们在准备发布 <a href="https://itunes.apple.com/app/nextday/id491352621?mt=8" target="_blank" rel="external">NextDay 4.0</a> 的时候, 也是这样. 但问题也随之而来了. 大家的 iPhone 上都装有 App Store 版本的 <a href="https://itunes.apple.com/app/nextday/id491352621?mt=8" target="_blank" rel="external">NextDay</a>, 内部测试的 Ad Hoc 版本装上去以后, 图标与名字都和正式版一样, 很难区分. 而我自己的手机上还有 Debug 版本的应用, 这一下就三个了.</p>
+<p>所以我就花时间找了一些方法来让不同版本 (不是版本号, 是 Debug, Staging, AppStore 这样的版本) 的同一个应用有各自不同的 Icon 和名字. 这样就避免了上面碰到的问题. 在这里记录一下, 一个是自己备忘, 另外还可以分享给大家:)</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>首先, 不同版本的应用要有不同的 Bundle ID. 这里推荐 <a href="http://swwritings.com" target="_blank" rel="external">Simon Wolf</a> 的命名方式. 如果你的应用原来的 Bundle ID 是 <code>com.mycompany.myapp</code>, 那么这几个版本你可以这么命名:</p>
+<ul>
+<li><code>com.mycompany.myapp.debug</code> Debug (Alpha) 版本</li>
+<li><code>com.mycompany.myapp.adhoc</code> Staging (Ad Hoc, Beta) 版本</li>
+<li><code>com.mycompany.myapp</code> App Store (Production) 版本</li>
+</ul>
+<p>然后对应的 Provisionng Profile 也都要准备好. 不用我说了吧.</p>
+<p>接下来准备几个不同的图标. 我是用 <a href="http://blog.consumedbycode.com/" target="_blank" rel="external">Curtis Herbert</a> 修改的 <a href="https://s3.amazonaws.com/consumedbycode/downloads/Icons+Template.zip" target="_blank" rel="external">PSD 文件</a> 做的.  效果可以看我的截图.</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/01.PNG" alt="NextDay in different version"></p>
+<p>原始 PSD 来自 <a href="http://appicontemplate.com" target="_blank" rel="external">appicontemplate.com</a>. 使用方法也在原网站.</p>
+<h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>接下来就是一步一步的设置了.</p>
+<h2 id="Build-Configurations"><a href="#Build-Configurations" class="headerlink" title="Build Configurations"></a>Build Configurations</h2><p>首先是添加 Configurations, 位置见下图所示. 项目之前已经有了 Debug 和 Release 两个配置, 可以分别对应咱们的 Debug 版本和 App Store 版本. 所以咱们只添加一个 Staging 版本就可以了. 我为了能让添加的版本按字母序排列在 Debug 和 Release 中间, 用的名字是 “ForBeta”.</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/02.png" alt=""></p>
+<p>这步完成后, 你会在 Build Settings 里看到所有的设置都有了三个子选项, 分别对应三个不同的 Configuration.</p>
+<h2 id="Schemes"><a href="#Schemes" class="headerlink" title="Schemes"></a>Schemes</h2><p>然后, 我们在项目里需要有两个 Scheme. 这两个 Scheme 在 Debug 时候的行为是一样的, 但在 Archive 的时候, 一个用于 Staging 版本发布内部测试, 一个用于 App Store 发布. </p>
+<p>Scheme 的设置入口在菜单上: “Product” -&gt; “Scheme” -&gt; “Manage Schemes”. 我的两个 Scheme 命名如图: </p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/03.png" alt=""></p>
+<p>对应 App Store 的 Scheme 设置里, Run 和 Test 的 Build Configuration 都使用 Debug, Profile 和 Archive 使用 Release.</p>
+<p>对应 Staging (Beta) 的 Scheme 设置里, Run 和 Test 也用 Debug, Profile 和 Archive 使用 ForBeta.</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/04.png" alt=""></p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/05.png" alt=""></p>
+<p>有了这里的设置, 咱们就可以通过切换 Scheme 来 Archive 出分别用于 Ad Hoc 发布和 App Store 发布的 App 了.</p>
+<h2 id="App-Icon"><a href="#App-Icon" class="headerlink" title="App Icon"></a>App Icon</h2><p>接着就是 Icon. 现在大家应该都用 Xcode 5 了吧! 既然用了, 那就多用用新功能, Icon 设置这块我使用了 Media Assets. 如果你的老项目还没有启用, 那就麻烦你在对应 Target 的 General 下启用一下.</p>
+<p>在 Media Assets 中 (在项目中的默认名字应该是 Images.xcassets), 点击菜单 “Editor” -&gt; “New App Icon”, 建立两个新的 App Icon, 分别对应 Debug 和 Staging 版本. 然后把之前准备好的图标分别拖进去. 如图:</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/06.png" alt=""></p>
+<p>设置好 Media Assets 后, 还要在对应 Target 的 Build Settings 里分别设置不同版本使用不同的 App Icon. 如图:</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/07.png" alt=""></p>
+<p>这样设置好, 不同版本的应用就拥有了各自不同的图标了.</p>
+<h2 id="Bundle-ID"><a href="#Bundle-ID" class="headerlink" title="Bundle ID"></a>Bundle ID</h2><p>再下来就是按照我们前面定义的 Bundle ID 和各个版本的对应关系来进行设置了.</p>
+<p>我们需要在 Build Settings 中定义一个变量. 入口在: “Editor” -&gt; “Add Build Setting” -&gt; “Add User-Defined Setting”.</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/08.png" alt=""></p>
+<p>然后在对应 Target 的 Info 里把 Bundle ID 设置为我们刚才定义的变量.</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/09.png" alt=""></p>
+<p>这样, 项目在使用不同的配置文件编译的时候就能分别利用不同的 Bundle ID 了.</p>
+<h2 id="App-Name"><a href="#App-Name" class="headerlink" title="App Name"></a>App Name</h2><p>设置了图标, 如果觉得有必要把应用名称也顺便区分一下的话, 也是可以的.</p>
+<p>我们需要在 Build Settings 中再定义一个变量. 比如我是这么定义的:</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/10.png" alt=""></p>
+<p>然后在应用名称的设置那里使用这个变量:</p>
+<p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/11.png" alt=""></p>
+<p>经过上面的一系列设置, 我现在在 Xcode 里只需要在左上角简单切换一下 Scheme 就可以很方便的编译出各个我需要的应用版本. 妈妈再也不用担心我发布应用了!</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="http://nilsou.com/blog/2013/07/29/how-to-have-two-versions-of-the-same-app-on-your-device/" target="_blank" rel="external">How to Have Two Versions of the Same App on Your Device</a></li>
+<li><a href="http://blog.consumedbycode.com/unique-icons-for-debug-beta-and-app-store-builds-in-xcode-5" target="_blank" rel="external">Unique icons for debug, beta, and App Store builds in Xcode 5</a></li>
+<li><a href="http://swwritings.com/post/2013-05-20-concurrent-debug-beta-app-store-builds" target="_blank" rel="external">Concurrent Debug, Beta and App Store Builds</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2013/04/23/expose-a-gangster-kuaiyong/" itemprop="url">
+                  揭露流氓-"快用苹果助手"
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2013-04-23T13:45:00+09:00" content="2013-04-23">
+              2013-04-23
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>作为一名 iOS Developer, 既然知道了 “快用苹果助手” 的流氓行为, 那么就有必要揭露一下, 让他暴露在阳光下!</p>
+<p>简单白话一下, “快用苹果助手” 就是利用非法手段跳过了苹果的 iTunes 把应用装到了你的 iPhone 上. 初期他会给你些”甜头”, 把一些付费的应用免费装到你的手机上; 以后会干什么那就不好说了. 希望不会装些垃圾软件, 广告软件, 窃听软件, 偷偷盗用你支付宝… 谁知道呢</p>
+<p>前两天 36kr 发了篇揭露”快用”流氓行径的文章, 不过这两天就看不到了, Google 上能搜到, 不过点过去就直接 404 了. 希望 36kr 不是被公关了… </p>
+<p><img src="http://i.imgur.com/zBdnQ1w.png" alt="image"></p>
+<p><img src="http://i.imgur.com/Nrao9IV.png" alt="image"></p>
+<p>还好能找到些快照, 我贴一下:</p>
+<blockquote>
+<p>“快用苹果助手”是如何实现不越狱即可安装正版APP的？</p>
+<p>最近一款名为”快用苹果助手”的苹果 PC 套件在行业内引起了较大讨论。除了可以将 iOS 设备连接电脑瞬间变身 U 盘外，快用最大的特点在于可帮助非越狱 iOS 设备安装正版付费应用，一度网友被称为”iPhone 神器”。</p>
+<p>有关快用的运行原理也在知乎上引起了大家的讨论。知乎上的一位 APP 开发者朱棋圣也正因为自己的应用”围棋之眼”曾经被”快用苹果助手”收录过，因此从技术上跟踪了快用的整个流程，了解到其盗版原理并且拍下视频作为证据。据朱棋圣分析：</p>
+<p>快用先采用企业级 (Enterprise) 开发者证书重新签名要盗版应用的 IPA，然后通过 Apple 的 itms 协议分发应用（见How to Distribute your iOS Apps Over the Air，这样可以通过 Web 浏览器直接下载应用)。最后，解决闪退是通过同步购买者信息 (也就是原来购买的正版签名文件）。</p>
+<p>简而言之，就是”快用苹果助手”采用了自己去 APP Store 上购买的权限，然后通过技术手段分享给普通用户，这一技术此前曾在国外流行过一阵。据知乎网友高笑楠透露，目前快用已在铺设自己的服务硬件在机场、商场等地，相当于一个硬件版的 App Store。而快用官方也正在和开发者合作签订授权，希望成为继 iTunes Store 之外的另一大应用平台。</p>
+<p>目前快用已经收录了超过 10 万款应用的授权。有开发者表示，将授权分享给其他用户，虽然方便了用户但却给开发者带来了毁灭性的打击，甚至有可能将 iOS 的生态圈变成 Android 那样开放，但同样的混乱。</p>
+<p>文章来自36氪</p>
+</blockquote>
+<p>快照来源: <a href="http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter" target="_blank" rel="external">http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter</a></p>
+<p>相关的讨论在知乎上也有展开: <a href="http://www.zhihu.com/question/20731947" target="_blank" rel="external">iOS 开发者对「快用苹果助手」这款软件怎么评价？</a> 文中也有提到具体的<a href="http://e-intuit.hk/kuaiyong-piracy.html" target="_blank" rel="external">技术实现</a>. </p>
+<p>按理说, 这种灰色的技术, 一经披露就没有壁垒可言了. 你夹着尾巴闷头挣个灰色收入得了, 但可能人家急于变现, 反而很高调, 还和别人吵架呢</p>
+<p><img src="http://i.imgur.com/3L08lkk.png" alt="image"></p>
+<p>图片来源: <a href="https://twitter.com/hanmo93/status/325196664375758850" target="_blank" rel="external">https://twitter.com/hanmo93/status/325196664375758850</a></p>
+<p>底气很足啊. 当然, 有后台老大的!</p>
+<p><img src="http://i.imgur.com/a4AwCnX.png" alt="image"></p>
+<p>网页地址: <a href="http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html" target="_blank" rel="external">http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html</a></p>
+<p>来源: <a href="https://twitter.com/Ratoo/status/325660911555723264" target="_blank" rel="external">https://twitter.com/Ratoo/status/325660911555723264</a></p>
+<p>注解一下, 这个”北京悠然天地科技有限公司”就是经营”快用苹果助手”的公司. 看起来是背后有人撑腰, 还来忽悠政府. 可怜政府为了税收背了这个黑锅啊…</p>
+<p>最近国外的媒体也盯上他们了, 丢人已经丢出国了! <a href="http://appadvice.com/appnn/2013/04/team-of-chinese-hackers-launch-pirated-app-store-for-ios" target="_blank" rel="external">Team Of Chinese Hackers Launches Pirated ‘App Store’ For iOS</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2013/04/23/a-bug-caused-by-the-update-of-afnetworking/" itemprop="url">
+                  AFNetworking 更新导致的 bug
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2013-04-23T11:08:00+09:00" content="2013-04-23">
+              2013-04-23
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天调试 <a href="https://github.com/nickcheng/NCMusicEngine" target="_blank" rel="external">NCMusicEngine</a> 的时候发现了一个 bug. 调试了半天才发现是引用的 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a> 模块新版本的更新引入的一个新功能导致的.</p>
+<p>之前在 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a> 里 cancel 掉一个 operation 是没有其他额外的影响的, 但是新版本里, operation 的 cancel 操作会导致 <code>CompletionBlockWithSuccess</code> 的 failure. Error Code 是 -999.</p>
+<p>所以在更新了 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a> 后, 如果之前的代码里有对 operation 的 cancel 操作, 那就要注意这一点了.</p>
+<p>Github 上这个新功能的 pull request: <a href="https://github.com/AFNetworking/AFNetworking/pull/693" target="_blank" rel="external">https://github.com/AFNetworking/AFNetworking/pull/693</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2013/02/05/little-or-mini-printer/" itemprop="url">
+                  Little or Mini Printer ?
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2013-02-05T18:17:00+09:00" content="2013-02-05">
+              2013-02-05
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>之前一直名声大振的 Little Printer 终于开卖了, 不过这价格可真是… £199, 英镑啊, 我买个正儿八经的打印机好不好? 不过话虽这么说, 但是还是抵不住新玩意的诱惑, 是吧? 那咱就光看看 Review 吧, 然后…</p>
+<p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/P1020063_verge_super_wide.png" alt=""><br><a href="http://www.theverge.com/2013/1/29/3927228/little-printer-review" target="_blank" rel="external">Little Printer review: a design nerd fantasy</a></p>
+<p>然后… 就想办法曲线救国呗</p>
+<p>其实 KickStarter 上也有一个类似的项目: <a href="http://www.kickstarter.com/projects/1953425088/mprinter-an-analog-printer-for-a-digital-world" target="_blank" rel="external">mPrinter - An analog printer for a digital world</a> </p>
+<p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/image-188025-full.jpg" alt=""></p>
+<p>价格便宜一些. 可惜 $100 的早鸟卖没了, 只有 $125 的了, 不过那也比 £199 便宜是吧! 而且还有配套网站和 API: <a href="http://themprinter.com" target="_blank" rel="external">mPrinter</a></p>
+<p>还嫌贵是吧? 那咱就别玩成品了, 自己老老实实攒吧! 而且还能体验 DIY 乐趣. 这儿就有一个简单的热感收据打印机模块: <a href="https://www.adafruit.com/products/597" target="_blank" rel="external">Mini Thermal Receipt Printer</a></p>
+<p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/thermalprinter_MED.jpg" alt=""></p>
+<p>看看这价格, 给力吧?! 不到 $50. 而且买多了还能便宜到 $39.96. 然后自己弄个板子一连, 想怎么搞怎么搞!</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2012/10/14/2012-10-14-twitter-weekly-updates-for-2012-10-14/" itemprop="url">
+                  Twitter Weekly Updates for 2012-10-14
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2012-10-14T15:50:00+09:00" content="2012-10-14">
+              2012-10-14
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>@<a href="http://twitter.com/jacob_bubu" target="_blank" rel="external">jacob_bubu</a> 过了这点儿,网站就不让用了  <a href="http://twitter.com/nickcheng/statuses/255927778099212288" target="_blank" rel="external">#</a></li>
+<li>想了一个 Node 的练手项目, 嘿嘿…  <a href="http://twitter.com/nickcheng/statuses/255605844467654657" target="_blank" rel="external">#</a></li>
+<li>iPhone 5 预约还只能朝九晚五…  <a href="http://twitter.com/nickcheng/statuses/255605712770723840" target="_blank" rel="external">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-10-07: 刚花了1刀买了六个 Mac 应用,…Read moreRelated posts:Twitter Weekly… <a href="http://t.co/eaPcqqfQ" target="_blank" rel="external">http://t.co/eaPcqqfQ</a>  <a href="http://twitter.com/nickcheng/statuses/254972188808065024" target="_blank" rel="external">#</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2012/10/07/2012-10-07-twitter-weekly-updates-for-2012-10-07/" itemprop="url">
+                  Twitter Weekly Updates for 2012-10-07
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2012-10-07T15:50:00+09:00" content="2012-10-07">
+              2012-10-07
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>刚花了1刀买了六个 Mac 应用, 其实主要是要里面的 Sparkbox. via @<a href="http://twitter.com/StackSocial" target="_blank" rel="external">StackSocial</a> #<a href="http://search.twitter.com/search?q=%23StackUp" target="_blank" rel="external">StackUp</a> <a href="https://t.co/vJIG3GM5" target="_blank" rel="external">https://t.co/vJIG3GM5</a>  <a href="http://twitter.com/nickcheng/statuses/254837817157488642" target="_blank" rel="external">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-30: …Read moreRelated posts:Twitter Weekly Updates for 2012… <a href="http://t.co/7aVOptyC" target="_blank" rel="external">http://t.co/7aVOptyC</a>  <a href="http://twitter.com/nickcheng/statuses/252435357654736897" target="_blank" rel="external">#</a></li>
+</ul>
 
           
         
@@ -631,6 +1303,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/45/">45</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -669,7 +1345,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">443</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -679,7 +1355,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">231</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

@@ -1,0 +1,707 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="tech," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="摘要
+在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.  
+窗口类元素  
+• &amp;lt;OBJECT&amp;gt; 标志元素  
+• ActiveX 控件  
+• Plug-ins  
+• 动态 HTML (DHTML) Scriptlets  
+• SELECT 元素  
+• Internet Explorer 5.01">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML元素的Z-index属性是如何工作的">
+<meta property="og:url" content="http://nickcheng.com/2004/11/19/2004-11-19-how-zindex-working/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="摘要
+在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.  
+窗口类元素  
+• &amp;lt;OBJECT&amp;gt; 标志元素  
+• ActiveX 控件  
+• Plug-ins  
+• 动态 HTML (DHTML) Scriptlets  
+• SELECT 元素  
+• Internet Explorer 5.01">
+<meta property="og:updated_time" content="2016-05-25T12:07:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML元素的Z-index属性是如何工作的">
+<meta name="twitter:description" content="摘要
+在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.  
+窗口类元素  
+• &amp;lt;OBJECT&amp;gt; 标志元素  
+• ActiveX 控件  
+• Plug-ins  
+• 动态 HTML (DHTML) Scriptlets  
+• SELECT 元素  
+• Internet Explorer 5.01">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> HTML元素的Z-index属性是如何工作的 | Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                HTML元素的Z-index属性是如何工作的
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-19T21:23:00+09:00" content="2004-11-19">
+              2004-11-19
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>摘要</p>
+<p>在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.  </p>
+<p>窗口类元素  </p>
+<pre><code>• &lt;OBJECT&gt; 标志元素  
+• ActiveX 控件  
+• Plug-ins  
+• 动态 HTML (DHTML) Scriptlets  
+• SELECT 元素  
+• Internet Explorer 5.01 以及早期版本中的IFRAMEs
+</code></pre><p><strong>注意</strong> </p>
+<p>ActiveX 控件是按照窗口类来实现的, 但实际上还有一部分是非窗口类的. 默认的, Microsoft Visual Basic 和Microsoft Foundation Class (MFC) 控件是窗口类的, 但是Active Template Library (ATL) 空间是非窗口类的.  </p>
+<p>非窗口类元素  </p>
+<pre><code>• 非窗口的ActiveX控件  
+• Internet Explorer 5.5和以后版本的IFRAMEs  
+• 大多数DHTML元素, 比如hyperlinks和 tables  
+</code></pre><p>更多信息  </p>
+<p>所有的窗口类元素在呈现时都会覆盖在非窗口类元素上面, 而不管他们的容器是什么样的. 然而在窗口类元素之间也是象非窗口类元素一样都是按照z-index属性来排列的.  </p>
+<p>所有的非窗口类元素都是呈现在相同的MSHTML平面上, 而窗口类元素是呈现在单独的MSHTML平面上. 你可以利用z-index在同一个平面内随意操作元素, 但是不要把不通平面的元素混为一谈. 你可以分别重新排列不同平面上元素的z-index, 但是窗口类的平面是总在非窗口类平面之上的.  </p>
+<p>在Internet Explorer 5中Z-index是怎么工作的  </p>
+<p>Internet Explorer 5中, IFRAMEs是窗口类控件, 并且他按照z-index属性的顺序和其他窗口类控件排列在一起, 比如SELECT元素. 如果IFRAME的z-index值比SELECT元素的大, 那么IFRAME将会呈现在SELECT元素之上, 反之亦然. 如果z-index值相同, 那就要看元素在页面上的位置; 也就是说, 最后放上去的元素将会在前面的元素之上.  </p>
+<p>下面的代码说明这一点:</p>
+<pre><code>&lt;HTML&gt;  
+&lt;HEAD&gt;  
+&lt;TITLE&gt;Z-Index&lt;/TITLE&gt;  
+&lt;script&gt;  
+function setindex()  
+{  
+div1.style.zIndex=text1.value;  
+select1.style.zIndex=text2.value;  
+getindexes();  
+}  
+
+function getindexes(){  
+text1.value=div1.style.zIndex;  
+text2.value=select1.style.zIndex;  
+text3.value=5;  
+}  
+&lt;/script&gt;  
+&lt;/HEAD&gt;  
+&lt;BODY onload=&quot;getindexes()&quot;&gt;  
+
+Div  
+&lt;input type=&quot;text&quot; value=&quot;&quot; id=text1 name=text1 &gt;&lt;p&gt;  
+
+Select  
+&lt;input type=&quot;text&quot; value=&quot;&quot; id=text2 name=text2&gt;&lt;p&gt;  
+
+IFrame  
+&lt;input type=&quot;text&quot; value=&quot;&quot; id=text3 name=text3&gt;&lt;p&gt;  
+&lt;input type=&quot;button&quot; value=&quot;Set Z-Index&quot; id=button1 name=button1 onclick=&quot;setindex()&quot;&gt;  
+&lt;DIV id=div1 name=div1 style=&quot;width:200;height:200;background-color:lightblue;  
+position:absolute;left:350;top:250;z-index:&quot;&gt;DIV&lt;/DIV&gt;  
+&lt;select id=select1 name=select1 style=&quot;;position:absolute;left:300;top:400;width=300;z-index:&quot;  
+size=1 &gt;  
+&lt;option&gt;Option1  
+&lt;option&gt;Option2  
+&lt;option&gt;Option3  
+&lt;/select&gt;  
+&lt;IFRAME id=iframe1 name=iframe1 src=&quot;&quot; scroll=none style=&quot;width:100;height:115;position:absolute;  
+left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;  
+&lt;/BODY&gt;  
+&lt;/HTML&gt;
+</code></pre><p>IFRAME 的z-index被设置成一个不变的值5. 当你输入一个比任何元素都大的值的时候DIV元素还是一直在最下面, 因为他是非窗口类的, 其他的元素都会在DIV元素之上. 当你把SELECT元素的z-index值设的比5大的时候, SELECT元素就会在IFRAME之上. 当你把SELECT元素的z-index值设的比5小的时候, 它就会在IFRAME之下了.  </p>
+<p>当你把SELECT元素的z- index值设为5, IFRAME会在SELECT元素之上, 因为IFRAME是最后的元素, 因此, 它就会比SELECT优先. 如果SELECT元素在IFRAME后面, 那么在z-index值相同的时候, 它就会在IFRAME之上了.  </p>
+<p>在Internet Explorer 5.5中Z-index是如何工作的  </p>
+<p>在Internet Explorer 5.5中, z-index 被带到了一个新的水平. IFRAMEs不再是窗口类元素. 更多的相关信息请到以下地址查阅”Windowless IFRAME Elements”标题:  </p>
+<p><a href="http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames" target="_blank" rel="external">http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames</a>  </p>
+<p>这使得SELECT元素变成了唯一的窗口类元素. 如果你在Internet Explorer 5.5中使用前面的代码, 当你把SELECT 元素的z-index值设的比5大的时候, 它会在IFRAME之上. 当你把SELECT 元素的z-index值设的比5小的时候, IFRAME会覆盖SELECT元, 即使他们都是非窗口类元素. 这就是IFRAME的独特性: 它按照z-index顺序和非窗口类元素排列在一起, 并且还可以按照z-index和窗口类元素排列在一起, 比如在这里和SELECT元素一起.  </p>
+<p>当你把DIV 元素的z-index值设置的比IFRAME大时 (比如6), DIV会覆盖IFRAME. 这符合我们上面的描述: IFRAMEs是非窗口的, 并且它按照z-index的顺序和其他非窗口类元素排列在一起. 当你设的z-index值和IFRAME相等时 (比如5), 它还是会在DIV之上, 这是因为元素的顺序在起作用. 当你把DIV 元素的z-index值设置为6, 同时使SELECT元素和IFRAME的z-index值为5, 那么SELECT元素将会一直在DIV之上, 因为它是窗口类的元素.  </p>
+<p>然而, IFRAME会在SELECT之上是因为它在顺序上是最后. 为了避免这样, SELECT元素的z-index值必须比IFRAME大, 或者SELECT元素必须排在最后来保证在z-index值一样的情况下它会在IFRAME 之上. Because of this, z-indexing similar content can be difficult. To work around this, use the following methods:  </p>
+<ul>
+<li>使用样式表的Style属性在需要的时候隐藏和显示元素.  </li>
+<li>Use DHTML Scriptlets. Although behaviors are usually preferred, this is one instance where scriptlets are preferred.  </li>
+<li><p>在Internet Explorer 5.5中, 你可以使用popup对象, 使用它你可以在任何元素之上显示丰富的内容. 这在菜单和工具提示功能上非常有用. 想了解更多, 请在下面的地址查阅”popup Object”:  </p>
+<p>  <a href="http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp" target="_blank" rel="external">http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp</a>  </p>
+</li>
+<li><p>使用非窗口类的ActiveX控件来代替窗口类对象. 不幸的是, 所有ActiveX控件都没有非窗口类的实现.  </p>
+</li>
+</ul>
+<p>参考  </p>
+<p>想了解更多基于IE的Web开发解决方案, 请访问以下Web站点:  </p>
+<p><a href="http://msdn.microsoft.com/workshop/entry.asp" target="_blank" rel="external">http://msdn.microsoft.com/workshop/entry.asp</a>  </p>
+<p><a href="http://msdn.microsoft.com/ie/" target="_blank" rel="external">http://msdn.microsoft.com/ie/</a>  </p>
+<p><a href="http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn" target="_blank" rel="external">http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn</a>  </p>
+<hr>
+<p>应用于  </p>
+<ul>
+<li>Microsoft Internet Explorer 6.0 Service Pack 1  </li>
+<li>Microsoft Internet Explorer 5.5 Service Pack 2 and Internet Tools  </li>
+<li>Microsoft Internet Explorer 5.0  </li>
+</ul>
+<p>关键字: kbbug kbdhtml kbfaq kbieobj kbinfo KB177378</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/wechat_pay10_qr.png" alt="nickcheng WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/alipay_qr.png" alt="nickcheng Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tech/" rel="tag">#tech</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2004/11/16/2004-11-16-clear-up-some-trojen/" rel="next" title="清除几个木马">
+                <i class="fa fa-chevron-left"></i> 清除几个木马
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2004/11/21/2004-11-21-some-explains-of-windows-service/" rel="prev" title="Windows服务的一些解释">
+                Windows服务的一些解释 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

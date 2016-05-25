@@ -1,0 +1,616 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="life," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="之前写过一篇关于那个winstall.exe的木马的post, 当时以为已经搞定了这个该死的东西, 可是谁知道, 那只是治标不治本! 后来的日子里, 还是总会在任务栏托盘处弹出该死的提示. 而且频率很高, 最少一天一次.
+按照之前的处理方法, 先到C:\下一看, 果然出现了一个winstall.exe的可执行文件. 删除之, 提示消失. 可过一段时间, 那个该死的提示还会出现, C:\下的那个文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="这世道,垃圾和木马都让人恶心">
+<meta property="og:url" content="http://nickcheng.com/2006/03/19/2006-03-19-the-fucking-trojen-and-the-spam-software/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="之前写过一篇关于那个winstall.exe的木马的post, 当时以为已经搞定了这个该死的东西, 可是谁知道, 那只是治标不治本! 后来的日子里, 还是总会在任务栏托盘处弹出该死的提示. 而且频率很高, 最少一天一次.
+按照之前的处理方法, 先到C:\下一看, 果然出现了一个winstall.exe的可执行文件. 删除之, 提示消失. 可过一段时间, 那个该死的提示还会出现, C:\下的那个文">
+<meta property="og:image" content="http://web.mit.edu/jpnet/ji/gifs/200x200/3364.gif">
+<meta property="og:updated_time" content="2016-05-25T12:07:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="这世道,垃圾和木马都让人恶心">
+<meta name="twitter:description" content="之前写过一篇关于那个winstall.exe的木马的post, 当时以为已经搞定了这个该死的东西, 可是谁知道, 那只是治标不治本! 后来的日子里, 还是总会在任务栏托盘处弹出该死的提示. 而且频率很高, 最少一天一次.
+按照之前的处理方法, 先到C:\下一看, 果然出现了一个winstall.exe的可执行文件. 删除之, 提示消失. 可过一段时间, 那个该死的提示还会出现, C:\下的那个文">
+<meta name="twitter:image" content="http://web.mit.edu/jpnet/ji/gifs/200x200/3364.gif">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> 这世道,垃圾和木马都让人恶心 | Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                这世道,垃圾和木马都让人恶心
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2006-03-19T01:47:39+09:00" content="2006-03-19">
+              2006-03-19
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://web.mit.edu/jpnet/ji/gifs/200x200/3364.gif" alt=""></p>
+<p>之前写过一篇<a href="http://nickcheng.com/index.php/2006/02/18/tmd-the-trojan/">关于那个winstall.exe的木马的post</a>, 当时以为已经搞定了这个该死的东西, 可是谁知道, 那只是治标不治本! 后来的日子里, 还是总会在任务栏托盘处弹出该死的提示. 而且频率很高, 最少一天一次.</p>
+<p>按照之前的处理方法, 先到C:\下一看, 果然出现了一个winstall.exe的可执行文件. 删除之, 提示消失. 可过一段时间, 那个该死的提示还会出现, C:\下的那个文件又出现了! 看来不能只盯着这儿了!</p>
+<p>为了抓到是谁生成的winstall.exe文件, 我每天打开电脑都时, 都会打开<a href="http://www.sysinternals.com/Utilities/Filemon.html" target="_blank" rel="external">filemon</a>来记录各个进程处理文件的操作日志. 这可真痛苦, 也不知道他什么时候会出现, 只能这么等着, 而且有时还忘了开filemon…</p>
+<p>终于, 今晚被我逮了个正着! 打开filemon的日志一看, 看到了一番奇特的景象.</p>
+<p>还没有看到winstall.exe的时候, 看到了在我C:\Program Files\下, 有一个叫做”Daily Weather Forecast”的目录, 里面有一个weather.exe文件. 我可是从没有装过什么和天气预报相关的软件.</p>
+<p>再一看, 这个进程在我档案的临时目录(temp)里建立了一个叫做539.exe的可执行文件. 这一切发生的时间, 正是系统弹出那个该死提示的时间!</p>
+<p>(在此犯了一个错误, 在没有查到winstall的日志的时候, 我手误把日志清除了……)</p>
+<p>再在系统进程中查看, 正有一个weather的进程在跑. 于是, 杀进程, 删目录(C:\Program Files\Daily Weather Forecast).</p>
+<p>因为只是怀疑和这个东西有关, 所以还需要观察. 有后续我会继续写的! 大家都是疾恶如仇的!</p>
+<p>处理完这个该死的东西, 我随手启动起来Autoruns(<a href="http://www.sysinternals.com" target="_blank" rel="external">http://www.sysinternals.com</a>)来查看系统的启动进程这些东西. 不幸, 又让我看到了两个恶心的东西.</p>
+<p>注册表项 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run 中有一个mscfs的启动项, 地址是c:\windows\system32\msibm\cfsys.dll. 这个是什么? 怎么没有听说过?? 赶紧Google了一下, 看到了一些信息:</p>
+<p><a href="http://www.mhcnt.sh.cn/blog/blogview.asp?logID=300" target="_blank" rel="external">http://www.mhcnt.sh.cn/blog/blogview.asp?logID=300</a> (此乃他人文章, 在此给出link, 详情请自行查看)</p>
+<p>简单说, 这就是一个木马, 会干什么事情不是太清除, 但不会干什么好事情是肯定的了! 于是乎, 删注册表项, 删程序! 删程序的时候发现那个目录里的文件还挺多, 而且还有一个uninstall, 执行了一下, 还管用了, 不过还是残留了一些垃圾. 另外看到里面的web文件夹中有一些html格式的广告文件, 看了几个, 都是和游戏有关的! 看来这个软件也是国内的了:( 这帮只顾赚钱, 没有人品的家伙…</p>
+<p>同时在system32目录下还看到了一个叫msicn的目录, 凭直觉, 我觉得这也不是什么好鸟! 进去一看, 嗬, 俨然一套应用程序, 还带一个plugin目录. TMD, 有见过装应用程序装到c:\windows\system32下的么? KAO, 让这写程序的昧良心的去死吧! 都是什么东西!</p>
+<p>更可气的是这东西直接删还搞不定! 我又用上<a href="http://www.softpedia.com/get/System/System-Miscellaneous/Unlocker.shtml" target="_blank" rel="external">Unlocker</a>, 才勉强删掉了这个东西!</p>
+<p>在autoruns中继续看, 一个叫spoolsv的启动项赫然在目, 后面还写着”广州傲讯信息科技有限公司”. 丫是干嘛的? 从来没听说! 而且叫这么一个名字, 不是图谋不轨是干嘛?(spoolsv是系统后台打印服务的名称) 一看目录, 好家伙, 系统的spoolsv在c:\windows\system32下, 丫的程序在c:\windows\system32\spoolsv下. 我说这公司就是TMD犯贱, 顺手Google了一下, 发现了更贱的事情!</p>
+<p>原来这个SB吃屎公司杰作除了这个以外, 还有就是上面两个垃圾! (参见 <a href="http://blog.diy0768.com/blogview.asp?logID=72" target="_blank" rel="external">http://blog.diy0768.com/blogview.asp?logID=72</a>)</p>
+<p>大家在清理这几个东西的时候一定要注意清理完以后再看看, 我发现他们之间似乎会相互照应, 所以删的一定要彻底! 如果有什么问题可以给我mail: <a href="mailto:nick.nickcheng@gmail.com" target="_blank" rel="external">nick.nickcheng@gmail.com</a></p>
+<p>ps. 清理的时候又看到了另外的垃圾”中搜”, 也是一家极为令人恶心的公司和手段, 之前写过文章说这个事情, 在此就不再赘述了. 不过如果让我再发现, 我还是会说的! 这次中搜中招应该是我表弟来上网时误装的!</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/wechat_pay10_qr.png" alt="nickcheng WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://nickcheng-blog.u.qiniudn.com/misc/alipay_qr.png" alt="nickcheng Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/life/" rel="tag">#life</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2006/03/17/2006-03-17-what-do-we-working-for/" rel="next" title="我们是为了什么而工作">
+                <i class="fa fa-chevron-left"></i> 我们是为了什么而工作
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2006/03/21/2006-03-21-the-long-way/" rel="prev" title="路途遥远...">
+                路途遥远... <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
