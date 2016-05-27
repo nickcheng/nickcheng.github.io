@@ -71,3 +71,7 @@ deploy:
   type: git
   repo: https://github.com/nickcheng/nickcheng.github.io
   branch: master
+
+# Analytics
+google_analytics: UA-53032-1
+
