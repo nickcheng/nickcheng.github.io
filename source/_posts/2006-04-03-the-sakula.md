@@ -1,7 +1,7 @@
 ---
 date: 2006-04-03 22:17:22
 type: post
-title_en: 2006-04-03-the-sakula
+title_en: the-sakula
 title: 赏樱
 wordpress_id: 252
 tags:

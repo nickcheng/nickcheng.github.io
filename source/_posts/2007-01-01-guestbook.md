@@ -1,7 +1,7 @@
 ---
 date: 2007-01-01 11:11:57
 type: page
-title_en: 2007-01-01-guestbook
+title_en: guestbook
 title: 留言本
 wordpress_id: 346
 tags:

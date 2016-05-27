@@ -1,7 +1,7 @@
 ---
 date: 2012-09-23 15:50:00
 type: post
-title_en: 2012-09-23-twitter-weekly-updates-for-2012-09-23
+title_en: twitter-weekly-updates-for-2012-09-23
 title: Twitter Weekly Updates for 2012-09-23
 wordpress_id: 617
 tags:

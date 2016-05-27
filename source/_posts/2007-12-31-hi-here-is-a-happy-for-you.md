@@ -1,7 +1,7 @@
 ---
 date: 2007-12-31 23:35:49
 type: post
-title_en: 2007-12-31-hi-here-is-a-happy-for-you
+title_en: hi-here-is-a-happy-for-you
 title: 请速来我处领取新年祝福
 wordpress_id: 410
 tags:

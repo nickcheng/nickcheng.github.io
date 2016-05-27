@@ -1,7 +1,7 @@
 ---
 date: 2003-11-27 22:00:00
 type: post
-title_en: 2003-11-27-will-be-a-intern
+title_en: will-be-a-intern
 title: 要实习了!
 wordpress_id: 38
 tags:

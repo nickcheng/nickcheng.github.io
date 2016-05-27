@@ -1,7 +1,7 @@
 ---
 date: 2007-03-07 20:38:41
 type: post
-title_en: 2007-03-07-the-words-from-guodegang
+title_en: the-words-from-guodegang
 title: 郭德纲如是说
 wordpress_id: 343
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-10-26 10:21:27
 type: post
-title_en: 2006-10-26-where-is-my-creativity
+title_en: where-is-my-creativity
 title: 我们得创造力到哪里去了?
 wordpress_id: 302
 tags:

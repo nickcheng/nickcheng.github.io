@@ -1,7 +1,7 @@
 ---
 date: 2010-03-15 08:22:04
 type: post
-title_en: 2010-03-15-recommend-iphont-itouch-game-space-raider
+title_en: recommend-iphont-itouch-game-space-raider
 title: 推荐iPhone/iTouch游戏 – 太空游侠
 wordpress_id: 528
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2008-02-26 09:51:03
 type: post
-title_en: 2008-02-26-adjust-vista
+title_en: adjust-vista
 title: 调校Vista
 wordpress_id: 428
 tags:

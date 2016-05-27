@@ -1,7 +1,7 @@
 ---
 date: 2004-12-07 00:55:00
 type: post
-title_en: 2004-12-07-the-memory-of-cyanbird-by-nickcheng-first
+title_en: the-memory-of-cyanbird-by-nickcheng-first
 title: Nickcheng对青鸟的回忆系列之一
 wordpress_id: 100
 tags:

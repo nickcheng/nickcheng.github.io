@@ -1,7 +1,7 @@
 ---
 date: 2005-12-13 09:37:49
 type: post
-title_en: 2005-12-13-my-wiki-is-opened-for-public-editing
+title_en: my-wiki-is-opened-for-public-editing
 title: 我的WIKI(维客)开放编辑了!
 wordpress_id: 191
 tags:

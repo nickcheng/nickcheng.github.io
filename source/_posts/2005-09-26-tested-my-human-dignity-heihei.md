@@ -1,7 +1,7 @@
 ---
 date: 2005-09-26 08:34:00
 type: post
-title_en: 2005-09-26-tested-my-human-dignity-heihei
+title_en: tested-my-human-dignity-heihei
 title: 测试了一下俺的人格类型,嘿嘿
 wordpress_id: 143
 tags:

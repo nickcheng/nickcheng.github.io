@@ -1,7 +1,7 @@
 ---
 date: 2006-08-04 23:44:35
 type: post
-title_en: 2006-08-04-i-have-arrived-kunming
+title_en: i-have-arrived-kunming
 title: 已经到昆明了！
 wordpress_id: 283
 tags:

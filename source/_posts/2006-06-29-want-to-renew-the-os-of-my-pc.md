@@ -1,7 +1,7 @@
 ---
 date: 2006-06-29 10:47:45
 type: post
-title_en: 2006-06-29-want-to-renew-the-os-of-my-pc
+title_en: want-to-renew-the-os-of-my-pc
 title: 想重装系统了
 wordpress_id: 271
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-04-19 14:35:52
 type: post
-title_en: 2006-04-19-rss-was-repaired
+title_en: rss-was-repaired
 title: RSS 修好了!
 wordpress_id: 256
 tags:

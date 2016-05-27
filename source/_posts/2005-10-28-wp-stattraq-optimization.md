@@ -1,7 +1,7 @@
 ---
 date: 2005-10-28 18:03:59
 type: post
-title_en: 2005-10-28-wp-stattraq-optimization
+title_en: wp-stattraq-optimization
 title: WP-StatTraq优化
 wordpress_id: 167
 tags:

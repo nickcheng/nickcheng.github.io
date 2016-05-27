@@ -1,7 +1,7 @@
 ---
 date: 2007-08-04 21:55:54
 type: post
-title_en: 2007-08-04-i-am-sensitive-really
+title_en: i-am-sensitive-really
 title: 我是一个敏感的人
 wordpress_id: 380
 tags:

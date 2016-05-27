@@ -1,7 +1,7 @@
 ---
 date: 2003-10-19 23:22:00
 type: post
-title_en: 2003-10-19-i-thought-google-was-blocked
+title_en: i-thought-google-was-blocked
 title: 我还以为Google又被封了呢！
 wordpress_id: 17
 tags:

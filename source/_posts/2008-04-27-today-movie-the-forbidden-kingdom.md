@@ -1,7 +1,7 @@
 ---
 date: 2008-04-27 01:33:33
 type: post
-title_en: 2008-04-27-today-movie-the-forbidden-kingdom
+title_en: today-movie-the-forbidden-kingdom
 title: 今日赏影-功夫之王
 wordpress_id: 420
 tags:

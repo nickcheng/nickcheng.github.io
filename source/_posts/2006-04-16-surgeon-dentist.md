@@ -1,7 +1,7 @@
 ---
 date: 2006-04-16 10:49:08
 type: post
-title_en: 2006-04-16-surgeon-dentist
+title_en: surgeon-dentist
 title: 看牙医:(...
 wordpress_id: 254
 tags:

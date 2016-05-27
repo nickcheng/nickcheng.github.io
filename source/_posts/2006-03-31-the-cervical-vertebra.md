@@ -1,7 +1,7 @@
 ---
 date: 2006-03-31 22:44:48
 type: post
-title_en: 2006-03-31-the-cervical-vertebra
+title_en: the-cervical-vertebra
 title: 全民预防颈椎病!
 wordpress_id: 250
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-11-18 01:16:00
 type: post
-title_en: 2003-11-18-my-prog-is-submitted
+title_en: my-prog-is-submitted
 title: 程序终于交了！
 wordpress_id: 31
 tags:

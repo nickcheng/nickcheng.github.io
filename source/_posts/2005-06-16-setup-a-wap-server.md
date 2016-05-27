@@ -1,7 +1,7 @@
 ---
 date: 2005-06-16 15:10:00
 type: post
-title_en: 2005-06-16-setup-a-wap-server
+title_en: setup-a-wap-server
 title: 简单建立一个Wap Server
 wordpress_id: 116
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-10-08 14:54:58
 type: post
-title_en: 2006-10-08-memo-of-national-day
+title_en: memo-of-national-day
 title: 十一小记
 wordpress_id: 297
 tags:

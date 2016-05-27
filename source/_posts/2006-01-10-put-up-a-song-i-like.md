@@ -1,7 +1,7 @@
 ---
 date: 2006-01-10 12:40:37
 type: post
-title_en: 2006-01-10-put-up-a-song-i-like
+title_en: put-up-a-song-i-like
 title: 放上一首自己喜欢听的歌曲
 wordpress_id: 200
 tags:

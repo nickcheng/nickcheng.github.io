@@ -1,7 +1,7 @@
 ---
 date: 2006-07-08 00:30:52
 type: post
-title_en: 2006-07-08-my-classmate-has-gone
+title_en: my-classmate-has-gone
 title: 纸鹤飘落...
 wordpress_id: 274
 tags:

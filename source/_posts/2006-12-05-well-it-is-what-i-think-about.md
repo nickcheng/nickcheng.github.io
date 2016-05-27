@@ -1,7 +1,7 @@
 ---
 date: 2006-12-05 23:19:27
 type: post
-title_en: 2006-12-05-well-it-is-what-i-think-about
+title_en: well-it-is-what-i-think-about
 title: 嗨,我的理想是那个
 wordpress_id: 315
 tags:

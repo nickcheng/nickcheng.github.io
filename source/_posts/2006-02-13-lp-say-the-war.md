@@ -1,7 +1,7 @@
 ---
 date: 2006-02-13 09:22:40
 type: post
-title_en: 2006-02-13-lp-say-the-war
+title_en: lp-say-the-war
 title: "老婆说: 打仗了..."
 wordpress_id: 210
 tags:

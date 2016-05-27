@@ -1,7 +1,7 @@
 ---
 date: 2003-12-22 00:38:00
 type: post
-title_en: 2003-12-22-an-article-for-aspnet
+title_en: an-article-for-aspnet
 title: 今天又完成了一篇小文章
 wordpress_id: 55
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2007-06-11 13:25:45
 type: post
-title_en: 2007-06-11-how-to-display-picture-of-sina-in-rss-reader
+title_en: how-to-display-picture-of-sina-in-rss-reader
 title: 让新浪显示图片-突破新浪图片屏蔽
 wordpress_id: 367
 tags:

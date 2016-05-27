@@ -1,7 +1,7 @@
 ---
 date: 2004-01-04 22:02:00
 type: post
-title_en: 2004-01-04-do-my-best-to-do-homework
+title_en: do-my-best-to-do-homework
 title: 抓紧时间写作业~~~~~~
 wordpress_id: 67
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-06-20 00:36:00
 type: post
-title_en: 2005-06-20-my-university-its-a-pity
+title_en: my-university-its-a-pity
 title: 我的大学-它不完整(毕业1年回忆)
 wordpress_id: 118
 tags:

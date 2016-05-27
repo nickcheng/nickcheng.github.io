@@ -1,7 +1,7 @@
 ---
 date: 2007-09-05 14:41:00
 type: post
-title_en: 2007-09-05-server-migrating-is-over
+title_en: server-migrating-is-over
 title: 服务器已经迁移完毕
 wordpress_id: 393
 tags:

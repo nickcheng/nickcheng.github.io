@@ -1,7 +1,7 @@
 ---
 date: 2005-05-19 23:30:00
 type: post
-title_en: 2005-05-19-today-is-eraly-cooking-for-myself
+title_en: today-is-eraly-cooking-for-myself
 title: 今天回来的早,自己做饭吃!
 wordpress_id: 115
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2010-03-23 08:14:05
 type: post
-title_en: 2010-03-23-a-new-approach-to-china-an-updatez
+title_en: a-new-approach-to-china-an-updatez
 title: "A new approach to China: an update"
 wordpress_id: 534
 tags:

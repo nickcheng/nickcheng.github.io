@@ -1,7 +1,7 @@
 ---
 date: 2005-12-08 22:25:59
 type: post
-title_en: 2005-12-08-the-fucking-spams
+title_en: the-fucking-spams
 title: 让人痛恨的SPAM - 垃圾评论
 wordpress_id: 188
 tags:

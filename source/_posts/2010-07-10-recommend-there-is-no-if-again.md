@@ -1,7 +1,7 @@
 ---
 date: 2010-07-10 23:17:41
 type: post
-title_en: 2010-07-10-recommend-there-is-no-if-again
+title_en: recommend-there-is-no-if-again
 title: 再次推荐 There is no if
 wordpress_id: 573
 tags:

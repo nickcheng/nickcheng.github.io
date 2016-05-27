@@ -1,7 +1,7 @@
 ---
 date: 2005-03-25 18:07:00
 type: post
-title_en: 2005-03-25-opensource-game-framework-popcap
+title_en: opensource-game-framework-popcap
 title: 应用广泛的(Casual Game)小游戏框架PopCap开源了
 wordpress_id: 112
 tags:

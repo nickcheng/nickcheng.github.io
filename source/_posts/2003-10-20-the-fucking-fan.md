@@ -1,7 +1,7 @@
 ---
 date: 2003-10-20 23:27:00
 type: post
-title_en: 2003-10-20-the-fucking-fan
+title_en: the-fucking-fan
 title: 该死的风扇~~~
 wordpress_id: 19
 tags:

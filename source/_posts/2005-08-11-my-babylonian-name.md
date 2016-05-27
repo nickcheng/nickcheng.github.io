@@ -1,7 +1,7 @@
 ---
 date: 2005-08-11 09:16:00
 type: post
-title_en: 2005-08-11-my-babylonian-name
+title_en: my-babylonian-name
 title: 我的巴比伦名字
 wordpress_id: 132
 tags:

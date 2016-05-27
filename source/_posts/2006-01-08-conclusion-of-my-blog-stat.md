@@ -1,7 +1,7 @@
 ---
 date: 2006-01-08 00:16:14
 type: post
-title_en: 2006-01-08-conclusion-of-my-blog-stat
+title_en: conclusion-of-my-blog-stat
 title: 05年个人Blog总结(统计篇)
 wordpress_id: 198
 tags:

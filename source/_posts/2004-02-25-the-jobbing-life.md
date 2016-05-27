@@ -1,7 +1,7 @@
 ---
 date: 2004-02-25 22:12:00
 type: post
-title_en: 2004-02-25-the-jobbing-life
+title_en: the-jobbing-life
 title: 终于开始工作了~~~~~~
 wordpress_id: 76
 tags:

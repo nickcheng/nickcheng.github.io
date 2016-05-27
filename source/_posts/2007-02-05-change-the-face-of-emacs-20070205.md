@@ -1,7 +1,7 @@
 ---
 date: 2007-02-05 00:48:30
 type: post
-title_en: 2007-02-05-change-the-face-of-emacs-20070205
+title_en: change-the-face-of-emacs-20070205
 title: 给Emacs改了一个样子
 wordpress_id: 335
 tags:

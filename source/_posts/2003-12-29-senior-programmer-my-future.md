@@ -1,7 +1,7 @@
 ---
 date: 2003-12-29 00:23:00
 type: post
-title_en: 2003-12-29-senior-programmer-my-future
+title_en: senior-programmer-my-future
 title: 高程...&...我的未来......
 wordpress_id: 61
 tags:

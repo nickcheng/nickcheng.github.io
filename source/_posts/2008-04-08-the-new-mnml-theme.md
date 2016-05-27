@@ -1,7 +1,7 @@
 ---
 date: 2008-04-08 11:10:19
 type: post
-title_en: 2008-04-08-the-new-mnml-theme
+title_en: the-new-mnml-theme
 title: 安装了MNML的主题
 wordpress_id: 416
 tags:

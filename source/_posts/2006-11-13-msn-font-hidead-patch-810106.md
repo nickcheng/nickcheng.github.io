@@ -1,7 +1,7 @@
 ---
 date: 2006-11-13 23:20:59
 type: post
-title_en: 2006-11-13-msn-font-hidead-patch-810106
+title_en: msn-font-hidead-patch-810106
 title: MSN字体,去广告补丁-8.1.0106
 wordpress_id: 307
 tags:

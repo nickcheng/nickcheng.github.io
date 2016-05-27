@@ -1,7 +1,7 @@
 ---
 date: 2007-04-26 10:39:19
 type: post
-title_en: 2007-04-26-solution-of-wlm-contacts-groups-in-a-mess
+title_en: solution-of-wlm-contacts-groups-in-a-mess
 title: WLM(俗称MSN Messenger)联系人混乱解决方法
 wordpress_id: 358
 tags:

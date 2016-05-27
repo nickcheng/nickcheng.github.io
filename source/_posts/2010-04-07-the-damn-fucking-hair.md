@@ -1,7 +1,7 @@
 ---
 date: 2010-04-07 23:00:43
 type: post
-title_en: 2010-04-07-the-damn-fucking-hair
+title_en: the-damn-fucking-hair
 title: 该死的头发
 wordpress_id: 563
 tags:

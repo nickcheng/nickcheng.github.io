@@ -1,7 +1,7 @@
 ---
 date: 2004-11-06 05:04:00
 type: post
-title_en: 2004-11-06-about-authrities-of-aspnet-user
+title_en: about-authrities-of-aspnet-user
 title: 关于ASPNET用户的权限
 wordpress_id: 92
 tags:

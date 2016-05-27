@@ -1,7 +1,7 @@
 ---
 date: 2011-10-26 13:26:54
 type: post
-title_en: 2011-10-26-enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak
+title_en: enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak
 title: iPad 1 不越狱开启多任务手势和屏幕镜像
 wordpress_id: 589
 tags:

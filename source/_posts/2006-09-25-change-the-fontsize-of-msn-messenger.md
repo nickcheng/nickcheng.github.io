@@ -1,7 +1,7 @@
 ---
 date: 2006-09-25 10:56:32
 type: post
-title_en: 2006-09-25-change-the-fontsize-of-msn-messenger
+title_en: change-the-fontsize-of-msn-messenger
 title: MSN字体修改
 wordpress_id: 294
 tags:

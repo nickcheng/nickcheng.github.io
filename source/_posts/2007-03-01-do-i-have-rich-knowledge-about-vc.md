@@ -1,7 +1,7 @@
 ---
 date: 2007-03-01 15:45:19
 type: post
-title_en: 2007-03-01-do-i-have-rich-knowledge-about-vc
+title_en: do-i-have-rich-knowledge-about-vc
 title: 我竟然也有丰富的融资知识?
 wordpress_id: 342
 tags:

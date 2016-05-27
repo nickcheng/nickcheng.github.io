@@ -1,7 +1,7 @@
 ---
 date: 2008-07-18 19:02:00
 type: post
-title_en: 2008-07-18-i-should-write-something-earlyer
+title_en: i-should-write-something-earlyer
 title: 其实早该来写点什么了
 wordpress_id: 434
 tags:

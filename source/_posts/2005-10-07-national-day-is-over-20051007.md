@@ -1,7 +1,7 @@
 ---
 date: 2005-10-07 23:21:00
 type: post
-title_en: 2005-10-07-national-day-is-over-20051007
+title_en: national-day-is-over-20051007
 title: 国庆长假过去喽！
 wordpress_id: 150
 tags:

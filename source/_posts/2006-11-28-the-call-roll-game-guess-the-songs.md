@@ -1,7 +1,7 @@
 ---
 date: 2006-11-28 11:16:54
 type: post
-title_en: 2006-11-28-the-call-roll-game-guess-the-songs
+title_en: the-call-roll-game-guess-the-songs
 title: 点名游戏-猜歌曲
 wordpress_id: 311
 tags:

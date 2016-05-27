@@ -1,7 +1,7 @@
 ---
 date: 2006-09-13 10:15:31
 type: post
-title_en: 2006-09-13-expose-myself
+title_en: expose-myself
 title: 开始自暴了啊!准备接招
 wordpress_id: 288
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-11-24 11:56:04
 type: post
-title_en: 2005-11-24-test-flashplayer-and-play
+title_en: test-flashplayer-and-play
 title: 试试Flash播放器,顺便打歌:)
 wordpress_id: 182
 tags:

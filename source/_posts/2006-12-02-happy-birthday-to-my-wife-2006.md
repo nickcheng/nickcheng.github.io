@@ -1,7 +1,7 @@
 ---
 date: 2006-12-02 00:01:03
 type: post
-title_en: 2006-12-02-happy-birthday-to-my-wife-2006
+title_en: happy-birthday-to-my-wife-2006
 title: 祝老婆生日快乐!
 wordpress_id: 312
 tags:

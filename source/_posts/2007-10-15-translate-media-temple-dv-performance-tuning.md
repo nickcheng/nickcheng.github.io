@@ -1,7 +1,7 @@
 ---
 date: 2007-10-15 17:05:00
 type: post
-title_en: 2007-10-15-translate-media-temple-dv-performance-tuning
+title_en: translate-media-temple-dv-performance-tuning
 title: "[翻译]Media Temple (dv) 服务器性能优化"
 wordpress_id: 400
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-03-17 09:06:35
 type: post
-title_en: 2006-03-17-what-do-we-working-for
+title_en: what-do-we-working-for
 title: 我们是为了什么而工作
 wordpress_id: 240
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-05-22 17:29:10
 type: post
-title_en: 2003-05-22-my-5-years-in-east-soft-blueluhan
+title_en: my-5-years-in-east-soft-blueluhan
 title: 我的东软五年（blueluhan (鹿寒) ） 
 wordpress_id: 599
 tags:

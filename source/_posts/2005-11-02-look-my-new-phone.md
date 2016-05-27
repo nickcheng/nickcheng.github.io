@@ -1,7 +1,7 @@
 ---
 date: 2005-11-02 17:37:01
 type: post
-title_en: 2005-11-02-look-my-new-phone
+title_en: look-my-new-phone
 title: 偶要鸟枪换炮啦！
 wordpress_id: 171
 tags:

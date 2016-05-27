@@ -1,7 +1,7 @@
 ---
 date: 2004-11-06 05:02:00
 type: post
-title_en: 2004-11-06-problem-of-session-quote
+title_en: problem-of-session-quote
 title: Session引用的问题
 wordpress_id: 91
 tags:

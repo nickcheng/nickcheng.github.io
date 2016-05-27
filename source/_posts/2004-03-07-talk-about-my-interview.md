@@ -1,7 +1,7 @@
 ---
 date: 2004-03-07 13:02:00
 type: post
-title_en: 2004-03-07-talk-about-my-interview
+title_en: talk-about-my-interview
 title: 说说面试的时候~~~
 wordpress_id: 79
 tags:

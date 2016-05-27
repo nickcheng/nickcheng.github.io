@@ -1,7 +1,7 @@
 ---
 date: 2005-10-27 00:13:49
 type: post
-title_en: 2005-10-27-next-station-is-heaven
+title_en: next-station-is-heaven
 title: 下一站,天堂
 wordpress_id: 163
 tags:

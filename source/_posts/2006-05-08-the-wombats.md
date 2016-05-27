@@ -1,7 +1,7 @@
 ---
 date: 2006-05-08 22:02:04
 type: post
-title_en: 2006-05-08-the-wombats
+title_en: the-wombats
 title: 袋熊,袋熊,英国的袋熊
 wordpress_id: 261
 tags:

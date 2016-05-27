@@ -1,7 +1,7 @@
 ---
 date: 2007-03-29 23:25:44
 type: post
-title_en: 2007-03-29-install-trac-11dev-in-python-25
+title_en: install-trac-11dev-in-python-25
 title: 在Python2.5下安装Trac 0.11dev
 wordpress_id: 352
 tags:

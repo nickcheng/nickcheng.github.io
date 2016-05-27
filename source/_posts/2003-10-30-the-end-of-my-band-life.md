@@ -1,7 +1,7 @@
 ---
 date: 2003-10-30 00:02:00
 type: post
-title_en: 2003-10-30-the-end-of-my-band-life
+title_en: the-end-of-my-band-life
 title: 乐队......
 wordpress_id: 26
 tags:

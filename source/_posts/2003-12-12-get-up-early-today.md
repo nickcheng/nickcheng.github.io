@@ -1,7 +1,7 @@
 ---
 date: 2003-12-12 09:00:00
 type: post
-title_en: 2003-12-12-get-up-early-today
+title_en: get-up-early-today
 title: 今天起了一个大早！
 wordpress_id: 48
 tags:

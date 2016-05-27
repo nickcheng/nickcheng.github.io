@@ -1,7 +1,7 @@
 ---
 date: 2008-07-29 18:21:00
 type: post
-title_en: 2008-07-29-modify-the-font-size-of-msn-9
+title_en: modify-the-font-size-of-msn-9
 title: msn 9.0 字体修改
 wordpress_id: 436
 tags:

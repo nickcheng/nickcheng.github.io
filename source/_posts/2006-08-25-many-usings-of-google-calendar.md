@@ -1,7 +1,7 @@
 ---
 date: 2006-08-25 14:28:24
 type: post
-title_en: 2006-08-25-many-usings-of-google-calendar
+title_en: many-usings-of-google-calendar
 title: GoogleCalendar的多种用法
 wordpress_id: 285
 tags:

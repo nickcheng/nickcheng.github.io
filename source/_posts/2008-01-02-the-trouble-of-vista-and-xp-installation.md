@@ -1,7 +1,7 @@
 ---
 date: 2008-01-02 22:12:00
 type: post
-title_en: 2008-01-02-the-trouble-of-vista-and-xp-installation
+title_en: the-trouble-of-vista-and-xp-installation
 title: 搞定双启动, 先装Vista,后装XP的麻烦
 wordpress_id: 426
 tags:

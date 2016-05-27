@@ -1,7 +1,7 @@
 ---
 date: 2006-07-26 14:49:15
 type: post
-title_en: 2006-07-26-recommend-boxdotnet
+title_en: recommend-boxdotnet
 title: 推荐一下Box.net
 wordpress_id: 279
 tags:

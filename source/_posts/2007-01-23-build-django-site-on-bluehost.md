@@ -1,7 +1,7 @@
 ---
 date: 2007-01-23 21:44:08
 type: post
-title_en: 2007-01-23-build-django-site-on-bluehost
+title_en: build-django-site-on-bluehost
 title: 在BlueHost上建立Django站点
 wordpress_id: 329
 tags:

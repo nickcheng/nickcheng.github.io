@@ -1,7 +1,7 @@
 ---
 date: 2012-10-14 15:50:00
 type: post
-title_en: 2012-10-14-twitter-weekly-updates-for-2012-10-14
+title_en: twitter-weekly-updates-for-2012-10-14
 title: Twitter Weekly Updates for 2012-10-14
 wordpress_id: 621
 tags:

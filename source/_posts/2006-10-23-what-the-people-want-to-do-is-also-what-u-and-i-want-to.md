@@ -1,7 +1,7 @@
 ---
 date: 2006-10-23 10:59:37
 type: post
-title_en: 2006-10-23-what-the-people-want-to-do-is-also-what-u-and-i-want-to
+title_en: what-the-people-want-to-do-is-also-what-u-and-i-want-to
 title: 大家想做得事情也是你我想做得!
 wordpress_id: 301
 tags:

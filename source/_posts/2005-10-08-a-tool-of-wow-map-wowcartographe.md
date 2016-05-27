@@ -1,7 +1,7 @@
 ---
 date: 2005-10-08 18:44:00
 type: post
-title_en: 2005-10-08-a-tool-of-wow-map-wowcartographe
+title_en: a-tool-of-wow-map-wowcartographe
 title: 又发现一个魔兽世界的地图辅助工具
 wordpress_id: 152
 tags:

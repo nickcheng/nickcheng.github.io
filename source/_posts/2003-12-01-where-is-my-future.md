@@ -1,7 +1,7 @@
 ---
 date: 2003-12-01 18:37:00
 type: post
-title_en: 2003-12-01-where-is-my-future
+title_en: where-is-my-future
 title: 未来在何处？
 wordpress_id: 40
 tags:

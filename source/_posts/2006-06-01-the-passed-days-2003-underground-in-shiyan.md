@@ -1,7 +1,7 @@
 ---
 date: 2006-06-01 10:06:42
 type: post
-title_en: 2006-06-01-the-passed-days-2003-underground-in-shiyan
+title_en: the-passed-days-2003-underground-in-shiyan
 title: 也怀旧一下,2003十堰地下乐队最新演出纪实
 wordpress_id: 266
 tags:

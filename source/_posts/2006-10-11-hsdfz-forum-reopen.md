@@ -1,7 +1,7 @@
 ---
 date: 2006-10-11 09:36:57
 type: post
-title_en: 2006-10-11-hsdfz-forum-reopen
+title_en: hsdfz-forum-reopen
 title: 附中论坛重新开张
 wordpress_id: 298
 tags:

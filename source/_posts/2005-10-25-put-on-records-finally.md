@@ -1,7 +1,7 @@
 ---
 date: 2005-10-25 17:07:25
 type: post
-title_en: 2005-10-25-put-on-records-finally
+title_en: put-on-records-finally
 title: 终于备案了
 wordpress_id: 164
 tags:

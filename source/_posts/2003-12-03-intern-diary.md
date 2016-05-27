@@ -1,7 +1,7 @@
 ---
 date: 2003-12-03 18:36:00
 type: post
-title_en: 2003-12-03-intern-diary
+title_en: intern-diary
 title: 实习日记
 wordpress_id: 44
 tags:

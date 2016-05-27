@@ -1,7 +1,7 @@
 ---
 date: 2006-07-02 17:36:23
 type: post
-title_en: 2006-07-02-solved-the-issue-of-windows-fonts-partly
+title_en: solved-the-issue-of-windows-fonts-partly
 title: 部分解决Windows的字体问题
 wordpress_id: 272
 tags:

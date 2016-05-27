@@ -1,7 +1,7 @@
 ---
 date: 2003-10-17 00:41:00
 type: post
-title_en: 2003-10-17-a-question-about-memory-in-c
+title_en: a-question-about-memory-in-c
 title: C  下内存分配的一个问题
 wordpress_id: 14
 tags:

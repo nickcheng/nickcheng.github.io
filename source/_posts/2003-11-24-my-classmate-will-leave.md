@@ -1,7 +1,7 @@
 ---
 date: 2003-11-24 22:22:00
 type: post
-title_en: 2003-11-24-my-classmate-will-leave
+title_en: my-classmate-will-leave
 title: 补充......
 wordpress_id: 35
 tags:

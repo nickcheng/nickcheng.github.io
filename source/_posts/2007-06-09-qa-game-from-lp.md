@@ -1,7 +1,7 @@
 ---
 date: 2007-06-09 23:16:14
 type: post
-title_en: 2007-06-09-qa-game-from-lp
+title_en: qa-game-from-lp
 title: 很荣幸, 被俺家娘子点名......
 wordpress_id: 365
 tags:

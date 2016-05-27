@@ -1,7 +1,7 @@
 ---
 date: 2007-10-18 08:58:44
 type: post
-title_en: 2007-10-18-db-db-say-you-dont-love-me
+title_en: db-db-say-you-dont-love-me
 title: "db-db say: You dont love me..."
 wordpress_id: 402
 tags:

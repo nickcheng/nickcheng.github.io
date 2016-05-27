@@ -1,7 +1,7 @@
 ---
 date: 2006-03-02 13:39:19
 type: post
-title_en: 2006-03-02-i-love-cartoons
+title_en: i-love-cartoons
 title: 我爱动画片! - 06动画片追踪
 wordpress_id: 227
 tags:

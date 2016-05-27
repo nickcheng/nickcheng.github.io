@@ -1,7 +1,7 @@
 ---
 date: 2007-03-14 10:25:19
 type: post
-title_en: 2007-03-14-use-google-to-find-the-download-link-of-free-ebook
+title_en: use-google-to-find-the-download-link-of-free-ebook
 title: 用Google找免费电子书的下载
 wordpress_id: 344
 tags:

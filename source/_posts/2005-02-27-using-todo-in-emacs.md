@@ -1,7 +1,7 @@
 ---
 date: 2005-02-27 11:23:00
 type: post
-title_en: 2005-02-27-using-todo-in-emacs
+title_en: using-todo-in-emacs
 title: 在Emacs中使用TODO
 wordpress_id: 108
 tags:

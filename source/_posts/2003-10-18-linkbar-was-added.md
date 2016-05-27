@@ -1,7 +1,7 @@
 ---
 date: 2003-10-18 13:50:00
 type: post
-title_en: 2003-10-18-linkbar-was-added
+title_en: linkbar-was-added
 title: 加上了Links栏~~~~~~
 wordpress_id: 18
 tags:

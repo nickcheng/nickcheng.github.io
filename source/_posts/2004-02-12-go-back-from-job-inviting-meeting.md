@@ -1,7 +1,7 @@
 ---
 date: 2004-02-12 16:06:00
 type: post
-title_en: 2004-02-12-go-back-from-job-inviting-meeting
+title_en: go-back-from-job-inviting-meeting
 title: 招聘会归来！
 wordpress_id: 73
 tags:

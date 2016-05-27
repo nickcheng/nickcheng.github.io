@@ -1,7 +1,7 @@
 ---
 date: 2006-05-26 09:54:17
 type: post
-title_en: 2006-05-26-cheap-should-not-be-an-excuse
+title_en: cheap-should-not-be-an-excuse
 title: 便宜没好货?
 wordpress_id: 265
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-10-10 13:23:00
 type: post
-title_en: 2005-10-10-moved-house-again
+title_en: moved-house-again
 title: 我又搬家了
 wordpress_id: 385
 tags:

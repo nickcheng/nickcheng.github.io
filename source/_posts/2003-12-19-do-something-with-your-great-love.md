@@ -1,7 +1,7 @@
 ---
 date: 2003-12-19 22:48:00
 type: post
-title_en: 2003-12-19-do-something-with-your-great-love
+title_en: do-something-with-your-great-love
 title: 用伟大的爱去做一些小事~~~
 wordpress_id: 53
 tags:

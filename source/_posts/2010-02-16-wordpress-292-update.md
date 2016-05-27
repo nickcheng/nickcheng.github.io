@@ -1,7 +1,7 @@
 ---
 date: 2010-02-16 12:34:43
 type: post
-title_en: 2010-02-16-wordpress-292-update
+title_en: wordpress-292-update
 title: WordPress 2.9.2 更新
 wordpress_id: 507
 tags:

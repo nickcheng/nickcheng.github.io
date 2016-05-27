@@ -1,7 +1,7 @@
 ---
 date: 2008-05-15 12:38:18
 type: post
-title_en: 2008-05-15-china-sichuan-earth-quake-donate-information
+title_en: china-sichuan-earth-quake-donate-information
 title: 地震捐款信息
 wordpress_id: 422
 tags:

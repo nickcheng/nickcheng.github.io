@@ -1,7 +1,7 @@
 ---
 date: 2007-06-13 12:41:25
 type: post
-title_en: 2007-06-13-pirates-of-the-caribbean-at-worlds-end
+title_en: pirates-of-the-caribbean-at-worlds-end
 title: 世界的尽头 - 加勒比海盗3
 wordpress_id: 368
 tags:

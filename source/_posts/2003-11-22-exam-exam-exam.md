@@ -1,7 +1,7 @@
 ---
 date: 2003-11-22 00:14:00
 type: post
-title_en: 2003-11-22-exam-exam-exam
+title_en: exam-exam-exam
 title: 考试,考试,还是考试!
 wordpress_id: 34
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-01-31 18:18:00
 type: post
-title_en: 2005-01-31-movz-filename-and-quanlity
+title_en: movz-filename-and-quanlity
 title: MovZ：文件名看质量
 wordpress_id: 104
 tags:

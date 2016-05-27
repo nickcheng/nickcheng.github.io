@@ -1,7 +1,7 @@
 ---
 date: 2005-09-20 13:44:00
 type: post
-title_en: 2005-09-20-exp-of-fitment-collection
+title_en: exp-of-fitment-collection
 title: 装修经验收藏
 wordpress_id: 141
 tags:

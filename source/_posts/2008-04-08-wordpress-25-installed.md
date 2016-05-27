@@ -1,7 +1,7 @@
 ---
 date: 2008-04-08 13:42:12
 type: post
-title_en: 2008-04-08-wordpress-25-installed
+title_en: wordpress-25-installed
 title: 安装了WP2.5
 wordpress_id: 417
 tags:

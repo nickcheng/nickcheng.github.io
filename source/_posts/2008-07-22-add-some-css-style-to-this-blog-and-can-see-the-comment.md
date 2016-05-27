@@ -1,7 +1,7 @@
 ---
 date: 2008-07-22 00:47:00
 type: post
-title_en: 2008-07-22-add-some-css-style-to-this-blog-and-can-see-the-comment
+title_en: add-some-css-style-to-this-blog-and-can-see-the-comment
 title: 增加了一点样式和查看评论的功能
 wordpress_id: 435
 tags:

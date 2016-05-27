@@ -1,7 +1,7 @@
 ---
 date: 2006-12-25 20:13:10
 type: post
-title_en: 2006-12-25-run-as-administrator-in-vista
+title_en: run-as-administrator-in-vista
 title: Vista下的管理员身份运行
 wordpress_id: 321
 tags:

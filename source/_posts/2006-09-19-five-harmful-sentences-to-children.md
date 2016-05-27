@@ -1,7 +1,7 @@
 ---
 date: 2006-09-19 09:52:56
 type: post
-title_en: 2006-09-19-five-harmful-sentences-to-children
+title_en: five-harmful-sentences-to-children
 title: 对孩子伤害最大的5句话
 wordpress_id: 291
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-03-31 17:39:00
 type: post
-title_en: 2005-03-31-ipod-shuffle-song
+title_en: ipod-shuffle-song
 title: ipod shuffle 广告歌
 wordpress_id: 113
 tags:

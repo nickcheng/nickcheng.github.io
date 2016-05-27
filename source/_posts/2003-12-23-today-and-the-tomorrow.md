@@ -1,7 +1,7 @@
 ---
 date: 2003-12-23 02:25:00
 type: post
-title_en: 2003-12-23-today-and-the-tomorrow
+title_en: today-and-the-tomorrow
 title: 今天，明天
 wordpress_id: 58
 tags:

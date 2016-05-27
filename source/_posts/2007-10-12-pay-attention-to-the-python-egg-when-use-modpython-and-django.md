@@ -1,7 +1,7 @@
 ---
 date: 2007-10-12 17:03:00
 type: post
-title_en: 2007-10-12-pay-attention-to-the-python-egg-when-use-modpython-and-django
+title_en: pay-attention-to-the-python-egg-when-use-modpython-and-django
 title: mod_python和django使用需要注意python egg
 wordpress_id: 399
 tags:

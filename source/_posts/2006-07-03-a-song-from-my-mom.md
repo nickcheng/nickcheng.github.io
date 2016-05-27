@@ -1,7 +1,7 @@
 ---
 date: 2006-07-03 21:42:40
 type: post
-title_en: 2006-07-03-a-song-from-my-mom
+title_en: a-song-from-my-mom
 title: 妈妈送我的歌
 wordpress_id: 273
 tags:

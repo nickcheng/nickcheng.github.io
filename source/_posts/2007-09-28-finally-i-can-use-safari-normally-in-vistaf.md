@@ -1,7 +1,7 @@
 ---
 date: 2007-09-28 17:01:00
 type: post
-title_en: 2007-09-28-finally-i-can-use-safari-normally-in-vistaf
+title_en: finally-i-can-use-safari-normally-in-vistaf
 title: 终于可以在Vista下正常使用Safari了
 wordpress_id: 397
 tags:

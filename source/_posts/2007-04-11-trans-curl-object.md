@@ -1,7 +1,7 @@
 ---
 date: 2007-04-11 20:23:05
 type: post
-title_en: 2007-04-11-trans-curl-object
+title_en: trans-curl-object
 title: "[翻译]Curl对象"
 wordpress_id: 355
 tags:

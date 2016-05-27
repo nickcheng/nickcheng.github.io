@@ -1,7 +1,7 @@
 ---
 date: 2006-11-27 20:28:17
 type: post
-title_en: 2006-11-27-it-is-hard-to-find
+title_en: it-is-hard-to-find
 title: 真的很难找的!
 wordpress_id: 310
 tags:

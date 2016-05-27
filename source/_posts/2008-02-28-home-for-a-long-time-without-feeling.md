@@ -1,7 +1,7 @@
 ---
 date: 2008-02-28 15:31:23
 type: post
-title_en: 2008-02-28-home-for-a-long-time-without-feeling
+title_en: home-for-a-long-time-without-feeling
 title: 好久没有家的感觉
 wordpress_id: 415
 tags:

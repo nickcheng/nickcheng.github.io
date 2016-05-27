@@ -1,7 +1,7 @@
 ---
 date: 2006-02-06 23:30:18
 type: post
-title_en: 2006-02-06-update-of-audio-tools
+title_en: update-of-audio-tools
 title: 武器升级啦! - 我的音乐爱好
 wordpress_id: 207
 tags:

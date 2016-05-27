@@ -1,7 +1,7 @@
 ---
 date: 2005-10-27 21:15:40
 type: post
-title_en: 2005-10-27-cms-album-rss-reader
+title_en: cms-album-rss-reader
 title: CMS+相册+RSS Reader
 wordpress_id: 165
 tags:

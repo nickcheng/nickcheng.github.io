@@ -1,7 +1,7 @@
 ---
 date: 2008-02-26 18:36:00
 type: post
-title_en: 2008-02-26-zoundryraven-offline-blog-quite-easy-to-write
+title_en: zoundryraven-offline-blog-quite-easy-to-write
 title: ZoundryRaven离线写Blog挺方便的
 wordpress_id: 414
 tags:

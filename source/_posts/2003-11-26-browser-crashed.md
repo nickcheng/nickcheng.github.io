@@ -1,7 +1,7 @@
 ---
 date: 2003-11-26 00:01:00
 type: post
-title_en: 2003-11-26-browser-crashed
+title_en: browser-crashed
 title: 失误......
 wordpress_id: 36
 tags:

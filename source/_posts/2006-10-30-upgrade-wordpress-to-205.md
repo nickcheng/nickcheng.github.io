@@ -1,7 +1,7 @@
 ---
 date: 2006-10-30 14:11:16
 type: post
-title_en: 2006-10-30-upgrade-wordpress-to-205
+title_en: upgrade-wordpress-to-205
 title: Wordpress升级到2.0.5
 wordpress_id: 303
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-02-27 16:09:28
 type: post
-title_en: 2006-02-27-emacs-23-unicode-download
+title_en: emacs-23-unicode-download
 title: Emacs 23 Unicode Download
 wordpress_id: 219
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2004-11-22 21:19:00
 type: post
-title_en: 2004-11-22-language-info-processing-working-for-live
+title_en: language-info-processing-working-for-live
 title: 语言信息处理技术, 努力为了自己活着!
 wordpress_id: 98
 tags:

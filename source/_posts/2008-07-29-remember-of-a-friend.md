@@ -1,7 +1,7 @@
 ---
 date: 2008-07-29 23:57:00
 type: post
-title_en: 2008-07-29-remember-of-a-friend
+title_en: remember-of-a-friend
 title: 想起一位朋友
 wordpress_id: 437
 tags:

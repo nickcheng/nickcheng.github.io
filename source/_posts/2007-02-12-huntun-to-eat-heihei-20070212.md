@@ -1,7 +1,7 @@
 ---
 date: 2007-02-12 23:39:12
 type: post
-title_en: 2007-02-12-huntun-to-eat-heihei-20070212
+title_en: huntun-to-eat-heihei-20070212
 title: 混沌志-20070212
 wordpress_id: 338
 tags:

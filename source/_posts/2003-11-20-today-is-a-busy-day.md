@@ -1,7 +1,7 @@
 ---
 date: 2003-11-20 22:45:00
 type: post
-title_en: 2003-11-20-today-is-a-busy-day
+title_en: today-is-a-busy-day
 title: 今天挺忙的!
 wordpress_id: 32
 tags:

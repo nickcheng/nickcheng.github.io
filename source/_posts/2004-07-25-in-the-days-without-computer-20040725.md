@@ -1,7 +1,7 @@
 ---
 date: 2004-07-25 10:41:00
 type: post
-title_en: 2004-07-25-in-the-days-without-computer-20040725
+title_en: in-the-days-without-computer-20040725
 title: 还在没有电脑的日子。。。。。。
 wordpress_id: 89
 tags:

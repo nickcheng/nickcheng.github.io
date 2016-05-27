@@ -1,7 +1,7 @@
 ---
 date: 2006-06-10 22:35:29
 type: post
-title_en: 2006-06-10-iceage2-meltdown
+title_en: iceage2-meltdown
 title: 冰河纪2-消融
 wordpress_id: 267
 tags:

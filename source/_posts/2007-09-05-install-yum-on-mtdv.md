@@ -1,7 +1,7 @@
 ---
 date: 2007-09-05 16:58:00
 type: post
-title_en: 2007-09-05-install-yum-on-mtdv
+title_en: install-yum-on-mtdv
 title: 在MT(dv)安装yum
 wordpress_id: 394
 tags:

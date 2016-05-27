@@ -1,7 +1,7 @@
 ---
 date: 2007-12-21 13:59:30
 type: post
-title_en: 2007-12-21-rock-equips
+title_en: rock-equips
 title: Rock Equips
 wordpress_id: 407
 tags:

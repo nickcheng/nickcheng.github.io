@@ -1,7 +1,7 @@
 ---
 date: 2010-01-29 10:02:32
 type: post
-title_en: 2010-01-29-rebuilding-please-wait
+title_en: rebuilding-please-wait
 title: 重建中,敬请期待
 wordpress_id: 3
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-12-21 02:00:00
 type: post
-title_en: 2003-12-21-a-whole-night-to-my-blog
+title_en: a-whole-night-to-my-blog
 title: 搞了一晚上~~~~~~
 wordpress_id: 54
 tags:

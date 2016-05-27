@@ -1,7 +1,7 @@
 ---
 date: 2008-02-14 09:53:05
 type: post
-title_en: 2008-02-14-come-back-and-v-day
+title_en: come-back-and-v-day
 title: 归来+V-Day
 wordpress_id: 411
 tags:

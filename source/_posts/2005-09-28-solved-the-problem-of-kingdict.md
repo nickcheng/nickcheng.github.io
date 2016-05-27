@@ -1,7 +1,7 @@
 ---
 date: 2005-09-28 11:22:00
 type: post
-title_en: 2005-09-28-solved-the-problem-of-kingdict
+title_en: solved-the-problem-of-kingdict
 title: 金山词霸的问题搞定了
 wordpress_id: 146
 tags:

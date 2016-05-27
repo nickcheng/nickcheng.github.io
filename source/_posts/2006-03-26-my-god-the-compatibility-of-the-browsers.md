@@ -1,7 +1,7 @@
 ---
 date: 2006-03-26 00:00:23
 type: post
-title_en: 2006-03-26-my-god-the-compatibility-of-the-browsers
+title_en: my-god-the-compatibility-of-the-browsers
 title: 令人郁闷的浏览器兼容性
 wordpress_id: 246
 tags:

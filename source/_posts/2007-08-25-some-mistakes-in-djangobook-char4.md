@@ -1,7 +1,7 @@
 ---
 date: 2007-08-25 10:32:57
 type: post
-title_en: 2007-08-25-some-mistakes-in-djangobook-char4
+title_en: some-mistakes-in-djangobook-char4
 title: djangobook 第四章中的遗漏
 wordpress_id: 384
 tags:

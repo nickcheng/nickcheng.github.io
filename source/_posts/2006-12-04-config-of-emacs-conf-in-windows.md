@@ -1,7 +1,7 @@
 ---
 date: 2006-12-04 10:45:30
 type: post
-title_en: 2006-12-04-config-of-emacs-conf-in-windows
+title_en: config-of-emacs-conf-in-windows
 title: Windows下Emacs配置文件路径设置
 wordpress_id: 314
 tags:

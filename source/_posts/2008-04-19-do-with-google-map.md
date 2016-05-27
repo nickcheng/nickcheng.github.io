@@ -1,7 +1,7 @@
 ---
 date: 2008-04-19 01:23:10
 type: post
-title_en: 2008-04-19-do-with-google-map
+title_en: do-with-google-map
 title: 折腾Google Map
 wordpress_id: 432
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2007-03-19 22:10:32
 type: post
-title_en: 2007-03-19-module-robotparser-in-python
+title_en: module-robotparser-in-python
 title: python的robotparser模块
 wordpress_id: 348
 tags:

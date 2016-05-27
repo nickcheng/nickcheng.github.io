@@ -1,7 +1,7 @@
 ---
 date: 2005-11-10 09:33:32
 type: post
-title_en: 2005-11-10-how-to-display-chinese-on-windows-mobile5
+title_en: how-to-display-chinese-on-windows-mobile5
 title: 如何让英文Windows Mobile 5.0 系统显示中文
 wordpress_id: 173
 tags:

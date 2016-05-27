@@ -1,7 +1,7 @@
 ---
 date: 2005-08-10 08:58:00
 type: post
-title_en: 2005-08-10-interest-things-in-these-days-20050810
+title_en: interest-things-in-these-days-20050810
 title: 最近有趣的东西
 wordpress_id: 130
 tags:

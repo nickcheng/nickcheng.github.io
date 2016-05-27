@@ -1,7 +1,7 @@
 ---
 date: 2003-11-15 00:42:00
 type: post
-title_en: 2003-11-15-got-some-thread-of-neural-network
+title_en: got-some-thread-of-neural-network
 title: 神经网络终于有了头绪！
 wordpress_id: 29
 tags:

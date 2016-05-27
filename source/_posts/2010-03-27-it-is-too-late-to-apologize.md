@@ -1,7 +1,7 @@
 ---
 date: 2010-03-27 22:11:39
 type: post
-title_en: 2010-03-27-it-is-too-late-to-apologize
+title_en: it-is-too-late-to-apologize
 title: Its too late to apologize
 wordpress_id: 559
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-10-21 00:23:00
 type: post
-title_en: 2003-10-21-heihei-the-first-exam-was-finished
+title_en: heihei-the-first-exam-was-finished
 title: 嘿嘿~~~今天考完一门了！
 wordpress_id: 33
 tags:

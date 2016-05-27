@@ -1,7 +1,7 @@
 ---
 date: 2003-12-02 18:36:00
 type: post
-title_en: 2003-12-02-intern-in-dongfeng
+title_en: intern-in-dongfeng
 title: 实习~~~~~~
 wordpress_id: 42
 tags:

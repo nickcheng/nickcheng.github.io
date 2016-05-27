@@ -1,7 +1,7 @@
 ---
 date: 2006-09-15 09:45:33
 type: post
-title_en: 2006-09-15-wii-will-release
+title_en: wii-will-release
 title: Wii要发布了!
 wordpress_id: 289
 tags:

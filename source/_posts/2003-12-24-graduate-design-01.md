@@ -1,7 +1,7 @@
 ---
 date: 2003-12-24 00:22:00
 type: post
-title_en: 2003-12-24-graduate-design-01
+title_en: graduate-design-01
 title: 毕设-01
 wordpress_id: 59
 tags:

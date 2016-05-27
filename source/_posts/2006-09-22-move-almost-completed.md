@@ -1,7 +1,7 @@
 ---
 date: 2006-09-22 14:37:48
 type: post
-title_en: 2006-09-22-move-almost-completed
+title_en: move-almost-completed
 title: 搬家基本完毕
 wordpress_id: 293
 tags:

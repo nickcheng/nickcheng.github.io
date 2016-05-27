@@ -1,7 +1,7 @@
 ---
 date: 2007-09-26 17:00:00
 type: post
-title_en: 2007-09-26-how-to-modify-the-font-of-document-map-in-word
+title_en: how-to-modify-the-font-of-document-map-in-word
 title: 如何修改Word文档中文档结构图的字体
 wordpress_id: 396
 tags:

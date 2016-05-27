@@ -1,7 +1,7 @@
 ---
 date: 2007-08-09 14:01:54
 type: post
-title_en: 2007-08-09-my-lived-places-in-beijing
+title_en: my-lived-places-in-beijing
 title: 我在北京的几个据点
 wordpress_id: 382
 tags:

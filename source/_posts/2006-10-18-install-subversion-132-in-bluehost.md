@@ -1,7 +1,7 @@
 ---
 date: 2006-10-18 13:19:24
 type: post
-title_en: 2006-10-18-install-subversion-132-in-bluehost
+title_en: install-subversion-132-in-bluehost
 title: 在BlueHost上安装Subversion 1.3.2
 wordpress_id: 299
 tags:

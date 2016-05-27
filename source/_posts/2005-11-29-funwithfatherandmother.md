@@ -1,7 +1,7 @@
 ---
 date: 2005-11-29 13:07:02
 type: post
-title_en: 2005-11-29-funwithfatherandmother
+title_en: funwithfatherandmother
 title: 老爸和老妈在家也挺搞笑得
 wordpress_id: 184
 tags:

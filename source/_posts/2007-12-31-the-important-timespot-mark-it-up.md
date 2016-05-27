@@ -1,7 +1,7 @@
 ---
 date: 2007-12-31 23:04:10
 type: post
-title_en: 2007-12-31-the-important-timespot-mark-it-up
+title_en: the-important-timespot-mark-it-up
 title: 重要时间点, 记录一下
 wordpress_id: 409
 tags:

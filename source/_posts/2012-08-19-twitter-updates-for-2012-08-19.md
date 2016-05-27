@@ -1,7 +1,7 @@
 ---
 date: 2012-08-19 15:59:00
 type: post
-title_en: 2012-08-19-twitter-updates-for-2012-08-19
+title_en: twitter-updates-for-2012-08-19
 title: Twitter Updates for 2012-08-19
 wordpress_id: 612
 tags:

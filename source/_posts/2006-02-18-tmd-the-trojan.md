@@ -1,7 +1,7 @@
 ---
 date: 2006-02-18 23:44:33
 type: post
-title_en: 2006-02-18-tmd-the-trojan
+title_en: tmd-the-trojan
 title: TMD, 中招了...
 wordpress_id: 213
 tags:

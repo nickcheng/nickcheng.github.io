@@ -1,7 +1,7 @@
 ---
 date: 2008-04-26 12:33:41
 type: post
-title_en: 2008-04-26-bought-a-flickr-pro-account
+title_en: bought-a-flickr-pro-account
 title: 买了Flickr的Pro帐户
 wordpress_id: 419
 tags:

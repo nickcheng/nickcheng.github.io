@@ -1,7 +1,7 @@
 ---
 date: 2007-02-02 00:46:09
 type: post
-title_en: 2007-02-02-public-the-ip-public
+title_en: public-the-ip-public
 title: 发布内网机器的公网IP
 wordpress_id: 334
 tags:

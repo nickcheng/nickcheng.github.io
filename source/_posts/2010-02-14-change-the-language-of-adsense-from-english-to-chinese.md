@@ -1,7 +1,7 @@
 ---
 date: 2010-02-14 12:43:28
 type: post
-title_en: 2010-02-14-change-the-language-of-adsense-from-english-to-chinese
+title_en: change-the-language-of-adsense-from-english-to-chinese
 title: 把英文的Adsense广告改成中文
 wordpress_id: 505
 tags:

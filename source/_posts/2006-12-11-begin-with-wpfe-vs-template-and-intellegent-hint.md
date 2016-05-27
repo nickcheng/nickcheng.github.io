@@ -1,7 +1,7 @@
 ---
 date: 2006-12-11 23:46:27
 type: post
-title_en: 2006-12-11-begin-with-wpfe-vs-template-and-intellegent-hint
+title_en: begin-with-wpfe-vs-template-and-intellegent-hint
 title: 开发WPF/E初步(VS模板+智能提示)
 wordpress_id: 318
 tags:

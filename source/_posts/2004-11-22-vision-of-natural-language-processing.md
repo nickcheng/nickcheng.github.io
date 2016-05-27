@@ -1,7 +1,7 @@
 ---
 date: 2004-11-22 21:02:00
 type: post
-title_en: 2004-11-22-vision-of-natural-language-processing
+title_en: vision-of-natural-language-processing
 title: 关于语言信息处理技术的展望
 wordpress_id: 97
 tags:

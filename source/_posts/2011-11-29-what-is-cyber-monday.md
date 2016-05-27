@@ -1,7 +1,7 @@
 ---
 date: 2011-11-29 10:48:35
 type: post
-title_en: 2011-11-29-what-is-cyber-monday
+title_en: what-is-cyber-monday
 title: 什么是 Cyber Monday ?
 wordpress_id: 591
 tags:

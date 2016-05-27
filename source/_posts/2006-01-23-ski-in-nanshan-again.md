@@ -1,7 +1,7 @@
 ---
 date: 2006-01-23 23:25:53
 type: post
-title_en: 2006-01-23-ski-in-nanshan-again
+title_en: ski-in-nanshan-again
 title: 再向南山行
 wordpress_id: 202
 tags:

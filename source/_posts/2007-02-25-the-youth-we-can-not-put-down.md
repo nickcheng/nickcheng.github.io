@@ -1,7 +1,7 @@
 ---
 date: 2007-02-25 22:50:41
 type: post
-title_en: 2007-02-25-the-youth-we-can-not-put-down
+title_en: the-youth-we-can-not-put-down
 title: 我们无处安放的青春
 wordpress_id: 341
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-05-13 09:28:17
 type: post
-title_en: 2006-05-13-sony-to-offer-ps1-game-downloads-for-psp
+title_en: sony-to-offer-ps1-game-downloads-for-psp
 title: PSP上要可以玩PSone得游戏了
 wordpress_id: 263
 tags:

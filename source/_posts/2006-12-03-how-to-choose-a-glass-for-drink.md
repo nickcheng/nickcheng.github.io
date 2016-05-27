@@ -1,7 +1,7 @@
 ---
 date: 2006-12-03 00:20:03
 type: post
-title_en: 2006-12-03-how-to-choose-a-glass-for-drink
+title_en: how-to-choose-a-glass-for-drink
 title: 喝水杯子
 wordpress_id: 313
 tags:

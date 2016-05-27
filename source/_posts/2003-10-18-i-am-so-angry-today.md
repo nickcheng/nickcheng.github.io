@@ -1,7 +1,7 @@
 ---
 date: 2003-10-18 22:58:00
 type: post
-title_en: 2003-10-18-i-am-so-angry-today
+title_en: i-am-so-angry-today
 title: 今天发了一次火！
 wordpress_id: 16
 tags:

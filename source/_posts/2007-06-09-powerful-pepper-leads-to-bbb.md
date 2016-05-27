@@ -1,7 +1,7 @@
 ---
 date: 2007-06-09 23:29:58
 type: post
-title_en: 2007-06-09-powerful-pepper-leads-to-bbb
+title_en: powerful-pepper-leads-to-bbb
 title: 为什么"一吃辣的就拉肚子"
 wordpress_id: 366
 tags:

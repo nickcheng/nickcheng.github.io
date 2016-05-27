@@ -1,7 +1,7 @@
 ---
 date: 2008-02-25 08:59:02
 type: post
-title_en: 2008-02-25-music-and-lea
+title_en: music-and-lea
 title: 乐和乐呵
 wordpress_id: 413
 tags:

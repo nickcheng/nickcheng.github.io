@@ -1,7 +1,7 @@
 ---
 date: 2006-06-20 10:13:21
 type: post
-title_en: 2006-06-20-some-problems-in-feedburner
+title_en: some-problems-in-feedburner
 title: 貌似今天FeedBurner有些问题
 wordpress_id: 270
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-06-18 23:40:07
 type: post
-title_en: 2006-06-18-the-past-ideal
+title_en: the-past-ideal
 title: 理想之过去式
 wordpress_id: 269
 tags:

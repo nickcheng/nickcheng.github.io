@@ -1,7 +1,7 @@
 ---
 date: 2007-02-18 00:28:14
 type: post
-title_en: 2007-02-18-my-fate-year-has-gone-away
+title_en: my-fate-year-has-gone-away
 title: 本命年终于过去了
 wordpress_id: 340
 tags:

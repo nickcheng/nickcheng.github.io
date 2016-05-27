@@ -1,7 +1,7 @@
 ---
 date: 2009-07-12 20:32:59
 type: post
-title_en: 2009-07-12-new-life-begin
+title_en: new-life-begin
 title: 新生活开始
 wordpress_id: 510
 tags:

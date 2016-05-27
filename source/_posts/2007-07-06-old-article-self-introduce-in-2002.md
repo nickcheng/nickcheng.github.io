@@ -1,7 +1,7 @@
 ---
 date: 2007-07-06 08:16:18
 type: post
-title_en: 2007-07-06-old-article-self-introduce-in-2002
+title_en: old-article-self-introduce-in-2002
 title: "贴篇老文: 2002年写的自我介绍:)"
 wordpress_id: 378
 tags:

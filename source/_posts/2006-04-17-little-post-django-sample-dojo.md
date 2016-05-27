@@ -1,7 +1,7 @@
 ---
 date: 2006-04-17 22:59:52
 type: post
-title_en: 2006-04-17-little-post-django-sample-dojo
+title_en: little-post-django-sample-dojo
 title: "记一小笔: django sample + dojo"
 wordpress_id: 255
 tags:

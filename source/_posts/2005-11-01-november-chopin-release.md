@@ -1,7 +1,7 @@
 ---
 date: 2005-11-01 08:25:23
 type: post
-title_en: 2005-11-01-november-chopin-release
+title_en: november-chopin-release
 title: 十一月的萧邦 Release
 wordpress_id: 170
 tags:

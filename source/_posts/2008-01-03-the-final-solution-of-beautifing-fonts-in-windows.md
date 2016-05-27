@@ -1,7 +1,7 @@
 ---
 date: 2008-01-03 19:33:22
 type: post
-title_en: 2008-01-03-the-final-solution-of-beautifing-fonts-in-windows
+title_en: the-final-solution-of-beautifing-fonts-in-windows
 title: Windows下的字体美化终极方案
 wordpress_id: 427
 tags:

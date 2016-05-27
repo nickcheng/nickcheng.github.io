@@ -1,7 +1,7 @@
 ---
 date: 2012-08-26 15:50:00
 type: post
-title_en: 2012-08-26-twitter-weekly-updates-for-2012-08-26
+title_en: twitter-weekly-updates-for-2012-08-26
 title: Twitter Weekly Updates for 2012-08-26
 wordpress_id: 613
 tags:

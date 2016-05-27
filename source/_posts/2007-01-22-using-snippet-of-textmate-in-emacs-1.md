@@ -1,7 +1,7 @@
 ---
 date: 2007-01-22 23:01:46
 type: post
-title_en: 2007-01-22-using-snippet-of-textmate-in-emacs-1
+title_en: using-snippet-of-textmate-in-emacs-1
 title: Emacs下使用TextMate的Snippets功能(一)
 wordpress_id: 328
 tags:

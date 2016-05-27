@@ -1,7 +1,7 @@
 ---
 date: 2004-11-30 23:59:00
 type: post
-title_en: 2004-11-30-solve-the-problem-error-operation-must-use-an-updateable-query
+title_en: solve-the-problem-error-operation-must-use-an-updateable-query
 title: 错误“操作必须使用一个可更新的查询”原因及解决办法
 wordpress_id: 99
 tags:

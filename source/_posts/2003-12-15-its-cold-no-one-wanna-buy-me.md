@@ -1,7 +1,7 @@
 ---
 date: 2003-12-15 18:34:00
 type: post
-title_en: 2003-12-15-its-cold-no-one-wanna-buy-me
+title_en: its-cold-no-one-wanna-buy-me
 title: 天都冷了,还是没把自己卖出去!
 wordpress_id: 50
 tags:

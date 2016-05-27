@@ -1,7 +1,7 @@
 ---
 date: 2005-02-27 18:15:00
 type: post
-title_en: 2005-02-27-nice-font-can-be-used-in-programming
+title_en: nice-font-can-be-used-in-programming
 title: 漂亮的等宽字体，写程序的时候有用哦！
 wordpress_id: 109
 tags:

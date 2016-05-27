@@ -1,7 +1,7 @@
 ---
 date: 2007-12-23 11:30:00
 type: post
-title_en: 2007-12-23-let-us-jam-band-when-we-are-old
+title_en: let-us-jam-band-when-we-are-old
 title: 让我们老了也在一起玩乐队吧
 wordpress_id: 408
 tags:

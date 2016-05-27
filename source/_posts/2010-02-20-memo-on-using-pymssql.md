@@ -1,7 +1,7 @@
 ---
 date: 2010-02-20 21:10:58
 type: post
-title_en: 2010-02-20-memo-on-using-pymssql
+title_en: memo-on-using-pymssql
 title: 使用pymssql备忘
 wordpress_id: 518
 tags:

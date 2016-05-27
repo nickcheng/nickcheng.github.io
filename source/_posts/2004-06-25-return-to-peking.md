@@ -1,7 +1,7 @@
 ---
 date: 2004-06-25 18:56:00
 type: post
-title_en: 2004-06-25-return-to-peking
+title_en: return-to-peking
 title: Return to Peking......
 wordpress_id: 88
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-01-03 15:34:21
 type: post
-title_en: 2006-01-03-conclusion-of-personal-blog-in-2005
+title_en: conclusion-of-personal-blog-in-2005
 title: 05年个人Blog总结(总结篇)
 wordpress_id: 197
 tags:

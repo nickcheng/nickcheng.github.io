@@ -1,7 +1,7 @@
 ---
 date: 2003-12-06 13:40:00
 type: post
-title_en: 2003-12-06-solved-the-posting-problem
+title_en: solved-the-posting-problem
 title: 问题解决了~~~~~~
 wordpress_id: 46
 tags:

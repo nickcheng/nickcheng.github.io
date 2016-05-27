@@ -1,7 +1,7 @@
 ---
 date: 2006-03-10 10:18:09
 type: post
-title_en: 2006-03-10-new-net-bank-of-cmbchina-20060310
+title_en: new-net-bank-of-cmbchina-20060310
 title: 招商银行新版网上个人银行
 wordpress_id: 236
 tags:

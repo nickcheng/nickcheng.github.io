@@ -1,7 +1,7 @@
 ---
 date: 2003-12-02 23:36:00
 type: post
-title_en: 2003-12-02-how-about-go-abroad
+title_en: how-about-go-abroad
 title: 出国也挺好的!
 wordpress_id: 43
 tags:

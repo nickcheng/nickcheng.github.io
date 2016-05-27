@@ -1,7 +1,7 @@
 ---
 date: 2010-06-28 13:48:47
 type: post
-title_en: 2010-06-28-my-sense-to-foursquare
+title_en: my-sense-to-foursquare
 title: 我对FourSquare的认识
 wordpress_id: 570
 tags:

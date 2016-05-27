@@ -1,7 +1,7 @@
 ---
 date: 2006-05-06 10:59:19
 type: post
-title_en: 2006-05-06-how-to-use-the-copy-of-idcard
+title_en: how-to-use-the-copy-of-idcard
 title: 身份证复印件的正确用法[公益转载]
 wordpress_id: 260
 tags:

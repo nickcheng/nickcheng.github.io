@@ -1,7 +1,7 @@
 ---
 date: 2005-12-12 12:17:57
 type: post
-title_en: 2005-12-12-talk-about-the-rss-reader-on-smartphone
+title_en: talk-about-the-rss-reader-on-smartphone
 title: 说一下SmartPhone手机上的RSS阅读器
 wordpress_id: 190
 tags:

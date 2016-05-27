@@ -1,7 +1,7 @@
 ---
 date: 2003-10-24 22:25:00
 type: post
-title_en: 2003-10-24-still-the-optimizing-algorithm
+title_en: still-the-optimizing-algorithm
 title: 还是那个优化算法！
 wordpress_id: 21
 tags:

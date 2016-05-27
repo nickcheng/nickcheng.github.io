@@ -1,7 +1,7 @@
 ---
 date: 2005-10-28 23:42:53
 type: post
-title_en: 2005-10-28-2005-universal-chinese-blog-competition
+title_en: 2005-universal-chinese-blog-competition
 title: 2005全球中文博客大赛？
 wordpress_id: 168
 tags:

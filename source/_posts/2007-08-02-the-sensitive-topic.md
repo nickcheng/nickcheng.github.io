@@ -1,7 +1,7 @@
 ---
 date: 2007-08-02 23:09:42
 type: post
-title_en: 2007-08-02-the-sensitive-topic
+title_en: the-sensitive-topic
 title: 再次触及敏感话题
 wordpress_id: 379
 tags:

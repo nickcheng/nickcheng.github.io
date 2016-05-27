@@ -1,7 +1,7 @@
 ---
 date: 2007-04-29 22:22:45
 type: post
-title_en: 2007-04-29-old-articles-the-music-recommendation-of-nickcheng-1
+title_en: old-articles-the-music-recommendation-of-nickcheng-1
 title: 原创老文:Nickcheng 推荐歌曲之一 (有简介,连接,歌词等)
 wordpress_id: 359
 tags:

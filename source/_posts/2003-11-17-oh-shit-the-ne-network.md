@@ -1,7 +1,7 @@
 ---
 date: 2003-11-17 01:17:00
 type: post
-title_en: 2003-11-17-oh-shit-the-ne-network
+title_en: oh-shit-the-ne-network
 title: 头大！！
 wordpress_id: 30
 tags:

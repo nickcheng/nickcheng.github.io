@@ -1,7 +1,7 @@
 ---
 date: 2006-03-03 17:04:06
 type: post
-title_en: 2006-03-03-test-for-podpress
+title_en: test-for-podpress
 title: test for podpress
 wordpress_id: 229
 tags:

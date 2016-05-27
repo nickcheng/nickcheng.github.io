@@ -1,7 +1,7 @@
 ---
 date: 2007-11-14 15:15:11
 type: post
-title_en: 2007-11-14-why-can-not-getlatest-when-checkout-in-tfs-and-solution
+title_en: why-can-not-getlatest-when-checkout-in-tfs-and-solution
 title: 关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)
 wordpress_id: 424
 tags:

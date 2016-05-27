@@ -1,7 +1,7 @@
 ---
 date: 2005-11-25 14:11:03
 type: post
-title_en: 2005-11-25-signupfreebedomain
+title_en: signupfreebedomain
 title: 来申请免费顶级域名啦！
 wordpress_id: 183
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2004-01-11 14:25:00
 type: post
-title_en: 2004-01-11-its-bad-to-go-internet-at-home
+title_en: its-bad-to-go-internet-at-home
 title: 回家上网真不方便~~~~
 wordpress_id: 69
 tags:

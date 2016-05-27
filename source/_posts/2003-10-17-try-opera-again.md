@@ -1,7 +1,7 @@
 ---
 date: 2003-10-17 00:06:00
 type: post
-title_en: 2003-10-17-try-opera-again
+title_en: try-opera-again
 title: Opera
 wordpress_id: 11
 tags:

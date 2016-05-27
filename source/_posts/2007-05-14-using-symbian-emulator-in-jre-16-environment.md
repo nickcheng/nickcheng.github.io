@@ -1,7 +1,7 @@
 ---
 date: 2007-05-14 11:17:27
 type: post
-title_en: 2007-05-14-using-symbian-emulator-in-jre-16-environment
+title_en: using-symbian-emulator-in-jre-16-environment
 title: 在JRE 1.6环境下使用Symbian模拟器
 wordpress_id: 362
 tags:

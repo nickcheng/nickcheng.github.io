@@ -1,7 +1,7 @@
 ---
 date: 2003-12-22 06:26:00
 type: post
-title_en: 2003-12-22-study-aspnet-application-state
+title_en: study-aspnet-application-state
 title: 学习ASP.NET-初探Application状态
 wordpress_id: 56
 tags:

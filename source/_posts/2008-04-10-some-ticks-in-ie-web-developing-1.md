@@ -1,7 +1,7 @@
 ---
 date: 2008-04-10 11:38:01
 type: post
-title_en: 2008-04-10-some-ticks-in-ie-web-developing-1
+title_en: some-ticks-in-ie-web-developing-1
 title: IE下Web开发注意事项 - 1
 wordpress_id: 431
 tags:

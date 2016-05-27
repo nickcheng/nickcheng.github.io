@@ -1,7 +1,7 @@
 ---
 date: 2005-11-20 23:50:37
 type: post
-title_en: 2005-11-20-bicycling-weekend
+title_en: bicycling-weekend
 title: 周末单车行
 wordpress_id: 177
 tags:

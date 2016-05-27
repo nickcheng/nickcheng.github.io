@@ -1,7 +1,7 @@
 ---
 date: 2007-02-07 09:18:04
 type: post
-title_en: 2007-02-07-the-problem-of-the-changed-name-of-attachment-when-sending-chinese-attachment-in-thunderbird
+title_en: the-problem-of-the-changed-name-of-attachment-when-sending-chinese-attachment-in-thunderbird
 title: Thunderbird发送中文附件自动改名的问题
 wordpress_id: 336
 tags:

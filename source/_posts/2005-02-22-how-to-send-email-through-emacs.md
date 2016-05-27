@@ -1,7 +1,7 @@
 ---
 date: 2005-02-22 18:16:00
 type: post
-title_en: 2005-02-22-how-to-send-email-through-emacs
+title_en: how-to-send-email-through-emacs
 title: 如何使用emacs发送邮件
 wordpress_id: 107
 tags:

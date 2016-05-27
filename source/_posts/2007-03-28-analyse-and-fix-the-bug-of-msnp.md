@@ -1,7 +1,7 @@
 ---
 date: 2007-03-28 23:36:34
 type: post
-title_en: 2007-03-28-analyse-and-fix-the-bug-of-msnp
+title_en: analyse-and-fix-the-bug-of-msnp
 title: 分析修正msnp.py小问题的全过程
 wordpress_id: 350
 tags:

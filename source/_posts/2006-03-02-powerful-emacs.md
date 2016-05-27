@@ -1,7 +1,7 @@
 ---
 date: 2006-03-02 10:14:11
 type: post
-title_en: 2006-03-02-powerful-emacs
+title_en: powerful-emacs
 title: 强大的Emacs
 wordpress_id: 226
 tags:

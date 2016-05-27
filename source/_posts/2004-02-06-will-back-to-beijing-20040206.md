@@ -1,7 +1,7 @@
 ---
 date: 2004-02-06 13:58:00
 type: post
-title_en: 2004-02-06-will-back-to-beijing-20040206
+title_en: will-back-to-beijing-20040206
 title: 倒记时~~~~~~
 wordpress_id: 106
 tags:

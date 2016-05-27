@@ -1,7 +1,7 @@
 ---
 date: 2007-10-10 17:02:00
 type: post
-title_en: 2007-10-10-install-and-setup-django-on-media-temple-dvd
+title_en: install-and-setup-django-on-media-temple-dvd
 title: 在Media Temple(dv)上安装配置Django
 wordpress_id: 398
 tags:

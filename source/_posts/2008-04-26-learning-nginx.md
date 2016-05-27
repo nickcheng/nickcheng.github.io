@@ -1,7 +1,7 @@
 ---
 date: 2008-04-26 12:27:21
 type: post
-title_en: 2008-04-26-learning-nginx
+title_en: learning-nginx
 title: 学习NginX
 wordpress_id: 433
 tags:

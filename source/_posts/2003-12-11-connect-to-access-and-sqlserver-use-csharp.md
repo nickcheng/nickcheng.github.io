@@ -1,7 +1,7 @@
 ---
 date: 2003-12-11 11:41:00
 type: post
-title_en: 2003-12-11-connect-to-access-and-sqlserver-use-csharp
+title_en: connect-to-access-and-sqlserver-use-csharp
 title: 用ASP.NET/C#连接Access和SQL Server数据库
 wordpress_id: 47
 tags:

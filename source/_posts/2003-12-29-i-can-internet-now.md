@@ -1,7 +1,7 @@
 ---
 date: 2003-12-29 15:56:00
 type: post
-title_en: 2003-12-29-i-can-internet-now
+title_en: i-can-internet-now
 title: 终于可以上网了！
 wordpress_id: 62
 tags:

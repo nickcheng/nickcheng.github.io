@@ -1,7 +1,7 @@
 ---
 date: 2003-10-10 23:42:00
 type: post
-title_en: 2003-10-10-the-excise-has-leaked-out
+title_en: the-excise-has-leaked-out
 title: 竟然又露题了
 wordpress_id: 7
 tags:

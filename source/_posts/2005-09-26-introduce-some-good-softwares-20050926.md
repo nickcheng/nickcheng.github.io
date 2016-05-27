@@ -1,7 +1,7 @@
 ---
 date: 2005-09-26 18:34:00
 type: post
-title_en: 2005-09-26-introduce-some-good-softwares-20050926
+title_en: introduce-some-good-softwares-20050926
 title: 介绍几个不错的软件
 wordpress_id: 145
 tags:

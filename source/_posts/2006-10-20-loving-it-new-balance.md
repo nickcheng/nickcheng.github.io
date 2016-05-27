@@ -1,7 +1,7 @@
 ---
 date: 2006-10-20 13:20:52
 type: post
-title_en: 2006-10-20-loving-it-new-balance
+title_en: loving-it-new-balance
 title: 就是喜欢NB(New Balance)
 wordpress_id: 300
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-12-22 18:28:00
 type: post
-title_en: 2003-12-22-detailed-internet-explorer-predefine-protocol
+title_en: detailed-internet-explorer-predefine-protocol
 title: 详解 Internet Explorer 的预定义协议
 wordpress_id: 57
 tags:

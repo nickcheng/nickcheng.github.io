@@ -1,7 +1,7 @@
 ---
 date: 2006-03-01 16:51:11
 type: post
-title_en: 2006-03-01-the-double-meeting-again
+title_en: the-double-meeting-again
 title: 又到两会了
 wordpress_id: 224
 tags:

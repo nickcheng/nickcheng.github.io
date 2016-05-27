@@ -1,7 +1,7 @@
 ---
 date: 2005-10-20 23:30:52
 type: post
-title_en: 2005-10-20-build-dokuwiki
+title_en: build-dokuwiki
 title: 架设Dokuwiki
 wordpress_id: 162
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-02-24 23:16:01
 type: post
-title_en: 2006-02-24-hit-by-django
+title_en: hit-by-django
 title: 被Django折腾
 wordpress_id: 218
 tags:

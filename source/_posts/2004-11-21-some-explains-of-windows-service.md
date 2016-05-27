@@ -1,7 +1,7 @@
 ---
 date: 2004-11-21 17:40:00
 type: post
-title_en: 2004-11-21-some-explains-of-windows-service
+title_en: some-explains-of-windows-service
 title: Windows服务的一些解释
 wordpress_id: 95
 tags:

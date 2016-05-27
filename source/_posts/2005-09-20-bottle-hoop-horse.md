@@ -1,7 +1,7 @@
 ---
 date: 2005-09-20 18:45:00
 type: post
-title_en: 2005-09-20-bottle-hoop-horse
+title_en: bottle-hoop-horse
 title: 瓶盖，脚架
 wordpress_id: 142
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-11-26 01:25:41
 type: post
-title_en: 2003-11-26-add-trackback-to-my-blog
+title_en: add-trackback-to-my-blog
 title:  呼呼...终于搞好了!
 wordpress_id: 155
 tags:

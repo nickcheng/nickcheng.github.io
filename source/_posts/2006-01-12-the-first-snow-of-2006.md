@@ -1,7 +1,7 @@
 ---
 date: 2006-01-12 15:00:34
 type: post
-title_en: 2006-01-12-the-first-snow-of-2006
+title_en: the-first-snow-of-2006
 title: 2006年的第一场雪
 wordpress_id: 201
 tags:

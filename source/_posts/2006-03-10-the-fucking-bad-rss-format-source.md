@@ -1,7 +1,7 @@
 ---
 date: 2006-03-10 16:48:26
 type: post
-title_en: 2006-03-10-the-fucking-bad-rss-format-source
+title_en: the-fucking-bad-rss-format-source
 title: 不规则的RSS害死人啊
 wordpress_id: 237
 tags:

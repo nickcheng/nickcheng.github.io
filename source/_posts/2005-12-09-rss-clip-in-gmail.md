@@ -1,7 +1,7 @@
 ---
 date: 2005-12-09 10:48:43
 type: post
-title_en: 2005-12-09-rss-clip-in-gmail
+title_en: rss-clip-in-gmail
 title: Gmail里的RSS Clip
 wordpress_id: 189
 tags:

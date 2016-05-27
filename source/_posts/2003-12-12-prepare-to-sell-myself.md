@@ -1,7 +1,7 @@
 ---
 date: 2003-12-12 18:35:00
 type: post
-title_en: 2003-12-12-prepare-to-sell-myself
+title_en: prepare-to-sell-myself
 title: 明天去招聘会！
 wordpress_id: 49
 tags:

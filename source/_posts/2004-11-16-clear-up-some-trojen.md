@@ -1,7 +1,7 @@
 ---
 date: 2004-11-16 20:13:00
 type: post
-title_en: 2004-11-16-clear-up-some-trojen
+title_en: clear-up-some-trojen
 title: 清除几个木马
 wordpress_id: 93
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-07-27 17:23:47
 type: post
-title_en: 2006-07-27-a-tool-to-get-the-source-of-metacafe-video
+title_en: a-tool-to-get-the-source-of-metacafe-video
 title: 获取Metacafe视频文件的小工具
 wordpress_id: 280
 tags:

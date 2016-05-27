@@ -1,7 +1,7 @@
 ---
 date: 2008-05-12 20:18:55
 type: post
-title_en: 2008-05-12-from-the-earthquake-to-see-health
+title_en: from-the-earthquake-to-see-health
 title: 从地震看健康
 wordpress_id: 421
 tags:

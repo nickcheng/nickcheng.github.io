@@ -1,7 +1,7 @@
 ---
 date: 2006-03-08 22:09:40
 type: post
-title_en: 2006-03-08-talk-about-blog
+title_en: talk-about-blog
 title: 说说写博客
 wordpress_id: 234
 tags:

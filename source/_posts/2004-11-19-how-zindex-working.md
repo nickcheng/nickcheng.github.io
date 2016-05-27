@@ -1,7 +1,7 @@
 ---
 date: 2004-11-19 21:23:00
 type: post
-title_en: 2004-11-19-how-zindex-working
+title_en: how-zindex-working
 title: HTML元素的Z-index属性是如何工作的
 wordpress_id: 94
 tags:

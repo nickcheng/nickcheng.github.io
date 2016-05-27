@@ -1,7 +1,7 @@
 ---
 date: 2003-10-26 22:26:00
 type: post
-title_en: 2003-10-26-i-love-my-gf
+title_en: i-love-my-gf
 title: I love my GF
 wordpress_id: 23
 tags:

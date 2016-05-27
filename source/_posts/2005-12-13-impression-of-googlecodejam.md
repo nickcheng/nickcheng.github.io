@@ -1,7 +1,7 @@
 ---
 date: 2005-12-13 13:11:21
 type: post
-title_en: 2005-12-13-impression-of-googlecodejam
+title_en: impression-of-googlecodejam
 title: 参加了Google Code Jam
 wordpress_id: 192
 tags:

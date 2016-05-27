@@ -1,7 +1,7 @@
 ---
 date: 2006-12-08 17:19:55
 type: post
-title_en: 2006-12-08-vista-let-me-sleep-how-to-solve-it
+title_en: vista-let-me-sleep-how-to-solve-it
 title: Vista非让我睡觉!咋办?
 wordpress_id: 317
 tags:

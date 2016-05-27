@@ -1,7 +1,7 @@
 ---
 date: 2008-04-10 14:30:17
 type: post
-title_en: 2008-04-10-the-summer-is-coming
+title_en: the-summer-is-coming
 title: 夏天到了...蚊子来了...
 wordpress_id: 418
 tags:

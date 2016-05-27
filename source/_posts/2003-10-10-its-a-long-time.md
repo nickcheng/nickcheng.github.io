@@ -1,7 +1,7 @@
 ---
 date: 2003-10-10 20:28:39
 type: post
-title_en: 2003-10-10-its-a-long-time
+title_en: its-a-long-time
 title: 很久没有来了~~ 
 wordpress_id: 603
 tags:

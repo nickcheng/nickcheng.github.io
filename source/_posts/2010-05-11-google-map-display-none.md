@@ -1,7 +1,7 @@
 ---
 date: 2010-05-11 21:43:16
 type: post
-title_en: 2010-05-11-google-map-display-none
+title_en: google-map-display-none
 title: Google Map - display:none
 wordpress_id: 565
 tags:

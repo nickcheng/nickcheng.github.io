@@ -1,7 +1,7 @@
 ---
 date: 2005-09-06 08:59:00
 type: post
-title_en: 2005-09-06-using-rss-in-im
+title_en: using-rss-in-im
 title: 关于RSS用在IM上的一点想法
 wordpress_id: 136
 tags:

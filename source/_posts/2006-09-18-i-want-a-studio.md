@@ -1,7 +1,7 @@
 ---
 date: 2006-09-18 18:00:38
 type: post
-title_en: 2006-09-18-i-want-a-studio
+title_en: i-want-a-studio
 title: 啥时候整个Studio?
 wordpress_id: 290
 tags:

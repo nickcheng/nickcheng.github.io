@@ -1,7 +1,7 @@
 ---
 date: 2006-02-06 13:19:57
 type: post
-title_en: 2006-02-06-put-up-the-bookmarks-json
+title_en: put-up-the-bookmarks-json
 title: 再把网摘放到Blog上吧! JSON
 wordpress_id: 206
 tags:

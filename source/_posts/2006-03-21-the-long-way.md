@@ -1,7 +1,7 @@
 ---
 date: 2006-03-21 22:55:28
 type: post
-title_en: 2006-03-21-the-long-way
+title_en: the-long-way
 title: 路途遥远...
 wordpress_id: 242
 tags:

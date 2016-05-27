@@ -1,7 +1,7 @@
 ---
 date: 2007-08-15 17:34:41
 type: post
-title_en: 2007-08-15-talk-about-the-avatar-here
+title_en: talk-about-the-avatar-here
 title: 说说我这里的头像系统
 wordpress_id: 383
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-09-29 09:09:00
 type: post
-title_en: 2005-09-29-its-bothering-to-download-such-things
+title_en: its-bothering-to-download-such-things
 title: 下载个东西这么麻烦
 wordpress_id: 147
 tags:

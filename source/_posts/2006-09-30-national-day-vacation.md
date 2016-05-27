@@ -1,7 +1,7 @@
 ---
 date: 2006-09-30 13:02:09
 type: post
-title_en: 2006-09-30-national-day-vacation
+title_en: national-day-vacation
 title: 国庆了国庆了
 wordpress_id: 296
 tags:

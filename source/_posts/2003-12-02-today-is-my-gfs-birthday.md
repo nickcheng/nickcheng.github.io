@@ -1,7 +1,7 @@
 ---
 date: 2003-12-02 00:33:00
 type: post
-title_en: 2003-12-02-today-is-my-gfs-birthday
+title_en: today-is-my-gfs-birthday
 title: 今天老婆生日！
 wordpress_id: 41
 tags:

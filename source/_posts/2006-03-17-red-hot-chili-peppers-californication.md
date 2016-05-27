@@ -1,7 +1,7 @@
 ---
 date: 2006-03-17 00:01:15
 type: post
-title_en: 2006-03-17-red-hot-chili-peppers-californication
+title_en: red-hot-chili-peppers-californication
 title: 推荐首老歌,红辣椒(Red Hot Chili Peppers)的Californication
 wordpress_id: 239
 tags:

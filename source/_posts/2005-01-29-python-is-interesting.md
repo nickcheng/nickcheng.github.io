@@ -1,7 +1,7 @@
 ---
 date: 2005-01-29 18:21:00
 type: post
-title_en: 2005-01-29-python-is-interesting
+title_en: python-is-interesting
 title: Python还是挺有意思的
 wordpress_id: 103
 tags:

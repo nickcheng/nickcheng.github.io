@@ -1,7 +1,7 @@
 ---
 date: 2004-01-03 15:52:00
 type: post
-title_en: 2004-01-03-got-ticket-will-go-home
+title_en: got-ticket-will-go-home
 title: 要回家喽~~~~~~
 wordpress_id: 64
 tags:

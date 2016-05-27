@@ -1,7 +1,7 @@
 ---
 date: 2006-05-12 09:50:02
 type: post
-title_en: 2006-05-12-support-douwei
+title_en: support-douwei
 title: 声援窦唯
 wordpress_id: 262
 tags:

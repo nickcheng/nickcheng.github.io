@@ -1,7 +1,7 @@
 ---
 date: 2007-11-12 12:39:38
 type: post
-title_en: 2007-11-12-i-am-the-host-of-my-blog
+title_en: i-am-the-host-of-my-blog
 title: 俺的Blog俺做主
 wordpress_id: 404
 tags:

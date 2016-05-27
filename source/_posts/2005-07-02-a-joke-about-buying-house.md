@@ -1,7 +1,7 @@
 ---
 date: 2005-07-02 21:05:00
 type: post
-title_en: 2005-07-02-a-joke-about-buying-house
+title_en: a-joke-about-buying-house
 title: 转一个买房的笑话
 wordpress_id: 119
 tags:

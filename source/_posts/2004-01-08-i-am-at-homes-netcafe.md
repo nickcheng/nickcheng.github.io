@@ -1,7 +1,7 @@
 ---
 date: 2004-01-08 15:48:00
 type: post
-title_en: 2004-01-08-i-am-at-homes-netcafe
+title_en: i-am-at-homes-netcafe
 title: 到家了~~~~~~
 wordpress_id: 63
 tags:

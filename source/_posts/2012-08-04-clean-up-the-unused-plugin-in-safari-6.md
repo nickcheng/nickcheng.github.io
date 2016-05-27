@@ -1,7 +1,7 @@
 ---
 date: 2012-08-04 12:44:13
 type: post
-title_en: 2012-08-04-clean-up-the-unused-plugin-in-safari-6
+title_en: clean-up-the-unused-plugin-in-safari-6
 title: 清除 Safari 6.0 中无法使用的插件
 wordpress_id: 608
 tags:

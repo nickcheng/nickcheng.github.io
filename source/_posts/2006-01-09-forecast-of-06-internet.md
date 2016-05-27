@@ -1,7 +1,7 @@
 ---
 date: 2006-01-09 13:00:13
 type: post
-title_en: 2006-01-09-forecast-of-06-internet
+title_en: forecast-of-06-internet
 title: 06小预测(互联网)
 wordpress_id: 199
 tags:

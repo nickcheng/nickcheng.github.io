@@ -1,7 +1,7 @@
 ---
 date: 2007-02-17 11:33:41
 type: post
-title_en: 2007-02-17-a-poem-for-lp
+title_en: a-poem-for-lp
 title: 送首诗给老婆...
 wordpress_id: 339
 tags:

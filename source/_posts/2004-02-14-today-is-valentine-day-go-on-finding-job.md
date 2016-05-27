@@ -1,7 +1,7 @@
 ---
 date: 2004-02-14 15:14:00
 type: post
-title_en: 2004-02-14-today-is-valentine-day-go-on-finding-job
+title_en: today-is-valentine-day-go-on-finding-job
 title: 今天情人节，继续参加招聘会！
 wordpress_id: 74
 tags:

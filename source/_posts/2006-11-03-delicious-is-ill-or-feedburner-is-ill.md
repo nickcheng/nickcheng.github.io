@@ -1,7 +1,7 @@
 ---
 date: 2006-11-03 17:14:50
 type: post
-title_en: 2006-11-03-delicious-is-ill-or-feedburner-is-ill
+title_en: delicious-is-ill-or-feedburner-is-ill
 title: Del.icio.us病了?FeedBurner病了?
 wordpress_id: 304
 tags:

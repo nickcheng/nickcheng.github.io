@@ -1,7 +1,7 @@
 ---
 date: 2011-10-12 20:03:50
 type: post
-title_en: 2011-10-12-how-to-obtain-the-rss-link-of-users-timeline-in-twitter
+title_en: how-to-obtain-the-rss-link-of-users-timeline-in-twitter
 title: 如何获得 Twitter 里用户 Timeline 的 RSS 地址
 wordpress_id: 586
 tags:

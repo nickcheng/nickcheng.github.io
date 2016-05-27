@@ -1,7 +1,7 @@
 ---
 date: 2006-07-20 17:31:11
 type: post
-title_en: 2006-07-20-the-qing-tomb
+title_en: the-qing-tomb
 title: 清东陵
 wordpress_id: 276
 tags:

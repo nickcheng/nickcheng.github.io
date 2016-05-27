@@ -1,7 +1,7 @@
 ---
 date: 2007-03-29 21:22:39
 type: post
-title_en: 2007-03-29-install-and-config-subversion-143-in-apache-224
+title_en: install-and-config-subversion-143-in-apache-224
 title: 在Apache2.2.4下安装配置Subversion1.4.3
 wordpress_id: 351
 tags:

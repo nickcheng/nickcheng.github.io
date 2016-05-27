@@ -1,7 +1,7 @@
 ---
 date: 2007-04-29 22:38:11
 type: post
-title_en: 2007-04-29-old-articles-the-music-recommendation-of-nickcheng-2-wangfeng
+title_en: old-articles-the-music-recommendation-of-nickcheng-2-wangfeng
 title: 原创老文:Nickcheng推荐音乐之二 [汪峰专题]
 wordpress_id: 360
 tags:

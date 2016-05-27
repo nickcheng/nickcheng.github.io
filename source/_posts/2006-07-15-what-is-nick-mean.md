@@ -1,7 +1,7 @@
 ---
 date: 2006-07-15 15:39:47
 type: post
-title_en: 2006-07-15-what-is-nick-mean
+title_en: what-is-nick-mean
 title: nick是啥意思
 wordpress_id: 275
 tags:

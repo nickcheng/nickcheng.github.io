@@ -1,7 +1,7 @@
 ---
 date: 2006-01-02 00:06:56
 type: post
-title_en: 2006-01-02-force-myself
+title_en: force-myself
 title: 给自己上个套子先!
 wordpress_id: 196
 tags:

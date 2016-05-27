@@ -1,7 +1,7 @@
 ---
 date: 2006-11-21 12:58:06
 type: post
-title_en: 2006-11-21-save-card-export
+title_en: save-card-export
 title: CardExport复原了！
 wordpress_id: 309
 tags:

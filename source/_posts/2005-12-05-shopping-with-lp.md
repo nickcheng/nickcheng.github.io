@@ -1,7 +1,7 @@
 ---
 date: 2005-12-05 12:49:53
 type: post
-title_en: 2005-12-05-shopping-with-lp
+title_en: shopping-with-lp
 title: 和老婆逛街喽
 wordpress_id: 187
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2006-11-12 00:01:32
 type: post
-title_en: 2006-11-12-the-dog-is-different
+title_en: the-dog-is-different
 title: 同样是狗狗, 差别可大了
 wordpress_id: 306
 tags:

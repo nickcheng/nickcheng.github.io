@@ -1,7 +1,7 @@
 ---
 date: 2006-12-22 10:44:14
 type: post
-title_en: 2006-12-22-actions-in-internet-music
+title_en: actions-in-internet-music
 title: 网络音乐圈的小动作
 wordpress_id: 320
 tags:

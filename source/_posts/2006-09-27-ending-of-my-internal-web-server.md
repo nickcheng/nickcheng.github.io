@@ -1,7 +1,7 @@
 ---
 date: 2006-09-27 11:04:04
 type: post
-title_en: 2006-09-27-ending-of-my-internal-web-server
+title_en: ending-of-my-internal-web-server
 title: 国内时光结束
 wordpress_id: 295
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2007-01-29 23:34:27
 type: post
-title_en: 2007-01-29-snowboarding-in-shijinglong-20070128
+title_en: snowboarding-in-shijinglong-20070128
 title: 石京龙单板雪上行
 wordpress_id: 331
 tags:

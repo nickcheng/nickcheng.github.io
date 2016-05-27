@@ -1,7 +1,7 @@
 ---
 date: 2008-05-23 09:35:54
 type: post
-title_en: 2008-05-23-memories-about-makino-park-and-the-east-main-street
+title_en: memories-about-makino-park-and-the-east-main-street
 title: 关于牧野公园和东干道的回忆
 wordpress_id: 423
 tags:

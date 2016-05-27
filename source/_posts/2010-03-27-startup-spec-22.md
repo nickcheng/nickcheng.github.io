@@ -1,7 +1,7 @@
 ---
 date: 2010-03-27 17:41:53
 type: post
-title_en: 2010-03-27-startup-spec-22
+title_en: startup-spec-22
 title: 创业自卫“二十二条”
 wordpress_id: 556
 tags:

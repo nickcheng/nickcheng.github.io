@@ -1,7 +1,7 @@
 ---
 date: 2010-02-17 11:45:39
 type: post
-title_en: 2010-02-17-word-around-to-get-google-buzz-on-blackberry
+title_en: word-around-to-get-google-buzz-on-blackberry
 title: 在BlackBerry上使用Buzz的变通方案
 wordpress_id: 513
 tags:

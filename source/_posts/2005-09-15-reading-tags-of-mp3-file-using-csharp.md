@@ -1,7 +1,7 @@
 ---
 date: 2005-09-15 10:55:00
 type: post
-title_en: 2005-09-15-reading-tags-of-mp3-file-using-csharp
+title_en: reading-tags-of-mp3-file-using-csharp
 title: 用C#读取MP3文件的Tags
 wordpress_id: 138
 tags:

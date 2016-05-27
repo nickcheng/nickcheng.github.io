@@ -1,7 +1,7 @@
 ---
 date: 2005-12-30 00:05:34
 type: post
-title_en: 2005-12-30-upgrade-of-blog
+title_en: upgrade-of-blog
 title: Blog又升级啦
 wordpress_id: 195
 tags:

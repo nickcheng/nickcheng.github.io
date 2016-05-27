@@ -1,7 +1,7 @@
 ---
 date: 2004-01-03 23:06:00
 type: post
-title_en: 2004-01-03-aspnet-button-click-once-do-twice
+title_en: aspnet-button-click-once-do-twice
 title: 关于asp.net中,点击按钮一次,响应两次的问题
 wordpress_id: 65
 tags:

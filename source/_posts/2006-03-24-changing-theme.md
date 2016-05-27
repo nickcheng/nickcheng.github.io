@@ -1,7 +1,7 @@
 ---
 date: 2006-03-24 19:28:54
 type: post
-title_en: 2006-03-24-changing-theme
+title_en: changing-theme
 title: 再次改版
 wordpress_id: 245
 tags:

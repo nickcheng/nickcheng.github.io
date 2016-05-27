@@ -1,7 +1,7 @@
 ---
 date: 2008-03-12 10:00:00
 type: post
-title_en: 2008-03-12-iphone-successful-transceiver-mms
+title_en: iphone-successful-transceiver-mms
 title: iPhone成功收发彩信
 wordpress_id: 430
 tags:

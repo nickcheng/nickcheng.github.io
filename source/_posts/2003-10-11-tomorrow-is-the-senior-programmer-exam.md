@@ -1,7 +1,7 @@
 ---
 date: 2003-10-11 21:48:00
 type: post
-title_en: 2003-10-11-tomorrow-is-the-senior-programmer-exam
+title_en: tomorrow-is-the-senior-programmer-exam
 title: 明天就要考高程了~！！
 wordpress_id: 386
 tags:

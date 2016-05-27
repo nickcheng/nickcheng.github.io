@@ -1,7 +1,7 @@
 ---
 date: 2006-11-06 13:07:52
 type: post
-title_en: 2006-11-06-editplus-230-beta
+title_en: editplus-230-beta
 title: Editplus 2.30 beta
 wordpress_id: 305
 tags:

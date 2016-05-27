@@ -1,7 +1,7 @@
 ---
 date: 2004-01-06 10:16:00
 type: post
-title_en: 2004-01-06-yesterday-is-a-hard-day-will-go-back-this-noon
+title_en: yesterday-is-a-hard-day-will-go-back-this-noon
 title: 昨晚苦战~~~下午要回家了~~~~~~
 wordpress_id: 68
 tags:

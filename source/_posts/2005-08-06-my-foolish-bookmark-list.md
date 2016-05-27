@@ -1,7 +1,7 @@
 ---
 date: 2005-08-06 11:16:00
 type: post
-title_en: 2005-08-06-my-foolish-bookmark-list
+title_en: my-foolish-bookmark-list
 title: 自己输出的蠢蠢的网摘列表
 wordpress_id: 128
 tags:

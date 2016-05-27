@@ -1,7 +1,7 @@
 ---
 date: 2005-02-01 18:17:00
 type: post
-title_en: 2005-02-01-fifty-ways-to-change-life-2005
+title_en: fifty-ways-to-change-life-2005
 title: 2005改变你生活的50种方法
 wordpress_id: 105
 tags:

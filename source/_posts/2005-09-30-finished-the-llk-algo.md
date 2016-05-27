@@ -1,7 +1,7 @@
 ---
 date: 2005-09-30 23:43:00
 type: post
-title_en: 2005-09-30-finished-the-llk-algo
+title_en: finished-the-llk-algo
 title: 连连看得算法完成喽
 wordpress_id: 149
 tags:

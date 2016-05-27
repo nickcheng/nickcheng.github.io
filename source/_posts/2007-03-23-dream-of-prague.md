@@ -1,7 +1,7 @@
 ---
 date: 2007-03-23 21:39:11
 type: post
-title_en: 2007-03-23-dream-of-prague
+title_en: dream-of-prague
 title: 布拉格之梦
 wordpress_id: 349
 tags:

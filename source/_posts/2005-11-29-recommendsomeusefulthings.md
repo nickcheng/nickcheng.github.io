@@ -1,7 +1,7 @@
 ---
 date: 2005-11-29 16:27:14
 type: post
-title_en: 2005-11-29-recommendsomeusefulthings
+title_en: recommendsomeusefulthings
 title: 感觉比较有用的东西，推荐
 wordpress_id: 185
 tags:

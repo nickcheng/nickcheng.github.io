@@ -1,7 +1,7 @@
 ---
 date: 2004-07-30 23:11:00
 type: post
-title_en: 2004-07-30-havent-update-blog-for-a-long-time
+title_en: havent-update-blog-for-a-long-time
 title: 好久没有更新Blog了
 wordpress_id: 39
 tags:

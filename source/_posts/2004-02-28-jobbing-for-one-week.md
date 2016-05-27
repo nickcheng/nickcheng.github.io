@@ -1,7 +1,7 @@
 ---
 date: 2004-02-28 22:57:00
 type: post
-title_en: 2004-02-28-jobbing-for-one-week
+title_en: jobbing-for-one-week
 title: 工作一个星期了~~~~~~
 wordpress_id: 77
 tags:

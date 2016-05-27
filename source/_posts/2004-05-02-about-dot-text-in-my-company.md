@@ -1,7 +1,7 @@
 ---
 date: 2004-05-02 22:37:00
 type: post
-title_en: 2004-05-02-about-dot-text-in-my-company
+title_en: about-dot-text-in-my-company
 title: 关于.TEXT的东西
 wordpress_id: 83
 tags:

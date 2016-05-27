@@ -1,7 +1,7 @@
 ---
 date: 2005-06-19 15:00:00
 type: post
-title_en: 2005-06-19-memory-of-cyanbird-3-by-nickcheng
+title_en: memory-of-cyanbird-3-by-nickcheng
 title: Nickcheng对青鸟的回忆系列之三
 wordpress_id: 117
 tags:

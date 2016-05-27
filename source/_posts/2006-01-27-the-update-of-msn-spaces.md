@@ -1,7 +1,7 @@
 ---
 date: 2006-01-27 11:04:29
 type: post
-title_en: 2006-01-27-the-update-of-msn-spaces
+title_en: the-update-of-msn-spaces
 title: 突然发现MSN Spaces升级了
 wordpress_id: 203
 tags:

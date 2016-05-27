@@ -1,7 +1,7 @@
 ---
 date: 2006-11-17 17:36:15
 type: post
-title_en: 2006-11-17-solved-char-problem-of-subversion
+title_en: solved-char-problem-of-subversion
 title: Subversion 乱码问题解决
 wordpress_id: 308
 tags:

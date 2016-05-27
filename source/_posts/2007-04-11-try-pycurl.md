@@ -1,7 +1,7 @@
 ---
 date: 2007-04-11 00:18:29
 type: post
-title_en: 2007-04-11-try-pycurl
+title_en: try-pycurl
 title: 初试Pycurl
 wordpress_id: 354
 tags:

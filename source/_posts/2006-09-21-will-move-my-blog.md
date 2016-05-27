@@ -1,7 +1,7 @@
 ---
 date: 2006-09-21 10:11:01
 type: post
-title_en: 2006-09-21-will-move-my-blog
+title_en: will-move-my-blog
 title: 将搬家提上日程!
 wordpress_id: 292
 tags:

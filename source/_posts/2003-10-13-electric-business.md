@@ -1,7 +1,7 @@
 ---
 date: 2003-10-13 00:14:00
 type: post
-title_en: 2003-10-13-electric-business
+title_en: electric-business
 title: 电子商务
 wordpress_id: 388
 tags:

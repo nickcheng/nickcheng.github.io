@@ -1,7 +1,7 @@
 ---
 date: 2005-10-08 17:38:00
 type: post
-title_en: 2005-10-08-stat-of-visiting-my-blog-through-google-and-baidu
+title_en: stat-of-visiting-my-blog-through-google-and-baidu
 title: 通过两大搜索引擎访问我的Blog的情况
 wordpress_id: 151
 tags:

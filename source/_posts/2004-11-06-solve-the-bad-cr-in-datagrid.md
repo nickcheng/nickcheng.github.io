@@ -1,7 +1,7 @@
 ---
 date: 2004-11-06 04:55:00
 type: post
-title_en: 2004-11-06-solve-the-bad-cr-in-datagrid
+title_en: solve-the-bad-cr-in-datagrid
 title: DataGrid控件中内容不换行的处理
 wordpress_id: 90
 tags:

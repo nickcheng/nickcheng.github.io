@@ -1,7 +1,7 @@
 ---
 date: 2010-03-09 08:43:43
 type: post
-title_en: 2010-03-09-the-damn-spam-comment
+title_en: the-damn-spam-comment
 title: 垃圾评论实在是嚣张
 wordpress_id: 530
 tags:

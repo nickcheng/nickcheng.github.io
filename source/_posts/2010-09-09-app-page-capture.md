@@ -1,7 +1,7 @@
 ---
 date: 2010-09-09 09:00:58
 type: post
-title_en: 2010-09-09-app-page-capture
+title_en: app-page-capture
 title: Page Capture - 浏览器截图大师
 wordpress_id: 576
 tags:

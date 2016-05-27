@@ -1,7 +1,7 @@
 ---
 date: 2004-11-22 19:47:00
 type: post
-title_en: 2004-11-22-php-faq-in-smth
+title_en: php-faq-in-smth
 title: smth中关于PHP的faq
 wordpress_id: 96
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2005-12-05 12:43:08
 type: post
-title_en: 2005-12-05-concert-of-zhengjun
+title_en: concert-of-zhengjun
 title: 老郑的演唱会
 wordpress_id: 186
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2004-02-10 20:44:00
 type: post
-title_en: 2004-02-10-i-am-in-beijing-now-finding-job
+title_en: i-am-in-beijing-now-finding-job
 title: 到北京了！
 wordpress_id: 72
 tags:

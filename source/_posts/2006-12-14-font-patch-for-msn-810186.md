@@ -1,7 +1,7 @@
 ---
 date: 2006-12-14 10:18:17
 type: post
-title_en: 2006-12-14-font-patch-for-msn-810186
+title_en: font-patch-for-msn-810186
 title: MSN 8.1.0186 英文版字体修正补丁
 wordpress_id: 319
 tags:

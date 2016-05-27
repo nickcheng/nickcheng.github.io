@@ -1,7 +1,7 @@
 ---
 date: 2007-08-09 09:27:57
 type: post
-title_en: 2007-08-09-our-dv-playground-hah
+title_en: our-dv-playground-hah
 title: 宣传一下我们的片场
 wordpress_id: 381
 tags:

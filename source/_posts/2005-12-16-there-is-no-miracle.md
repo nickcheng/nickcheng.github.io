@@ -1,7 +1,7 @@
 ---
 date: 2005-12-16 10:25:53
 type: post
-title_en: 2005-12-16-there-is-no-miracle
+title_en: there-is-no-miracle
 title: 奇迹没有出现:)
 wordpress_id: 193
 tags:

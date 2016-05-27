@@ -1,7 +1,7 @@
 ---
 date: 2004-12-11 14:37:00
 type: post
-title_en: 2004-12-11-the-solution-of-can-not-display-flash-in-webpage
+title_en: the-solution-of-can-not-display-flash-in-webpage
 title: 在网页内无法显示Flash的问题的解决方法
 wordpress_id: 101
 tags:

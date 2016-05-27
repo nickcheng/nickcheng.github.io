@@ -1,7 +1,7 @@
 ---
 date: 2003-10-12 21:37:00
 type: post
-title_en: 2003-10-12-the-senior-programmer-exam-is-over
+title_en: the-senior-programmer-exam-is-over
 title: 高程终于考完了~~~
 wordpress_id: 387
 tags:

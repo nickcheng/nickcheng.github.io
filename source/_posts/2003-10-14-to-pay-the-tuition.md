@@ -1,7 +1,7 @@
 ---
 date: 2003-10-14 22:47:00
 type: post
-title_en: 2003-10-14-to-pay-the-tuition
+title_en: to-pay-the-tuition
 title: 交学费
 wordpress_id: 10
 tags:

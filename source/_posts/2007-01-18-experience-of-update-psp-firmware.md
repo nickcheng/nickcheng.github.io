@@ -1,7 +1,7 @@
 ---
 date: 2007-01-18 13:15:58
 type: post
-title_en: 2007-01-18-experience-of-update-psp-firmware
+title_en: experience-of-update-psp-firmware
 title: PSP刷机经历(2.8->2.7->1.5->3.02)
 wordpress_id: 325
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-12-16 00:10:00
 type: post
-title_en: 2003-12-16-try-to-vote-to-me
+title_en: try-to-vote-to-me
 title: 呵呵,俺也试试来拉选票
 wordpress_id: 52
 tags:

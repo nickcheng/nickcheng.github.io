@@ -1,7 +1,7 @@
 ---
 date: 2005-10-11 12:52:12
 type: post
-title_en: 2005-10-11-some-problems-in-using-ftp-component-of-xceed
+title_en: some-problems-in-using-ftp-component-of-xceed
 title: 在使用Xceed的FTP组件时遇到的问题
 wordpress_id: 51
 tags:

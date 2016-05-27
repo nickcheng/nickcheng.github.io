@@ -1,7 +1,7 @@
 ---
 date: 2004-01-12 18:05:00
 type: post
-title_en: 2004-01-12-get-forgather-done
+title_en: get-forgather-done
 title: 今天搞定聚会的事情了~~~
 wordpress_id: 70
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2007-02-01 07:40:48
 type: post
-title_en: 2007-02-01-begin-the-mp3-of-band-plan
+title_en: begin-the-mp3-of-band-plan
 title: MP3补全计划开始
 wordpress_id: 333
 tags:

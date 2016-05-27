@@ -1,7 +1,7 @@
 ---
 date: 2006-03-19 01:47:39
 type: post
-title_en: 2006-03-19-the-fucking-trojen-and-the-spam-software
+title_en: the-fucking-trojen-and-the-spam-software
 title: 这世道,垃圾和木马都让人恶心
 wordpress_id: 241
 tags:

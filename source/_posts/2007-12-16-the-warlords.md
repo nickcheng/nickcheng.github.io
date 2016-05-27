@@ -1,7 +1,7 @@
 ---
 date: 2007-12-16 12:26:56
 type: post
-title_en: 2007-12-16-the-warlords
+title_en: the-warlords
 title: 投名状(不是头名状元)
 wordpress_id: 406
 tags:

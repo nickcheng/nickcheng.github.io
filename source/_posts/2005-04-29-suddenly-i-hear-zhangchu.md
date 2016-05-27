@@ -1,7 +1,7 @@
 ---
 date: 2005-04-29 17:31:00
 type: post
-title_en: 2005-04-29-suddenly-i-hear-zhangchu
+title_en: suddenly-i-hear-zhangchu
 title: 突然的又听了张楚......
 wordpress_id: 114
 tags:

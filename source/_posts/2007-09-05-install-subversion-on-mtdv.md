@@ -1,7 +1,7 @@
 ---
 date: 2007-09-05 16:59:00
 type: post
-title_en: 2007-09-05-install-subversion-on-mtdv
+title_en: install-subversion-on-mtdv
 title: 在MT(dv)上安装Subversion
 wordpress_id: 395
 tags:

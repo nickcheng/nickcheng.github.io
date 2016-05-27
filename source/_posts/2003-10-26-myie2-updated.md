@@ -1,7 +1,7 @@
 ---
 date: 2003-10-26 00:42:00
 type: post
-title_en: 2003-10-26-myie2-updated
+title_en: myie2-updated
 title: MyIE2又更新了~~~~~~
 wordpress_id: 22
 tags:

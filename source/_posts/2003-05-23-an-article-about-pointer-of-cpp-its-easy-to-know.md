@@ -1,7 +1,7 @@
 ---
 date: 2003-05-23 11:21:42
 type: post
-title_en: 2003-05-23-an-article-about-pointer-of-cpp-its-easy-to-know
+title_en: an-article-about-pointer-of-cpp-its-easy-to-know
 title: 一篇C++讲指针的文章,很好懂! 
 wordpress_id: 601
 tags:

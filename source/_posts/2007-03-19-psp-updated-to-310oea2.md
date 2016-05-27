@@ -1,7 +1,7 @@
 ---
 date: 2007-03-19 20:32:57
 type: post
-title_en: 2007-03-19-psp-updated-to-310oea2
+title_en: psp-updated-to-310oea2
 title: PSP升级实况文字转播-3.10 OE-A(A2)
 wordpress_id: 347
 tags:

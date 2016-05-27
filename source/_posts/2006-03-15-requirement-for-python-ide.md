@@ -1,7 +1,7 @@
 ---
 date: 2006-03-15 10:10:22
 type: post
-title_en: 2006-03-15-requirement-for-python-ide
+title_en: requirement-for-python-ide
 title: 偶对Python IDE的要求
 wordpress_id: 238
 tags:

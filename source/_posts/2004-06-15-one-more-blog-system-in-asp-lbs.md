@@ -1,7 +1,7 @@
 ---
 date: 2004-06-15 00:32:00
 type: post
-title_en: 2004-06-15-one-more-blog-system-in-asp-lbs
+title_en: one-more-blog-system-in-asp-lbs
 title: ASP下的BLOG系统又有了一个新成员！
 wordpress_id: 86
 tags:

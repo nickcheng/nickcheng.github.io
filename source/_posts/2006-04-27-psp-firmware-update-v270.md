@@ -1,7 +1,7 @@
 ---
 date: 2006-04-27 14:32:10
 type: post
-title_en: 2006-04-27-psp-firmware-update-v270
+title_en: psp-firmware-update-v270
 title: PSP系统升级到2.7了!
 wordpress_id: 259
 tags:

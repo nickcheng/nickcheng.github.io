@@ -1,7 +1,7 @@
 ---
 date: 2003-12-25 01:38:00
 type: post
-title_en: 2003-12-25-Xmas-eve-drawing-change
+title_en: Xmas-eve-drawing-change
 title: 平安夜~~画画~~改动~~~
 wordpress_id: 60
 tags:

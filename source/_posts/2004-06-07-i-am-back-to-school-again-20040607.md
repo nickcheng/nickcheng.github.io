@@ -1,7 +1,7 @@
 ---
 date: 2004-06-07 00:13:00
 type: post
-title_en: 2004-06-07-i-am-back-to-school-again-20040607
+title_en: i-am-back-to-school-again-20040607
 title: 我终于又回到学校了!
 wordpress_id: 85
 tags:

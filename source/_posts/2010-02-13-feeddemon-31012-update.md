@@ -1,7 +1,7 @@
 ---
 date: 2010-02-13 13:45:26
 type: post
-title_en: 2010-02-13-feeddemon-31012-update
+title_en: feeddemon-31012-update
 title: FeedDemon 3.1.0.12 更新
 wordpress_id: 6
 tags:

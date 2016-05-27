@@ -1,7 +1,7 @@
 ---
 date: 2004-01-04 00:47:00
 type: post
-title_en: 2004-01-04-about-syntax-with-from-subsentence
+title_en: about-syntax-with-from-subsentence
 title: 关于“FROM 子句语法错误”
 wordpress_id: 66
 tags:

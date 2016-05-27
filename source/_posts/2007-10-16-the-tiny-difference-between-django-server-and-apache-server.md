@@ -1,7 +1,7 @@
 ---
 date: 2007-10-16 17:06:00
 type: post
-title_en: 2007-10-16-the-tiny-difference-between-django-server-and-apache-server
+title_en: the-tiny-difference-between-django-server-and-apache-server
 title: Django server和Apache下运行Django的细微差别
 wordpress_id: 401
 tags:

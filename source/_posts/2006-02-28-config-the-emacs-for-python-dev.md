@@ -1,7 +1,7 @@
 ---
 date: 2006-02-28 10:45:51
 type: post
-title_en: 2006-02-28-config-the-emacs-for-python-dev
+title_en: config-the-emacs-for-python-dev
 title: 简单配置了一下Emacs, 用于Python开发
 wordpress_id: 222
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2003-10-16 00:30:00
 type: post
-title_en: 2003-10-16-it-is-night
+title_en: it-is-night
 title: 晚了~~~
 wordpress_id: 9
 tags:

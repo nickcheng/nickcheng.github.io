@@ -1,7 +1,7 @@
 ---
 date: 2007-12-25 09:22:52
 type: post
-title_en: 2007-12-25-wiimote-hackers-cool-stuff
+title_en: wiimote-hackers-cool-stuff
 title: Wiimote 改装牛人
 wordpress_id: 425
 tags:

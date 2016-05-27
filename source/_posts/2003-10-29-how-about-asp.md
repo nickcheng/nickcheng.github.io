@@ -1,7 +1,7 @@
 ---
 date: 2003-10-29 14:56:00
 type: post
-title_en: 2003-10-29-how-about-asp
+title_en: how-about-asp
 title: ASP？？
 wordpress_id: 25
 tags:

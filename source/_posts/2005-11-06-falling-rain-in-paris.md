@@ -1,7 +1,7 @@
 ---
 date: 2005-11-06 22:22:47
 type: post
-title_en: 2005-11-06-falling-rain-in-paris
+title_en: falling-rain-in-paris
 title: 巴黎下了一场雨
 wordpress_id: 172
 tags:

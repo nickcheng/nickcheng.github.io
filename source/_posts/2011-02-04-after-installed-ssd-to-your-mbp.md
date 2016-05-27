@@ -1,7 +1,7 @@
 ---
 date: 2011-02-04 22:36:37
 type: post
-title_en: 2011-02-04-after-installed-ssd-to-your-mbp
+title_en: after-installed-ssd-to-your-mbp
 title: MBP 装了 SSD 以后要做的事情
 wordpress_id: 583
 tags:

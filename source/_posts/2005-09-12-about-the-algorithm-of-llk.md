@@ -1,7 +1,7 @@
 ---
 date: 2005-09-12 23:19:00
 type: post
-title_en: 2005-09-12-about-the-algorithm-of-llk
+title_en: about-the-algorithm-of-llk
 title: 关于"连连看"得算法
 wordpress_id: 137
 tags:

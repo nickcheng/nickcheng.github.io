@@ -1,7 +1,7 @@
 ---
 date: 2005-09-19 13:48:00
 type: post
-title_en: 2005-09-19-midautumnday-waitingalone-llk-mail
+title_en: midautumnday-waitingalone-llk-mail
 title: 中秋，独自等待，连连看，邮件
 wordpress_id: 139
 tags:

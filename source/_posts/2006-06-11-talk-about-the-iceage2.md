@@ -1,7 +1,7 @@
 ---
 date: 2006-06-11 22:59:41
 type: post
-title_en: 2006-06-11-talk-about-the-iceage2
+title_en: talk-about-the-iceage2
 title: 看完冰河纪2了
 wordpress_id: 268
 tags:

@@ -1,7 +1,7 @@
 ---
 date: 2010-02-19 13:41:40
 type: post
-title_en: 2010-02-19-some-naocanlity-words
+title_en: some-naocanlity-words
 title: 给大家介绍几个脑残合体字
 wordpress_id: 516
 tags:

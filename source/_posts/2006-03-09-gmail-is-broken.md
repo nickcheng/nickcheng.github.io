@@ -1,7 +1,7 @@
 ---
 date: 2006-03-09 08:55:10
 type: post
-title_en: 2006-03-09-gmail-is-broken
+title_en: gmail-is-broken
 title: Gmail出问题了
 wordpress_id: 235
 tags:

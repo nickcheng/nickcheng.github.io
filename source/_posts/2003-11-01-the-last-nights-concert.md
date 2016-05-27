@@ -1,7 +1,7 @@
 ---
 date: 2003-11-01 23:31:00
 type: post
-title_en: 2003-11-01-the-last-nights-concert
+title_en: the-last-nights-concert
 title: 演出
 wordpress_id: 27
 tags:

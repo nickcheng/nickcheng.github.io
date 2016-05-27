@@ -1,7 +1,7 @@
 ---
 date: 2006-02-09 13:07:24
 type: post
-title_en: 2006-02-09-try-firefox-again
+title_en: try-firefox-again
 title: 再次用回FireFox
 wordpress_id: 208
 tags:

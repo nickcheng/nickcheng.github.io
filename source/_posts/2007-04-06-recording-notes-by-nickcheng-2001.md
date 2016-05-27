@@ -1,7 +1,7 @@
 ---
 date: 2007-04-06 22:22:20
 type: post
-title_en: 2007-04-06-recording-notes-by-nickcheng-2001
+title_en: recording-notes-by-nickcheng-2001
 title: Nickcheng的录音手记
 wordpress_id: 353
 tags:

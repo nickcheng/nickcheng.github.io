@@ -1,7 +1,7 @@
 ---
 date: 2007-04-11 21:09:05
 type: post
-title_en: 2007-04-11-update-of-my-bluehost-account
+title_en: update-of-my-bluehost-account
 title: Bluehost升级帐号
 wordpress_id: 357
 tags:

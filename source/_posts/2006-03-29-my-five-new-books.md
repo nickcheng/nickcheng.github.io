@@ -1,7 +1,7 @@
 ---
 date: 2006-03-29 12:46:54
 type: post
-title_en: 2006-03-29-my-five-new-books
+title_en: my-five-new-books
 title: 今天入手的5本书
 wordpress_id: 249
 tags:

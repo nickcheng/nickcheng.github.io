@@ -1,7 +1,7 @@
 ---
 date: 2005-12-29 17:33:27
 type: post
-title_en: 2005-12-29-upgrade-now
+title_en: upgrade-now
 title: 要升级啦!
 wordpress_id: 194
 tags:
