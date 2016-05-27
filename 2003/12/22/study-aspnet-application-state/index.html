@@ -273,6 +273,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2003/12/22/study-aspnet-application-state/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2003/12/22/study-aspnet-application-state/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -423,6 +430,13 @@ void Application_OnStart()
 
           
   <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     
   </div>
 
@@ -641,6 +655,27 @@ void Application_OnStart()
 
 
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'nickcheng';
+      var disqus_identifier = '2003/12/22/study-aspnet-application-state/';
+      var disqus_title = '学习ASP.NET-初探Application状态';
+      var disqus_url = 'http://nickcheng.com/2003/12/22/study-aspnet-application-state/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
   
 
 
