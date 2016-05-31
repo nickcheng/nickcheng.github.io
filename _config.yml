@@ -75,3 +75,8 @@ deploy:
 # Analytics
 google_analytics: UA-53032-1
 
+# Algolia search
+# algolia:
+#   en:
+#     apiKey: 'af74fc98fd576a5ce53080f1d31e7751'
+#     indexName: 'indexName'
