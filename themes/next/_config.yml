@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "nickcheng, ios, development, life"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2003
 
 
 
@@ -200,7 +200,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night eighties
+highlight_theme: night
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -234,7 +234,7 @@ mathjax:
 
 
 # Swiftype Search API Key
-#swiftype_key:
+swiftype_key: MyzM8vmK9uaRxPeki6P4
 
 # Baidu Analytics ID
 #baidu_analytics:
