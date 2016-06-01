@@ -8,9 +8,9 @@ tags:
 - life
 ---
 
-[![ipod.jpg](http://nickcheng.com/wp-content/112902284490_tn.jpg)](http://nickcheng.com/wp-content/112902284490.jpg)
+[![Jerk it Out](http://streamd.hitparade.ch/cdimages/caesars-jerk_it_out_s.jpg)](http://streamd.hitparade.ch/cdimages/caesars-jerk_it_out_s.jpg)
 
-MM和MM's papa 都觉得这个歌好听，那我当然要找到了！顺便Share给大家:)
+MM 和 MM's papa 都觉得这个歌好听，那我当然要找到了！顺便 Share 给大家:)
 
 Enjoy!
 

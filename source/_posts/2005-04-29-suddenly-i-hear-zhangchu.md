@@ -8,7 +8,7 @@ tags:
 - life
 ---
 
-[![05_173631_zhch.jpg](http://nickcheng.com/wp-content/112902298793_tn.jpg)](http://nickcheng.com/wp-content/112902298793.jpg)  
+[![造飞机的工厂](http://www.auvplayer.com/ap_img/album/zhangchu_628/s300_559247e2857a86a85f9bc4f14e25324e.jpg)](http://www.auvplayer.com/ap_img/album/zhangchu_628/s300_559247e2857a86a85f9bc4f14e25324e.jpg)  
 
 真的是挺突然的!  
 
