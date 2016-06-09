@@ -27,15 +27,15 @@ tags:
 
 Sublime 的丰富的插件让这一切得以可行, 最终我的配置大概如下:
 
-__[修改过颜色配置的 Markdown Light](https://github.com/nvtkaszpir/MarkdownLight)__
+[修改过颜色配置的 Markdown Light](https://github.com/nvtkaszpir/MarkdownLight)
 
 这家默认的颜色都是亮色调的, 所以我用了这个模仿 Dracula 主题配色的 Fork
 
-__[Dracula Theme](https://github.com/zenorocha/dracula-theme)__
+[Dracula Theme](https://github.com/zenorocha/dracula-theme)
 
 用到了这个主题的语法配色, 主要是为了让打开其他类型的文件能有统一的体验
 
-__[cobalt2](https://github.com/wesbos/cobalt2)__
+[cobalt2](https://github.com/wesbos/cobalt2)
 
 这个是使用的编辑器主题. 主要目的是边栏美化
 

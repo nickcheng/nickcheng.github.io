@@ -17,13 +17,13 @@ tags:
 
 所以我就花时间找了一些方法来让不同版本 (不是版本号, 是 Debug, Staging, AppStore 这样的版本) 的同一个应用有各自不同的 Icon 和名字. 这样就避免了上面碰到的问题. 在这里记录一下, 一个是自己备忘, 另外还可以分享给大家:)
 
-# 准备工作 #
+# 准备工作
 
-首先, 不同版本的应用要有不同的 Bundle ID. 这里推荐 [Simon Wolf](http://swwritings.com) 的命名方式. 如果你的应用原来的 Bundle ID 是 ```com.mycompany.myapp```, 那么这几个版本你可以这么命名:
+首先, 不同版本的应用要有不同的 Bundle ID. 这里推荐 [Simon Wolf](http://swwritings.com) 的命名方式. 如果你的应用原来的 Bundle ID 是 `com.mycompany.myapp`, 那么这几个版本你可以这么命名:
 
-* ```com.mycompany.myapp.debug``` Debug (Alpha) 版本
-* ```com.mycompany.myapp.adhoc``` Staging (Ad Hoc, Beta) 版本
-* ```com.mycompany.myapp``` App Store (Production) 版本
+* `com.mycompany.myapp.debug` Debug (Alpha) 版本
+* `com.mycompany.myapp.adhoc` Staging (Ad Hoc, Beta) 版本
+* `com.mycompany.myapp` App Store (Production) 版本
 
 然后对应的 Provisionng Profile 也都要准备好. 不用我说了吧.
 
@@ -33,11 +33,11 @@ tags:
 
 原始 PSD 来自 [appicontemplate.com](http://appicontemplate.com). 使用方法也在原网站.
 
-# 设置 #
+# 设置
 
 接下来就是一步一步的设置了.
 
-## Build Configurations ##
+## Build Configurations
 
 首先是添加 Configurations, 位置见下图所示. 项目之前已经有了 Debug 和 Release 两个配置, 可以分别对应咱们的 Debug 版本和 App Store 版本. 所以咱们只添加一个 Staging 版本就可以了. 我为了能让添加的版本按字母序排列在 Debug 和 Release 中间, 用的名字是 "ForBeta".
 
@@ -45,7 +45,7 @@ tags:
 
 这步完成后, 你会在 Build Settings 里看到所有的设置都有了三个子选项, 分别对应三个不同的 Configuration.
 
-## Schemes ##
+## Schemes
 
 然后, 我们在项目里需要有两个 Scheme. 这两个 Scheme 在 Debug 时候的行为是一样的, 但在 Archive 的时候, 一个用于 Staging 版本发布内部测试, 一个用于 App Store 发布. 
 
@@ -63,7 +63,7 @@ Scheme 的设置入口在菜单上: "Product" -> "Scheme" -> "Manage Schemes". �
 
 有了这里的设置, 咱们就可以通过切换 Scheme 来 Archive 出分别用于 Ad Hoc 发布和 App Store 发布的 App 了.
 
-## App Icon ##
+## App Icon
 
 接着就是 Icon. 现在大家应该都用 Xcode 5 了吧! 既然用了, 那就多用用新功能, Icon 设置这块我使用了 Media Assets. 如果你的老项目还没有启用, 那就麻烦你在对应 Target 的 General 下启用一下.
 
@@ -77,7 +77,7 @@ Scheme 的设置入口在菜单上: "Product" -> "Scheme" -> "Manage Schemes". �
 
 这样设置好, 不同版本的应用就拥有了各自不同的图标了.
 
-## Bundle ID ##
+## Bundle ID
 
 再下来就是按照我们前面定义的 Bundle ID 和各个版本的对应关系来进行设置了.
 
@@ -91,7 +91,7 @@ Scheme 的设置入口在菜单上: "Product" -> "Scheme" -> "Manage Schemes". �
 
 这样, 项目在使用不同的配置文件编译的时候就能分别利用不同的 Bundle ID 了.
 
-## App Name ##
+## App Name
 
 设置了图标, 如果觉得有必要把应用名称也顺便区分一下的话, 也是可以的.
 
@@ -105,7 +105,7 @@ Scheme 的设置入口在菜单上: "Product" -> "Scheme" -> "Manage Schemes". �
 
 经过上面的一系列设置, 我现在在 Xcode 里只需要在左上角简单切换一下 Scheme 就可以很方便的编译出各个我需要的应用版本. 妈妈再也不用担心我发布应用了!
 
-# 参考 #
+# 参考
 
 * [How to Have Two Versions of the Same App on Your Device](http://nilsou.com/blog/2013/07/29/how-to-have-two-versions-of-the-same-app-on-your-device/)
 * [Unique icons for debug, beta, and App Store builds in Xcode 5](http://blog.consumedbycode.com/unique-icons-for-debug-beta-and-app-store-builds-in-xcode-5)
