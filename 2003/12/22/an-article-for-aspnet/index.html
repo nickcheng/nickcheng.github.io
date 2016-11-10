@@ -114,16 +114,20 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: 'Author'
     }
   };
 </script>
 
+
+
+
+
   <title> 今天又完成了一篇小文章 | Nickcheng.LOG </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
 
   
 
@@ -153,7 +157,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -215,7 +219,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="st-search-show-outputs">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -268,7 +272,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -338,6 +342,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
     <div>
       
         
+
       
     </div>
 
@@ -457,7 +462,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="nickcheng" />
@@ -553,7 +558,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -647,7 +652,7 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
     <script type="text/javascript">
       var disqus_shortname = 'nickcheng';
       var disqus_identifier = '2003/12/22/an-article-for-aspnet/';
-      var disqus_title = '今天又完成了一篇小文章';
+      var disqus_title = "今天又完成了一篇小文章";
       var disqus_url = 'http://nickcheng.com/2003/12/22/an-article-for-aspnet/';
 
       function run_disqus_script(disqus_script){
@@ -660,6 +665,11 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
 
       run_disqus_script('count.js');
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
     </script>
@@ -667,13 +677,18 @@ ps.自己觉得写得还不错的文章就顺便发到CSDN的个人文档里了�
 
 
 
-  
+
   
   
 
   
 
   
+
+  
+
+  
+
 
 </body>
 </html>

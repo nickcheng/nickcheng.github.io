@@ -117,16 +117,20 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: 'Author'
     }
   };
 </script>
 
+
+
+
+
   <title> 札记20050716 | Nickcheng.LOG </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
 
   
 
@@ -156,7 +160,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -218,7 +222,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="st-search-show-outputs">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -271,7 +275,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -342,6 +346,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
     <div>
       
         
+
       
     </div>
 
@@ -461,7 +466,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="nickcheng" />
@@ -557,7 +562,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -651,7 +656,7 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
     <script type="text/javascript">
       var disqus_shortname = 'nickcheng';
       var disqus_identifier = '2005/07/17/memo-20050716/';
-      var disqus_title = '札记20050716';
+      var disqus_title = "札记20050716";
       var disqus_url = 'http://nickcheng.com/2005/07/17/memo-20050716/';
 
       function run_disqus_script(disqus_script){
@@ -664,6 +669,11 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
 
       run_disqus_script('count.js');
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
     </script>
@@ -671,13 +681,18 @@ SOUNDDOGS, FINDSOUNDS. 两个找声音的网站, 作音效和Loop比较有用!
 
 
 
-  
+
   
   
 
   
 
   
+
+  
+
+  
+
 
 </body>
 </html>

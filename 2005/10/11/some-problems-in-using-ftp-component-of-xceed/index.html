@@ -114,16 +114,20 @@ at Xceed.Ftp.FtpClient.CheckState(FtpClie">
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: 'Author'
     }
   };
 </script>
 
+
+
+
+
   <title> 在使用Xceed的FTP组件时遇到的问题 | Nickcheng.LOG </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
 
   
 
@@ -153,7 +157,7 @@ at Xceed.Ftp.FtpClient.CheckState(FtpClie">
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -215,7 +219,7 @@ at Xceed.Ftp.FtpClient.CheckState(FtpClie">
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="st-search-show-outputs">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -268,7 +272,7 @@ at Xceed.Ftp.FtpClient.CheckState(FtpClie">
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -347,6 +351,7 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
     <div>
       
         
+
       
     </div>
 
@@ -466,7 +471,7 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="nickcheng" />
@@ -562,7 +567,7 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -656,7 +661,7 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
     <script type="text/javascript">
       var disqus_shortname = 'nickcheng';
       var disqus_identifier = '2005/10/11/some-problems-in-using-ftp-component-of-xceed/';
-      var disqus_title = '在使用Xceed的FTP组件时遇到的问题';
+      var disqus_title = "在使用Xceed的FTP组件时遇到的问题";
       var disqus_url = 'http://nickcheng.com/2005/10/11/some-problems-in-using-ftp-component-of-xceed/';
 
       function run_disqus_script(disqus_script){
@@ -669,6 +674,11 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
       run_disqus_script('count.js');
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
     </script>
@@ -676,13 +686,18 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
 
 
-  
+
   
   
 
   
 
   
+
+  
+
+  
+
 
 </body>
 </html>

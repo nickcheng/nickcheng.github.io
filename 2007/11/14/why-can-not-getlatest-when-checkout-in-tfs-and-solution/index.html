@@ -118,16 +118,20 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: 'Author'
     }
   };
 </script>
 
+
+
+
+
   <title> 关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文) | Nickcheng.LOG </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
 
   
 
@@ -157,7 +161,7 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -219,7 +223,7 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="st-search-show-outputs">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -272,7 +276,7 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -367,6 +371,7 @@ End Sub
     <div>
       
         
+
       
     </div>
 
@@ -490,7 +495,7 @@ End Sub
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="nickcheng" />
@@ -586,7 +591,7 @@ End Sub
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -680,7 +685,7 @@ End Sub
     <script type="text/javascript">
       var disqus_shortname = 'nickcheng';
       var disqus_identifier = '2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/';
-      var disqus_title = '关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)';
+      var disqus_title = "关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)";
       var disqus_url = 'http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/';
 
       function run_disqus_script(disqus_script){
@@ -693,6 +698,11 @@ End Sub
 
       run_disqus_script('count.js');
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
     </script>
@@ -700,13 +710,18 @@ End Sub
 
 
 
-  
+
   
   
 
   
 
   
+
+  
+
+  
+
 
 </body>
 </html>
