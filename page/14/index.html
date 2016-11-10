@@ -272,6 +272,247 @@
             
               
                 
+                <a class="post-title-link" href="/2007/02/02/public-the-ip-public/" itemprop="url">
+                  发布内网机器的公网IP
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2007-02-02T00:46:09+09:00" content="2007-02-02">
+              2007-02-02
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2007/02/02/public-the-ip-public/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2007/02/02/public-the-ip-public/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>家里的三台机器是用路由器组的局域网. 最近我需要把自己的机器配置成公网可以访问的服务器, 所以就在路由器的设置里把机器的IP放到了DMZ里. 这样, 我的机器就直接暴露在公网上了, 也就是说我本地配置的服务器通过公网IP可以直接访问了:)</p>
+<p>不过因为是ADSL拨号上网, 所以如果路由器重新拨号, 那么公网IP就会发生改变, 这样就很不爽了! 所以为了解决公网IP改变的问题, 我写了一个Python小程序:)</p>
+<pre><code>#coding=utf-8
+import urllib
+import re
+import libgmail
+import time
+
+# Get the page content
+url = &apos;http://username:password@192.168.0.1/status.htm&apos;
+data = urllib.urlopen(url)
+pageContent = data.read()
+
+# Filter &amp; Get the IP
+begin = pageContent.find(&apos;IP 地址&apos;, 3000)+21
+end = pageContent.find(&apos;&amp;&apos;, begin)
+IP = pageContent[begin: end - 1]
+
+# Get current time
+t = time.localtime()
+datetime = &quot;-&quot;.join([str(a) for a in t[:3]]) + &apos; &apos; + &quot;:&quot;.join([str(a) for a in t[3:6]])
+
+# Generate content
+content = IP + &apos; - &apos; + datetime
+
+# Send mail
+ga = libgmail.GmailAccount(&quot;gmail帐号&quot;, &quot;gmail密码&quot;)
+gcm = libgmail.GmailComposedMessage(&apos;nick.nickcheng@gmail.com&apos;, &apos;HOME IP&apos;, content)
+ga.login()
+ga.sendMessage(gcm)
+
+print &quot;Done!&quot;
+</code></pre><p>这个程序的作用就是从路由器的管理界面取得当前的公网IP, 然后发邮件告诉我IP是什么. 有了这个程序以后, 再结合Windows的计划任务, 每半小时执行一次. 这样如果我的机器的IP地址发生了改变, 那么最长半小时时间后, 我就会在邮件中收到最新的IP地址:)</p>
+<p>上面的程序用到了<a href="http://libgmail.sourceforge.net/" target="_blank" rel="external">libgmail</a>这个开源的python模块, 用他来调用Gmail的邮件功能非常的方便:) 具体可以看我的代码!</p>
+<p>下一步的计划是把自己的一个子域名绑定到这个IP上, 如果IP发生了改变, 让程序自己去更改这个绑定!</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2007/02/01/begin-the-mp3-of-band-plan/" itemprop="url">
+                  MP3补全计划开始
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2007-02-01T07:40:48+09:00" content="2007-02-01">
+              2007-02-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2007/02/01/begin-the-mp3-of-band-plan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2007/02/01/begin-the-mp3-of-band-plan/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这个计划已经想开始很久, 那就从现在开始吧!</p>
+<p>我要把我喜欢乐队和音乐人的所有专辑的MP3都收集全! 然后刻成DVD收藏!</p>
+<p>为什么不是CD? 因为正版CD不好买到, 而且听MP3也已经挺不错了! 就酱紫! 表攻击我哦!</p>
+<p>第一个收集目标就是Metallica, 哈哈! 饿心中滴神啊! 目前还不知道收集全的概念是什么, 先去verycd上搂一把, 把能弄到的都弄到, 然后再去国外的网站找更全的资料吧:)</p>
+<p>放个eMule地址, 大家一起加速啊:)</p>
+<p><a href="http://find.verycd.com/folders?cat=music&amp;kernel=1&amp;ft=&amp;sort=&amp;rev=1&amp;kw=metallica&amp;field=" target="_blank" rel="external">Metallica音乐相对全集</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2007/01/31/solution-of-msn-810178/" itemprop="url">
                   MSN 8.1 最终完美舒适版
                 </a>
@@ -1182,216 +1423,6 @@ RewriteRule ^(.*)$ django.fcgi/$1 [L]
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2006/12/25/dilbert-20061225/" itemprop="url">
-                  Dilbert 20061225
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-12-25T20:15:00+09:00" content="2006-12-25">
-              2006-12-25
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2006/12/25/dilbert-20061225/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/12/25/dilbert-20061225/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://static.zooomr.com/images/564428_599d317f3e.jpg" alt="Dilbert"></p>
-<p>链接失效</p>
-<p>这就是用PS CS3测试的杰作, 嘿嘿…小漫画</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2006/12/25/run-as-administrator-in-vista/" itemprop="url">
-                  Vista下的管理员身份运行
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-12-25T20:13:10+09:00" content="2006-12-25">
-              2006-12-25
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2006/12/25/run-as-administrator-in-vista/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/12/25/run-as-administrator-in-vista/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Vista下的身份机制有一点和Ubuntu挺像的.</p>
-<p>默认登陆的用户不是管理员(Administrator)身份, 有些系统级的操作是受限的, 比如更改系统的设置之类的, 这时会提示你不是管理员, 如果需要继续的话, 则需要提供管理员的密码才行!</p>
-<p>这样的机制还是不错的, 最起码避免了一些误操作, 而且可以限制登陆你机器的其他人. 最重要的是, 在一个受限的用户环境下, 还可以防止一些恶意的软件来更改你的系统的配置! 因为恶意程序得不到管理员的操作权限!</p>
-<p>可是一把剑都是有两面刃的! 这种形式带来的不方便的地方也有不少! 因为有的软件需要的权限范围比较大, 所以在以普通身份运行的时候就会出现莫名的问题, 想要正常的运行就需要在这个程序上点击鼠标右键, 选择”以管理员身份运行”来运行程序, 虽然麻烦点儿, 但也解决了问题! 但是如果你要是想不起来这码事, 那就郁闷了! 今天我就碰到了一个和这有关的郁闷的事情!</p>
-<p>前段时间安装了新版的PhotoShop CS 3, 今天一时兴起想来做个图, 可是一到新建文件的时候就弹出了”An Error has been detected with a required application library and the product  cannot continue. Please reinstall the application”的对话框, 我这个郁闷啊! 我可是刚装的啊!</p>
-<p>在网上搜了一圈解决方案未果, 正在郁闷着, 突然想到Vista下用管理员身份运行程序的方法,  抱着试试的心态去try了一把……哈哈, 还真被我给猜中了! 以管理员身份运行一点儿问题都没有了! 于是立刻在程序的属性中把这个程序改为”始终以管理员身份运行”, 以后就不会这么郁闷了:)</p>
-<p>所以, 如果在Vista下碰到软件执行莫名出错的情况, 别忘了以管理员身份来运行一把试试, 很多都是这个导致的!</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1437,7 +1468,7 @@ RewriteRule ^(.*)$ django.fcgi/$1 [L]
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-count">445</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>

@@ -272,6 +272,316 @@
             
               
                 
+                <a class="post-title-link" href="/2004/11/22/php-faq-in-smth/" itemprop="url">
+                  smth中关于PHP的faq
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-22T19:47:00+09:00" content="2004-11-22">
+              2004-11-22
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2004/11/22/php-faq-in-smth/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2004/11/22/php-faq-in-smth/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Q: 为什么使用Apache服务器时，浏览器中不能显示中文内容？  </p>
+<p>A: 新版的Apache(2.0.x以上)将服务器的默认语言设置成了西欧语言，因此出现这种情况。解决办法是，修改<code>httpd.conf</code>，查找<code>AddDefaultCharset</code>，将该行改为：<code>AddDefaultCharset GB2312</code>然后重新启动Apache服务器。  </p>
+<p>Tips: </p>
+<p>httpd.conf 的位置：</p>
+<p>linux下位于/etc/httpd或者/usr/local/apache2/conf，  </p>
+<p>windows下面位于安装目录的conf目录下面。  </p>
+<p>浏览器浏览过西欧语言的该页面以后，就会记住该页面的语言设置，所以有时候即使你修改了服务器设置，从浏览器中看到的默认语言还是西欧语言。这种情况只要清空浏览器的历史记录和缓存即可。  </p>
+<p>Q: 网页上提交表单之后，PHP为什么不能获取提交的内容？  </p>
+<p>A: 新版的PHP已经废弃了原来的表单内容处理方式，即不再把提交的表单的内容直接复制到一个同名变量中。解决办法有四个：  </p>
+<ol>
+<li>修改php.ini，查找 register_globals，将其值修改为 On。这样就可以像原来一样，例如，提交的表单中包括一个名为”username”的变量，那么在php中就可以直接使用$username来访问该变量。但是，除非你要使用一段旧的代码而考虑到兼容性问题，否则不建议使用该方法。  </li>
+<li>使用 $HTTP_GET_VARS、$HTTP_POST_VARS数组来访问，例如写成$HTTP_POST_VARS[“username”]的形式。不过该方法也不建议采用。  </li>
+<li>(推荐)使用 $_POST、$_GET等数组来访问，例如写成 $_POST[“username”]的形式。建议采用这种方法。  </li>
+<li>(推荐)使用 import_request_variables 函数。该函数将提交内容导入到变量中。例如 import_request<em>variables(“gp”, “rvar</em>“);第一个参数可以选择g,p,c，分别表示导入 GET,POST,COOKIE 变量；第二个参数为导入后的变量前缀。执行上面的语句后即可使用 $rvar_username 来访问提交的 username 变量。  </li>
+</ol>
+<p>Tips: 第三项中提到的预设变量有: $GLOBALS, $_SERVER, $_GET, $_POST, $_COOKIE,<br>$_FILES, $_ENV, $_REQUEST, $_SESSION等。详细信息请参考PHP手册。  </p>
+<p>Q: 为什么在Windows+Apache+PHP不能正常使用Session?  </p>
+<p>A: PHP将session保存到服务器的一个目录中。由于PHP原本是为UNIX设计的，因此该目录默认为 /tmp。因此在Windows下使用session时，需要将该目录修改为正确的目录。  </p>
+<p>修改方法是：打开php.ini文件，查找变量session.save_path，然后将它的值(默认是/tmp)修改为你的计算机上存在的目录，例如C:\WINNT\Temp。  </p>
+<p>Q: 请推荐一些好用的论坛程序以及下载方式。<br>A: ASP环境：动网论坛(dvbbs)<br>PHP环境：vbb论坛，phpBB论坛，一般都需要mysql数据库支持<br>Perl环境：LB5000论坛，不需要数据库支持<br>下载方法，请到www.google.com之类的搜索引擎上用论坛名称作为关键字来搜索。  </p>
+<p>Q: 如何粘贴附件<br>A: </p>
+<ol>
+<li>使用web方式发文可以粘贴附件，  </li>
+<li>使用带有zmodem功能的term工具，在发文输入标题时按u键并选择文件。<br>新版本的fterm等均可以，下载地址见<a href="http://www.smth.edu.cn/" target="_blank" rel="external">http://www.smth.edu.cn</a><br>Tips: 附件限3个&amp;2M以内，如果您的附件超过了该限制请分批上载。<br>附件上载之后请不要编辑文章，否则会覆盖掉文件地址（可以自行删除重发）<br>附件上传功能是为了方便版面讨论，不得上载违法违规文件，上载前注意杀毒。<br>对所上载文件发文者有义务解释清楚其用途。违者视情节删文或封禁发文权限。  </li>
+</ol>
+<p>Q: 如何下载附件<br>A:</p>
+<ol>
+<li>使用web方式浏览时可以点击附件链接下载  </li>
+<li>使用term的zmodem功能下载。具体方法请看相关term的使用说明。</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2004/11/21/some-explains-of-windows-service/" itemprop="url">
+                  Windows服务的一些解释
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2004-11-21T17:40:00+09:00" content="2004-11-21">
+              2004-11-21
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2004/11/21/some-explains-of-windows-service/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2004/11/21/some-explains-of-windows-service/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>alerter -错误警报器，垃圾  </p>
+<p>application layer gateway service -给与第三者网络共享/防火墙支持的服务，有些防火墙/网络共享软件需要。占用　１。５ｍｂ内存。  </p>
+<p>application management-用于设定，发布和删除软件服务。  </p>
+<p>automatic updates -windows自动更新，靠，滚！  </p>
+<p>background intelligent transfer service -这个服务原是用来实现http1.1服务器之间的信息传输，微软称支持windows更新时断点续传  </p>
+<p>clipbook - 用与局域网电脑来共享 粘贴/剪贴的内容。（靠，想得出！）  </p>
+<p>com+Event system　-一些 COM+　软件需要，检查你的 c:\program files\ComPlus Applications 目录，没东西可以把这个服务关闭．  </p>
+<p>COM+Event system application　－同上  </p>
+<p>COmputer browser　－　用来浏览局域网电脑的服务，但关了也不影响浏览！垃圾  </p>
+<p>cryptographic services -windows更新时用来确认windows 文件指纹的，我更新时才开启一下。  </p>
+<p>DHCP client－静态ＩＰ者需要（ｘＤＳＬ　等）小猫就不用了！！  </p>
+<p>Distributed link tracking client－用于局域网更新连接信息，比如在电脑Ａ有个文件，在Ｂ做了个连接，如果文件移动了，这个服务将会  </p>
+<p>更新信息。占用４兆内存。  </p>
+<p>Distributed Transaction coordinator－无聊的东西。  </p>
+<p>DNS Client－ＤＮＳ解析服务。。无聊～～  </p>
+<p>Error reporting service -错误报告器，把windows中错误报告给微软，无聊～～～～～  </p>
+<p>＊Event Log - 系统日志纪录服务，很有用于查找系统毛病．  </p>
+<p>Fast user switching compatibility－多用户快速切换服务．．无聊  </p>
+<p>help and support -帮助，无聊，还是无聊帮助．．哈哈  </p>
+<p>Human interface device access－支持＂弱智“电脑配件的。。比如键盘上调音量的按钮等等。。  </p>
+<p>IMAPI CD-burning COM service　－ｘｐ刻牒服务，用软件就不用了，占用１。６兆内存。  </p>
+<p>Indexing service -恐怖的xp减速的东东！！！关关关！！！  </p>
+<p>Internet Connection Firewall(ICF)………-xp防火墙。。不用就关。  </p>
+<p>IPSEC Services－大众用户连边都沾不上。  </p>
+<p>Logical Disk manager　－磁盘管理服务。。需要时它会通知你，所以一般关。  </p>
+<p>Logical Disk manager administrative service－同上。  </p>
+<p>messenger -不是msn，不想被骚扰的话就关。注：妖刺就是利用这个。  </p>
+<p>MS software shadow copy provider－无用，据说是备份用的。。我看什么用都没。  </p>
+<p>Net Logon－登陆　Ｄｏｍａｉｎ　Ｃｏｎｔｒｏｌｌｅｒ　用的，大众用户快关！  </p>
+<p>Netmeeting remote desktop sharing－用ｎｅｔｍｅｅｔｉｎｇ　实现电脑共享。。晕！关！！  </p>
+<p>Network Connections - 上网／局域网要用的东东！  </p>
+<p>Network DDE　－和ｃｌｉｐｂｏｏｋ一起用的，无聊～～～～  </p>
+<p>Network DDE DSDM　－同上  </p>
+<p>Network Location Awareness－如有网络共享或ICS/ICF可能需要.(服务器端）  </p>
+<p>NT LM Security support provider－telnet　服务用的东东，关！！  </p>
+<p>NVIDIA Driver Helper service -nvidia 显卡帮助，关！  </p>
+<p>PDEngine - perfectdisk 引擎  </p>
+<p>PDScheduler -perfectdisk 计划服务  </p>
+<p>PerFORMance logs and alerts－记录机器运行状况而且定时写入日志或发警告，内容可能过于专业，所以。。自己决定。  </p>
+<p>＊Plug and Play - 自动查测新装硬件，即插即用，开着吧～～～  </p>
+<p>Portable media serial number－绝对无用，无聊之及。  </p>
+<p>Print Spooler -打印机用的，我打印时才开一下。  </p>
+<p>Protected Storage－储存本地密码和网上服务密码的服务，包括填表时的“自动完成”功能。  </p>
+<p>QoS RSVP -关！就是那个２０％的　ＱｏＳ  </p>
+<p>Remote access auto connection manager－宽带者／网络共享可能需要！！  </p>
+<p>Remote desktop help session manager－远程帮助服务，傻透，占用４兆内存。  </p>
+<p>＊Remote Procedure Call (RPC) -系统核心服务！  </p>
+<p>Remote Procedure Call LOCATOR－这个倒没什么用，管理　ＲＰＣ　数据库服务，占用１兆内存。  </p>
+<p>remote registry －远程注册表运行／修改。大漏洞，还不快关！！  </p>
+<p>removable storage　－一般情况下不用，磁带备份用的。  </p>
+<p>routing and remote access－哈哈。。不知者关！  </p>
+<p>secondary logon－给与administrator 以外的用户分配指定操作权．晕～～～  </p>
+<p>security accounts manager－像 Protected Storage,　IIS Admin 才需要。  </p>
+<p>server -局域网文件／打印共享需要的。  </p>
+<p>shell hardware detection－给有些配置自动启动，像内存棒，和有些ｃｄ驱动等  </p>
+<p>smart card -关！１。４兆内存  </p>
+<p>smart card helper -关！  </p>
+<p>SSDP Discovery service－没有什么硬件利用这个服务。。  </p>
+<p>system event notification－记录用户登录／注销／重起／关机信息。。谁管这些。。  </p>
+<p>system restore service -系统还原服务，吃资源和内存的怪兽。。虽然有时用到，自己决定。  </p>
+<p>task scheduler－windows 计划服务啦，垃圾．  </p>
+<p>TCP/IP NetBIOS helper－如果你的网络不用　Netbios 或WINS，关了．  </p>
+<p>Telephony - 拨号服务，如果你的宽带不用拨号，那么关了它。  </p>
+<p>telnet -大漏洞，我第一个关的就是这个．这根dos中　ｔｅｌｎｅｔ　命令没关系。２兆内存。  </p>
+<p>terminal services－实现远程登录本地电脑，快速用户切换和远程桌面功能需要，不用这些功能就关了吧。  </p>
+<p>themes -给ｘｐ打扮的东东，不要太花锹的就关了。  </p>
+<p>uninterruptible power supply－停电保护设备用的。。。没有的就关。  </p>
+<p>universal plug and play device host－同SSDP Discovery Service ，没用．  </p>
+<p>upload manager－用来实现服务器和客户端输送文件的服务，简单文件传输不需要这个！  </p>
+<p>volume shadow copy－同MS Software Shadow Copy Provider，无用．  </p>
+<p>webclient－可能和以后的．ｎｅｔ技术有联系，安全起见，我关得实实的！  </p>
+<p>＊Windows Audio -　控制着你听到的声音。关了就没声音了！！  </p>
+<p>Windows Installer -windows的ＭＳＩ安装服务，建议设成手动。  </p>
+<p>windows image acquisition (WIA) -有些数码相机和扫描器用的，我的扫描器觉得它没用。  </p>
+<p>＊Windows Management Instrumentation - 满重要的服务，是管＂服务依靠＂的，但关了会出现奇怪的问题．  </p>
+<p>windows management instrumentation driver extensions－没上面的重要，建议设成手动．  </p>
+<p>windows time -网上时间校对．．晕  </p>
+<p>wireless zero configuration -无线网络设置服务．．很少人用吧．．．  </p>
+<p>WMI perFORMance adapter -关！占用６兆内存．  </p>
+<p>＊Workstation -很多服务都依靠这个服务，支持联网和打印／文件共享的．</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2004/11/19/how-zindex-working/" itemprop="url">
                   HTML元素的Z-index属性是如何工作的
                 </a>
@@ -1205,211 +1515,6 @@ e.Item.Cells[i].Wrap = false;
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2004/06/16/memo-20040616/" itemprop="url">
-                  随便写写~~~~~~
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2004-06-16T13:57:00+09:00" content="2004-06-16">
-              2004-06-16
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2004/06/16/memo-20040616/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2004/06/16/memo-20040616/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天终于把答辩给搞定了，论文也交给了老师，算是通过了…下午就要照像了，呵呵……要滚蛋了…  </p>
-<p>中午上网，又看了一些东西，有些还挺长，还没有来的及全看，就先留个记号。  </p>
-<p>在车东的网站看到了一篇关于搜索引擎研究的文章，里面讲的很多东西都是很有价值的，做网站的看看会很有帮助的！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2004/06/15/one-more-blog-system-in-asp-lbs/" itemprop="url">
-                  ASP下的BLOG系统又有了一个新成员！
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2004-06-15T00:32:00+09:00" content="2004-06-15">
-              2004-06-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2004/06/15/one-more-blog-system-in-asp-lbs/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2004/06/15/one-more-blog-system-in-asp-lbs/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>一直以来，我都以为ASP下的Blog程序只有一个，就是我现在使用的duoluo的DLog，不过见天才看到还有一个挺有名气的Blog系统，叫L-Blog，具体的情况大家可以到<a href="http://www.loveyuki.com/" target="_blank" rel="external">http://www.loveyuki.com/</a> 来看看。而且SiC老大（MyIE2的一位老大）又在这个的基础上自己做了一番改进，叫做LBS，这个系统一直还在更新着，有兴趣的朋友可以看看去，目前的版本已经到了0xC9了  </p>
-<p>虽然现在已经有了这么多Blog的程序，但是自己也想写一个Blog程序。ASP.NET下的，呵呵，肯定不敢和著名的.TEXT比了！不过如果自己的写一个的话，相信在技术上会有很大的进步的！不过，目前的状态还不太适合自己写程序，首先，连自己的电脑还没有，首要目标还是先买台电脑</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1455,7 +1560,7 @@ e.Item.Cells[i].Wrap = false;
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-count">445</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>

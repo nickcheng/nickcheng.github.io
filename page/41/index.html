@@ -272,6 +272,270 @@
             
               
                 
+                <a class="post-title-link" href="/2003/12/11/connect-to-access-and-sqlserver-use-csharp/" itemprop="url">
+                  用ASP.NET/C#连接Access和SQL Server数据库
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2003-12-11T11:41:00+09:00" content="2003-12-11">
+              2003-12-11
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2003/12/11/connect-to-access-and-sqlserver-use-csharp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2003/12/11/connect-to-access-and-sqlserver-use-csharp/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>连接Access</p>
+<p>首先看一个例子代码片断:</p>
+<p>程序代码:</p>
+<pre><code>using System.Data;
+using System.Data.OleDb; `
+
+string strConnection=&quot;Provider=Microsoft.Jet.OleDb.4.0;&quot;;
+strConnection+=@&quot;Data Source=C:\BegASPNET\Northwind.mdb&quot;;OleDbConnection objConnection=new OleDbConnection(strConnection);
+
+objConnection.Open();
+objConnection.Close();
+</code></pre><hr>
+<p>解释:</p>
+<p>连接Access数据库需要导入额外的命名空间,所以有了最前面的两条using命令,这是必不可少的!</p>
+<p>strConnection这个变量里存放的是连接数据库所需要的连接字符串,他指定了要使用的数据提供者和要使用的数据源.</p>
+<p>“Provider=Microsoft.Jet.OleDb.4.0;”是指数据提供者,这里使用的是Microsoft Jet引擎,也就是Access中的数据引擎,asp.net就是靠这个和Access的数据库连接的.</p>
+<p>“Data Source=C:\BegASPNET\Northwind.mdb”是指明数据源的位置,他的标准形式是”Data Source=MyDrive:MyPath\MyFile.MDB”.</p>
+<p>ps:</p>
+<ol>
+<li>“+=”后面的”@”符号是防止将后面字符串中的”\”解析为转义字符.</li>
+<li><p>如果要连接的数据库文件和当前文件在同一个目录下,还可以使用如下的方法连接:</p>
+<pre><code>strConnection+=&quot;Data Source=&quot;;
+strConnection+=MapPath(&quot;Northwind.mdb&quot;);
+</code></pre><p> 这样就可以省得你写一大堆东西了!</p>
+</li>
+<li><p>要注意连接字符串中的参数之间要用分号来分隔.</p>
+</li>
+</ol>
+<p>“OleDbConnection objConnection=new OleDbConnection(strConnection);”这一句是利用定义好的连接字符串来建立了一个链接对象,以后对数据库的操作我们都要和这个对象打交道.</p>
+<p>“objConnection.Open();”这用来打开连接.至此,与Access数据库的连接完成.其余操作(插入,删除…)请参阅相关书籍</p>
+<p>连接SQL Server</p>
+<p>例子代码片断:</p>
+<p>程序代码:</p>
+<pre><code>using System.Data;
+using System.Data.SqlClient;...
+
+string strConnection=&quot;user id=sa;password=;&quot;;
+strConnection+=&quot;initial catalog=Northwind;Server=YourSQLServer;&quot;;
+strConnection+=&quot;Connect Timeout=30&quot;;
+
+SqlConnection objConnection=new SqlConnection(strConnection);
+
+...
+
+objConnection.Open();
+objConnection.Close();
+
+...
+</code></pre><p>解释:</p>
+<p>连接SQL Server数据库的机制与连接Access的机制没有什么太大的区别,只是改变了Connection对象和连接字符串中的不同参数.</p>
+<p>首先,连接SQL Server使用的命名空间不是”System.Data.OleDb”,而是”System.Data.SqlClient”.</p>
+<p>其次就是他的连接字符串了,我们一个一个参数来介绍(注意:参数间用分号分隔):</p>
+<p>“user id=sa”:连接数据库的验证用户名为sa.他还有一个别名”uid”,所以这句我们还可以写成”uid=sa”.</p>
+<p>“password=”:连接数据库的验证密码为空.他的别名为”pwd”,所以我们可以写为”pwd=”.</p>
+<p>这里注意,你的SQL Server必须已经设置了需要用户名和密码来登录,否则不能用这样的方式来登录.如果你的SQL Server设置为Windows登录,那么在这里就不需要使用”user id”和”password”这样的方式来登录,而需要使用”Trusted_Connection=SSPI”来进行登录.</p>
+<p>“initial catalog=Northwind”:使用的数据源为”Northwind”这个数据库.他的别名为”Database”,本句可以写成”Database=Northwind”.</p>
+<p>“Server =YourSQLServer”:使用名为”YourSQLServer”的服务器.他的别名为”Data Source”,”Address”,”Addr”.如果使用的是本地数据库且定义了实例名,则可以写为”Server=(local)\实例名”;如果是远程服务器,则将”(local)”替换为远程服务器的名称或IP地址.</p>
+<p>“Connect Timeout=30”:连接超时时间为30秒.</p>
+<p>在这里,建立连接对象用的构造函数为:SqlConnection.</p>
+<p>其余的就和Access没有什么区别了!</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2003/12/06/solved-the-posting-problem/" itemprop="url">
+                  问题解决了~~~~~~
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2003-12-06T13:40:00+09:00" content="2003-12-06">
+              2003-12-06
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2003/12/06/solved-the-posting-problem/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2003/12/06/solved-the-posting-problem/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天的麻烦给解决了…~~ 实时病毒监控软件总会有一些负面的影响。这次装的KAV swiss就对我的VS.net有影响,HTML设计器总出错!还害得我重新装了一次vs.net…… 卸了KAV,就一点儿问题没有了!!</p>
+<p>原来还碰到过类似的问题… Norton的放火墙曾经让我无法在论坛上发帖… 后来才知道,防火墙隐藏了我的IP地址,论坛无法检测到我的来源,所以出现了”来源错误”的错误信息!</p>
+<p>以后如果出现了什么异常情况,我应该会注意到这方面的影响了……</p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="external"></a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2003/12/05/today-2003-12-5/" itemprop="url">
                   今天~~~~~~
                 </a>
@@ -1098,210 +1362,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2003/11/26/browser-crashed/" itemprop="url">
-                  失误......
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2003-11-26T00:01:00+09:00" content="2003-11-26">
-              2003-11-26
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2003/11/26/browser-crashed/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2003/11/26/browser-crashed/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本来在写blog,谁知道在没写完的时候整理了一些东西，竟然影响到了浏览器，结果好不容易写的一些东西就disappear了！哎。。。没心情了！明天吧！</p>
-<p>今天还要早睡呢！！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2003/11/24/my-classmate-will-leave/" itemprop="url">
-                  补充......
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2003-11-24T22:22:00+09:00" content="2003-11-24">
-              2003-11-24
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2003/11/24/my-classmate-will-leave/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2003/11/24/my-classmate-will-leave/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>前两天一直有事,就没来的及Update Blog.前天晚上班里同学吃饭,因为一个同学要离开我们了!离开的理由很简单,交不起学费!就这样,大肆的眼瞅着要毕业的人了,还要休学一年,回去打工挣钱,然后交了学费才让继续上学!这种举动在我们这里已经很平常了!</p>
-<p>我觉得学校是不是以后在通知书上要写上”交不清四年学费的同学请不要来报到!”.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1347,7 +1407,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-count">445</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>

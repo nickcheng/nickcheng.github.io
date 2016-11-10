@@ -272,6 +272,241 @@
             
               
                 
+                <a class="post-title-link" href="/2007/09/05/install-yum-on-mtdv/" itemprop="url">
+                  在MT(dv)安装yum
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2007-09-05T16:58:00+09:00" content="2007-09-05">
+              2007-09-05
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2007/09/05/install-yum-on-mtdv/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2007/09/05/install-yum-on-mtdv/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前面说了自己已经成功的在自己的MT(dv)服务器上部署了Subversion服务, 而且启用了在 Apache 下的 Web Access, 所以这里单独写文章记录一下, 一来给自己做一个备忘, 二来可以帮助有类似需求的朋友:)</p>
+<p>在MT(dv)上安装Subversion需要用到yum, 所以这篇文章单独来讲如何安装yum</p>
+<p>步骤如下</p>
+<ul>
+<li>建立一个子域名. 如: svn.domain.com </li>
+<li>开通自己域名的SSH功能 </li>
+<li>向MediaTemple申请root权限</li>
+</ul>
+<p>上面是准备工作, 下面是正式的操作步骤</p>
+<ul>
+<li>通过SSH, 登录自己的服务器 </li>
+<li>使用su指令切换为root身份 </li>
+<li>切换目录到你建立的子域名所在的目录. 如:/var/www/vhosts/domain_name/subdomains/svn </li>
+<li><p>下载yum在centos上的安装包      </p>
+<pre><code>wget http://centos.mirror.vpslink.com/centos-4/4.5/os/i386/CentOS/RPMS/yum-2.4.3-3.el4.centos.noarch.rpm
+</code></pre></li>
+<li><p>yum安装包会有一些依赖文件, 也下载一下      </p>
+<pre><code>rpm -ivh --nodeps http://centos.mirror.vpslink.com/centos-4/4.5/os/i386/CentOS/RPMS/libxml2-python-2.6.16-10.i386.rpm           
+rpm -ivh --nodeps http://centos.mirror.vpslink.com/centos-4/4.5/os/i386/CentOS/RPMS/python-elementtree-1.2.6-5.el4.centos.i386.rpm            
+rpm -ivh --nodeps http://centos.mirror.vpslink.com/centos-4/4.5/os/i386/CentOS/RPMS/python-sqlite-1.1.7-1.2.1.i386.rpm            
+rpm -ivh --nodeps http://centos.mirror.vpslink.com/centos-4/4.5/os/i386/CentOS/RPMS/rpm-python-4.3.3-22_nonptl.i386.rpm            
+rpm -ivh --nodeps http://centos.mirror.vpslink.com/centos-4/4.5/os/i386/CentOS/RPMS/python-urlgrabber-2.9.8-2.noarch.rpm
+</code></pre></li>
+<li><p>安装yum      </p>
+<pre><code>rpm -Uvh yum-2.4.3-3.el4.centos.noarch.rpm
+</code></pre></li>
+<li><p>检查一下是否安装好了      </p>
+<pre><code>rpm -q yum
+</code></pre></li>
+</ul>
+<p>好了, yum可以使用了:)</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2007/09/05/server-migrating-is-over/" itemprop="url">
+                  服务器已经迁移完毕
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2007-09-05T14:41:00+09:00" content="2007-09-05">
+              2007-09-05
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2007/09/05/server-migrating-is-over/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2007/09/05/server-migrating-is-over/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一年的Bluehost用完了, 刚好有朋友要买空间, 于是撺掇之. 最后, 花了比Bluehost还少的钱就使用上了MT(dv)空间, 不过要时不时的当顾问…… 哈哈!</p>
+<p>空间到手后就开始着手迁移. 原来的空间上主要就是自己的Blog, 于是花了几天来做迁移, 今天才基本上完毕. 这也是这段时间没有新写文章的原因:)</p>
+<p>这次使用MT的空间, 自由度大了很多! 几乎什么都可以装! 自己很早就想拥有一个个人的Subversion了, 这次就能够实现了! 经过一番研究和实验, 终于成功搞定! 因为是个人的Subversion, 在此就不公布地址了(公布了也没用, 有权限控制)!</p>
+<p>另外还准备在这个服务器上部署一些Django应用, 这个慢慢来!</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2007/08/25/some-mistakes-in-djangobook-char4/" itemprop="url">
                   djangobook 第四章中的遗漏
                 </a>
@@ -1107,223 +1342,6 @@ DJANGO_SETTINGS_MODULE = mysite.settings
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2007/06/15/get-some-books-20070615/" itemprop="url">
-                  今天入手图书
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2007-06-15T19:29:54+09:00" content="2007-06-15">
-              2007-06-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2007/06/15/get-some-books-20070615/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2007/06/15/get-some-books-20070615/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://www.douban.com/subject/2042966/" target="_blank" rel="external"><img src="http://www.douban.com/spic/s2359493.jpg" alt="双生水莽"></a><a href="http://www.douban.com/subject/1486573/" target="_blank" rel="external"><img src="http://www.douban.com/spic/s1503857.jpg" alt="朗姆酒的传奇之旅"></a></p>
-<p><a href="http://www.douban.com/subject/2036345/" target="_blank" rel="external"><img src="http://www.douban.com/spic/s2407338.jpg" alt="创意市集2 玩心大发"></a><a href="http://www.douban.com/subject/1396339/" target="_blank" rel="external"><img src="http://www.douban.com/spic/s1407395.jpg" alt="创意市集"></a><a href="http://www.douban.com/subject/1941558/" target="_blank" rel="external"><img src="http://www.douban.com/spic/s1950479.jpg" alt="设计中的设计"></a></p>
-<p><a href="http://www.douban.com/subject/2042966/" target="_blank" rel="external"><strong>双生水莽</strong></a>:<br>田原的新书. 豆瓣上的dangdang购买链接是签名版的书, 刚点进去说已经售罄, 我心想虽然火也不至于这么快缺货吧, 于是乎又搜了一把, 呵呵果然搜到非签名版. 我是不在意是否有签名了.</p>
-<p>之所以买这书是因为作者这个人,从最早的”跳房子”主唱到现在的独立电影演员, 我觉得这个女孩子挺神的. 而且这书的个人色彩也挺浓厚, 于是乎就入手了这本书.</p>
-<p><a href="http://www.douban.com/subject/1486573/" target="_blank" rel="external"><strong>朗姆酒的传奇之旅</strong></a>:<br>买这本书完全源于我这几天的抽筋. 从前几天的钱柜K歌就开始吵吵要开酒, 不过到现在都没有如愿, 只是前两天在7-11买了瓶百加得的朗姆预调酒, 一点儿酒精的感觉都没有!</p>
-<p>前两天又看了加勒比海盗3, 对朗姆酒更有了向往! 我感觉我的前世是一个海盗!</p>
-<p><strong><a href="http://www.douban.com/subject/1396339/" target="_blank" rel="external">创意市集</a></strong>:<br>今年MIDI音乐节的时候第一次知道创意市集, 和娘子逛了一大圈, 感觉挺不错的. 个人色彩浓厚的手工艺制品, 俺稀饭! 小时候俺也是手工制作强人呢, 大了就没怎么玩过了, 看了他们做的东西, 手还真有点儿痒!</p>
-<p><strong><a href="http://www.douban.com/subject/2036345/" target="_blank" rel="external">创意市集2玩心大法</a></strong>:<br>两本顺便都买了得了! 第二本的封面还有点儿小附件, 好玩…</p>
-<p><strong><a href="http://www.douban.com/subject/1941558/" target="_blank" rel="external">设计中的设计</a></strong>:<br>号称给初学者讲设计理论的书! 虽然自认sense不差, 但是当着别人的面还是要说自己没什么sense, 需要看看大师的书来培养一下sense, 嘿嘿…虽然是小日本写的, 但咱也要师夷长技以制夷哈!</p>
-<p>家里没看的书越来越多了, 要好好消化了! 要遏制自己买书的欲望</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2007/06/13/pirates-of-the-caribbean-at-worlds-end/" itemprop="url">
-                  世界的尽头 - 加勒比海盗3
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2007-06-13T12:41:25+09:00" content="2007-06-13">
-              2007-06-13
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2007/06/13/pirates-of-the-caribbean-at-worlds-end/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2007/06/13/pirates-of-the-caribbean-at-worlds-end/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://lh5.google.com/image/nick.nickcheng/Rm9LDI5ROcI/AAAAAAAAACY/tDM_vL_YDAI/clip.jpg" alt=""></p>
-<p>昨天和娘子一起去看了加勒比海盗3的首映. 刚好周二, 而且自己手头还有一些电影兑换券, 于是乎, 免费观影:)</p>
-<p>看完以后的第一感觉……这片子真长, 紫光影院那舒服的沙发椅都让我和娘子感觉屁股不舒服了! 真巴不得能躺着看电影……</p>
-<p>说说片子吧. 里面发哥的一段戏给我的感觉真是有些鸡肋了, 最搞笑的是发哥竟然死于流弹…无语了……相比较其他海盗头子在枪林弹雨中毫发未伤…还是发哥真实啊, 呵呵…</p>
-<p>吾家娘子还抱怨说片子有些太拖沓了. 是的, 中间那一段, 我几乎可以睡着…还好后面的打斗场面还算精彩, 让我最终没有睡去, 呵呵…</p>
-<p>总的来说, 也就是我今天早上见了同事说的评价 – 没有我想像的差!</p>
-<p>就酱紫</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1369,7 +1387,7 @@ DJANGO_SETTINGS_MODULE = mysite.settings
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-count">445</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>

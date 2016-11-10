@@ -272,6 +272,251 @@
             
               
                 
+                <a class="post-title-link" href="/2005/09/12/about-the-algorithm-of-llk/" itemprop="url">
+                  关于"连连看"得算法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2005-09-12T23:19:00+09:00" content="2005-09-12">
+              2005-09-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2005/09/12/about-the-algorithm-of-llk/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2005/09/12/about-the-algorithm-of-llk/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近准备研究一下连连看得算法, 说不定哪天闲下来还可以写一个小外挂玩玩  </p>
+<p>之前简单的想了一下算法, 最笨的方法也就是一个双重的宽度有限搜索了, 遍历整个矩阵. 因为没有深入的思考, 所以先不发表自己的想法.  </p>
+<p>后来上网看到有些同志已经作出了一些成果, 只是思路和我不太一样, 在此先贴上来, 学习一下, 等我略有小成的时候再贴我自己的  </p>
+<p>===================================  </p>
+<p>连连看所要求的是：  </p>
+<ol>
+<li>两个目标是相同的  </li>
+<li><p>两个目标之间连接线的折点不超过两个。（连接线由x轴和y轴的平行线组成） 那么分析一下连接的情况可以看到，一般分三种情况  </p>
+<ol>
+<li>直线相连 </li>
+<li>一个折点 </li>
+<li><p>两个折点 如图：  </p>
+<p> <a href="http://www.icbean.com/nickcheng/uploads/200509/12_231927_llk1.jpg" target="_blank" rel="external"></a><a href="http://nickcheng.com/wp-content/112902455210.jpg"><img src="http://nickcheng.com/wp-content/112902455210_tn.jpg" alt="12_231927_llk1.jpg"></a></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>可以发现，如果有折点，每个折点必定有且至少有一个坐标（x或者y）是和其中一个目标点是相同的，也就是说，折点必定在两个目标点所在的x方向或y方向的直线上。  </p>
+<p>所以设计思路就是：  </p>
+<p>假设目标点 p1 , p2 ,如果有两个折点分别为z1 , z2 那么，所要进行的是  </p>
+<ol>
+<li>如果验证p1 , p2 直线连线，则连接成立  </li>
+<li>搜索以p1,p2的x,y方向四条直线（可能某两条直线会重合）上的有限点，每次取两点作为z1,z2 ,验证p1到z1/z1到z2/z2到p2 是否都能直线相连 ，是则连接成立。（如果z1=z2也就是只有一个折点喽，对判断没影响）  </li>
+</ol>
+<p>===================================  </p>
+<p>原作者还给出了一段代码和演示来展示自己的算法. 因为我们关注的是算法, 那些实现在此就不贴了, 有兴趣的可以自己去搜一下</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2005/09/06/using-rss-in-im/" itemprop="url">
+                  关于RSS用在IM上的一点想法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2005-09-06T08:59:00+09:00" content="2005-09-06">
+              2005-09-06
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2005/09/06/using-rss-in-im/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2005/09/06/using-rss-in-im/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>MSN Messenger的Spaces相信大家都不会陌生. 一旦你Messenger上的好友在他的Spaces里写了一篇文章, 那么他在你好友列表中的名字前面就会开出一朵小花, 来提醒你:”可以来看看我新写的文章了”. 这应该算是一个比较典型的交叉营销了, 而且二者的捆绑性非常的强, 很难能让第三者插足进来:)</p>
+<p>Spaces用户数量的巨增让不少IM厂家都羡红了眼, 他们也纷纷推出了自己的Blog绑定到了自己的IM上. 顿时, IM捆绑Blog蔚然成风.</p>
+<p>那么, 如果我是IM厂家, 我会怎么在自己的IM上做Blog呢?</p>
+<p>首先要明白几点:</p>
+<ol>
+<li>我不是Microsoft, 我的IM是没有用户基础的.</li>
+<li>我不是专门的BSP, 我不可能花太大的资源和精力在Blog系统的开发上.</li>
+<li>目前许许多多的Blogger已经有自己长期经营的Blog, 他们可能不会愿意迁移自己的Blog</li>
+</ol>
+<p>明确了这几点, 我就有了自己的想法. 那就是利用RSS.</p>
+<p>用户既有的Blog基本上都可以输出RSS(Blog的必备功能), 那我们的IM上就展示用户指定的RSS好了. 在我们的IM上, 用户可以很容易的分享自己已有的Blog给自己的好友. 而完成这一切, 用户并不用迁移自己的Blog, 需要的只是在我们的IM中指定一个RSS的link, 就这么简单!</p>
+<p>现在有许许多多的BSP, 他们提供的服务是很丰富的, 用户在那里Blog会有很好的用户体验, 我们何必要剥夺或取代用户的习惯呢?而我, 就是一个IM厂商, 何必要掺和那些BSP事情呢?</p>
+<p>说的再远一些, 我们甚至可以利用这个简单的想法玩更多的花样</p>
+<ol>
+<li>在用户的RSS中烧入自己的广告. 呵呵, 在我们IM中呈现用户的RSS的时候小小的作一把广告, 只要不惹怒用户就好了</li>
+<li>多种RSS的呈现方式, 让用户选择自己的样式呈现给自己的朋友</li>
+<li>……</li>
+</ol>
+<p>RSS, 让一切变得简单起来…</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2005/08/26/bookmarks-20050826/" itemprop="url">
                   近日网摘
                 </a>
@@ -1133,223 +1378,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2005/08/05/memo-20050805/" itemprop="url">
-                  近日网摘
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2005-08-05T08:32:00+09:00" content="2005-08-05">
-              2005-08-05
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2005/08/05/memo-20050805/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2005/08/05/memo-20050805/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><a href="http://blueslugs.com/wordpress/index.php/archives/2005/07/12/tag1-delicious-style-file-tagging/" target="_blank" rel="external">blueslugs.com ? Blog Archive ? tag(1): del.icio.us-style file tagging</a><br>　像del.icio.us那样给本地文件加上tag, 可惜是Linux下的, 不过可以参考  </li>
-<li><a href="http://www.alvit.de/handbook/" target="_blank" rel="external">Web Developer’s Handbook: developing web-sites, exploring own imagination | CSS, Color Tools, SEO, Usability etc.</a><br>　一些很实用的link  </li>
-<li><a href="http://www.cnbeta.com/index.php" target="_blank" rel="external">cnBeta.COM - For your eyes only.</a><br>　中文软件资讯网  </li>
-<li><a href="http://www.flickr.com/explore/" target="_blank" rel="external">Flickr: Explore!</a><br>　Flickr精彩图片荟萃  </li>
-<li><a href="http://freshmeat.net/projects/wheeloyum/?branch_id=38968&amp;release_id=202171" target="_blank" rel="external">freshmeat.net: Project details for Wheel ‘O Yum</a><br>　搞笑的开源软件,大家投票去哪里吃饭. 还是有一定实用价值得  </li>
-<li><a href="http://www.sinoutopia.org/plog/post/1/419" target="_blank" rel="external">Windows下PSP软件的开发环境配置</a>  </li>
-<li><a href="http://www.badboy.ro/" target="_blank" rel="external">badboy.media.design</a><br>　关于Web开发得不错得站点</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2005/08/03/bookmarks-20050802/" itemprop="url">
-                  2005-8-2 网摘
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2005-08-03T08:55:00+09:00" content="2005-08-03">
-              2005-08-03
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2005/08/03/bookmarks-20050802/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2005/08/03/bookmarks-20050802/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><a href="http://www.synergymx.com/foss.asp" target="_blank" rel="external">SynergyMX.com - Freeware and Open Source Software</a><br>　免费又好用的开源软件啊!  </li>
-<li><a href="http://www.bleacheatingfreaks.com/science/OB2/bxmas/" target="_blank" rel="external">Office Bricolage2: Office Bow of Death</a><br>　用办公用具diy弓箭  </li>
-<li><a href="http://www.officeguns.com/gunadv_super_maul.html" target="_blank" rel="external">OfficeGuns - Guns Advanced - Super Maul</a><br>　用办公用具diy枪  </li>
-<li><a href="http://www.gotdotnet.com/workspaces/workspace.aspx?id=91936c5e-461f-4027-bdba-8a46f52fefdb" target="_blank" rel="external">NUnit Add-Ons: Workspace Home</a><br>　把Nunit的程序转换到VSTP中  </li>
-<li><a href="http://www.tspl.cn/Default.aspx" target="_blank" rel="external">图书漂流网 - 分享藏书，以书会友</a><br>　图书漂流, 一个不错的想法, 有资源大家一起分享!</li>
-</ul>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=4" target="_blank" rel="external"></a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1395,7 +1423,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">443</span>
+              <span class="site-state-item-count">445</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
