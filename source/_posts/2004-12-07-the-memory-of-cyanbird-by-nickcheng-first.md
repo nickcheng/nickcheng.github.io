@@ -7,7 +7,6 @@ wordpress_id: 100
 tags:
 - life
 - band
-- life
 - memory
 - qingniao
 ---

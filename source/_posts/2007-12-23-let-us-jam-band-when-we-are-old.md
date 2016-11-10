@@ -9,9 +9,7 @@ tags:
 - band
 ---
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/mqlZVBcs1Wg" frameborder="0" allowfullscreen></iframe>
-
-<iframe height=498 width=510 src="http://player.youku.com/embed/XMzIyMDAxNTQ4" frameborder=0 allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3Um_xMmE8OA" frameborder="0" allowfullscreen></iframe>
 
 今天烟灰又给我发了这个MV, 之前也被推荐看过这个MV, 看一次感动一次啊...
 
