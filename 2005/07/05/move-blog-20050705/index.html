@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -63,7 +63,7 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
@@ -73,6 +73,8 @@
 
 
 
+
+  <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
 
 
 
@@ -106,9 +108,10 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
@@ -116,6 +119,13 @@
     duoshuo: {
       userId: '0',
       author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -124,10 +134,12 @@
 
 
 
+
+
   <title> 搬家... | Nickcheng.LOG </title>
 </head>
 
-<body itemscope itemtype="//schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -157,7 +169,7 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -168,7 +180,9 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+    
+      <p class="site-subtitle"></p>
+    
 </div>
 
 <div class="site-nav-toggle">
@@ -253,6 +267,8 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
@@ -266,13 +282,26 @@
     
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/07/05/move-blog-20050705/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -291,13 +320,11 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2005-07-05T18:48:00+09:00" content="2005-07-05">
-              2005-07-05
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -305,9 +332,12 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2005/07/05/move-blog-20050705/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2005/07/05/move-blog-20050705/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2005/07/05/move-blog-20050705/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -319,6 +349,9 @@
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -373,11 +406,12 @@
       
     </div>
 
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/life/" rel="tag">#life</a>
+            <a href="/tags/life/" rel="tag"># life</a>
           
         </div>
       
@@ -391,6 +425,8 @@
               </a>
             
           </div>
+
+          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -414,7 +450,7 @@
     </div>
   </div>
 
-
+          
           </div>
           
 
@@ -450,18 +486,9 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="nickcheng" />
@@ -469,12 +496,15 @@
           <p class="site-description motion-element" itemprop="description">A place for logging something</p>
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">445</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
 
           
 
@@ -489,6 +519,13 @@
 
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">
@@ -521,19 +558,11 @@
         
         
 
+        
+
+
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -549,23 +578,14 @@
         <div class="copyright" >
   
   &copy;  2003 - 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
 
         
 
@@ -595,6 +615,7 @@
 
 
   
+
 
 
 
@@ -651,10 +672,11 @@
     <script type="text/javascript">
       var disqus_shortname = 'nickcheng';
       var disqus_identifier = '2005/07/05/move-blog-20050705/';
-      var disqus_title = "搬家...";
-      var disqus_url = 'http://nickcheng.com/2005/07/05/move-blog-20050705/';
 
-      function run_disqus_script(disqus_script){
+      var disqus_title = "搬家...";
+
+
+      function run_disqus_script(disqus_script) {
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
@@ -663,6 +685,7 @@
       }
 
       run_disqus_script('count.js');
+
       
         var disqus_config = function () {
             this.page.url = disqus_url;
@@ -671,8 +694,14 @@
         };
         run_disqus_script('embed.js');
       
+
     </script>
   
+
+
+
+
+
 
 
 

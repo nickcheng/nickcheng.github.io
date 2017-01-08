@@ -5,10 +5,10 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
@@ -63,7 +63,7 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
@@ -73,6 +73,8 @@
 
 
 
+
+  <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
 
 
 
@@ -96,9 +98,10 @@
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    root: '/',
     scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
@@ -106,6 +109,13 @@
     duoshuo: {
       userId: '0',
       author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: "",
+      labels: ""
     }
   };
 </script>
@@ -114,10 +124,12 @@
 
 
 
+
+
   <title> Nickcheng.LOG </title>
 </head>
 
-<body itemscope itemtype="//schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -149,7 +161,7 @@
  ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -160,7 +172,9 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+    
+      <p class="site-subtitle"></p>
+    
 </div>
 
 <div class="site-nav-toggle">
@@ -245,6 +259,8 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
@@ -258,13 +274,26 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/10/26/where-is-my-creativity/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -286,13 +315,11 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-10-26T10:21:27+09:00" content="2006-10-26">
-              2006-10-26
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -300,9 +327,12 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/10/26/where-is-my-creativity/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/26/where-is-my-creativity/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/26/where-is-my-creativity/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -314,6 +344,9 @@
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -355,6 +388,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -372,13 +406,26 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/10/23/what-the-people-want-to-do-is-also-what-u-and-i-want-to/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -400,13 +447,11 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-10-23T10:59:37+09:00" content="2006-10-23">
-              2006-10-23
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -414,9 +459,12 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/10/23/what-the-people-want-to-do-is-also-what-u-and-i-want-to/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/23/what-the-people-want-to-do-is-also-what-u-and-i-want-to/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/23/what-the-people-want-to-do-is-also-what-u-and-i-want-to/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -428,6 +476,9 @@
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -461,6 +512,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -478,13 +530,26 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/10/20/loving-it-new-balance/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -506,13 +571,11 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-10-20T13:20:52+09:00" content="2006-10-20">
-              2006-10-20
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -520,9 +583,12 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/10/20/loving-it-new-balance/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/20/loving-it-new-balance/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/20/loving-it-new-balance/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -534,6 +600,9 @@
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -570,6 +639,7 @@
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -587,13 +657,26 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/10/18/install-subversion-132-in-bluehost/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -615,13 +698,11 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-10-18T13:19:24+09:00" content="2006-10-18">
-              2006-10-18
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -629,9 +710,12 @@
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/10/18/install-subversion-132-in-bluehost/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/18/install-subversion-132-in-bluehost/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/18/install-subversion-132-in-bluehost/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -643,6 +727,9 @@
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -698,6 +785,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -715,13 +803,26 @@ make install
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/10/11/hsdfz-forum-reopen/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -743,13 +844,11 @@ make install
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-10-11T09:36:57+09:00" content="2006-10-11">
-              2006-10-11
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -757,9 +856,12 @@ make install
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/10/11/hsdfz-forum-reopen/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/11/hsdfz-forum-reopen/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/11/hsdfz-forum-reopen/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -771,6 +873,9 @@ make install
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -803,6 +908,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -820,13 +926,26 @@ make install
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/10/08/memo-of-national-day/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -848,13 +967,11 @@ make install
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-10-08T14:54:58+09:00" content="2006-10-08">
-              2006-10-08
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -862,9 +979,12 @@ make install
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/10/08/memo-of-national-day/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/08/memo-of-national-day/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/10/08/memo-of-national-day/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -876,6 +996,9 @@ make install
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -959,6 +1082,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -976,13 +1100,26 @@ make install
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/30/national-day-vacation/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1004,13 +1141,11 @@ make install
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-09-30T13:02:09+09:00" content="2006-09-30">
-              2006-09-30
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -1018,9 +1153,12 @@ make install
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/09/30/national-day-vacation/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/30/national-day-vacation/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/30/national-day-vacation/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1032,6 +1170,9 @@ make install
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -1065,6 +1206,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -1082,13 +1224,26 @@ make install
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/27/ending-of-my-internal-web-server/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1110,13 +1265,11 @@ make install
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-09-27T11:04:04+09:00" content="2006-09-27">
-              2006-09-27
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -1124,9 +1277,12 @@ make install
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/09/27/ending-of-my-internal-web-server/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/27/ending-of-my-internal-web-server/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/27/ending-of-my-internal-web-server/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1138,6 +1294,9 @@ make install
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -1170,6 +1329,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -1187,13 +1347,26 @@ make install
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/25/change-the-fontsize-of-msn-messenger/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1215,13 +1388,11 @@ make install
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-09-25T10:56:32+09:00" content="2006-09-25">
-              2006-09-25
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -1229,9 +1400,12 @@ make install
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/09/25/change-the-fontsize-of-msn-messenger/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/25/change-the-fontsize-of-msn-messenger/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/25/change-the-fontsize-of-msn-messenger/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1243,6 +1417,9 @@ make install
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -1279,6 +1456,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -1296,13 +1474,26 @@ make install
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-post " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/22/move-almost-completed/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
 
     
       <header class="post-header">
@@ -1324,13 +1515,11 @@ make install
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2006-09-22T14:37:48+09:00" content="2006-09-22">
-              2006-09-22
-            </time>
+            
+
+            
+
+            
           </span>
 
           
@@ -1338,9 +1527,12 @@ make install
           
             
               <span class="post-comments-count">
-                &nbsp; | &nbsp;
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2006/09/22/move-almost-completed/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/22/move-almost-completed/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2006/09/22/move-almost-completed/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1352,6 +1544,9 @@ make install
           
 
           
+
+          
+
         </div>
       </header>
     
@@ -1384,6 +1579,7 @@ make install
       
     </div>
 
+
     <footer class="post-footer">
       
 
@@ -1406,7 +1602,7 @@ make install
   </nav>
 
 
-
+          
           </div>
           
 
@@ -1432,8 +1628,8 @@ make install
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="nickcheng" />
@@ -1441,12 +1637,15 @@ make install
           <p class="site-description motion-element" itemprop="description">A place for logging something</p>
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">445</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
-          </div>
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
 
           
 
@@ -1461,6 +1660,13 @@ make install
 
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">
@@ -1493,6 +1699,9 @@ make install
         
         
 
+        
+
+
       </section>
 
       
@@ -1510,23 +1719,14 @@ make install
         <div class="copyright" >
   
   &copy;  2003 - 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
 
         
 
@@ -1556,6 +1756,7 @@ make install
 
 
   
+
 
 
 
@@ -1608,10 +1809,11 @@ make install
     <script type="text/javascript">
       var disqus_shortname = 'nickcheng';
       var disqus_identifier = 'page/17/index.html';
-      var disqus_title = "";
-      var disqus_url = '';
 
-      function run_disqus_script(disqus_script){
+      var disqus_title = "";
+
+
+      function run_disqus_script(disqus_script) {
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
@@ -1620,9 +1822,16 @@ make install
       }
 
       run_disqus_script('count.js');
+
       
+
     </script>
   
+
+
+
+
+
 
 
 
