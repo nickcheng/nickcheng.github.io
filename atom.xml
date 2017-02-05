@@ -264,11 +264,11 @@
     
       <category term="apple" scheme="http://nickcheng.com/tags/apple/"/>
     
-      <category term="config" scheme="http://nickcheng.com/tags/config/"/>
-    
       <category term="tv" scheme="http://nickcheng.com/tags/tv/"/>
     
       <category term="dns" scheme="http://nickcheng.com/tags/dns/"/>
+    
+      <category term="config" scheme="http://nickcheng.com/tags/config/"/>
     
       <category term="youku" scheme="http://nickcheng.com/tags/youku/"/>
     
@@ -441,9 +441,9 @@
     
       <category term="iOS" scheme="http://nickcheng.com/tags/ios/"/>
     
-      <category term="development" scheme="http://nickcheng.com/tags/development/"/>
-    
       <category term="afnetworking" scheme="http://nickcheng.com/tags/afnetworking/"/>
+    
+      <category term="development" scheme="http://nickcheng.com/tags/development/"/>
     
       <category term="bug" scheme="http://nickcheng.com/tags/bug/"/>
     
