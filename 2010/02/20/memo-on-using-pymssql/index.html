@@ -86,25 +86,18 @@
 
 
 
-<meta name="description" content="最近需要用Python来操作SQL Server, 所以找来了一些库试用.
-简单搜索了一下, 看到pymssql是被提及最多的, 所以就决定用他了. 使用过程中有些小的地方需要注意, 特此备忘一下. 也能让别人少走点儿弯路(说不定我这个反而是弯路? whatever…)
-
-我是在windows下使用的. 如果在import pymssql的时候出现DLL找不到的异常, 可以尝试把pymssql的e">
+<meta name="description" content="最近需要用Python来操作SQL Server, 所以找来了一些库试用. 简单搜索了一下, 看到pymssql是被提及最多的, 所以就决定用他了. 使用过程中有些小的地方需要注意, 特此备忘一下. 也能让别人少走点儿弯路(说不定我这个反而是弯路? whatever…)  我是在windows下使用的. 如果在import pymssql的时候出现DLL找不到的异常, 可以尝试把pymssql的e">
+<meta name="keywords" content="tech,sql,server,python,db,mssql,pymssql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用pymssql备忘">
 <meta property="og:url" content="http://nickcheng.com/2010/02/20/memo-on-using-pymssql/index.html">
 <meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="最近需要用Python来操作SQL Server, 所以找来了一些库试用.
-简单搜索了一下, 看到pymssql是被提及最多的, 所以就决定用他了. 使用过程中有些小的地方需要注意, 特此备忘一下. 也能让别人少走点儿弯路(说不定我这个反而是弯路? whatever…)
-
-我是在windows下使用的. 如果在import pymssql的时候出现DLL找不到的异常, 可以尝试把pymssql的e">
+<meta property="og:description" content="最近需要用Python来操作SQL Server, 所以找来了一些库试用. 简单搜索了一下, 看到pymssql是被提及最多的, 所以就决定用他了. 使用过程中有些小的地方需要注意, 特此备忘一下. 也能让别人少走点儿弯路(说不定我这个反而是弯路? whatever…)  我是在windows下使用的. 如果在import pymssql的时候出现DLL找不到的异常, 可以尝试把pymssql的e">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-05-27T11:44:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用pymssql备忘">
-<meta name="twitter:description" content="最近需要用Python来操作SQL Server, 所以找来了一些库试用.
-简单搜索了一下, 看到pymssql是被提及最多的, 所以就决定用他了. 使用过程中有些小的地方需要注意, 特此备忘一下. 也能让别人少走点儿弯路(说不定我这个反而是弯路? whatever…)
-
-我是在windows下使用的. 如果在import pymssql的时候出现DLL找不到的异常, 可以尝试把pymssql的e">
+<meta name="twitter:description" content="最近需要用Python来操作SQL Server, 所以找来了一些库试用. 简单搜索了一下, 看到pymssql是被提及最多的, 所以就决定用他了. 使用过程中有些小的地方需要注意, 特此备忘一下. 也能让别人少走点儿弯路(说不定我这个反而是弯路? whatever…)  我是在windows下使用的. 如果在import pymssql的时候出现DLL找不到的异常, 可以尝试把pymssql的e">
 
 
 
@@ -131,6 +124,8 @@
 </script>
 
 
+
+  <link rel="canonical" href="http://nickcheng.com/2010/02/20/memo-on-using-pymssql/"/>
 
 
 
@@ -181,7 +176,7 @@
     </a>
   </div>
     
-      <p class="site-subtitle"></p>
+      <h1 class="site-subtitle" itemprop="description"></h1>
     
 </div>
 
@@ -316,18 +311,28 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
                 使用pymssql备忘
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2010-02-20T21:10:58+09:00">
+                2010-02-20
+              </time>
             
 
             
@@ -604,11 +609,22 @@
   &copy;  2003 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         

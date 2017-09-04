@@ -86,52 +86,18 @@
 
 
 
-<meta name="description" content="好久没有自己编程了，已经生疏了好多了！下面就是我出现的一个很基础的问题！程序代码:  
-这样定义了一个结构  
-struct aa  
-{  
-char *ss;  
-}bb;  
-象下面这么调用总有错！  
-bb.ss[0]=&amp;apos;a&amp;apos;;  
-但是如果为ss分配内存空间后就可以！  
-但是如果这样定义  
-char *str;  
-再这样使用  
-str[0]=&amp;apos;a&amp;a">
+<meta name="description" content="好久没有自己编程了，已经生疏了好多了！下面就是我出现的一个很基础的问题！程序代码:   这样定义了一个结构   struct aa   {   char *ss;   }bb;   象下面这么调用总有错！   bb.ss[0]=&amp;apos;a&amp;apos;;   但是如果为ss分配内存空间后就可以！   但是如果这样定义   char *str;   再这样使用   str[0]=&amp;apos;a&amp;a">
+<meta name="keywords" content="tech">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C  下内存分配的一个问题">
 <meta property="og:url" content="http://nickcheng.com/2003/10/17/a-question-about-memory-in-c/index.html">
 <meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="好久没有自己编程了，已经生疏了好多了！下面就是我出现的一个很基础的问题！程序代码:  
-这样定义了一个结构  
-struct aa  
-{  
-char *ss;  
-}bb;  
-象下面这么调用总有错！  
-bb.ss[0]=&amp;apos;a&amp;apos;;  
-但是如果为ss分配内存空间后就可以！  
-但是如果这样定义  
-char *str;  
-再这样使用  
-str[0]=&amp;apos;a&amp;a">
+<meta property="og:description" content="好久没有自己编程了，已经生疏了好多了！下面就是我出现的一个很基础的问题！程序代码:   这样定义了一个结构   struct aa   {   char *ss;   }bb;   象下面这么调用总有错！   bb.ss[0]=&amp;apos;a&amp;apos;;   但是如果为ss分配内存空间后就可以！   但是如果这样定义   char *str;   再这样使用   str[0]=&amp;apos;a&amp;a">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-05-27T11:44:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C  下内存分配的一个问题">
-<meta name="twitter:description" content="好久没有自己编程了，已经生疏了好多了！下面就是我出现的一个很基础的问题！程序代码:  
-这样定义了一个结构  
-struct aa  
-{  
-char *ss;  
-}bb;  
-象下面这么调用总有错！  
-bb.ss[0]=&amp;apos;a&amp;apos;;  
-但是如果为ss分配内存空间后就可以！  
-但是如果这样定义  
-char *str;  
-再这样使用  
-str[0]=&amp;apos;a&amp;a">
+<meta name="twitter:description" content="好久没有自己编程了，已经生疏了好多了！下面就是我出现的一个很基础的问题！程序代码:   这样定义了一个结构   struct aa   {   char *ss;   }bb;   象下面这么调用总有错！   bb.ss[0]=&amp;apos;a&amp;apos;;   但是如果为ss分配内存空间后就可以！   但是如果这样定义   char *str;   再这样使用   str[0]=&amp;apos;a&amp;a">
 
 
 
@@ -158,6 +124,8 @@ str[0]=&amp;apos;a&amp;a">
 </script>
 
 
+
+  <link rel="canonical" href="http://nickcheng.com/2003/10/17/a-question-about-memory-in-c/"/>
 
 
 
@@ -208,7 +176,7 @@ str[0]=&amp;apos;a&amp;a">
     </a>
   </div>
     
-      <p class="site-subtitle"></p>
+      <h1 class="site-subtitle" itemprop="description"></h1>
     
 </div>
 
@@ -343,18 +311,28 @@ str[0]=&amp;apos;a&amp;a">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
                 C  下内存分配的一个问题
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2003-10-17T00:41:00+09:00">
+                2003-10-17
+              </time>
             
 
             
@@ -628,11 +606,22 @@ char *ss;
   &copy;  2003 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         

@@ -86,22 +86,18 @@
 
 
 
-<meta name="description" content="不认识上面几个英文的朋友请忽略本文, 谢谢:)
-昨天在配置Django的数据库的时候, 发现了一个奇怪的问题.
-在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的mid">
+<meta name="description" content="不认识上面几个英文的朋友请忽略本文, 谢谢:) 昨天在配置Django的数据库的时候, 发现了一个奇怪的问题. 在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的mid">
+<meta name="keywords" content="tech,python,django,egg,modpython">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mod_python和django使用需要注意python egg">
 <meta property="og:url" content="http://nickcheng.com/2007/10/12/pay-attention-to-the-python-egg-when-use-modpython-and-django/index.html">
 <meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="不认识上面几个英文的朋友请忽略本文, 谢谢:)
-昨天在配置Django的数据库的时候, 发现了一个奇怪的问题.
-在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的mid">
+<meta property="og:description" content="不认识上面几个英文的朋友请忽略本文, 谢谢:) 昨天在配置Django的数据库的时候, 发现了一个奇怪的问题. 在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的mid">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-05-27T11:44:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mod_python和django使用需要注意python egg">
-<meta name="twitter:description" content="不认识上面几个英文的朋友请忽略本文, 谢谢:)
-昨天在配置Django的数据库的时候, 发现了一个奇怪的问题.
-在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的mid">
+<meta name="twitter:description" content="不认识上面几个英文的朋友请忽略本文, 谢谢:) 昨天在配置Django的数据库的时候, 发现了一个奇怪的问题. 在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的mid">
 
 
 
@@ -128,6 +124,8 @@
 </script>
 
 
+
+  <link rel="canonical" href="http://nickcheng.com/2007/10/12/pay-attention-to-the-python-egg-when-use-modpython-and-django/"/>
 
 
 
@@ -178,7 +176,7 @@
     </a>
   </div>
     
-      <p class="site-subtitle"></p>
+      <h1 class="site-subtitle" itemprop="description"></h1>
     
 </div>
 
@@ -313,18 +311,28 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
                 mod_python和django使用需要注意python egg
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-10-12T17:03:00+09:00">
+                2007-10-12
+              </time>
             
 
             
@@ -598,11 +606,22 @@
   &copy;  2003 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         

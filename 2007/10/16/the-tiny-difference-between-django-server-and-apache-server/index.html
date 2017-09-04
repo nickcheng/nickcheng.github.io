@@ -86,22 +86,18 @@
 
 
 
-<meta name="description" content="今天把在家调好的网站放到服务器上, 发现不能运行, 提示 ViewDoesNotExist 的异常错误. 一开始以为又是服务器上的文件访问权限问题, 但是 chmod 到 777 之后问题还是照旧, 而且在我本地用”manage.py runserver”运行还是没有问题. 于是乎, 去Python-Chinese的邮件列表寻找答案. 看到limodou有如下一说:
-
-使用apache要复杂些，要">
+<meta name="description" content="今天把在家调好的网站放到服务器上, 发现不能运行, 提示 ViewDoesNotExist 的异常错误. 一开始以为又是服务器上的文件访问权限问题, 但是 chmod 到 777 之后问题还是照旧, 而且在我本地用”manage.py runserver”运行还是没有问题. 于是乎, 去Python-Chinese的邮件列表寻找答案. 看到limodou有如下一说:  使用apache要复杂些，要">
+<meta name="keywords" content="tech,server,django,error,url,view">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django server和Apache下运行Django的细微差别">
 <meta property="og:url" content="http://nickcheng.com/2007/10/16/the-tiny-difference-between-django-server-and-apache-server/index.html">
 <meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="今天把在家调好的网站放到服务器上, 发现不能运行, 提示 ViewDoesNotExist 的异常错误. 一开始以为又是服务器上的文件访问权限问题, 但是 chmod 到 777 之后问题还是照旧, 而且在我本地用”manage.py runserver”运行还是没有问题. 于是乎, 去Python-Chinese的邮件列表寻找答案. 看到limodou有如下一说:
-
-使用apache要复杂些，要">
+<meta property="og:description" content="今天把在家调好的网站放到服务器上, 发现不能运行, 提示 ViewDoesNotExist 的异常错误. 一开始以为又是服务器上的文件访问权限问题, 但是 chmod 到 777 之后问题还是照旧, 而且在我本地用”manage.py runserver”运行还是没有问题. 于是乎, 去Python-Chinese的邮件列表寻找答案. 看到limodou有如下一说:  使用apache要复杂些，要">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-05-27T11:44:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django server和Apache下运行Django的细微差别">
-<meta name="twitter:description" content="今天把在家调好的网站放到服务器上, 发现不能运行, 提示 ViewDoesNotExist 的异常错误. 一开始以为又是服务器上的文件访问权限问题, 但是 chmod 到 777 之后问题还是照旧, 而且在我本地用”manage.py runserver”运行还是没有问题. 于是乎, 去Python-Chinese的邮件列表寻找答案. 看到limodou有如下一说:
-
-使用apache要复杂些，要">
+<meta name="twitter:description" content="今天把在家调好的网站放到服务器上, 发现不能运行, 提示 ViewDoesNotExist 的异常错误. 一开始以为又是服务器上的文件访问权限问题, 但是 chmod 到 777 之后问题还是照旧, 而且在我本地用”manage.py runserver”运行还是没有问题. 于是乎, 去Python-Chinese的邮件列表寻找答案. 看到limodou有如下一说:  使用apache要复杂些，要">
 
 
 
@@ -128,6 +124,8 @@
 </script>
 
 
+
+  <link rel="canonical" href="http://nickcheng.com/2007/10/16/the-tiny-difference-between-django-server-and-apache-server/"/>
 
 
 
@@ -178,7 +176,7 @@
     </a>
   </div>
     
-      <p class="site-subtitle"></p>
+      <h1 class="site-subtitle" itemprop="description"></h1>
     
 </div>
 
@@ -313,18 +311,28 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
                 Django server和Apache下运行Django的细微差别
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-10-16T17:06:00+09:00">
+                2007-10-16
+              </time>
             
 
             
@@ -611,11 +619,22 @@ urlpatterns = patterns(&apos;&apos;,
   &copy;  2003 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         

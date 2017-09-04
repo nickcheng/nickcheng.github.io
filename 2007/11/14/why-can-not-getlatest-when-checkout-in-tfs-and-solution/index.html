@@ -86,28 +86,21 @@
 
 
 
-<meta name="description" content="原因
-TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下: 
-
-假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta name="description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta name="keywords" content="tech,solution,tfs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)">
 <meta property="og:url" content="http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/index.html">
 <meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="原因
-TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下: 
-
-假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta property="og:description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg">
 <meta property="og:image" content="http://photo5.yupoo.com/20071114/145404_279588783_m.jpg">
 <meta property="og:image" content="http://photo5.yupoo.com/20071114/145404_248546321_m.jpg">
 <meta property="og:updated_time" content="2016-05-27T11:44:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)">
-<meta name="twitter:description" content="原因
-TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下: 
-
-假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta name="twitter:description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
 <meta name="twitter:image" content="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg">
 
 
@@ -135,6 +128,8 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
 </script>
 
 
+
+  <link rel="canonical" href="http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/"/>
 
 
 
@@ -185,7 +180,7 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
     </a>
   </div>
     
-      <p class="site-subtitle"></p>
+      <h1 class="site-subtitle" itemprop="description"></h1>
     
 </div>
 
@@ -320,18 +315,28 @@ TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
             
             
               
                 关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-11-14T15:15:11+09:00">
+                2007-11-14
+              </time>
             
 
             
@@ -622,11 +627,22 @@ End Sub
   &copy;  2003 - 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
-    <i class="fa fa-"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 </div>
 
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
 
         
