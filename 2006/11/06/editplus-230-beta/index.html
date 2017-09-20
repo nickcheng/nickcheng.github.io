@@ -1,0 +1,658 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="tech," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="ES-Computing.EditPlus.v2.30.Incl.Keymaker-ZWT.rar 周末看到EditPlus 2.30 beta出来了! 特意和大家分享一下:) 自己一直是EditPlus的簇拥, 启动速度快, 而且功能也比较强大! 这次更新又增加一些新的特性, 挺吸引人的! 把新特性简单翻译了一下, 写了些自己的理解. 并用红色标出自己喜欢的新特性!   按照行缩进进行代码折叠">
+<meta name="keywords" content="tech">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Editplus 2.30 beta">
+<meta property="og:url" content="http://nickcheng.com/2006/11/06/editplus-230-beta/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="ES-Computing.EditPlus.v2.30.Incl.Keymaker-ZWT.rar 周末看到EditPlus 2.30 beta出来了! 特意和大家分享一下:) 自己一直是EditPlus的簇拥, 启动速度快, 而且功能也比较强大! 这次更新又增加一些新的特性, 挺吸引人的! 把新特性简单翻译了一下, 写了些自己的理解. 并用红色标出自己喜欢的新特性!   按照行缩进进行代码折叠">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-20T13:38:20.878Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Editplus 2.30 beta">
+<meta name="twitter:description" content="ES-Computing.EditPlus.v2.30.Incl.Keymaker-ZWT.rar 周末看到EditPlus 2.30 beta出来了! 特意和大家分享一下:) 自己一直是EditPlus的簇拥, 启动速度快, 而且功能也比较强大! 这次更新又增加一些新的特性, 挺吸引人的! 把新特性简单翻译了一下, 写了些自己的理解. 并用红色标出自己喜欢的新特性!   按照行缩进进行代码折叠">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: 'K8MLGLUY7B',
+      apiKey: 'c9ebe1b4c1bd794327271d452488feab',
+      indexName: 'nickcheng.com',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://nickcheng.com/2006/11/06/editplus-230-beta/"/>
+
+
+
+
+
+  <title> Editplus 2.30 beta | Nickcheng.LOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-53032-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Nickcheng.LOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle"></p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/11/06/editplus-230-beta/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="nickcheng">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Nickcheng.LOG">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Editplus 2.30 beta
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2006-11-06T13:07:52+00:00">
+                2006-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="http://www.box.net/public/rcy4opsl2x" target="_blank" rel="external">ES-Computing.EditPlus.v2.30.Incl.Keymaker-ZWT.rar</a></p>
+<p>周末看到EditPlus 2.30 beta出来了! 特意和大家分享一下:)</p>
+<p>自己一直是EditPlus的簇拥, 启动速度快, 而且功能也比较强大! 这次更新又增加一些新的特性, 挺吸引人的!</p>
+<p>把新特性简单翻译了一下, 写了些自己的理解. 并用红色标出自己喜欢的新特性!</p>
+<ul>
+<li><strong> 按照行缩进进行代码折叠 (View-&gt;Code Folding). 这下方便多了</strong></li>
+<li>‘Copy as HTML’ 命令 (Edit-&gt;Clipboard). 将选中的文本以HTML格式复制, 字体属性都有了</li>
+<li>‘Search Document’, ‘Search All Open Files’ 命令 (Edit-&gt;Insert). 还不知道有什么用:)</li>
+<li>新的宏参数$(WindwList)支持 ‘Create temp file of remote file’ 选项. 写脚本的时候有更多选择了</li>
+<li>‘Use XHTML tags’ 选项 (Preferences-&gt;General). 网页标准啊, 大势所趋!</li>
+<li>安装时, 可以选择将配置文件存在”我的文档”的个人目录下.</li>
+<li>‘Sum’ 命令(Tools). 方便计算一些数字的和</li>
+<li><strong> ‘View in Browser 2’ 命令(View). 调试HTML更方便了</strong></li>
+<li>‘Create File’ 命令(Directory Window). 没找到这个命令在哪儿……</li>
+<li>‘Default encoding’ 选项 (Preferences-&gt;Files). 文件的默认编码, 有了这个选项以后, 我直接就改成UTF-8了</li>
+<li>‘Beginning page number’ 选项(Preferences-&gt;Print). 打印的时候可以设置起始页页码</li>
+<li>文件列表中, 按住Shift键删除可以跳过回收站.</li>
+<li>可以在环境变量中设置备份文件目录.</li>
+<li>‘Warn if server doesn’t respond in 10 sec.’ 选项 (FTP Settings). FTP设置中可以在服务器没有应答10s后提醒</li>
+<li>Adds ‘Document’-&gt;’File Format Multiple’ 作为单独的命令. 可以一次设置多个文件的格式</li>
+<li>工具栏按钮 for ‘File Directory’, ‘Monitor Clipbaord’, ‘Set Read Only’. 这三个功能有工具栏按钮, 不过我没有找到, 只在Documents菜单下看到</li>
+<li>‘Use system font in dialog box’ 选项(Preferences-&gt;Fonts). 对话框使用系统字体</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tech/" rel="tag"># tech</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2006/11/03/delicious-is-ill-or-feedburner-is-ill/" rel="next" title="Del.icio.us病了?FeedBurner病了?">
+                <i class="fa fa-chevron-left"></i> Del.icio.us病了?FeedBurner病了?
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2006/11/12/the-dog-is-different/" rel="prev" title="同样是狗狗, 差别可大了">
+                同样是狗狗, 差别可大了 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="nickcheng" />
+          <p class="site-author-name" itemprop="name">nickcheng</p>
+          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">nickcheng</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="></script>
+      <!-- UY END -->
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
