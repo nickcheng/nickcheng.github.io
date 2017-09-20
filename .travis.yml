@@ -3,6 +3,7 @@ sudo: required
 node_js:
   - stable
 before_install:
+  - export TZ='Asia/Tokyo'
   - npm install hexo-cli -g
 install:
   - npm install
@@ -19,7 +20,7 @@ after_script:
   - git config user.name "nickcheng"
   - git config user.email "n@nickcheng.com"
   - git add .
-  - git commit -m "Travis CI Auto Builder"
+  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
   - git push --force --quiet "https://${GH_Token}@${GH_Ref}" master:master
 branches:
   only:
