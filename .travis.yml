@@ -5,17 +5,23 @@ node_js:
 cache:
   directories:
     - node_modules
-before_script:
-  - git clone --branch master https://github.com/nickcheng/nickcheng.github.io.git public
+before_install:
+  - git config --global push.default matching
+  - git config --global user.name "nickcheng" 
+  - git config --global user.email "n@nickcheng.com"
+install:
+  - npm install hexo-cli -g
+  - npm install hexo --save
+  - npm install
 script:
-  - npm run build
+  - hexo clean
+  - hexo generate
 after_success:
-  - cd public
-  - git config user.name "nickcheng"
-  - git config user.email "n@nickcheng.com"
+  - cd ./public
+  - git init
   - git add --all .
-  - git commit -m "travis ci auto build"
-  - git push https://${GH_Token}@github.com/nickcheng/nickcheng.github.io.git master
+  - git commit -m "Travis CI Auto Builder"
+  - git push --quiet --force https://$GH_Token@github.com/nickcheng/nickcheng.github.io.git master
 branches:
   only:
     - admin
