@@ -1,0 +1,21 @@
+language: node_js
+sudo: required
+node_js:
+  - stable
+cache:
+  directories:
+    - node_modules
+before_script:
+  - git clone --branch master https://github.com/nickcheng/nickcheng.github.io.git public
+script:
+  - npm run build
+after_success:
+  - cd public
+  - git config user.name "nickcheng"
+  - git config user.email "n@nickcheng.com"
+  - git add --all .
+  - git commit -m "travis ci auto build"
+  - git push https://${GH_Token}@github.com/nickcheng/nickcheng.github.io.git master
+branches:
+  only:
+    - admin
