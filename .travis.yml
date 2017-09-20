@@ -5,6 +5,7 @@ node_js:
 before_install:
   - export TZ='Asia/Tokyo'
   - npm install hexo-cli -g
+  - npm install -- save-dev hexo-util
 install:
   - npm install
 script:
