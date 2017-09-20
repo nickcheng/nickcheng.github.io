@@ -3,25 +3,31 @@ sudo: required
 node_js:
   - stable
 cache:
+  apt: true
   directories:
     - node_modules
 before_install:
-  - git config --global push.default matching
-  - git config --global user.name "nickcheng" 
-  - git config --global user.email "n@nickcheng.com"
-install:
   - npm install hexo-cli -g
-  - npm install hexo --save
+install:
   - npm install
 script:
   - hexo clean
   - hexo generate
-after_success:
+after_script:
+  - git clone https://${GH_Ref} .deploy_git
+  - cd .deploy_git
+  - git checkout master
+  - cd ../
+  - mv .deploy_git/.git/ ./public/
   - cd ./public
-  - git init
-  - git add --all .
+  - git config user.name "nickcheng"
+  - git config user.email "n@nickcheng.com"
+  - git add .
   - git commit -m "Travis CI Auto Builder"
-  - git push --quiet --force https://$GH_Token@github.com/nickcheng/nickcheng.github.io.git master
+  - git push --force --quiet "https://${GH_Token}@${GH_Ref}" master:master
 branches:
   only:
     - admin
+env:
+  global:
+    - GH_Ref: github.com/nickcheng/nickcheng.github.io.git
