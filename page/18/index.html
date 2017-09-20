@@ -1,20 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next mist" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
 
 
 
@@ -65,10 +74,10 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="nickcheng, ios, development, life" />
 
 
 
@@ -79,7 +88,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,10 +112,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
+    version: '5.0.1',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
-    motion: true,
+    tabs: ,
+    motion: "",
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -129,19 +140,17 @@
 
 
 
-  <title> Nickcheng.LOG </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
+  <title>Nickcheng.LOG</title>
   
+
+
 
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-53032-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -150,42 +159,43 @@
 
 
 
+</head>
 
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Nickcheng.LOG</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Nickcheng.LOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
   </div>
-    
-      <p class="site-subtitle"></p>
-    
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -198,7 +208,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Home
           </a>
@@ -208,7 +218,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Archives
           </a>
@@ -218,7 +228,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Tags
           </a>
@@ -226,9 +236,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -252,38 +300,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/21/will-move-my-blog/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/21/will-move-my-blog/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/21/will-move-my-blog/" itemprop="url">
-                  将搬家提上日程!
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/21/will-move-my-blog/" itemprop="url">将搬家提上日程!</a></h2>
         
 
         <div class="post-meta">
@@ -312,8 +353,8 @@
           
 
           
-
           
+
           
 
           
@@ -324,7 +365,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -365,17 +408,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -385,6 +430,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -397,38 +446,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/19/five-harmful-sentences-to-children/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/19/five-harmful-sentences-to-children/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/19/five-harmful-sentences-to-children/" itemprop="url">
-                  对孩子伤害最大的5句话
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/19/five-harmful-sentences-to-children/" itemprop="url">对孩子伤害最大的5句话</a></h2>
         
 
         <div class="post-meta">
@@ -457,8 +499,8 @@
           
 
           
-
           
+
           
 
           
@@ -469,7 +511,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -510,17 +554,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -530,6 +576,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -542,38 +592,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/18/i-want-a-studio/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/18/i-want-a-studio/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/18/i-want-a-studio/" itemprop="url">
-                  啥时候整个Studio?
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/18/i-want-a-studio/" itemprop="url">啥时候整个Studio?</a></h2>
         
 
         <div class="post-meta">
@@ -602,8 +645,8 @@
           
 
           
-
           
+
           
 
           
@@ -614,7 +657,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -635,17 +680,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -655,6 +702,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -667,38 +718,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/15/wii-will-release/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/15/wii-will-release/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/15/wii-will-release/" itemprop="url">
-                  Wii要发布了!
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/15/wii-will-release/" itemprop="url">Wii要发布了!</a></h2>
         
 
         <div class="post-meta">
@@ -727,8 +771,8 @@
           
 
           
-
           
+
           
 
           
@@ -739,7 +783,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -755,17 +801,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -775,6 +823,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -787,38 +839,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/13/expose-myself/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/13/expose-myself/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/13/expose-myself/" itemprop="url">
-                  开始自暴了啊!准备接招
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/13/expose-myself/" itemprop="url">开始自暴了啊!准备接招</a></h2>
         
 
         <div class="post-meta">
@@ -847,8 +892,8 @@
           
 
           
-
           
+
           
 
           
@@ -859,7 +904,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -979,17 +1026,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -999,6 +1048,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1011,38 +1064,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/12/recently-20060913/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/12/recently-20060913/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/12/recently-20060913/" itemprop="url">
-                  最近记事
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/12/recently-20060913/" itemprop="url">最近记事</a></h2>
         
 
         <div class="post-meta">
@@ -1071,8 +1117,8 @@
           
 
           
-
           
+
           
 
           
@@ -1083,7 +1129,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1107,17 +1155,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1127,6 +1177,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1139,38 +1193,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/01/lp-humor/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/09/01/lp-humor/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/09/01/lp-humor/" itemprop="url">
-                  老婆爆笑日记（看了想结婚）
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/09/01/lp-humor/" itemprop="url">老婆爆笑日记（看了想结婚）</a></h2>
         
 
         <div class="post-meta">
@@ -1199,8 +1246,8 @@
           
 
           
-
           
+
           
 
           
@@ -1211,7 +1258,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1241,17 +1290,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1261,6 +1312,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1273,38 +1328,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/08/25/many-usings-of-google-calendar/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/08/25/many-usings-of-google-calendar/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/08/25/many-usings-of-google-calendar/" itemprop="url">
-                  GoogleCalendar的多种用法
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/08/25/many-usings-of-google-calendar/" itemprop="url">GoogleCalendar的多种用法</a></h2>
         
 
         <div class="post-meta">
@@ -1333,8 +1381,8 @@
           
 
           
-
           
+
           
 
           
@@ -1345,7 +1393,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1361,13 +1411,13 @@
 <p>自己曾经加过一些别人分享的有趣的日历, 象农历日历, F1日程, 节日等. 但当时只是觉得这是一个展示的工具, 玩了一段时间就放下了. 但随着后来的了解, 觉得这个日历还是蛮有玩头的!</p>
 <p>随便在搜索栏中搜索了一些有趣的词语, 随即看到了许多别人分享的日历(也有可能是不小心分享的^_^), 也看到了许多不同的使用日历的方式.</p>
 <p>最常用的就是日程表了, 工作的日程, 生活的日程, 活动的日程. 都是对于未来的计划, 我使用的方式应该也是这样</p>
-<p>例子: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#104;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#x77;&#x77;&#x77;&#x2e;&#103;&#x6f;&#111;&#x67;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;&#x2f;&#x63;&#97;&#x6c;&#101;&#x6e;&#100;&#x61;&#x72;&#47;&#101;&#x6d;&#x62;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#x6e;&#97;&#x73;&#x64;&#97;&#x71;&#x62;&#x61;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#104;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#x77;&#x77;&#x77;&#x2e;&#103;&#x6f;&#111;&#x67;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;&#x2f;&#x63;&#97;&#x6c;&#101;&#x6e;&#100;&#x61;&#x72;&#47;&#101;&#x6d;&#x62;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#x6e;&#97;&#x73;&#x64;&#97;&#x71;&#x62;&#x61;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>例子: <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#104;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x77;&#x77;&#119;&#46;&#103;&#111;&#x6f;&#x67;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;&#47;&#99;&#97;&#108;&#x65;&#110;&#x64;&#97;&#114;&#47;&#101;&#109;&#x62;&#101;&#100;&#x3f;&#115;&#x72;&#99;&#x3d;&#x6e;&#97;&#115;&#x64;&#97;&#113;&#98;&#97;&#114;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">&#104;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x77;&#x77;&#119;&#46;&#103;&#111;&#x6f;&#x67;&#108;&#x65;&#x2e;&#99;&#x6f;&#x6d;&#47;&#99;&#97;&#108;&#x65;&#110;&#x64;&#97;&#114;&#47;&#101;&#109;&#x62;&#101;&#100;&#x3f;&#115;&#x72;&#99;&#x3d;&#x6e;&#97;&#115;&#x64;&#97;&#113;&#98;&#97;&#114;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
 <p>然后就是一些记录了</p>
-<p>例子: <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#x74;&#x74;&#112;&#58;&#47;&#47;&#119;&#119;&#119;&#46;&#x67;&#x6f;&#111;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;&#x2f;&#x63;&#97;&#x6c;&#x65;&#110;&#100;&#97;&#x72;&#47;&#101;&#x6d;&#x62;&#x65;&#100;&#63;&#x73;&#114;&#x63;&#x3d;&#x66;&#x68;&#48;&#57;&#x74;&#x39;&#x63;&#101;&#x36;&#x76;&#x76;&#x6e;&#50;&#55;&#99;&#x62;&#x75;&#x38;&#116;&#x34;&#51;&#107;&#54;&#x30;&#x6d;&#x6b;&#64;&#x67;&#x72;&#111;&#x75;&#x70;&#46;&#x63;&#97;&#108;&#x65;&#110;&#x64;&#97;&#114;&#x2e;&#103;&#x6f;&#111;&#103;&#108;&#101;&#x2e;&#99;&#x6f;&#109;&#38;&#x6d;&#111;&#100;&#x65;&#x3b;&#61;&#77;&#79;&#x4e;&#x54;&#72;&#x26;&#100;&#97;&#x74;&#x65;&#x73;&#x3b;&#61;&#50;&#x30;&#x30;&#x36;&#x30;&#x37;&#48;&#49;&#37;&#x32;&#70;&#x32;&#x30;&#x30;&#x36;&#48;&#56;&#48;&#x31;">&#104;&#x74;&#x74;&#112;&#58;&#47;&#47;&#119;&#119;&#119;&#46;&#x67;&#x6f;&#111;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#111;&#109;&#x2f;&#x63;&#97;&#x6c;&#x65;&#110;&#100;&#97;&#x72;&#47;&#101;&#x6d;&#x62;&#x65;&#100;&#63;&#x73;&#114;&#x63;&#x3d;&#x66;&#x68;&#48;&#57;&#x74;&#x39;&#x63;&#101;&#x36;&#x76;&#x76;&#x6e;&#50;&#55;&#99;&#x62;&#x75;&#x38;&#116;&#x34;&#51;&#107;&#54;&#x30;&#x6d;&#x6b;&#64;&#x67;&#x72;&#111;&#x75;&#x70;&#46;&#x63;&#97;&#108;&#x65;&#110;&#x64;&#97;&#114;&#x2e;&#103;&#x6f;&#111;&#103;&#108;&#101;&#x2e;&#99;&#x6f;&#109;&#38;&#x6d;&#111;&#100;&#x65;&#x3b;&#61;&#77;&#79;&#x4e;&#x54;&#72;&#x26;&#100;&#97;&#x74;&#x65;&#x73;&#x3b;&#61;&#50;&#x30;&#x30;&#x36;&#x30;&#x37;&#48;&#49;&#37;&#x32;&#70;&#x32;&#x30;&#x30;&#x36;&#48;&#56;&#48;&#x31;</a></p>
-<p>例子: <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#104;&#116;&#116;&#112;&#58;&#x2f;&#47;&#x77;&#x77;&#x77;&#x2e;&#103;&#111;&#x6f;&#103;&#108;&#101;&#46;&#99;&#x6f;&#x6d;&#47;&#99;&#97;&#x6c;&#101;&#x6e;&#x64;&#97;&#114;&#47;&#x65;&#x6d;&#x62;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#x71;&#113;&#x38;&#50;&#53;&#x39;&#50;&#x33;&#57;&#57;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#109;">&#104;&#116;&#116;&#112;&#58;&#x2f;&#47;&#x77;&#x77;&#x77;&#x2e;&#103;&#111;&#x6f;&#103;&#108;&#101;&#46;&#99;&#x6f;&#x6d;&#47;&#99;&#97;&#x6c;&#101;&#x6e;&#x64;&#97;&#114;&#47;&#x65;&#x6d;&#x62;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#x71;&#113;&#x38;&#50;&#53;&#x39;&#50;&#x33;&#57;&#57;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>例子: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#x74;&#x74;&#112;&#x3a;&#47;&#47;&#119;&#x77;&#119;&#x2e;&#x67;&#111;&#111;&#103;&#x6c;&#101;&#x2e;&#99;&#111;&#109;&#x2f;&#x63;&#x61;&#108;&#101;&#x6e;&#x64;&#97;&#114;&#x2f;&#x65;&#109;&#x62;&#101;&#100;&#x3f;&#115;&#114;&#x63;&#61;&#102;&#104;&#x30;&#57;&#x74;&#x39;&#99;&#101;&#x36;&#x76;&#118;&#110;&#50;&#55;&#99;&#98;&#117;&#x38;&#116;&#52;&#51;&#x6b;&#x36;&#x30;&#109;&#x6b;&#64;&#103;&#114;&#111;&#117;&#112;&#x2e;&#99;&#x61;&#108;&#x65;&#110;&#100;&#97;&#114;&#46;&#x67;&#111;&#111;&#103;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x26;&#109;&#111;&#x64;&#x65;&#x3b;&#x3d;&#x4d;&#x4f;&#78;&#84;&#x48;&#38;&#x64;&#x61;&#x74;&#101;&#115;&#59;&#61;&#x32;&#x30;&#48;&#x36;&#48;&#x37;&#48;&#x31;&#37;&#x32;&#70;&#50;&#48;&#48;&#54;&#48;&#56;&#x30;&#x31;">&#104;&#x74;&#x74;&#112;&#x3a;&#47;&#47;&#119;&#x77;&#119;&#x2e;&#x67;&#111;&#111;&#103;&#x6c;&#101;&#x2e;&#99;&#111;&#109;&#x2f;&#x63;&#x61;&#108;&#101;&#x6e;&#x64;&#97;&#114;&#x2f;&#x65;&#109;&#x62;&#101;&#100;&#x3f;&#115;&#114;&#x63;&#61;&#102;&#104;&#x30;&#57;&#x74;&#x39;&#99;&#101;&#x36;&#x76;&#118;&#110;&#50;&#55;&#99;&#98;&#117;&#x38;&#116;&#52;&#51;&#x6b;&#x36;&#x30;&#109;&#x6b;&#64;&#103;&#114;&#111;&#117;&#112;&#x2e;&#99;&#x61;&#108;&#x65;&#110;&#100;&#97;&#114;&#46;&#x67;&#111;&#111;&#103;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x26;&#109;&#111;&#x64;&#x65;&#x3b;&#x3d;&#x4d;&#x4f;&#78;&#84;&#x48;&#38;&#x64;&#x61;&#x74;&#101;&#115;&#59;&#61;&#x32;&#x30;&#48;&#x36;&#48;&#x37;&#48;&#x31;&#37;&#x32;&#70;&#50;&#48;&#48;&#54;&#48;&#56;&#x30;&#x31;</a></p>
+<p>例子: <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#104;&#x74;&#x74;&#x70;&#x3a;&#47;&#x2f;&#119;&#119;&#119;&#46;&#x67;&#x6f;&#111;&#x67;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;&#x2f;&#x63;&#97;&#x6c;&#x65;&#110;&#x64;&#97;&#114;&#x2f;&#101;&#109;&#98;&#x65;&#x64;&#x3f;&#x73;&#114;&#99;&#x3d;&#113;&#x71;&#x38;&#x32;&#x35;&#x39;&#x32;&#51;&#x39;&#x39;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#104;&#x74;&#x74;&#x70;&#x3a;&#47;&#x2f;&#119;&#119;&#119;&#46;&#x67;&#x6f;&#111;&#x67;&#x6c;&#101;&#x2e;&#99;&#111;&#x6d;&#x2f;&#x63;&#97;&#x6c;&#x65;&#110;&#x64;&#97;&#114;&#x2f;&#101;&#109;&#98;&#x65;&#x64;&#x3f;&#x73;&#114;&#99;&#x3d;&#113;&#x71;&#x38;&#x32;&#x35;&#x39;&#x32;&#51;&#x39;&#x39;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 <p>同样是记录, 还有人用它来写日记, 也是不错的使用方式! 如果支持发布到Blog也不错:)</p>
-<p><a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#58;&#104;&#116;&#116;&#x70;&#58;&#47;&#47;&#x77;&#x77;&#119;&#x2e;&#x67;&#x6f;&#x6f;&#103;&#108;&#x65;&#x2e;&#99;&#x6f;&#109;&#47;&#99;&#x61;&#108;&#x65;&#x6e;&#x64;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#x64;&#x3f;&#115;&#x72;&#x63;&#61;&#x79;&#46;&#x78;&#x69;&#x61;&#111;&#x78;&#105;&#x61;&#x6f;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;&#38;&#100;&#x61;&#116;&#101;&#x73;&#59;&#x3d;&#x32;&#x30;&#x30;&#x36;&#48;&#x34;&#48;&#x31;&#37;&#x32;&#70;&#x32;&#48;&#48;&#54;&#48;&#x35;&#48;&#49;">&#104;&#116;&#116;&#x70;&#58;&#47;&#47;&#x77;&#x77;&#119;&#x2e;&#x67;&#x6f;&#x6f;&#103;&#108;&#x65;&#x2e;&#99;&#x6f;&#109;&#47;&#99;&#x61;&#108;&#x65;&#x6e;&#x64;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#x64;&#x3f;&#115;&#x72;&#x63;&#61;&#x79;&#46;&#x78;&#x69;&#x61;&#111;&#x78;&#105;&#x61;&#x6f;&#x40;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;&#38;&#100;&#x61;&#116;&#101;&#x73;&#59;&#x3d;&#x32;&#x30;&#x30;&#x36;&#48;&#x34;&#48;&#x31;&#37;&#x32;&#70;&#x32;&#48;&#48;&#54;&#48;&#x35;&#48;&#49;</a><br><a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#104;&#116;&#x74;&#112;&#x3a;&#47;&#47;&#119;&#x77;&#x77;&#x2e;&#x67;&#x6f;&#111;&#103;&#108;&#101;&#46;&#x63;&#111;&#x6d;&#x2f;&#99;&#97;&#108;&#x65;&#110;&#x64;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#100;&#x3f;&#x73;&#114;&#x63;&#61;&#57;&#116;&#116;&#98;&#109;&#105;&#54;&#53;&#x30;&#x75;&#x68;&#112;&#x6d;&#53;&#57;&#x6f;&#52;&#x34;&#102;&#118;&#x69;&#x6c;&#108;&#110;&#x61;&#103;&#64;&#103;&#x72;&#111;&#x75;&#112;&#x2e;&#99;&#97;&#x6c;&#101;&#x6e;&#x64;&#97;&#114;&#x2e;&#x67;&#x6f;&#111;&#103;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#104;&#116;&#x74;&#112;&#x3a;&#47;&#47;&#119;&#x77;&#x77;&#x2e;&#x67;&#x6f;&#111;&#103;&#108;&#101;&#46;&#x63;&#111;&#x6d;&#x2f;&#99;&#97;&#108;&#x65;&#110;&#x64;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#100;&#x3f;&#x73;&#114;&#x63;&#61;&#57;&#116;&#116;&#98;&#109;&#105;&#54;&#53;&#x30;&#x75;&#x68;&#112;&#x6d;&#53;&#57;&#x6f;&#52;&#x34;&#102;&#118;&#x69;&#x6c;&#108;&#110;&#x61;&#103;&#64;&#103;&#x72;&#111;&#x75;&#112;&#x2e;&#99;&#97;&#x6c;&#101;&#x6e;&#x64;&#97;&#114;&#x2e;&#x67;&#x6f;&#111;&#103;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a></p>
-<p>还有是使用Google Calendar来做工作上的事情, 比如Bug追踪:<br><a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x68;&#116;&#116;&#112;&#58;&#47;&#47;&#x77;&#119;&#119;&#46;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;&#x2f;&#x63;&#97;&#108;&#101;&#110;&#100;&#x61;&#114;&#47;&#x65;&#109;&#98;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#61;&#x65;&#113;&#x70;&#x65;&#116;&#x65;&#x72;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#x68;&#116;&#116;&#112;&#58;&#47;&#47;&#x77;&#119;&#119;&#46;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;&#x2f;&#x63;&#97;&#108;&#101;&#110;&#100;&#x61;&#114;&#47;&#x65;&#109;&#98;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#61;&#x65;&#113;&#x70;&#x65;&#116;&#x65;&#x72;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p><a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#x74;&#x74;&#112;&#x3a;&#x2f;&#47;&#119;&#x77;&#119;&#x2e;&#x67;&#x6f;&#x6f;&#103;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;&#47;&#99;&#x61;&#x6c;&#x65;&#x6e;&#x64;&#97;&#x72;&#x2f;&#x65;&#109;&#x62;&#x65;&#100;&#63;&#x73;&#x72;&#x63;&#x3d;&#x79;&#46;&#x78;&#105;&#x61;&#111;&#x78;&#x69;&#x61;&#x6f;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;&#38;&#x64;&#x61;&#116;&#101;&#x73;&#x3b;&#61;&#x32;&#48;&#48;&#54;&#x30;&#52;&#x30;&#x31;&#37;&#50;&#70;&#x32;&#x30;&#x30;&#54;&#48;&#x35;&#48;&#49;">&#x68;&#x74;&#x74;&#112;&#x3a;&#x2f;&#47;&#119;&#x77;&#119;&#x2e;&#x67;&#x6f;&#x6f;&#103;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;&#47;&#99;&#x61;&#x6c;&#x65;&#x6e;&#x64;&#97;&#x72;&#x2f;&#x65;&#109;&#x62;&#x65;&#100;&#63;&#x73;&#x72;&#x63;&#x3d;&#x79;&#46;&#x78;&#105;&#x61;&#111;&#x78;&#x69;&#x61;&#x6f;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;&#38;&#x64;&#x61;&#116;&#101;&#x73;&#x3b;&#61;&#x32;&#48;&#48;&#54;&#x30;&#52;&#x30;&#x31;&#37;&#50;&#70;&#x32;&#x30;&#x30;&#54;&#48;&#x35;&#48;&#49;</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#104;&#116;&#116;&#x70;&#x3a;&#47;&#47;&#x77;&#x77;&#x77;&#46;&#x67;&#111;&#111;&#x67;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;&#47;&#x63;&#x61;&#108;&#101;&#x6e;&#x64;&#97;&#114;&#x2f;&#x65;&#x6d;&#98;&#x65;&#x64;&#63;&#x73;&#114;&#x63;&#x3d;&#57;&#116;&#116;&#x62;&#x6d;&#x69;&#54;&#53;&#48;&#x75;&#x68;&#112;&#109;&#53;&#57;&#111;&#52;&#52;&#102;&#x76;&#x69;&#x6c;&#x6c;&#x6e;&#x61;&#x67;&#x40;&#103;&#x72;&#x6f;&#117;&#112;&#x2e;&#x63;&#97;&#108;&#101;&#110;&#x64;&#x61;&#x72;&#46;&#103;&#111;&#111;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#104;&#116;&#116;&#x70;&#x3a;&#47;&#47;&#x77;&#x77;&#x77;&#46;&#x67;&#111;&#111;&#x67;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;&#47;&#x63;&#x61;&#108;&#101;&#x6e;&#x64;&#97;&#114;&#x2f;&#x65;&#x6d;&#98;&#x65;&#x64;&#63;&#x73;&#114;&#x63;&#x3d;&#57;&#116;&#116;&#x62;&#x6d;&#x69;&#54;&#53;&#48;&#x75;&#x68;&#112;&#109;&#53;&#57;&#111;&#52;&#52;&#102;&#x76;&#x69;&#x6c;&#x6c;&#x6e;&#x61;&#x67;&#x40;&#103;&#x72;&#x6f;&#117;&#112;&#x2e;&#x63;&#97;&#108;&#101;&#110;&#x64;&#x61;&#x72;&#46;&#103;&#111;&#111;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p>还有是使用Google Calendar来做工作上的事情, 比如Bug追踪:<br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x68;&#x74;&#116;&#112;&#x3a;&#x2f;&#47;&#x77;&#119;&#x77;&#x2e;&#103;&#x6f;&#111;&#x67;&#108;&#101;&#46;&#99;&#x6f;&#109;&#47;&#99;&#97;&#108;&#x65;&#110;&#100;&#97;&#114;&#x2f;&#x65;&#109;&#98;&#101;&#x64;&#x3f;&#115;&#x72;&#x63;&#61;&#x65;&#113;&#x70;&#101;&#x74;&#101;&#x72;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#x74;&#116;&#112;&#x3a;&#x2f;&#47;&#x77;&#119;&#x77;&#x2e;&#103;&#x6f;&#111;&#x67;&#108;&#101;&#46;&#99;&#x6f;&#109;&#47;&#99;&#97;&#108;&#x65;&#110;&#100;&#97;&#114;&#x2f;&#x65;&#109;&#98;&#101;&#x64;&#x3f;&#115;&#x72;&#x63;&#61;&#x65;&#113;&#x70;&#101;&#x74;&#101;&#x72;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></p>
 <p>Google日历还支持RSS订阅和HTML输出, 用RSS Reader订阅和将HTML嵌入在自己网页上就是很好的应用!</p>
 <p>我也要想想自己要怎么使用这个灵活的工具!</p>
 
@@ -1375,17 +1425,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1395,6 +1447,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1407,38 +1463,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/08/04/i-have-arrived-kunming/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/08/04/i-have-arrived-kunming/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/08/04/i-have-arrived-kunming/" itemprop="url">
-                  已经到昆明了！
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/08/04/i-have-arrived-kunming/" itemprop="url">已经到昆明了！</a></h2>
         
 
         <div class="post-meta">
@@ -1467,8 +1516,8 @@
           
 
           
-
           
+
           
 
           
@@ -1479,7 +1528,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1499,17 +1550,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1519,6 +1572,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1531,38 +1588,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/08/02/webvideosniffer/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/08/02/webvideosniffer/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2006/08/02/webvideosniffer/" itemprop="url">
-                  WebVideoSniffer
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2006/08/02/webvideosniffer/" itemprop="url">WebVideoSniffer</a></h2>
         
 
         <div class="post-meta">
@@ -1591,8 +1641,8 @@
           
 
           
-
           
+
           
 
           
@@ -1603,7 +1653,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1621,17 +1673,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1641,6 +1695,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1653,7 +1711,7 @@
   </nav>
 
 
-          
+
           </div>
           
 
@@ -1673,6 +1731,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -1681,17 +1740,18 @@
 
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="nickcheng" />
-          <p class="site-author-name" itemprop="name">nickcheng</p>
-          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+          
+            <p class="site-author-name" itemprop="name">nickcheng</p>
+            <p class="site-description motion-element" itemprop="description"></p>
         </div>
+
         <nav class="site-state motion-element">
-        
+
           
             <div class="site-state-item site-state-posts">
+            
               <a href="/archives">
+            
                 <span class="site-state-item-count">445</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -1701,8 +1761,10 @@
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">231</span>
                 <span class="site-state-item-name">tags</span>
               </a>
@@ -1722,6 +1784,20 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
+              </span>
+            
+          
         </div>
 
         
@@ -1737,6 +1813,8 @@
 
       
 
+      
+
     </div>
   </aside>
 
@@ -1749,36 +1827,43 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2003 &mdash; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
+  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
 
 
         
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1798,6 +1883,14 @@
 
 
   
+
+
+
+
+
+
+
+
 
 
 
@@ -1824,37 +1917,29 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
 
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
   
 
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
-	
-
-
-
+  
 
 
   
@@ -1863,15 +1948,36 @@
 
 
 
-  
-
-  
-
 
 
 
   
+
+
+
+
+
+
+
+
   
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+
+
 
   
 
@@ -1881,6 +1987,9 @@
 
   
 
+  
+
+  
 
 </body>
 </html>

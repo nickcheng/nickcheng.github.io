@@ -1,20 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next mist" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
 
 
 
@@ -65,10 +74,10 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="nickcheng, ios, development, life" />
 
 
 
@@ -79,7 +88,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,10 +112,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
+    version: '5.0.1',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
-    motion: true,
+    tabs: ,
+    motion: "",
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -129,19 +140,17 @@
 
 
 
-  <title> Nickcheng.LOG </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
+  <title>Nickcheng.LOG</title>
   
+
+
 
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-53032-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -150,42 +159,43 @@
 
 
 
+</head>
 
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Nickcheng.LOG</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Nickcheng.LOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
   </div>
-    
-      <p class="site-subtitle"></p>
-    
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -198,7 +208,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Home
           </a>
@@ -208,7 +218,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Archives
           </a>
@@ -218,7 +228,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Tags
           </a>
@@ -226,9 +236,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -252,38 +300,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2012/08/04/clean-up-the-unused-plugin-in-safari-6/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2012/08/04/clean-up-the-unused-plugin-in-safari-6/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2012/08/04/clean-up-the-unused-plugin-in-safari-6/" itemprop="url">
-                  清除 Safari 6.0 中无法使用的插件
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2012/08/04/clean-up-the-unused-plugin-in-safari-6/" itemprop="url">清除 Safari 6.0 中无法使用的插件</a></h2>
         
 
         <div class="post-meta">
@@ -312,8 +353,8 @@
           
 
           
-
           
+
           
 
           
@@ -324,7 +365,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -350,17 +393,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -370,6 +415,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -382,38 +431,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/11/29/what-is-cyber-monday/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/11/29/what-is-cyber-monday/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2011/11/29/what-is-cyber-monday/" itemprop="url">
-                  什么是 Cyber Monday ?
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2011/11/29/what-is-cyber-monday/" itemprop="url">什么是 Cyber Monday ?</a></h2>
         
 
         <div class="post-meta">
@@ -442,8 +484,8 @@
           
 
           
-
           
+
           
 
           
@@ -454,7 +496,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -479,17 +523,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -499,6 +545,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -511,38 +561,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/10/26/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/10/26/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2011/10/26/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/" itemprop="url">
-                  iPad 1 不越狱开启多任务手势和屏幕镜像
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2011/10/26/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/" itemprop="url">iPad 1 不越狱开启多任务手势和屏幕镜像</a></h2>
         
 
         <div class="post-meta">
@@ -571,8 +614,8 @@
           
 
           
-
           
+
           
 
           
@@ -583,7 +626,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -614,17 +659,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -634,6 +681,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -646,38 +697,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/10/12/how-to-obtain-the-rss-link-of-users-timeline-in-twitter/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/10/12/how-to-obtain-the-rss-link-of-users-timeline-in-twitter/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2011/10/12/how-to-obtain-the-rss-link-of-users-timeline-in-twitter/" itemprop="url">
-                  如何获得 Twitter 里用户 Timeline 的 RSS 地址
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2011/10/12/how-to-obtain-the-rss-link-of-users-timeline-in-twitter/" itemprop="url">如何获得 Twitter 里用户 Timeline 的 RSS 地址</a></h2>
         
 
         <div class="post-meta">
@@ -706,8 +750,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -718,7 +762,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -738,17 +784,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -758,6 +806,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -770,38 +822,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/02/04/after-installed-ssd-to-your-mbp/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2011/02/04/after-installed-ssd-to-your-mbp/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2011/02/04/after-installed-ssd-to-your-mbp/" itemprop="url">
-                  MBP 装了 SSD 以后要做的事情
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2011/02/04/after-installed-ssd-to-your-mbp/" itemprop="url">MBP 装了 SSD 以后要做的事情</a></h2>
         
 
         <div class="post-meta">
@@ -830,8 +875,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -842,7 +887,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -867,17 +914,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -887,6 +936,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -899,38 +952,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/12/01/notesite/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/12/01/notesite/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2010/12/01/notesite/" itemprop="url">
-                  最近流行的笔记类网站
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/12/01/notesite/" itemprop="url">最近流行的笔记类网站</a></h2>
         
 
         <div class="post-meta">
@@ -959,8 +1005,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -971,7 +1017,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -991,17 +1039,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1011,6 +1061,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1023,38 +1077,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/09/09/app-page-capture/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/09/09/app-page-capture/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2010/09/09/app-page-capture/" itemprop="url">
-                  Page Capture - 浏览器截图大师
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/09/09/app-page-capture/" itemprop="url">Page Capture - 浏览器截图大师</a></h2>
         
 
         <div class="post-meta">
@@ -1083,8 +1130,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -1095,7 +1142,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1116,17 +1165,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1136,6 +1187,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1148,38 +1203,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/07/10/recommend-there-is-no-if-again/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/07/10/recommend-there-is-no-if-again/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2010/07/10/recommend-there-is-no-if-again/" itemprop="url">
-                  再次推荐 There is no if
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/07/10/recommend-there-is-no-if-again/" itemprop="url">再次推荐 There is no if</a></h2>
         
 
         <div class="post-meta">
@@ -1208,8 +1256,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -1220,7 +1268,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1247,17 +1297,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1267,6 +1319,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1279,38 +1335,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/06/28/my-sense-to-foursquare/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/06/28/my-sense-to-foursquare/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2010/06/28/my-sense-to-foursquare/" itemprop="url">
-                  我对FourSquare的认识
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/06/28/my-sense-to-foursquare/" itemprop="url">我对FourSquare的认识</a></h2>
         
 
         <div class="post-meta">
@@ -1339,8 +1388,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -1351,7 +1400,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1392,17 +1443,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1412,6 +1465,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1424,38 +1481,31 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/06/09/bicycle/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2010/06/09/bicycle/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2010/06/09/bicycle/" itemprop="url">
-                  单车
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2010/06/09/bicycle/" itemprop="url">单车</a></h2>
         
 
         <div class="post-meta">
@@ -1484,8 +1534,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
-
           
+
           
 
           
@@ -1496,7 +1546,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1514,17 +1566,19 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1534,6 +1588,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1546,7 +1604,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   </nav>
 
 
-          
+
           </div>
           
 
@@ -1566,6 +1624,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -1574,17 +1633,18 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="nickcheng" />
-          <p class="site-author-name" itemprop="name">nickcheng</p>
-          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+          
+            <p class="site-author-name" itemprop="name">nickcheng</p>
+            <p class="site-description motion-element" itemprop="description"></p>
         </div>
+
         <nav class="site-state motion-element">
-        
+
           
             <div class="site-state-item site-state-posts">
+            
               <a href="/archives">
+            
                 <span class="site-state-item-count">445</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -1594,8 +1654,10 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">231</span>
                 <span class="site-state-item-name">tags</span>
               </a>
@@ -1615,6 +1677,20 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
+              </span>
+            
+          
         </div>
 
         
@@ -1630,6 +1706,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
       
 
+      
+
     </div>
   </aside>
 
@@ -1642,36 +1720,43 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2003 &mdash; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
+  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
 
 
         
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1691,6 +1776,14 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
 
   
+
+
+
+
+
+
+
+
 
 
 
@@ -1717,37 +1810,29 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
 
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
   
 
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
-	
-
-
-
+  
 
 
   
@@ -1756,15 +1841,36 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
 
 
-  
-
-  
-
 
 
 
   
+
+
+
+
+
+
+
+
   
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+
+
 
   
 
@@ -1774,6 +1880,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
   
 
+  
+
+  
 
 </body>
 </html>

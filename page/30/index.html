@@ -1,20 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next mist" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="">
+
+
+
+
+
+
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
 
 
 
@@ -65,10 +74,10 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="nickcheng, ios, development, life" />
 
 
 
@@ -79,7 +88,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,10 +112,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
+    version: '5.0.1',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
-    motion: true,
+    tabs: ,
+    motion: "",
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -129,19 +140,17 @@
 
 
 
-  <title> Nickcheng.LOG </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
-
+  <title>Nickcheng.LOG</title>
   
+
+
 
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-53032-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -150,42 +159,43 @@
 
 
 
+</head>
 
-
-
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Nickcheng.LOG</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Nickcheng.LOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
   </div>
-    
-      <p class="site-subtitle"></p>
-    
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -198,7 +208,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Home
           </a>
@@ -208,7 +218,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Archives
           </a>
@@ -218,7 +228,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             Tags
           </a>
@@ -226,9 +236,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -252,38 +300,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/15/pizza/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/15/pizza/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/15/pizza/" itemprop="url">
-                  Pizza
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/15/pizza/" itemprop="url">Pizza</a></h2>
         
 
         <div class="post-meta">
@@ -312,8 +353,8 @@
           
 
           
-
           
+
           
 
           
@@ -324,7 +365,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -341,17 +384,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -361,6 +406,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -373,38 +422,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/13/what-is-pay-per-call/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/13/what-is-pay-per-call/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/13/what-is-pay-per-call/" itemprop="url">
-                  什么是Pay-Per-Call
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/13/what-is-pay-per-call/" itemprop="url">什么是Pay-Per-Call</a></h2>
         
 
         <div class="post-meta">
@@ -433,8 +475,8 @@
           
 
           
-
           
+
           
 
           
@@ -445,7 +487,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -464,17 +508,19 @@
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -484,6 +530,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -496,38 +546,31 @@
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/11/moved-over-20051011/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/11/moved-over-20051011/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/11/moved-over-20051011/" itemprop="url">
-                  迁移完毕
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/11/moved-over-20051011/" itemprop="url">迁移完毕</a></h2>
         
 
         <div class="post-meta">
@@ -556,8 +599,8 @@
           
 
           
-
           
+
           
 
           
@@ -568,7 +611,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -605,17 +650,19 @@ namespace llk
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -625,6 +672,10 @@ namespace llk
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -637,38 +688,31 @@ namespace llk
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/11/some-problems-in-using-ftp-component-of-xceed/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/11/some-problems-in-using-ftp-component-of-xceed/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/11/some-problems-in-using-ftp-component-of-xceed/" itemprop="url">
-                  在使用Xceed的FTP组件时遇到的问题
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/11/some-problems-in-using-ftp-component-of-xceed/" itemprop="url">在使用Xceed的FTP组件时遇到的问题</a></h2>
         
 
         <div class="post-meta">
@@ -697,8 +741,8 @@ namespace llk
           
 
           
-
           
+
           
 
           
@@ -709,7 +753,9 @@ namespace llk
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -737,17 +783,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -757,6 +805,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -769,38 +821,31 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/10/moved-house-again/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/10/moved-house-again/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/10/moved-house-again/" itemprop="url">
-                  我又搬家了
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/10/moved-house-again/" itemprop="url">我又搬家了</a></h2>
         
 
         <div class="post-meta">
@@ -829,8 +874,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
-
           
+
           
 
           
@@ -841,7 +886,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -858,17 +905,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -878,6 +927,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -890,38 +943,31 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/08/a-tool-of-wow-map-wowcartographe/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/08/a-tool-of-wow-map-wowcartographe/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/08/a-tool-of-wow-map-wowcartographe/" itemprop="url">
-                  又发现一个魔兽世界的地图辅助工具
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/08/a-tool-of-wow-map-wowcartographe/" itemprop="url">又发现一个魔兽世界的地图辅助工具</a></h2>
         
 
         <div class="post-meta">
@@ -950,8 +996,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
-
           
+
           
 
           
@@ -962,7 +1008,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -986,17 +1034,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1006,6 +1056,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1018,38 +1072,31 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/08/stat-of-visiting-my-blog-through-google-and-baidu/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/08/stat-of-visiting-my-blog-through-google-and-baidu/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/08/stat-of-visiting-my-blog-through-google-and-baidu/" itemprop="url">
-                  通过两大搜索引擎访问我的Blog的情况
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/08/stat-of-visiting-my-blog-through-google-and-baidu/" itemprop="url">通过两大搜索引擎访问我的Blog的情况</a></h2>
         
 
         <div class="post-meta">
@@ -1078,8 +1125,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
-
           
+
           
 
           
@@ -1090,7 +1137,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1116,17 +1165,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1136,6 +1187,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1148,38 +1203,31 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/07/national-day-is-over-20051007/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/10/07/national-day-is-over-20051007/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/10/07/national-day-is-over-20051007/" itemprop="url">
-                  国庆长假过去喽！
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/10/07/national-day-is-over-20051007/" itemprop="url">国庆长假过去喽！</a></h2>
         
 
         <div class="post-meta">
@@ -1208,8 +1256,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
-
           
+
           
 
           
@@ -1220,7 +1268,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1237,17 +1287,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1257,6 +1309,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1269,38 +1325,31 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/30/finished-the-llk-algo/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/30/finished-the-llk-algo/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/09/30/finished-the-llk-algo/" itemprop="url">
-                  连连看得算法完成喽
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/09/30/finished-the-llk-algo/" itemprop="url">连连看得算法完成喽</a></h2>
         
 
         <div class="post-meta">
@@ -1329,8 +1378,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
-
           
+
           
 
           
@@ -1341,7 +1390,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1360,17 +1411,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1380,6 +1433,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1392,38 +1449,31 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
   
 
-  <article class="post post-type-post " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/30/bookmarks-20050930/">
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/30/bookmarks-20050930/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="nickcheng">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Nickcheng.LOG">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Nickcheng.LOG" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
 
     
       <header class="post-header">
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2005/09/30/bookmarks-20050930/" itemprop="url">
-                  近日网摘
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2005/09/30/bookmarks-20050930/" itemprop="url">近日网摘</a></h2>
         
 
         <div class="post-meta">
@@ -1452,8 +1502,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
-
           
+
           
 
           
@@ -1464,7 +1514,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -1489,17 +1541,19 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         
       
     </div>
+    
+    
+    
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
 
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1509,6 +1563,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1521,7 +1579,7 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   </nav>
 
 
-          
+
           </div>
           
 
@@ -1541,6 +1599,7 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -1549,17 +1608,18 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="nickcheng" />
-          <p class="site-author-name" itemprop="name">nickcheng</p>
-          <p class="site-description motion-element" itemprop="description">A place for logging something</p>
+          
+            <p class="site-author-name" itemprop="name">nickcheng</p>
+            <p class="site-description motion-element" itemprop="description"></p>
         </div>
+
         <nav class="site-state motion-element">
-        
+
           
             <div class="site-state-item site-state-posts">
+            
               <a href="/archives">
+            
                 <span class="site-state-item-count">445</span>
                 <span class="site-state-item-name">posts</span>
               </a>
@@ -1569,8 +1629,10 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">231</span>
                 <span class="site-state-item-name">tags</span>
               </a>
@@ -1590,6 +1652,20 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
+              </span>
+            
+          
         </div>
 
         
@@ -1605,6 +1681,8 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
       
 
+      
+
     </div>
   </aside>
 
@@ -1617,36 +1695,43 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
+  &copy;  2003 &mdash; 
   <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
+
+  
 </div>
 
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
-</div>
+  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
 
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
 
 
         
+
+
+
+
+
+
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1666,6 +1751,14 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
 
   
+
+
+
+
+
+
+
+
 
 
 
@@ -1692,37 +1785,29 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
+  
 
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
   
 
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
-	
-
-
-
+  
 
 
   
@@ -1731,15 +1816,36 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
 
 
-  
-
-  
-
 
 
 
   
+
+
+
+
+
+
+
+
   
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+
+
 
   
 
@@ -1749,6 +1855,9 @@ at McasFileProcessor.Program.Main(String[] args) in f:\code\vss\3-developing\
 
   
 
+  
+
+  
 
 </body>
 </html>
