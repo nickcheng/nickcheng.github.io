@@ -12,17 +12,15 @@ script:
   - hexo clean
   - hexo generate
 after_script:
+  - git config user.name "nickcheng"
+  - git config user.email "n@nickcheng.com"
   - git clone https://${GH_Ref} .deploy_git
   - cd .deploy_git
   - git checkout master
   - cd ../
-  - mv .deploy_git/.git/ ./public/
-  - cd ./public
-  - git config user.name "nickcheng"
-  - git config user.email "n@nickcheng.com"
-  - git add .
-  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
-  - git push --force --quiet "https://${GH_Token}@${GH_Ref}" master:master
+  - sed -i'' "s~${GH_Ref}~${GH_Token}:x-oauth-basic@${GH_Ref}~" _config.yml
+  - hexo d > log.txt 2>&1
+  - cat log.txt | sed "s~${GH_Token}~TOKEN~g"
 branches:
   only:
     - admin
