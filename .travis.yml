@@ -12,8 +12,8 @@ script:
   - hexo clean
   - hexo generate
 after_script:
-  - git config user.name "nickcheng"
-  - git config user.email "n@nickcheng.com"
+  - git config --global user.name "nickcheng"
+  - git config --global user.email "n@nickcheng.com"
   - git clone https://${GH_Ref} .deploy_git
   - cd .deploy_git
   - git checkout master
