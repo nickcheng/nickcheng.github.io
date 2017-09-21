@@ -1,5 +1,7 @@
 # Hexo Admin
 
+![build-info](https://travis-ci.org/nickcheng/nickcheng.github.io.svg)
+
 ## Preparation
 Install  Node
 
