@@ -305,6 +305,143 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/02/24/hit-by-django/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2006/02/24/hit-by-django/" itemprop="url">被Django折腾</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2006-02-24T23:16:01+09:00">
+                2006-02-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这几天学习使用Python下的一个名叫Django的Web Framework的使用, 竟然看着<a href="http://www.woodpecker.org.cn/obp/django/django-stepbystep/newtest/doc/" target="_blank" rel="external">教程</a>也郁闷了两次, 讲讲经过吧!</p>
+<ol>
+<li><strong>版本</strong></li>
+</ol>
+<p>教程上写, 目前release出来的django的版本是0.91, 而教程是基于django的一个branch的, 名字叫做magic-removal, 貌似这个分支会成为0.92版本. 性急的我就看到了前半句, ok, 我想既然没有release出来, 那我就自己去SVN上自己拿去, 而且我竟然想当然的拿了trunk的版本, 然后就照着教程做了起来.</p>
+<p>这可好, 教程第一节的例子就不能work, 一直报数据库模块找不到. 可教程上明明写这个版本的django是不用配置数据库就可以work的啊. 没办法, 只能求救于maillist list了.</p>
+<p>第二天, 去review maillist list. 呵呵, 有人立刻指出我的问题. (我在问题里说了我拿的是trunk版本) 多谢多谢, 我这就去拿magic-removal分支! 拿下来一试, 嘿嘿, 还真好用! 此乃第一闷</p>
+<ol>
+<li><strong>端口</strong></li>
+</ol>
+<p>做到第六节, 一切按教程办妥, 就开始向往常一样启动服务器来测试一下.</p>
+<pre><code>manage.py runserver
+</code></pre><p>……<br>服务启动了, 不过竟然给我报了一个错误. 10030 XXXXXX</p>
+<p>本来想着, 报错就报错吧, 能work就行! 嘿, 还真跟我较劲, 死活访问不了…没办法, 只能想辙解决了!</p>
+<p>先到maillist 上搜了一通, 似乎没有人有这个问题, 然后又用google在官方网上搜了一通, 还是没有找到类似东东…这可如何是好呢? 百无聊赖, 只好看manage.py的帮助(直接执行这个就看到帮助了)</p>
+<p>突然看到runserver命令后面可以跟一个参数来指定启动服务的端口! 我就灵机一动, 换个端口玩玩…</p>
+<p>哈哈, 歪打正着! 我把默认的8000端口改成8080, 启动就成功了, 也没有报错! 不错,不错! 原来是这个该死的端口的问题…那为什么8000端口不能用呢? 我用netstat一看, 原来有另一个程序已经用了8000端口了, 所以我再启动服务的时候就不能用了!</p>
+<p>拨开云出见月明了!!!(也不知道这一句对不对, 在google搜这句的时候竟然把google搜死了, 估计搜索结果有问题, 被GFW了=_=’)</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/02/24/bookmark-of-2006-02-24/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1520,140 +1657,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2006/02/09/try-firefox-again/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2006/02/09/try-firefox-again/" itemprop="url">再次用回FireFox</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2006-02-09T13:07:24+09:00">
-                2006-02-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://www.theplaceforitall.com/portablefirefox/images/firefox-logo.jpg" alt="FireFox"></p>
-<p>前段时间不知道为什么, 自己的FireFox开一段时间(大概几天)后就会占用大量的内存, 而且有时CPU还会莫名的占用很高! 后来听说升级到1.5.1后会解决一些内存泄漏的问题, 于是就升级了. 可是升级之后并没有什么好转, 反而CPU占用的情况更严重了. 于是就怀疑是某个扩展的问题. 因为没有时间去一个一个试, 也就只能作罢, 于是决定放弃FireFox.:(</p>
-<p>今天在bloglines上闲逛, 偶尔看到某仁兄的扩展使用, 于是决定自己用一下他说的扩展, 看看是不是会有转机..^_^</p>
-<p>这不, 刚装好了这些扩展, 用几天看看吧!</p>
-<pre><code>2006-02-09  12:37            88,444 adblock_plus-0.6.1-fx+fl+mz+ns.xpi
-2006-02-09  12:37            62,629 download_statusbar-0.9.4-fx.xpi
-2006-02-09  12:38             8,962 flat_bookmark_editing-0.7.5-fx.xpi
-2006-02-09  12:38            60,434 image_toolbar-0.6.3-fx.xpi
-2006-02-09  12:36            34,559 linkification-1.2.1-fx.xpi
-2006-02-09  12:36           261,483 tab_mix_plus-0.3.0.2-fx.xpi
-2006-02-09  12:44            66,161 TargetAlert.xpi
-2006-02-09  12:39           170,336 tongwen_0.2.9a_115.xpi
-2006-02-09  12:38            75,508 view_formatted_source_format_source_extension_-0.9.4.2-fx.xpi
-2006-02-09  12:38           148,819 web_developer-1.0.2-fx+fl.xpi
-</code></pre><p>其实自己还是蛮喜欢用FireFox的, 放假回家在网吧的时候我都先下一个FF, 然后才上网的!</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1703,7 +1706,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1716,7 +1719,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

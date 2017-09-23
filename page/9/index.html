@@ -305,6 +305,155 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/" itemprop="url">关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-11-14T15:15:11+09:00">
+                2007-11-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>原因</strong></p>
+<p>TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下: </p>
+<ol>
+<li><p>假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。</p>
+</li>
+<li><p>通常意义上，你开始新的工作的时候同样应该确保你的本地版本是可以通过Build的。当然可能是跟Server上最新的版本同步的，也可能是Server上某个时刻的Snapshot，总之是一个好的版本。</p>
+</li>
+<li><p>当你需要编辑代码的时候，Check out这个动作只是做了个Editable的标记而已。如果发现Server上有新的版本，只是提示你Server上的版本比你的Local版本要新(这个提示在output窗口中显示)，而不是Get Latest Version。为何呢？因为通常意义上来说，如果Server上有一个新的版本，意味着有了一个新的Change Set，而一个Change Set并不是只有一个文件，如果你只是把正要编辑的版本Get Latest Version，由于Code的依赖关系，很可能导致本地编译被Block。</p>
+</li>
+<li><p>为了避免开发人员陷于此种陷阱，TFS团队决定不是直接Get Latest Version，而是在你完成了代码工作后要Check In的时候告诉你有Conflict,需要再做Merge来。这样在Check In的时候开发人员必须仔细的对比检查，做好Merge工作才能确保在你Check In之后Server上又是一个好的Build。Merge的时候注意千万别把别的开发人员的Code给覆盖了。</p>
+</li>
+</ol>
+<p>微软答应会在TFS的第二版本中会提供是否自动Get Latest的选项。</p>
+<p><strong>解决方法</strong></p>
+<p>既然MS现在没有提供解决方法, 我们只能自己想办法了. </p>
+<p>在Visual Studio的菜单中选择”Tools”-&gt;”Macros”-&gt;”Macros IDE”, 打开宏编辑器</p>
+<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9aa54c00" target="_blank" rel="external"><img src="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg" alt="宏编辑器"></a></p>
+<p>在Module1中添加如下代码</p>
+<pre><code>Sub CheckoutLatest()
+    DTE.ExecuteCommand(&quot;File.TfsGetLatestVersion&quot;)
+    DTE.ExecuteCommand(&quot;File.TfsCheckOut&quot;)
+End Sub
+</code></pre><p>要让你那里看到的和我图上的一致, 然后保存关闭. </p>
+<p>这只是增加了宏, 如果每次需要运行的时候都打开宏浏览器, 那就太麻烦了, 所以我们还要给这个宏添加一个快捷键. </p>
+<p>在菜单中选择:”Tools”-&gt;”Options”, 然后选择”Environment”-&gt;”Keyboard”</p>
+<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9cf04c02" target="_blank" rel="external"><img src="http://photo5.yupoo.com/20071114/145404_279588783_m.jpg" alt="选项"></a></p>
+<p>然后在”Show commands containing:”下的输入框中输入”checkoutlatest”, 就能定位到我们新建的宏了. </p>
+<p>在”Press shortcut keys”中输入你希望用的快捷键(我使用的是”Alt-O”), 然后点击”Assign”键, 点击”OK”, 完成. </p>
+<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9f2d4c06" target="_blank" rel="external"><img src="http://photo5.yupoo.com/20071114/145404_248546321_m.jpg" alt="选项完成"></a></p>
+<p>以后, 在需要Check Out文件的时候, 就可以使用快捷键”Alt-O”来操作了, 这个操作可以保证你Check Out到Latest的文件.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/11/12/i-am-the-host-of-my-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1544,167 +1693,6 @@ django-admin.py startproject djangotest
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/09/05/install-subversion-on-mtdv/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/09/05/install-subversion-on-mtdv/" itemprop="url">在MT(dv)上安装Subversion</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-09-05T16:59:00+09:00">
-                2007-09-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>安装Subversion需要服务器上之前安装好yum, 没有安装请参考我的另一篇文章: <a href="http://web.archive.org/web/20071012171712/http://nickcheng.com/2007/09/05/install-yum-on-mtdv/" target="_blank" rel="external">在MT(dv)安装yum</a></p>
-<p>以下操作如无法进行请确认自己是以root身份登录(命令行下执行su指令,输入申请的root权限密码即可)!</p>
-<ul>
-<li><p>MT(dv) 默认安装有Subversion 1.1.4, 可以查看一下      </p>
-<pre><code>svn --version
-</code></pre></li>
-<li><p>在自己的svn目录(/var/www/vhosts/your_domain/subdomains/your_subdomain/svn/)下建立SVN版本库目录      </p>
-<pre><code>mkdir repo
-</code></pre></li>
-<li><p>在新建的目录建立SVN版本库      </p>
-<pre><code>svnadmin create repo
-</code></pre></li>
-<li><p>然后更改目录的权限, 包括里面的子目录. 这一步很重要, 要不最后是无法访问的      </p>
-<pre><code>chmod 777 repo -R
-</code></pre></li>
-</ul>
-<p>上面这些是准备工作, 接下来是配置Apache, 让我们的Subversion 启用Web Access</p>
-<ul>
-<li><p>进入svn目录下的配置文件目录conf      </p>
-<pre><code>cd /var/www/vhosts/your_domain/subdomains/your_subdomain/conf
-</code></pre></li>
-<li><p>建立vhost.conf文件. 用任意的编辑器均可. 本来打算使用emacs, 但MT默认没有安装, 只要使用vi      </p>
-<pre><code>vi vhost.conf
-</code></pre></li>
-<li><p>vhost.conf 文件内容如下      </p>
-<pre><code># svn.server.com -- vhost.conf file           
-&lt;location /&gt;            
-DAV svn # 告诉Aapche加载svn模块来处理请求            
-SVNPath /var/www/vhosts/your_domain/subdomains/your_subdomain/repo # 指定SVN版本库路径            
-AuthType Basic # 身份验证方式            
-AuthName &quot;Subversion Repository&quot;            
-AuthUserFile /etc/svn-auth-file # 身份验证数据存放的路径文件            
-Require valid-user            
-&lt;/location&gt;            
-</code></pre></li>
-<li><p>我们在配置文件定义了用户访问需要经过进行身份验证, 所以我们还要建立访问用户.      </p>
-<pre><code>htpasswd -c /etc/svn-auth-file your-name
-</code></pre></li>
-<li><p>好了, 我们都完成了, 进行最后一步, 重启Apache      </p>
-<pre><code>/usr/local/psa/admin/sbin/websrvmng -a -v
-</code></pre></li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1754,7 +1742,7 @@ Require valid-user
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1767,7 +1755,7 @@ Require valid-user
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

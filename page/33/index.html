@@ -305,6 +305,138 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/08/06/my-foolish-bookmark-list/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2005/08/06/my-foolish-bookmark-list/" itemprop="url">自己输出的蠢蠢的网摘列表</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2005-08-06T11:16:00+09:00">
+                2005-08-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>自己虽然都在努力的写着Blog, 但是仍然不能达到每天一篇. 一直看到别人的Blog上有很多都是<a href="http://del.icio.us/" target="_blank" rel="external">del.icio.us</a>或者<a href="http://www.365key.com/" target="_blank" rel="external">365key</a>的网摘列表, 于是就想自己也来这么一招, 一来可以充实一下我那贫瘠的土地:), 二来也给为数不多的大家Share一下.  </p>
+<p>不知道别人的网摘都是怎么生成的, 看了一圈, 发现有好多人的都一样. 首先怀疑是不是书签服务商提供了这样的服务, 不过自己简单的搜了一下, 没有发现太明显得地方说这个事情, 也懒得去深入找下去. 然后想是不是某个知名的牛人提供了这样的程序, 然后大家都去用. 既然人家能自己动手, 那我也就自己动动手吧.  </p>
+<p>本来想是自己写个小程序通过调用del.icio.us的API来生成列表, 不过想到写个Blog还要再开一个程序就觉得麻烦, 就放弃了这个想法. 现在采用的方法巨简单. 因为我查看网页源代码的编辑器是<a href="http://www.editplus.com/" target="_blank" rel="external">Editplus</a>, 所以我就利用了一下他, 具体步骤如下:  </p>
+<ol>
+<li>生成自己网摘的简易列表. del.icio.us提供了一个生成自己网摘简易列表的方法, 大家看看<a href="http://del.icio.us/doc/html" target="_blank" rel="external">帮助文档</a>就明白了. 我自己用的是这个 <a href="http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20" target="_blank" rel="external">http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20</a>  </li>
+<li>查看列表的源文件. 我的是在Editplus中查看得哦!  </li>
+<li>使用Editplus的宏功能转换代码. 我自己编辑了一个把列表html源代码转换为我Blog可以使用的代码的宏.  </li>
+</ol>
+<p>ps. 本来del.icio.us提供的生成简易列表的方法就是输出现成的网摘, 不过他生成的代码我的Blog不能直接使用, 所以有了以上的步骤.  </p>
+<p>粘贴转换后的代码到自己的Blog, 厚厚, 搞定了! 方法是不是有些蠢? 不过操作起来还是挺简单的. 那个宏编辑好以后就一直用了!  </p>
+<p>自己的一个想法是:  </p>
+<p>修改自己的Blog程序, 在写Blog的时候有一个功能, 可以直接生成网摘, 这样就更简单了.  </p>
+<p>实现这个想法也不难, 就是通过程序调用del.icio.us的API. 呵呵, 等有时间再说吧, 自己还是比较懒的说. 我的法师才24级了……</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/08/05/memo-20050805/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1434,136 +1566,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/06/20/my-university-its-a-pity/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2005/06/20/my-university-its-a-pity/" itemprop="url">我的大学-它不完整(毕业1年回忆)</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2005-06-20T00:36:00+09:00">
-                2005-06-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>六月末, 七月初. 凤凰花开的季节, 也是一个离别的季节, 也许, 更是一个寂寞的季节  </p>
-<p>大学毕业, 大家都要各奔东西, 面对各自的前程了. 在这临别的日子里, 空气中也弥漫着伤感的味道. 男孩女孩们, 会聚在一起. 先是微笑着谈论着即将离校的忙碌和赶制毕业论文的不易, 然后, 在酒精的作用下, 话题变得沉重了起来. 一个个原本微笑的面庞都会笼罩上一层粉色, 然后就只能看到一个个哀伤的眼神. 大家在一起回味这四年的酸甜苦辣, 喜怒哀乐. 说到高兴的地方, 大家会不顾一起的大笑起来, 说道悲伤的时候, 男孩也会有晶莹的泪挂在脸上. 酒过三巡, 男孩会鼓起勇气, 向自己心仪的女孩表露心声, 女孩也会去掉往常的面纱, 坦然的和男孩说出自己心中的感觉. 一切伤感却不悲伤……  </p>
-<p>而我……只是想象着这一切……<br>一切……都和我无关……  </p>
-<p>小说中常常看到大学毕业的种种故事, 自己也常常唱着那样的歌曲, 当然, 我也会常常想象, 自己在大学毕业的时候会不会也向哪个女生表白一次. 我没有这个机会了……  </p>
-<p>大四下半学期, 我就来到了这个城市, 为了我的理想和承诺! 很幸运, 我这个外地人找到了一个可以让自己活在这里的工作. 其实, 从那时起, 我的校园生活就已经结束了!  </p>
-<p>每天朝九晚五的工作让我对未来开始了憧憬! 我也开始为了我的理想和承诺努力的工作着! 我要在这里活着, 而且要很好的活着! 我很快的熟悉了工作, 工作也变得忙碌了起来, 我也从一个实习期员工变成了正式员工, 薪水也随着提高了. 紧张的工作节奏似乎已经让我忘记了我的大学生活……不过上上学校论坛的习惯还存在, 只是不再疯狂的发帖, 而是做一名看客, 像个局外人一样.  </p>
-<p>唯一可以让我认识到自己还是学生的就是毕业论文了. 答辩的日子一天天的临近, 我也做好了回去的准备. 向领导请了个长假, 在被嘱咐要早点回来后, 我带着一些论文需要的资料, 踏上了返校的路途.  </p>
-<p>论文对于有工作经验的我不是什么问题. 在学校外面租的房子里, 12个小时, 一篇还不错的论文出来了. 后来老师要求的优秀论文答辩证明了这篇论文真的不算很坏. 不过, 我没有接受老师的建议, 因为我需要早点回去, 继续我的工作.  </p>
-<p>答辩完的第二天, 我又离开了学校. 这次也许是我最后一次以学生身份离开学校. 毕业证, 学位证我都没有自己去拿, 学士服照我也没有, 散伙饭我也没有出席. 火车上, 我似乎有些惆怅, 但这感觉紧接着就随之而去了.  </p>
-<p>我的大学生活……结束了……  </p>
-<p>它不完整……</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1613,7 +1615,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1626,7 +1628,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

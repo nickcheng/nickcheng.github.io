@@ -305,6 +305,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/15/reading-tags-of-mp3-file-using-csharp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2005/09/15/reading-tags-of-mp3-file-using-csharp/" itemprop="url">用C#读取MP3文件的Tags</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2005-09-15T10:55:00+09:00">
+                2005-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>看到别人写的一个小东西，顺手用C#实现了。纯属娱乐。  </p>
+<pre><code>using System;  
+using System.IO;  
+using System.Text;  
+
+namespace ShowMP3Tags  
+{  
+    class Class1  
+    {  
+        [STAThread]  
+        static void Main(string[] args)  
+        {  
+            if(args.Length == 0)  
+            {  
+                Console.WriteLine(&quot;Usage: ShowMP3Tags filename\n&quot;);  
+                return;  
+            }  
+
+            if(!File.Exists(args[0].Trim()))  
+            {  
+                Console.WriteLine(&quot;File not found!\n&quot;);  
+                return;  
+            }  
+
+            using(FileStream fs = File.OpenRead(args[0].Trim()))  
+            {  
+                ID3Tag tag = new ID3Tag();  
+
+                fs.Seek(-128, SeekOrigin.End);  
+                fs.Read(tag.TAGID, 0, tag.TAGID.Length);  
+                fs.Read(tag.Title, 0, tag.Title.Length);  
+                fs.Read(tag.Artist, 0, tag.Artist.Length);  
+                fs.Read(tag.Album, 0, tag.Album.Length);  
+                fs.Read(tag.Year, 0, tag.Year.Length);  
+                fs.Read(tag.Comment, 0, tag.Comment.Length);  
+                fs.Read(tag.Genre, 0, tag.Genre.Length);  
+
+                Console.WriteLine(Encoding.Default.GetString(tag.Title));  
+                Console.WriteLine(Encoding.Default.GetString(tag.Artist));  
+                Console.WriteLine(Encoding.Default.GetString(tag.Album));  
+                Console.WriteLine(Encoding.Default.GetString(tag.Year));  
+                Console.WriteLine(Encoding.Default.GetString(tag.Comment));  
+                Console.WriteLine(Encoding.Default.GetString(tag.Genre));  
+
+                Console.ReadLine();  
+            }  
+        }  
+    }  
+
+    class ID3Tag  
+    {  
+        public byte [] TAGID = new byte[3]; // 3, 必须是TAG  
+        public byte [] Title = new byte[30]; // 30, 歌曲的标题  
+        public byte [] Artist = new byte[30]; // 30, 歌曲的艺术家  
+        public byte [] Album = new byte[30]; // 30, 专辑名称  
+        public byte [] Year = new byte[4]; // 4, 出版年代  
+        public byte [] Comment = new byte[30]; // 30, 评论  
+        public byte [] Genre = new byte[1]; // 1, 种类标识  
+    }  
+}
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/12/about-the-algorithm-of-llk/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1477,138 +1656,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/08/06/my-foolish-bookmark-list/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2005/08/06/my-foolish-bookmark-list/" itemprop="url">自己输出的蠢蠢的网摘列表</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2005-08-06T11:16:00+09:00">
-                2005-08-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>自己虽然都在努力的写着Blog, 但是仍然不能达到每天一篇. 一直看到别人的Blog上有很多都是<a href="http://del.icio.us/" target="_blank" rel="external">del.icio.us</a>或者<a href="http://www.365key.com/" target="_blank" rel="external">365key</a>的网摘列表, 于是就想自己也来这么一招, 一来可以充实一下我那贫瘠的土地:), 二来也给为数不多的大家Share一下.  </p>
-<p>不知道别人的网摘都是怎么生成的, 看了一圈, 发现有好多人的都一样. 首先怀疑是不是书签服务商提供了这样的服务, 不过自己简单的搜了一下, 没有发现太明显得地方说这个事情, 也懒得去深入找下去. 然后想是不是某个知名的牛人提供了这样的程序, 然后大家都去用. 既然人家能自己动手, 那我也就自己动动手吧.  </p>
-<p>本来想是自己写个小程序通过调用del.icio.us的API来生成列表, 不过想到写个Blog还要再开一个程序就觉得麻烦, 就放弃了这个想法. 现在采用的方法巨简单. 因为我查看网页源代码的编辑器是<a href="http://www.editplus.com/" target="_blank" rel="external">Editplus</a>, 所以我就利用了一下他, 具体步骤如下:  </p>
-<ol>
-<li>生成自己网摘的简易列表. del.icio.us提供了一个生成自己网摘简易列表的方法, 大家看看<a href="http://del.icio.us/doc/html" target="_blank" rel="external">帮助文档</a>就明白了. 我自己用的是这个 <a href="http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20" target="_blank" rel="external">http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20</a>  </li>
-<li>查看列表的源文件. 我的是在Editplus中查看得哦!  </li>
-<li>使用Editplus的宏功能转换代码. 我自己编辑了一个把列表html源代码转换为我Blog可以使用的代码的宏.  </li>
-</ol>
-<p>ps. 本来del.icio.us提供的生成简易列表的方法就是输出现成的网摘, 不过他生成的代码我的Blog不能直接使用, 所以有了以上的步骤.  </p>
-<p>粘贴转换后的代码到自己的Blog, 厚厚, 搞定了! 方法是不是有些蠢? 不过操作起来还是挺简单的. 那个宏编辑好以后就一直用了!  </p>
-<p>自己的一个想法是:  </p>
-<p>修改自己的Blog程序, 在写Blog的时候有一个功能, 可以直接生成网摘, 这样就更简单了.  </p>
-<p>实现这个想法也不难, 就是通过程序调用del.icio.us的API. 呵呵, 等有时间再说吧, 自己还是比较懒的说. 我的法师才24级了……</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1658,7 +1705,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1671,7 +1718,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

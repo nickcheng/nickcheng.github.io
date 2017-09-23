@@ -305,6 +305,167 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/09/05/install-subversion-on-mtdv/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2007/09/05/install-subversion-on-mtdv/" itemprop="url">在MT(dv)上安装Subversion</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-09-05T16:59:00+09:00">
+                2007-09-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>安装Subversion需要服务器上之前安装好yum, 没有安装请参考我的另一篇文章: <a href="http://web.archive.org/web/20071012171712/http://nickcheng.com/2007/09/05/install-yum-on-mtdv/" target="_blank" rel="external">在MT(dv)安装yum</a></p>
+<p>以下操作如无法进行请确认自己是以root身份登录(命令行下执行su指令,输入申请的root权限密码即可)!</p>
+<ul>
+<li><p>MT(dv) 默认安装有Subversion 1.1.4, 可以查看一下      </p>
+<pre><code>svn --version
+</code></pre></li>
+<li><p>在自己的svn目录(/var/www/vhosts/your_domain/subdomains/your_subdomain/svn/)下建立SVN版本库目录      </p>
+<pre><code>mkdir repo
+</code></pre></li>
+<li><p>在新建的目录建立SVN版本库      </p>
+<pre><code>svnadmin create repo
+</code></pre></li>
+<li><p>然后更改目录的权限, 包括里面的子目录. 这一步很重要, 要不最后是无法访问的      </p>
+<pre><code>chmod 777 repo -R
+</code></pre></li>
+</ul>
+<p>上面这些是准备工作, 接下来是配置Apache, 让我们的Subversion 启用Web Access</p>
+<ul>
+<li><p>进入svn目录下的配置文件目录conf      </p>
+<pre><code>cd /var/www/vhosts/your_domain/subdomains/your_subdomain/conf
+</code></pre></li>
+<li><p>建立vhost.conf文件. 用任意的编辑器均可. 本来打算使用emacs, 但MT默认没有安装, 只要使用vi      </p>
+<pre><code>vi vhost.conf
+</code></pre></li>
+<li><p>vhost.conf 文件内容如下      </p>
+<pre><code># svn.server.com -- vhost.conf file           
+&lt;location /&gt;            
+DAV svn # 告诉Aapche加载svn模块来处理请求            
+SVNPath /var/www/vhosts/your_domain/subdomains/your_subdomain/repo # 指定SVN版本库路径            
+AuthType Basic # 身份验证方式            
+AuthName &quot;Subversion Repository&quot;            
+AuthUserFile /etc/svn-auth-file # 身份验证数据存放的路径文件            
+Require valid-user            
+&lt;/location&gt;            
+</code></pre></li>
+<li><p>我们在配置文件定义了用户访问需要经过进行身份验证, 所以我们还要建立访问用户.      </p>
+<pre><code>htpasswd -c /etc/svn-auth-file your-name
+</code></pre></li>
+<li><p>好了, 我们都完成了, 进行最后一步, 重启Apache      </p>
+<pre><code>/usr/local/psa/admin/sbin/websrvmng -a -v
+</code></pre></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/09/05/install-yum-on-mtdv/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1442,137 +1603,6 @@ DJANGO_SETTINGS_MODULE = mysite.settings
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-page" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/07/05/aboutme/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/07/05/aboutme/" itemprop="url">介绍一下自己</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-07-05T06:52:53+09:00">
-                2007-07-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>第一次在Blog中加入介绍自己的页面. 内容主要是来自曾经做的第一个网站中的个人简介 .</p>
-<p>班竹本名<strong>程雅男</strong>。特别强调，<strong>性别：男</strong>，因为已经有数以N计的人们在听到或看到本人姓名后将本人当作MM，你们看了以后可不要在犯同样的错误喽！</p>
-<p>公元壹仟玖佰捌拾贰年，就在世界环境日那天（什么？你不知道？让我告诉你，记清楚了，下次生日记得请我吃饭！！那就是–六月五日，知道了吧！！不过，那时好像还没有世界环境日······），本斑竹开始了自己茁壮成长的历程。</p>
-<p>九个月的时候我就断了奶。我也不知道自己那时候怎么那么傻，怪不得现在我总这么瘦，原来原因在这儿呀！现在的小Baby们，一定要多食母乳噢！！不过听说好像断奶早的人比较聪明（呵呵，不要骂我嘛！！啊！！更不要砸！！）。</p>
-<p>由于老妈是幼儿教育工作者的原因，我自然就成了幼儿教育的典范，三岁就开始了幼儿园生涯。（唉！命苦呀！！）不要以为我老妈会在幼儿园罩着我，她可不是那样的人，不过还好，老妈的同事们都待我不薄，直到现在仍旧很关心我，在此对她们深深感谢······N鞠躬！对了，那时我就进过录音棚了，不过不是唱歌，是讲故事，而且是即兴的，利害吧！！（三大白骨精变五打白骨精，呵呵…）幼儿园是我友谊世界的开端，现在的许多朋友都时那时认识的，当然有女孩子了，现在应该算是青梅竹马吧，呵呵······（注：老妈单位的幼儿园，我们也住在那儿）</p>
-<p>六岁半时，我刚上大班，比我大一岁的兄弟们都上了小学。因为我和他们的关系很好，我就缠着老妈让我上小学，没办法，我成功了。我那时在半学年时插学，小学那边说要看我的期末考试成绩来决定我的升级与否。呵呵，小Case，两个100送给了校长，无话可说了吧！！</p>
-<p>现在仍怀念小学时的时光，没有压力，无忧无虑的玩耍。要是那时开始玩吉他，现在我一定比老Jimi还牛！！四年级时接触了计算机（我妈单位是研究所）。计算机生涯就开始了。我们那时上重点中学有两个途径。一是掏钱，我家没那么多钱给我挥霍，二就是考计算机。我选择了计算机，也成功了。凭着我得兴趣和努力，考了个全市第一上了重点中学。（不信？我有证书的！）</p>
-<p>初中三年，学习方面没有什么值得炫耀的，就有两年全省信息学奥赛的二等奖和一次数学竞赛三等奖，有许多人都比我拿的奖高，我就不夸自己了。不过初中时我看到了Bill·Gates的传奇（其实是从小学六年级开始看的）。少年轻狂的人不少，我和几个志同道合的朋友做起了公司梦（.COM？），公司名字起了N多个，但实质的事情没做多少，就低价买进，高价卖出了一些软盘，挣了50多元钱。</p>
-<p>那时偶然在一本游戏杂志上看到了关于“逆火”小组（没听说过？作游戏的！）的介绍，就又萌发了自己做游戏的想法，于是，又成立了一个游戏小组。看到这里有些网友可能会笑了，是的，我们一个个都是心比天高。但是我们手却没有低。小组里的几个朋友当时全是用的BASIC，后来升级到QB V4.50，功能才强大了一些。就用着QB，我们做出了几个益智类的for DOS的小游戏（不知现在家中的五寸盘是否还能读出······），在那期间学了不少东西，后来渐渐觉得QB功能不够强大，我们就自学了C语言，什么直接写屏呀，调色板呀的都能很轻松的实现了。–好像扯远了。</p>
-<p>初中三年就没有怎么听音乐，但音乐课（就初一、初二有）都一直被老师宠着（可能是天赋吧，呵呵…~~，啊！怎么又砸我！！）。初三用了用功，中招以分数线成绩考上了本校高中（省重点）。</p>
-<p>上了高中才正式开始了自己的音乐生涯，关于音乐就不在此重述，请看我的音乐生涯。高中时计算机方面的成绩还是平平，有是两个省二等奖。真是气人，有一个一等奖就可以被保送上大学了。没办法，只能自己考了。黑色七月里阳光灿烂，我的高考语文成绩差到了极点，要不就重点了。由于志愿报得不好，花了点钱才到了现在的大学–湖北汽车工业学院。本想报国立华侨大学的，可老爸不让（华大的领导，后悔吧！）。唉！我们乐队的主音吉他上了华侨大学，我要是去了岂不是Perfect！看来只能好好学习，靠考研离开这里了（其实我还没有决定是否考研）！！</p>
-<p>临高考时，大概四、五月份时我才开始频繁上网成为中华人民共和国的一名网民。我这个人有先入为主的想法，先弄的东西都一直用到现在。邮箱：n.i.c.k@yeah.net ， oicq：11979090 ， 进的第一个社区：网易社区吉他版，直到现在斑竹都是那里的的常客。随着上网次数的增加，越来越觉得国内一些内容专一的网站太少了，就萌发了自己做的想法。实现后，就是现在大家看到的。有些内容还没做好，斑竹会尽快完成的，另外，大家还有什么觉得需要的就尽管说出来，只要与音乐有关，我一定会尽力的！！</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1622,7 +1652,7 @@ DJANGO_SETTINGS_MODULE = mysite.settings
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1635,7 +1665,7 @@ DJANGO_SETTINGS_MODULE = mysite.settings
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

@@ -305,6 +305,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/30/bookmarks-20050930/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2005/09/30/bookmarks-20050930/" itemprop="url">近日网摘</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2005-09-30T01:16:00+09:00">
+                2005-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><a href="http://www.microsoft.com/china/msdn/library/data/sqlserver/sqldev120704.mspx" target="_blank" rel="external">内部 SQL Server 诊断工具，第 1 部分：PSSDiag</a></li>
+<li><a href="http://cn.clyric.com/" target="_blank" rel="external">CLyric 英文歌词第一站 – cn.clyric.com</a></li>
+<li><a href="http://www.quakemachine.com/blog/software/wordpress/320" target="_blank" rel="external">quakemachine ? Blog Archive ? WordPress Plugin : Attach Files v1.2.1</a></li>
+<li><p><a href="http://www.thottbot.com/beta.cgi?set=218" target="_blank" rel="external">Thottbot: World of Warcraft</a></p>
+<p>  魔兽世界的数据库</p>
+</li>
+<li><p><a href="http://freemind.sourceforge.net/wiki/index.php/Main_Page" target="_blank" rel="external">Main Page - FreeMind - free mind mapping software</a></p>
+<p>  freemind 出新版的了</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/29/its-bothering-to-download-such-things/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1562,185 +1692,6 @@ FireBird
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2005/09/15/reading-tags-of-mp3-file-using-csharp/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2005/09/15/reading-tags-of-mp3-file-using-csharp/" itemprop="url">用C#读取MP3文件的Tags</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2005-09-15T10:55:00+09:00">
-                2005-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>看到别人写的一个小东西，顺手用C#实现了。纯属娱乐。  </p>
-<pre><code>using System;  
-using System.IO;  
-using System.Text;  
-
-namespace ShowMP3Tags  
-{  
-    class Class1  
-    {  
-        [STAThread]  
-        static void Main(string[] args)  
-        {  
-            if(args.Length == 0)  
-            {  
-                Console.WriteLine(&quot;Usage: ShowMP3Tags filename\n&quot;);  
-                return;  
-            }  
-
-            if(!File.Exists(args[0].Trim()))  
-            {  
-                Console.WriteLine(&quot;File not found!\n&quot;);  
-                return;  
-            }  
-
-            using(FileStream fs = File.OpenRead(args[0].Trim()))  
-            {  
-                ID3Tag tag = new ID3Tag();  
-
-                fs.Seek(-128, SeekOrigin.End);  
-                fs.Read(tag.TAGID, 0, tag.TAGID.Length);  
-                fs.Read(tag.Title, 0, tag.Title.Length);  
-                fs.Read(tag.Artist, 0, tag.Artist.Length);  
-                fs.Read(tag.Album, 0, tag.Album.Length);  
-                fs.Read(tag.Year, 0, tag.Year.Length);  
-                fs.Read(tag.Comment, 0, tag.Comment.Length);  
-                fs.Read(tag.Genre, 0, tag.Genre.Length);  
-
-                Console.WriteLine(Encoding.Default.GetString(tag.Title));  
-                Console.WriteLine(Encoding.Default.GetString(tag.Artist));  
-                Console.WriteLine(Encoding.Default.GetString(tag.Album));  
-                Console.WriteLine(Encoding.Default.GetString(tag.Year));  
-                Console.WriteLine(Encoding.Default.GetString(tag.Comment));  
-                Console.WriteLine(Encoding.Default.GetString(tag.Genre));  
-
-                Console.ReadLine();  
-            }  
-        }  
-    }  
-
-    class ID3Tag  
-    {  
-        public byte [] TAGID = new byte[3]; // 3, 必须是TAG  
-        public byte [] Title = new byte[30]; // 30, 歌曲的标题  
-        public byte [] Artist = new byte[30]; // 30, 歌曲的艺术家  
-        public byte [] Album = new byte[30]; // 30, 专辑名称  
-        public byte [] Year = new byte[4]; // 4, 出版年代  
-        public byte [] Comment = new byte[30]; // 30, 评论  
-        public byte [] Genre = new byte[1]; // 1, 种类标识  
-    }  
-}
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1790,7 +1741,7 @@ namespace ShowMP3Tags
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1803,7 +1754,7 @@ namespace ShowMP3Tags
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

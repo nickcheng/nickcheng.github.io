@@ -305,6 +305,150 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/02/05/change-the-face-of-emacs-20070205/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="nickcheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nickcheng.LOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2007/02/05/change-the-face-of-emacs-20070205/" itemprop="url">给Emacs改了一个样子</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-02-05T00:48:30+09:00">
+                2007-02-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一直以来, 自己写代码的环境都是黑色背景的! 也许和最早使用的GWBasic有关系吧:) 但是目前电脑上的Emacs一直还没有配成黑色背景(最近少写代码了?), 今天狠狠心给配了一下, 又把字体给改小了一号! 发现自己还是喜欢小字体, BT啊! 真不知道如果以后显示器再大下去, 我是不是还能继续保持这个习惯!</p>
+<p>废话少说, 贴代码了!</p>
+<pre><code>;; 字体设置
+(create-fontset-from-fontset-spec &quot;-outline-Bitstream Vera Sans Mono-normal-r-*-*-10-97-96-96-c-*-fontset-chinese&quot;)
+(set-fontset-font &quot;fontset-default&quot; nil
+          &quot;-outline-新宋体-*-r-*-*-12-*-96-96-c-*-iso10646-1&quot; nil &apos;prepend)
+(set-fontset-font &quot;fontset-chinese&quot; &apos;kana
+          &quot;-outline-新宋体-*-r-*-*-12-*-96-96-c-*-iso10646-1&quot; nil &apos;prepend)
+(set-fontset-font &quot;fontset-chinese&quot; &apos;han
+          &quot;-outline-新宋体-*-r-*-*-12-*-96-96-c-*-iso10646-1&quot; nil &apos;prepend)
+(set-fontset-font &quot;fontset-chinese&quot; &apos;cjk-misc
+          &quot;-outline-新宋体-*-r-*-*-12-*-96-96-c-*-iso10646-1&quot; nil &apos;prepend)
+(set-fontset-font &quot;fontset-chinese&quot; &apos;symbol
+          &quot;-outline-新宋体-*-r-*-*-12-*-96-96-c-*-iso10646-1&quot; nil &apos;prepend)
+(set-default-font &quot;fontset-chinese&quot;)
+
+;; 颜色设置
+(setq frame-background-mode &apos;dark)
+(set-background-color   &quot;black&quot;)
+(set-foreground-color   &quot;gray&quot;)
+(set-cursor-color   &quot;yellow&quot;)
+</code></pre><p>再附赠一个高亮光标所在行的设置:)</p>
+<pre><code>;; 高亮光标所在行设置
+(require &apos;hl-line)
+(global-hl-line-mode t)
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/02/02/public-the-ip-public/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1533,127 +1677,6 @@ RewriteRule ^(.*)$ django.fcgi/$1 [L]
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-page" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://nickcheng.com/2007/01/01/guestbook/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="nickcheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Nickcheng.LOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2007/01/01/guestbook/" itemprop="url">留言本</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-01-01T11:11:57+09:00">
-                2007-01-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>欢迎朋友们多留言, 垃圾信息就免了, 谢谢:) 如果有问题在留言板中不便或难以描述，请致信nick.nickcheng#gmail.com 。</p>
-<p>现在，对于留言的处理方式，我一般都会在email中直接回复，请务必留下正确真实的email地址，谢谢。您也不必每次来刷这个留言板了，呵呵。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1703,7 +1726,7 @@ RewriteRule ^(.*)$ django.fcgi/$1 [L]
             
               <a href="/archives">
             
-                <span class="site-state-item-count">445</span>
+                <span class="site-state-item-count">446</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1716,7 +1739,7 @@ RewriteRule ^(.*)$ django.fcgi/$1 [L]
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">231</span>
+                <span class="site-state-item-count">232</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
