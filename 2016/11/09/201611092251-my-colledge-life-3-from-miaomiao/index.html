@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="life,band,memory,qingniao," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="写大学生活 1，2 已经有很长时间了，因为一些事情，所以也一直没有往后面写了，其实我的大学生活应该到大三就结束的，因为我只上 3 年，不过因为前面说过的原因我要继续在这里的生活。大三就是我降级试读的一年，本来这一年对我来说没有什么值得好写的，因为这一年是黑暗的一年，我在这个新的班级不想和任何人说话不是因为什么原因，只是没有心情再去交一些新的朋友，在这一年，我经历了朋友的离校，我以为我会不在乎，我会">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.168Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.813Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的大学生活 3 - 苗苗">
 <meta name="twitter:description" content="写大学生活 1，2 已经有很长时间了，因为一些事情，所以也一直没有往后面写了，其实我的大学生活应该到大三就结束的，因为我只上 3 年，不过因为前面说过的原因我要继续在这里的生活。大三就是我降级试读的一年，本来这一年对我来说没有什么值得好写的，因为这一年是黑暗的一年，我在这个新的班级不想和任何人说话不是因为什么原因，只是没有心情再去交一些新的朋友，在这一年，我经历了朋友的离校，我以为我会不在乎，我会">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/09/201611092251-my-colledge-life-3-from-miaomiao/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/11/09/201611092251-my-colledge-life-3-from-miaomiao/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,7 +368,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -384,7 +385,7 @@
 <p>后面的几个乐队都没有什么出色的，所以我们的分也一直是最高的，一直到最后一个乐队出唱。</p>
 <p>这是这次比赛最黑暗的时候，一上来，他们就换上了自己的键盘，按规定，这是要扣分的，他们唱的第一首歌是别对我说失去了 BABY，是个 PUNK 歌曲，很简单，可以说这是乐队排练最简单的歌曲了，第 2 首歌曲是首类似于 80 年代港台歌曲的东西，唱的很煽情，可我怎么听怎么难受，最后他们居然的了 9.30 分，我们都呆了，因为他们是最不可能比我们分高的乐队，后来知道他们是襄樊艺校的乐队，而这个比赛是襄樊艺校承办的，评委还有他们的老师，我们都明白了，在场的所有的观众也都明白了，我们都被这个社会个<em>**</em>了，这就是现实，这就是生活，我们只不过是个引子，我们再出色，No.1 只会是那个什么白痴的艺校乐队，后来我去领奖金的时候，主办者都说我们应该是第一名的，可是有什么用呢。</p>
 <p>从襄樊回来，乐队到达了顶峰期间，不过随后带来的就是衰败，直到我们都退出青鸟<del>~</del>~ </p>
-<p><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002us.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010002us.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002us.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010002us.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html</a></p>
 
       
     </div>
@@ -397,7 +398,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -490,9 +491,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -515,81 +526,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -602,12 +625,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -615,11 +635,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -635,10 +661,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -673,62 +696,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2016/11/09/201611092251-my-colledge-life-3-from-miaomiao/';
+          this.page.identifier = '2016/11/09/201611092251-my-colledge-life-3-from-miaomiao/';
+          this.page.title = '我的大学生活 3 - 苗苗';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -752,7 +822,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -760,6 +830,9 @@
 
   
 
+  
+
+  
   
 
   

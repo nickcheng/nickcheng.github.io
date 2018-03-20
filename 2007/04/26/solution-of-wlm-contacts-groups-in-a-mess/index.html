@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="tech,contact,fix,live,messenger,msn," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="开头先把名词明确一下, 本文的主角是WLM, 全称是Windows Live Messenger, 这是他的新名字(也不是太新了,嘿嘿). 他的老名字就是MSN Messenger, 也就是大家常说的MSN了. 然后把解决方案说一下, 因为我是Vista系统, 所以其他系统没有实验, 有需要的朋友可以参考我的解决过程:  关闭WLM 删除C:\Users\nickcheng\AppData\Loc">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.164Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.809Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WLM(俗称MSN Messenger)联系人混乱解决方法">
 <meta name="twitter:description" content="开头先把名词明确一下, 本文的主角是WLM, 全称是Windows Live Messenger, 这是他的新名字(也不是太新了,嘿嘿). 他的老名字就是MSN Messenger, 也就是大家常说的MSN了. 然后把解决方案说一下, 因为我是Vista系统, 所以其他系统没有实验, 有需要的朋友可以参考我的解决过程:  关闭WLM 删除C:\Users\nickcheng\AppData\Loc">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/04/26/solution-of-wlm-contacts-groups-in-a-mess/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/04/26/solution-of-wlm-contacts-groups-in-a-mess/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,7 +368,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -389,7 +390,7 @@
 <p>根据经验, 这类大厂出品的软件不太会犯太过恶劣的过错, 也许这次联系人的混乱只是我本地的一次”抽筋”. IM软件都会在本地机器中缓存一份联系人列表, 可能只是这缓存的列表出现了问题, 而在服务器那端, 我的分组信息应该还是正确的, 只不过我这边的软件还没有和服务器端同步. 如果是这样, 那我需要做的就是让我本地的联系人列表和服务器同步一下.</p>
 <p>有了这样的想法, 就要看怎么能做到了. 自然, WLM不会提供一个按钮叫做”和服务器端同步”(这样的东东普通用户是无法理解滴), 所以就要想其他方法. 回想刚装新系统的时候, 机器里自然不会有什么缓存的联系人列表一说, 那时软件能做的只能是从服务器端去取用户的联系人列表. 哈哈, 这么一来, 我只需把本地缓存的联系人列表给清除掉, 然后再启动一次WLM就ok了.</p>
 <p>说干就干, 先找本地联系人列表存放的地方.</p>
-<p>这个好办, 祭起”<a href="http://www.microsoft.com/technet/sysinternals/default.mspx" target="_blank" rel="external">Procmon</a>“(查看运行中的程序访问了哪些本地路径的小工具, 这是Vista系统下用的, XP下叫Filemon), 然后启动WLM. 分析Procmon抓到的内容, 很容易就看到联系人列表存放的位置了:</p>
+<p>这个好办, 祭起”<a href="http://www.microsoft.com/technet/sysinternals/default.mspx" target="_blank" rel="noopener">Procmon</a>“(查看运行中的程序访问了哪些本地路径的小工具, 这是Vista系统下用的, XP下叫Filemon), 然后启动WLM. 分析Procmon抓到的内容, 很容易就看到联系人列表存放的位置了:</p>
 <pre><code>C:\Users\nickcheng\AppData\Local\Microsoft\Windows Live Contacts
 </code></pre><p>剩下要做的就很简单了, 进入这个目录, 直接把你帐号对应的目录给干掉就好了! 再次登录WLM, 经过稍长时间的登录, 哈哈, 我的联系人分组又回来啦! 赞哦!</p>
 
@@ -404,7 +405,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -501,9 +502,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -526,81 +537,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -613,12 +636,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -626,11 +646,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -646,10 +672,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -684,62 +707,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2007/04/26/solution-of-wlm-contacts-groups-in-a-mess/';
+          this.page.identifier = '2007/04/26/solution-of-wlm-contacts-groups-in-a-mess/';
+          this.page.title = 'WLM(俗称MSN Messenger)联系人混乱解决方法';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -763,7 +833,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -771,6 +841,9 @@
 
   
 
+  
+
+  
   
 
   

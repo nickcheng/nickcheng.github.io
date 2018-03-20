@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="life," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="看到Jay要发新专辑，偶MM就嚷着要下:) 上次下了一个不是完整的”夜曲”的MV, 这次终于让我找到完整的, 在此提供一下, 和大家共享:) @@完整版”夜曲”MV@@此MV禁供鉴赏,请欣赏后随手删除,需要保存者请购买正版! 这是歌词:)  一群嗜血的蚂蚁被腐肉所吸引我面无表情看孤独的风景失去你　爱开始分明失去你　还有什么事好关心那鸽子不再象征和平我终于被提醒　捆着手我现在是奴隶我用漂亮的押韵形容">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.160Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="周董的夜曲">
 <meta name="twitter:description" content="看到Jay要发新专辑，偶MM就嚷着要下:) 上次下了一个不是完整的”夜曲”的MV, 这次终于让我找到完整的, 在此提供一下, 和大家共享:) @@完整版”夜曲”MV@@此MV禁供鉴赏,请欣赏后随手删除,需要保存者请购买正版! 这是歌词:)  一群嗜血的蚂蚁被腐肉所吸引我面无表情看孤独的风景失去你　爱开始分明失去你　还有什么事好关心那鸽子不再象征和平我终于被提醒　捆着手我现在是奴隶我用漂亮的押韵形容">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/28/jay-yequ/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/28/jay-yequ/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,7 +368,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -378,10 +379,20 @@
 <p>这是歌词:)</p>
 <blockquote>
 <p>一群嗜血的蚂蚁被腐肉所吸引<br>我面无表情看孤独的风景<br>失去你　爱开始分明<br>失去你　还有什么事好关心<br>那鸽子不再象征和平<br>我终于被提醒　捆着手我现在是奴隶<br>我用漂亮的押韵形容被掠夺一空的爱情</p>
+</blockquote>
+<blockquote>
 <p>啊<br>我应该藏这里　夜色不干净<br>还给你整夜的回忆　占满天的星<br>送你的白色玫瑰　在窗台的花前凋零<br>午夜在树枝上诡异的很安静　　<br>倾听　我黑色的大衣　像我的你<br>衣栉比鳞的鬼　走过的走过的生命<br>啊四周弥漫雾气<br>啊我在空旷的墓地<br>老去后还爱你</p>
+</blockquote>
+<blockquote>
 <p>－副歌－</p>
+</blockquote>
+<blockquote>
 <p>为你弹奏萧邦的夜曲<br>纪念我死去的爱情<br>跟夜风一样的声音<br>心碎的很好听<br>手在键盘敲钢琴<br>我给的思念太小心<br>你埋葬的地方就有你</p>
+</blockquote>
+<blockquote>
 <p>为你弹奏萧邦的夜曲<br>纪念我死去的爱情<br>而我为你隐姓埋名<br>在月光下弹琴<br>对你心跳的感应<br>还是如此温热清晰<br>怀念你那鲜红的唇印</p>
+</blockquote>
+<blockquote>
 <p>那些白色的蜻蜓　散落在这森林<br>而我的眼睛　没有丝毫同情<br>失去你　泪水混浊无情<br>失去你　我连笑容都有阴影<br>我站在满心期待的屋顶<br>嘲笑我的伤心<br>像一口没有水的枯井<br>我用尽我的自信<br>要我后悔莫及等待爱情 </p>
 </blockquote>
 <p>11月1日就发片了, 大家拭目以待吧:)</p>
@@ -397,7 +408,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -484,9 +495,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -509,81 +530,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -596,12 +629,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -609,11 +639,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -629,10 +665,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -667,62 +700,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2005/10/28/jay-yequ/';
+          this.page.identifier = '2005/10/28/jay-yequ/';
+          this.page.title = '周董的夜曲';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -746,7 +826,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -754,6 +834,9 @@
 
   
 
+  
+
+  
   
 
   

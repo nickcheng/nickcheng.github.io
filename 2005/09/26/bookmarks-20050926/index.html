@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="life," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="tucoo.com 图酷 - 设计素材、插画、卡通、CG、矢量、时尚、图案、网页素材全方位素材图片库 - 首页   Hardening Windows XP     让你的Windows XP更安全一些    Guten Tag - Search the People’s Web     Tag搜索      Downloads     pdc 05 上的slide的下载  Visual C#">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.160Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个长期的网摘, 最近懒了..">
 <meta name="twitter:description" content="tucoo.com 图酷 - 设计素材、插画、卡通、CG、矢量、时尚、图案、网页素材全方位素材图片库 - 首页   Hardening Windows XP     让你的Windows XP更安全一些    Guten Tag - Search the People’s Web     Tag搜索      Downloads     pdc 05 上的slide的下载  Visual C#">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/09/26/bookmarks-20050926/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/09/26/bookmarks-20050926/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,126 +368,126 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         <ul>
-<li><a href="http://tucoo.com/" target="_blank" rel="external">tucoo.com 图酷 - 设计素材、插画、卡通、CG、矢量、时尚、图案、网页素材全方位素材图片库 - 首页</a>  </li>
-<li><p><a href="http://winxp.uwaterloo.ca/Documentation/Hardening_WXP.asp" target="_blank" rel="external">Hardening Windows XP</a>  </p>
+<li><a href="http://tucoo.com/" target="_blank" rel="noopener">tucoo.com 图酷 - 设计素材、插画、卡通、CG、矢量、时尚、图案、网页素材全方位素材图片库 - 首页</a>  </li>
+<li><p><a href="http://winxp.uwaterloo.ca/Documentation/Hardening_WXP.asp" target="_blank" rel="noopener">Hardening Windows XP</a>  </p>
 <p>  让你的Windows XP更安全一些  </p>
 </li>
-<li><p><a href="http://creative-mobs.com/gutentag/" target="_blank" rel="external">Guten Tag - Search the People’s Web</a>  </p>
+<li><p><a href="http://creative-mobs.com/gutentag/" target="_blank" rel="noopener">Guten Tag - Search the People’s Web</a>  </p>
 <p>  Tag搜索    </p>
 </li>
-<li><p><a href="http://microsoftpdc.com/content/downloads.aspx" target="_blank" rel="external">Downloads</a>  </p>
+<li><p><a href="http://microsoftpdc.com/content/downloads.aspx" target="_blank" rel="noopener">Downloads</a>  </p>
 <p>  pdc 05 上的slide的下载</p>
 </li>
-<li><p><a href="http://msdn.microsoft.com/vcsharp/future/" target="_blank" rel="external">Visual C# Developer Center : Future Versions</a>  </p>
+<li><p><a href="http://msdn.microsoft.com/vcsharp/future/" target="_blank" rel="noopener">Visual C# Developer Center : Future Versions</a>  </p>
 <p>  c# 3.0 相关资料  </p>
 </li>
-<li><p><a href="http://nickcheng.planzo.com/" target="_blank" rel="external">Planzo.com</a>  </p>
+<li><p><a href="http://nickcheng.planzo.com/" target="_blank" rel="noopener">Planzo.com</a>  </p>
 <p>  基于Web的个人日历  </p>
 </li>
-<li><p><a href="http://www.netvibes.com/" target="_blank" rel="external">Netvibes ★</a>  </p>
+<li><p><a href="http://www.netvibes.com/" target="_blank" rel="noopener">Netvibes ★</a>  </p>
 <p>  个人门户?  </p>
 </li>
-<li><p><a href="http://msdn.microsoft.com/netframework/future/" target="_blank" rel="external">MSDN .NET Framework Developer Center: Future Versions</a>  </p>
+<li><p><a href="http://msdn.microsoft.com/netframework/future/" target="_blank" rel="noopener">MSDN .NET Framework Developer Center: Future Versions</a>  </p>
 <p>  .net 的新框架 framework 3.0 &amp; c# 3.0  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10248" target="_blank" rel="external">纯真版QQIP数据库 0915 @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10248" target="_blank" rel="noopener">纯真版QQIP数据库 0915 @ 先锋新闻中心</a>  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10252" target="_blank" rel="external">Upiea 1.52 SP修正版 @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10252" target="_blank" rel="noopener">Upiea 1.52 SP修正版 @ 先锋新闻中心</a>  </p>
 <p>  垃圾软件杀手!  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10243" target="_blank" rel="external">WinAVI Video Converter 7.1 正式版 @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10243" target="_blank" rel="noopener">WinAVI Video Converter 7.1 正式版 @ 先锋新闻中心</a>  </p>
 <p>  各种视频格式转换!  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10260" target="_blank" rel="external">深入解析 Windows Mobile 5.0 Smartphone 版 @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10260" target="_blank" rel="noopener">深入解析 Windows Mobile 5.0 Smartphone 版 @ 先锋新闻中心</a>  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10257" target="_blank" rel="external">Amaya 9.2.2 编辑/浏览器 @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10257" target="_blank" rel="noopener">Amaya 9.2.2 编辑/浏览器 @ 先锋新闻中心</a>  </p>
 <p>  W3C官方推出的网页编辑器, 应该会很支持标准的1!  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10279" target="_blank" rel="external">Google Earth 3.0.0616 Beta @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10279" target="_blank" rel="noopener">Google Earth 3.0.0616 Beta @ 先锋新闻中心</a>  </p>
 <p>  更新的Google Earth, 据说有新特性, 开车有关的  </p>
 </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10278" target="_blank" rel="external">K-Lite Codec Pack v2.54 &amp; Klite Mega Codec pack v1.38 @ 先锋新闻中心</a>  </p>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10278" target="_blank" rel="noopener">K-Lite Codec Pack v2.54 &amp; Klite Mega Codec pack v1.38 @ 先锋新闻中心</a>  </p>
 </li>
 </ul>
 <p>一个包含各种解码器的包  </p>
 <ul>
-<li><a href="http://www.quakemachine.com/blog/software/wordpress/270" target="_blank" rel="external">quakemachine ? Blog Archive ? 避免网页代码被缓存的方法</a>  </li>
-<li><a href="http://edad.com.cn/datou/2005/09/blog-post_112697626882074999.htm" target="_blank" rel="external">2SIMPLE: 买房出租到底合算不</a>  </li>
-<li><p><a href="http://blog.joycode.com/percyboy/archive/2005/01/22/43433.aspx" target="_blank" rel="external">.NET 事件模型教程（一）</a>  </p>
+<li><a href="http://www.quakemachine.com/blog/software/wordpress/270" target="_blank" rel="noopener">quakemachine ? Blog Archive ? 避免网页代码被缓存的方法</a>  </li>
+<li><a href="http://edad.com.cn/datou/2005/09/blog-post_112697626882074999.htm" target="_blank" rel="noopener">2SIMPLE: 买房出租到底合算不</a>  </li>
+<li><p><a href="http://blog.joycode.com/percyboy/archive/2005/01/22/43433.aspx" target="_blank" rel="noopener">.NET 事件模型教程（一）</a>  </p>
 <p>  这个教程描述的非常清楚，而且很好理解  </p>
 </li>
-<li><p><a href="http://www.irradiance.net/NewStuff/Animation/YUI%20SHOP/?S=A" target="_blank" rel="external">Index of /NewStuff/Animation/YUI SHOP</a>  </p>
+<li><p><a href="http://www.irradiance.net/NewStuff/Animation/YUI%20SHOP/?S=A" target="_blank" rel="noopener">Index of /NewStuff/Animation/YUI SHOP</a>  </p>
 <p>  Comic Ani Download  </p>
 </li>
-<li><p><a href="http://www.mattberther.com/2004/09/000540.html" target="_blank" rel="external">public MattBerther : ISerializable – Implementing CollectionBase</a>  </p>
+<li><p><a href="http://www.mattberther.com/2004/09/000540.html" target="_blank" rel="noopener">public MattBerther : ISerializable – Implementing CollectionBase</a>  </p>
 <p>  .net下实现CollectionBase的一篇不错的文章  </p>
 </li>
-<li><p><a href="http://blog.cathayan.org/item/1055" target="_blank" rel="external">10个你未必知道的CSS技巧 - Blog on 27th Floor</a>  </p>
+<li><p><a href="http://blog.cathayan.org/item/1055" target="_blank" rel="noopener">10个你未必知道的CSS技巧 - Blog on 27th Floor</a>  </p>
 </li>
-<li><a href="http://blog.cathayan.org/item/1058" target="_blank" rel="external">再来10个你可能不知道的CSS技巧 - Blog on 27th Floor</a>  </li>
-<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10169" target="_blank" rel="external">VMware Workstation 5.5.16325 @ 先锋新闻中心</a>  </p>
+<li><a href="http://blog.cathayan.org/item/1058" target="_blank" rel="noopener">再来10个你可能不知道的CSS技巧 - Blog on 27th Floor</a>  </li>
+<li><p><a href="http://www.pcpchina.com/news/list.asp?id=10169" target="_blank" rel="noopener">VMware Workstation 5.5.16325 @ 先锋新闻中心</a>  </p>
 <p>  最新的VMware  </p>
 </li>
-<li><p><a href="http://msdn.microsoft.com/windowsvista/top10/" target="_blank" rel="external">Windows Vista Developer Center: Top 10 Ways to Light Up Your Apps</a>  </p>
+<li><p><a href="http://msdn.microsoft.com/windowsvista/top10/" target="_blank" rel="noopener">Windows Vista Developer Center: Top 10 Ways to Light Up Your Apps</a>  </p>
 </li>
-<li><a href="http://blog.fz0132.com/blogview.asp?logID=695" target="_blank" rel="external">快速保存网页中所有图片的方法 - 何昕博客(AlPar’s BloG)</a>  </li>
-<li><a href="http://www.byteofpython.info/language/chinese/index.html" target="_blank" rel="external">简明 Python 教程</a>  </li>
-<li><p><a href="http://www.petefreitag.com/item/455.cfm" target="_blank" rel="external">Cheat Sheet Roundup - Over 30 Cheatsheets for developers</a>  </p>
+<li><a href="http://blog.fz0132.com/blogview.asp?logID=695" target="_blank" rel="noopener">快速保存网页中所有图片的方法 - 何昕博客(AlPar’s BloG)</a>  </li>
+<li><a href="http://www.byteofpython.info/language/chinese/index.html" target="_blank" rel="noopener">简明 Python 教程</a>  </li>
+<li><p><a href="http://www.petefreitag.com/item/455.cfm" target="_blank" rel="noopener">Cheat Sheet Roundup - Over 30 Cheatsheets for developers</a>  </p>
 <p>  很全的各种语言的参考手册  </p>
 </li>
-<li><p><a href="http://in.comengo.net/index.php/archives/10-steps-to-web20-company/" target="_blank" rel="external">未完成 - Incomplete ? 10步创建成功的Web2.0公司</a>  </p>
+<li><p><a href="http://in.comengo.net/index.php/archives/10-steps-to-web20-company/" target="_blank" rel="noopener">未完成 - Incomplete ? 10步创建成功的Web2.0公司</a>  </p>
 <p>  写的挺不错的!  </p>
 </li>
-<li><p><a href="http://www.duduwolf.com/post/my_personal_portal_idea.asp" target="_blank" rel="external">我的个人门户——功能和框架-嘟嘟老窝</a>  </p>
+<li><p><a href="http://www.duduwolf.com/post/my_personal_portal_idea.asp" target="_blank" rel="noopener">我的个人门户——功能和框架-嘟嘟老窝</a>  </p>
 </li>
-<li><p><a href="http://www.amago.jp.lv/papercraft/papercraft2-2.html" target="_blank" rel="external">Trouts and Seasons of The Mountain Village - Paper Craft 2</a>  </p>
+<li><p><a href="http://www.amago.jp.lv/papercraft/papercraft2-2.html" target="_blank" rel="noopener">Trouts and Seasons of The Mountain Village - Paper Craft 2</a>  </p>
 <p>  这些纸鱼好像真的阿!  </p>
 </li>
-<li><p><a href="http://www.wowwiki.com/Interface_Customization" target="_blank" rel="external">Interface Customization - WoWWiki</a>  </p>
+<li><p><a href="http://www.wowwiki.com/Interface_Customization" target="_blank" rel="noopener">Interface Customization - WoWWiki</a>  </p>
 <p>  魔兽世界UI插件制作的参考资料  </p>
 </li>
-<li><p><a href="http://www.fluxiontech.com/?p=61" target="_blank" rel="external">? GTalk Tweaks</a>  </p>
+<li><p><a href="http://www.fluxiontech.com/?p=61" target="_blank" rel="noopener">? GTalk Tweaks</a>  </p>
 <p>  GT又现新彩蛋!  </p>
 </li>
-<li><p><a href="http://www.codeproject.com/csharp/ZedGraph.asp#xxxx" target="_blank" rel="external">The Code Project - A flexible charting library for .NET - C# Programming</a>  </p>
+<li><p><a href="http://www.codeproject.com/csharp/ZedGraph.asp#xxxx" target="_blank" rel="noopener">The Code Project - A flexible charting library for .NET - C# Programming</a>  </p>
 <p>  一个不错的.net下的图表库  </p>
 </li>
-<li><p><a href="http://www.microsoft.com/china/MSDN/library/netFramework/netframework/msdnmagissues0102dotnet.mspx" target="_blank" rel="external">特别的 .NET 类型成员</a>  </p>
+<li><p><a href="http://www.microsoft.com/china/MSDN/library/netFramework/netframework/msdnmagissues0102dotnet.mspx" target="_blank" rel="noopener">特别的 .NET 类型成员</a>  </p>
 </li>
-<li><p><a href="http://www.commontimes.org/" target="_blank" rel="external">CommonTimes.org - news you choose</a>  </p>
+<li><p><a href="http://www.commontimes.org/" target="_blank" rel="noopener">CommonTimes.org - news you choose</a>  </p>
 <p>  Google News的有力竞争对手! 看看吧! 再仿一个中文的?  </p>
 </li>
-<li><p><a href="http://www.ekany.com/wdg98/zc/ch1.htm" target="_blank" rel="external">《数据库系统概论》教学指导</a>  </p>
+<li><p><a href="http://www.ekany.com/wdg98/zc/ch1.htm" target="_blank" rel="noopener">《数据库系统概论》教学指导</a>  </p>
 </li>
-<li><p><a href="http://www4.uuzone.com/blog/mao/36997.htm" target="_blank" rel="external">我blog故我在－－Google Hacks</a>  </p>
+<li><p><a href="http://www4.uuzone.com/blog/mao/36997.htm" target="_blank" rel="noopener">我blog故我在－－Google Hacks</a>  </p>
 <p>  Google Hacks. 利用Google提供的服务实现的应用  </p>
 </li>
-<li><p><a href="http://www.wbeta.com/comments.php?catid=2&amp;shownews=9363" target="_blank" rel="external">GAlert v2.1.1 | wBeta.com</a>  </p>
+<li><p><a href="http://www.wbeta.com/comments.php?catid=2&amp;shownews=9363" target="_blank" rel="noopener">GAlert v2.1.1 | wBeta.com</a>  </p>
 <p>  多帐号Gmail提醒软件  </p>
 </li>
-<li><p><a href="http://blog.sina.com.tw/archive.php?blog_id=3759&amp;md=entry&amp;id=9778" target="_blank" rel="external">Curtis @ Blog: Linux 上完全手動編譯安裝 Lighttpd</a>  </p>
+<li><p><a href="http://blog.sina.com.tw/archive.php?blog_id=3759&amp;md=entry&amp;id=9778" target="_blank" rel="noopener">Curtis @ Blog: Linux 上完全手動編譯安裝 Lighttpd</a>  </p>
 <p>  Lighttpd是一个轻量级的Web Server  </p>
 </li>
-<li><p><a href="http://ilounge.com/" target="_blank" rel="external">All things iPod, iTunes and beyond | iLounge</a>  </p>
+<li><p><a href="http://ilounge.com/" target="_blank" rel="noopener">All things iPod, iTunes and beyond | iLounge</a>  </p>
 <p>  超多苹果相关的东东  </p>
 </li>
-<li><p><a href="http://www.flickr.com/photos/zheng/36102863/" target="_blank" rel="external">个人信息云与个人Web门户 on Flickr - Photo Sharing!</a>  </p>
+<li><p><a href="http://www.flickr.com/photos/zheng/36102863/" target="_blank" rel="noopener">个人信息云与个人Web门户 on Flickr - Photo Sharing!</a>  </p>
 <p>  这个个人门户的想法还是可以实现的, 通过RSS或WebService和APIs  </p>
 </li>
-<li><p><a href="http://www.alchemi.net/1_0_0_beta.html" target="_blank" rel="external">Alchemi [.NET Grid Computing Framework]</a>  </p>
+<li><p><a href="http://www.alchemi.net/1_0_0_beta.html" target="_blank" rel="noopener">Alchemi [.NET Grid Computing Framework]</a>  </p>
 <p>  .net下的网格计算的一个框架  </p>
 </li>
-<li><p><a href="http://www.gridcomputing.com/" target="_blank" rel="external">Grid Computing Info Centre (GRID Infoware)</a>  </p>
+<li><p><a href="http://www.gridcomputing.com/" target="_blank" rel="noopener">Grid Computing Info Centre (GRID Infoware)</a>  </p>
 <p>  网格计算  </p>
 </li>
-<li><p><a href="http://www.chinagrid.net/dvnews/default.aspx" target="_blank" rel="external">中国网格信息中转站</a></p>
+<li><p><a href="http://www.chinagrid.net/dvnews/default.aspx" target="_blank" rel="noopener">中国网格信息中转站</a></p>
 </li>
 </ul>
 
@@ -501,7 +502,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -588,9 +589,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -613,81 +624,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -700,12 +723,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -713,11 +733,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -733,10 +759,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -771,62 +794,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2005/09/26/bookmarks-20050926/';
+          this.page.identifier = '2005/09/26/bookmarks-20050926/';
+          this.page.title = '一个长期的网摘, 最近懒了..';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -850,7 +920,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -858,6 +928,9 @@
 
   
 
+  
+
+  
   
 
   

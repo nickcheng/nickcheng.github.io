@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/06/25/return-to-peking/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/06/25/return-to-peking/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -432,7 +433,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -472,6 +473,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/06/16/memo-20040616/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/06/16/memo-20040616/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -490,7 +502,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -554,7 +566,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -594,6 +606,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/06/15/one-more-blog-system-in-asp-lbs/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/06/15/one-more-blog-system-in-asp-lbs/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -612,7 +635,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -620,7 +643,7 @@
       
         
           
-            <p>一直以来，我都以为ASP下的Blog程序只有一个，就是我现在使用的duoluo的DLog，不过见天才看到还有一个挺有名气的Blog系统，叫L-Blog，具体的情况大家可以到<a href="http://www.loveyuki.com/" target="_blank" rel="external">http://www.loveyuki.com/</a> 来看看。而且SiC老大（MyIE2的一位老大）又在这个的基础上自己做了一番改进，叫做LBS，这个系统一直还在更新着，有兴趣的朋友可以看看去，目前的版本已经到了0xC9了  </p>
+            <p>一直以来，我都以为ASP下的Blog程序只有一个，就是我现在使用的duoluo的DLog，不过见天才看到还有一个挺有名气的Blog系统，叫L-Blog，具体的情况大家可以到<a href="http://www.loveyuki.com/" target="_blank" rel="noopener">http://www.loveyuki.com/</a> 来看看。而且SiC老大（MyIE2的一位老大）又在这个的基础上自己做了一番改进，叫做LBS，这个系统一直还在更新着，有兴趣的朋友可以看看去，目前的版本已经到了0xC9了  </p>
 <p>虽然现在已经有了这么多Blog的程序，但是自己也想写一个Blog程序。ASP.NET下的，呵呵，肯定不敢和著名的.TEXT比了！不过如果自己的写一个的话，相信在技术上会有很大的进步的！不过，目前的状态还不太适合自己写程序，首先，连自己的电脑还没有，首要目标还是先买台电脑</p>
 
           
@@ -675,7 +698,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -715,6 +738,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/06/07/i-am-back-to-school-again-20040607/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/06/07/i-am-back-to-school-again-20040607/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -733,7 +767,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -797,7 +831,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -837,6 +871,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/05/06/zt-20040506/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/05/06/zt-20040506/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -855,7 +900,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -865,15 +910,15 @@
           
             <p>首先是关于IIS的一些更新  </p>
 <blockquote>
-<p>IIS Kbs - April 2004<br>IIS WebCasts - May 2004<br>IIS LIVE on <a href="http://web.archive.org/web/20040604040806/http://www.asp.net/" target="_blank" rel="external">http://web.archive.org/web/20040604040806/http://www.asp.net/</a>  </p>
+<p>IIS Kbs - April 2004<br>IIS WebCasts - May 2004<br>IIS LIVE on <a href="http://web.archive.org/web/20040604040806/http://www.asp.net/" target="_blank" rel="noopener">http://web.archive.org/web/20040604040806/http://www.asp.net/</a>  </p>
 </blockquote>
 <p>另外听说Windows Update升级了,听着有些绕嘴”windows升级系统升级了”  </p>
-<p>测试地址: <a href="http://web.archive.org/web/20040604040806/http://v5.windowsupdate.microsoft.com/v5consumer/default.aspx?ln=zh-cn&amp;rc1=true" target="_blank" rel="external">http://web.archive.org/web/20040604040806/http://v5.windowsupdate.microsoft.com/v5consumer/default.aspx?ln=zh-cn&amp;rc1=true</a>  </p>
+<p>测试地址: <a href="http://web.archive.org/web/20040604040806/http://v5.windowsupdate.microsoft.com/v5consumer/default.aspx?ln=zh-cn&amp;rc1=true" target="_blank" rel="noopener">http://web.archive.org/web/20040604040806/http://v5.windowsupdate.microsoft.com/v5consumer/default.aspx?ln=zh-cn&amp;rc1=true</a>  </p>
 <p>这里还有一份C#编码规则,我现在正需要这方面的东西,希望能对我的编码规范有帮助  </p>
 <p>嘿嘿,又看到了关于.net的性能方面的东西. 这次是微软请Doculabs公司作了个测量，其基准测试结果（PDF File）充分的证明了ASP.NET比ASP的性能要好。  </p>
 <p>还有一个消息估计就严重一些了~~看看这个,严重产品漏洞通告 - 2004年5月1日 W32.SASSER WORM  </p>
 <p>这里还有一个关于Longhorn的Blog,没事的时候可以去了解一下关于长角牛的一些信息…毕竟这是以后的趋势啊~~这方面可不能落伍!  </p>
-<p><a href="http://web.archive.org/web/20040604040806/http://www.longhornblogs.com/" target="_blank" rel="external">http://web.archive.org/web/20040604040806/http://www.longhornblogs.com/</a></p>
+<p><a href="http://web.archive.org/web/20040604040806/http://www.longhornblogs.com/" target="_blank" rel="noopener">http://web.archive.org/web/20040604040806/http://www.longhornblogs.com/</a></p>
 
           
         
@@ -927,7 +972,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -967,6 +1012,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/05/02/about-dot-text-in-my-company/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/05/02/about-dot-text-in-my-company/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -985,7 +1041,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -993,10 +1049,10 @@
       
         
           
-            <p>上次例会中聊到要促进技术交流,我就给单位建议了在内网中弄一个和<a href="http://blog.joycode.com/" target="_blank" rel="external">joycode</a>类似的东西,也就是我们内部的blog了.我们老大觉得可以试试,就让我先搭起来这个平台.呵呵,我也没有具体搞过,就找来点儿东西看看  </p>
-<p><a href="http://blog.joycode.com/joy/posts/5532.aspx" target="_blank" rel="external">http://blog.joycode.com/joy/posts/5532.aspx</a>  </p>
-<p><a href="http://www.gotdotnet.com/community/workspaces/viewuploads.aspx?id=e99fccb3-1a8c-42b5-90ee-348f6b77c407" target="_blank" rel="external">http://www.gotdotnet.com/community/workspaces/viewuploads.aspx?id=e99fccb3-1a8c-42b5-90ee-348f6b77c407</a>  </p>
-<p><a href="http://www.cnblogs.com/eng21/archive/2004/04/29/8057.aspx" target="_blank" rel="external">Dottext配置结构</a></p>
+            <p>上次例会中聊到要促进技术交流,我就给单位建议了在内网中弄一个和<a href="http://blog.joycode.com/" target="_blank" rel="noopener">joycode</a>类似的东西,也就是我们内部的blog了.我们老大觉得可以试试,就让我先搭起来这个平台.呵呵,我也没有具体搞过,就找来点儿东西看看  </p>
+<p><a href="http://blog.joycode.com/joy/posts/5532.aspx" target="_blank" rel="noopener">http://blog.joycode.com/joy/posts/5532.aspx</a>  </p>
+<p><a href="http://www.gotdotnet.com/community/workspaces/viewuploads.aspx?id=e99fccb3-1a8c-42b5-90ee-348f6b77c407" target="_blank" rel="noopener">http://www.gotdotnet.com/community/workspaces/viewuploads.aspx?id=e99fccb3-1a8c-42b5-90ee-348f6b77c407</a>  </p>
+<p><a href="http://www.cnblogs.com/eng21/archive/2004/04/29/8057.aspx" target="_blank" rel="noopener">Dottext配置结构</a></p>
 
           
         
@@ -1050,7 +1106,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1090,6 +1146,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/03/21/memo-20040321/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/03/21/memo-20040321/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1108,7 +1175,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1117,7 +1184,7 @@
         
           
             <p>也就是随便写写了,想写的东西都写不了…~  </p>
-<p>刚在<a href="http://blog.joycode.com/saucer" target="_blank" rel="external">思归</a>老大的Blog看到了一些东西,是关于.net书籍方面的,觉得有机会应该读一下这”四大名著”  </p>
+<p>刚在<a href="http://blog.joycode.com/saucer" target="_blank" rel="noopener">思归</a>老大的Blog看到了一些东西,是关于.net书籍方面的,觉得有机会应该读一下这”四大名著”  </p>
 <p>以下是Readers’ Choice Awards (被认为是软件工业的奥斯卡，Oscars of the Software Industry)中的最佳.NET图书奖。  </p>
 <ol>
 <li>Ingo Rammer的《Advanced .NET Remoting》  </li>
@@ -1179,7 +1246,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1219,6 +1286,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/03/17/no-overtime-now-20040317/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/03/17/no-overtime-now-20040317/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1237,7 +1315,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1249,7 +1327,7 @@
 <p>每到星期三就觉得这个星期快过完了，今天就是，所以觉得下个星期很快就要到了…呵呵，兴奋阿  </p>
 <p>.net下的服务器控件要是想使用客户端javascript脚本还真是有些困难，看了好多文章以后，我才有了一点头绪…~有的时候，东西全在服务器端也不是那么理想的！！  </p>
 <p>最近特别想写一些东西，尤其是在做项目过程中遇到的一些问题及解决… 不过在单位的机器是和外界完全隔离的，而自己暂时还没有自己的电脑，所以只好作罢…</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1303,7 +1381,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1343,6 +1421,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/03/12/weekend-once-more-20040312/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/03/12/weekend-once-more-20040312/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1361,7 +1450,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1373,7 +1462,7 @@
 <p>这个星期天天晚上都加班到8点以后,终于到周末可以不用加了!我这就直奔网吧来了… 可见我对网络的虔诚阿不过明天还是要加班… 还好有加班费  </p>
 <p>周日和我们组长约好去爬山了… 组长是个不折不扣的户外运动爱好者,一个背包就2,3千的…~~ 我们这次的行程是:香山-八大处.这次的强度不大,主要因为有个伤员… 不过,我们还是会以走山道为主的… 伤员他们有可能走防火道…~  </p>
 <p>本周在技术上的研究重点还是ASP.NET下的那个DataGrid服务器控件… 越来越发现,只要是系统提供的功能,都不好使… 比如说那个分页的机制.每次翻页都要重新读取全部数据.估计微软也觉得这样不妥,所以在msdn上就提供了另外的方法.不过我个人感觉那个分页的方法还是不够完善… 现在我正啄磨着怎么改进这个方法呢… 明天加班应该就可以搞定了…~</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1427,7 +1516,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1467,6 +1556,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/03/07/talk-about-my-interview/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/03/07/talk-about-my-interview/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1485,7 +1585,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1503,11 +1603,23 @@
 <p>≡≡≡ 网友评论 ≡≡≡  </p>
 <blockquote>
 <p>一段木头 网友说：<br>2<em>3.14</em>r1-2<em>3.14</em>r2=1<br>(r1-r2)=1/6.28=0.15，高过15厘米的老鼠还没见过  </p>
+</blockquote>
+<blockquote>
 <p>既然是环线，那上面运行的列车应该不会多，两辆吧，没去过北京，一列火车不知道多少车厢，也不知道一列地铁多少时间能环一圈，这题可凭对地铁已有的知识胡诌，只要言之有理就好吧<br>at 2004-3-13 8:21:20  </p>
+</blockquote>
+<blockquote>
 <p>jason 网友说：<br>地铁的题目我不知道如何回答，但只要熟悉北京地铁多长时间一列（平时需热爱生活）环线行程长，在联系北京人口分布状况和上下班情况，就基本ok了吧。前者是周长变化量求半径变化量的问题，easy 2PIx=1解方程ok了。<br>at 2004-3-15 10:21:12  </p>
+</blockquote>
+<blockquote>
 <p>nickcheng 网友说：<br>第一个题主要是要看你的数学思维，因为总有人一看到这个题就觉得是脑筋急转弯，其实不然，只要自己稍加分析，便可以得到正确的结果…  </p>
+</blockquote>
+<blockquote>
 <p>第二个题的答案连问我问题的人都不知道，当然，他也不太可能确切的知道… 问这个题的意思是在考分析能力，你要把你的整个思考过程都描述给主考官，具体的答案就不重要了~<br>at 2004-3-17 19:29:14  </p>
+</blockquote>
+<blockquote>
 <p>aze 网友说：<br>第二个问题很象是搬的别人的想法<br>有一期程序员上曾经说过这么一个题目<br>他根本不是要你的正确答案<br>因为他也不知道<br>at 2004-3-18 8:35:05  </p>
+</blockquote>
+<blockquote>
 <p>nickcheng 网友说：<br>那估计就是了,他可能也是看了程序员以后才想到拿这个问题来问我的!</p>
 </blockquote>
 
@@ -1580,81 +1692,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1667,12 +1791,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1680,11 +1801,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1700,10 +1827,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1738,62 +1862,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1817,7 +1972,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1825,6 +1980,9 @@
 
   
 
+  
+
+  
   
 
   

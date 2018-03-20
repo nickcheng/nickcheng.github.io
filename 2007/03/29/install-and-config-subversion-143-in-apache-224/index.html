@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="tech,apache,installation,subversion,svn," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="中午吃完饭, 回来配置自己的Droupnir. 对于Droupnir, 计划在上面安装支持Subversion的Trac. 作为自己的项目管理平台和配置管理平台. 一篇先写安装配置Subversion 去Subversion的网站下载最新的Subversion, 我下载的是这个版本: http://subversion.tigris.org/files/documents/15/36797/svn">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.164Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.809Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Apache2.2.4下安装配置Subversion1.4.3">
 <meta name="twitter:description" content="中午吃完饭, 回来配置自己的Droupnir. 对于Droupnir, 计划在上面安装支持Subversion的Trac. 作为自己的项目管理平台和配置管理平台. 一篇先写安装配置Subversion 去Subversion的网站下载最新的Subversion, 我下载的是这个版本: http://subversion.tigris.org/files/documents/15/36797/svn">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/29/install-and-config-subversion-143-in-apache-224/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/29/install-and-config-subversion-143-in-apache-224/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,7 +368,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -376,20 +377,20 @@
         <p>中午吃完饭, 回来配置自己的Droupnir. 对于Droupnir, 计划在上面安装支持Subversion的Trac. 作为自己的项目管理平台和配置管理平台.</p>
 <p>一篇先写安装配置Subversion</p>
 <p>去Subversion的网站下载最新的Subversion, 我下载的是这个版本:</p>
-<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="external">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></p>
-<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="external"></a>因为Droupnir上已经安装好了Apache 2.2.4, 所以我就直接安装Subversion. 我以为一切都会很顺利, 可是…我错了…安装过程中出现了一个错误, 然后Apache就不能启动了! 查了半天Google, 终于知道了原因–最新的Subversion 1.4.3 不支持Apache 2.2.4. 除非自己去Build Apache所需的module.</p>
-<p>是又在网上找到了<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="external">别人build好的module</a>, 虽然有<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="external">一些已知的问题</a>, 但是应该还好! 这里需要注意, 这个编译好的module是用VC2005sp1编译的, 所以要求使用的Apache也是用VC2005sp1编译, <a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="external">VC2005sp1编译的Apache在这里</a>, 使用这个版本的Apache还需要<a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="external">Visual C++ 2005 Redistributable Package</a>. 安装的时候别忘了看readme哦!</p>
+<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="noopener">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></p>
+<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="noopener"></a>因为Droupnir上已经安装好了Apache 2.2.4, 所以我就直接安装Subversion. 我以为一切都会很顺利, 可是…我错了…安装过程中出现了一个错误, 然后Apache就不能启动了! 查了半天Google, 终于知道了原因–最新的Subversion 1.4.3 不支持Apache 2.2.4. 除非自己去Build Apache所需的module.</p>
+<p>是又在网上找到了<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="noopener">别人build好的module</a>, 虽然有<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="noopener">一些已知的问题</a>, 但是应该还好! 这里需要注意, 这个编译好的module是用VC2005sp1编译的, 所以要求使用的Apache也是用VC2005sp1编译, <a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="noopener">VC2005sp1编译的Apache在这里</a>, 使用这个版本的Apache还需要<a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="noopener">Visual C++ 2005 Redistributable Package</a>. 安装的时候别忘了看readme哦!</p>
 <p>装Subversion后, 他会自动修改Apache的conf. 不过你要是使用上面说的自己编译的Apache的话, 那就要自己去看看是不是在conf中加入了该加入的内容.</p>
-<p>后就是把自己的SVN版本库用Apache发布了, 这一步就是配置Apache的conf了, 没有什么特别的, <a href="http://svnbook.subversion.org.cn/1.2/svn.serverconfig.httpd.html" target="_blank" rel="external">SVNBook里写的很清楚</a>.</p>
-<p>果需要权限配置的话, 可以参考<a href="http://www.iusesvn.com/bbs/thread-158-1-1.html" target="_blank" rel="external">这篇帖子</a>, 里面写的很详细!</p>
+<p>后就是把自己的SVN版本库用Apache发布了, 这一步就是配置Apache的conf了, 没有什么特别的, <a href="http://svnbook.subversion.org.cn/1.2/svn.serverconfig.httpd.html" target="_blank" rel="noopener">SVNBook里写的很清楚</a>.</p>
+<p>果需要权限配置的话, 可以参考<a href="http://www.iusesvn.com/bbs/thread-158-1-1.html" target="_blank" rel="noopener">这篇帖子</a>, 里面写的很详细!</p>
 <p>下面附上我整理的步骤</p>
 <p>安装步骤</p>
 <ul>
 <li>下载<ul>
-<li><a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="external">http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip</a></li>
-<li><a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="external">http://www.apachelounge.com/download/vcredist_x86-sp1.exe</a></li>
-<li><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="external">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></li>
-<li><a href="http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip" target="_blank" rel="external">http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip</a></li>
+<li><a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="noopener">http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip</a></li>
+<li><a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="noopener">http://www.apachelounge.com/download/vcredist_x86-sp1.exe</a></li>
+<li><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="noopener">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></li>
+<li><a href="http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip" target="_blank" rel="noopener">http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip</a></li>
 </ul>
 </li>
 <li>安装Apache<ul>
@@ -464,7 +465,7 @@ Require valid-user
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -559,9 +560,19 @@ Require valid-user
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -584,81 +595,93 @@ Require valid-user
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -671,12 +694,9 @@ Require valid-user
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -684,11 +704,17 @@ Require valid-user
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -704,10 +730,7 @@ Require valid-user
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -742,62 +765,109 @@ Require valid-user
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2007/03/29/install-and-config-subversion-143-in-apache-224/';
+          this.page.identifier = '2007/03/29/install-and-config-subversion-143-in-apache-224/';
+          this.page.title = '在Apache2.2.4下安装配置Subversion1.4.3';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -821,7 +891,7 @@ Require valid-user
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -829,6 +899,9 @@ Require valid-user
 
   
 
+  
+
+  
   
 
   

@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/19/psp-updated-to-310oea2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/19/psp-updated-to-310oea2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -382,12 +383,12 @@
 <p>先上网搜一下最新的系统!</p>
 <p>–20:07<br>接了老婆一个电话, 闲聊了几句:)</p>
 <p>在网上查到目前最新的自制系统(可以玩破解游戏)应该是3.10 OE-A’(A2)系统了. 具体怎样还还不太清楚, 网上有一些评价, 也不好说是好是坏, 大家可以自己看看. 这个帖子有些评价:</p>
-<p><a href="http://bbs.tgbus.com/viewthread.php?tid=2290969" target="_blank" rel="external">http://bbs.tgbus.com/viewthread.php?tid=2290969</a></p>
+<p><a href="http://bbs.tgbus.com/viewthread.php?tid=2290969" target="_blank" rel="noopener">http://bbs.tgbus.com/viewthread.php?tid=2290969</a></p>
 <p>我在”电玩巴士”找到了一些升级资料. 首先需要升级到3.10 OE-A, 然后才能升级到A2系统. 3.10 OE-A的升级方法(里面有相关下载):</p>
-<p><a href="http://psp.tgbus.com/pspdg/jc/200702/20070205093638.shtml" target="_blank" rel="external">http://psp.tgbus.com/pspdg/jc/200702/20070205093638.shtml</a></p>
+<p><a href="http://psp.tgbus.com/pspdg/jc/200702/20070205093638.shtml" target="_blank" rel="noopener">http://psp.tgbus.com/pspdg/jc/200702/20070205093638.shtml</a></p>
 <p>–20:17<br>哈哈, 3.10 OE-A已经升级完毕了! 虽然升级过程中需要保持电量在75%以上, 但是我是插着电源, 所以在启动升级程序后, 我就一直按着”三角”键和”L”键, 跳过了检测电量的步骤:)</p>
 <p>接下来要准备升3.10 OE-A’(A2)了. 升级方法以及下载在下面的地址中:</p>
-<p><a href="http://psp.tgbus.com/pspdg/jc/200702/20070207090725.shtml" target="_blank" rel="external">http://psp.tgbus.com/pspdg/jc/200702/20070207090725.shtml</a></p>
+<p><a href="http://psp.tgbus.com/pspdg/jc/200702/20070207090725.shtml" target="_blank" rel="noopener">http://psp.tgbus.com/pspdg/jc/200702/20070207090725.shtml</a></p>
 <p>–20:24<br>搞定, A2版本的升级连电量都不检查的! 升级完成!</p>
 
           
@@ -442,7 +443,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -482,6 +483,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/14/use-google-to-find-the-download-link-of-free-ebook/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/14/use-google-to-find-the-download-link-of-free-ebook/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -500,7 +512,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -571,7 +583,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -611,6 +623,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/07/the-words-from-guodegang/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/07/the-words-from-guodegang/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -629,7 +652,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -637,7 +660,7 @@
       
         
           
-            <p>昨天晚上看<a href="http://www.douban.com/subject/1493523/" target="_blank" rel="external">读库0601</a>上写郭德纲的一篇文章, 里面有一段写的挺好的! 所谓好并不是写的文笔多好, 也不是刻画人物多到位, 而是这段话适合说给我听!</p>
+            <p>昨天晚上看<a href="http://www.douban.com/subject/1493523/" target="_blank" rel="noopener">读库0601</a>上写郭德纲的一篇文章, 里面有一段写的挺好的! 所谓好并不是写的文笔多好, 也不是刻画人物多到位, 而是这段话适合说给我听!</p>
 <blockquote>
 <p>……一个月挣这么一千块钱, 八百块钱, 娶个媳妇生个孩子, 等到我八十了, 打开电视, 我只能跟孩子说, 瞧见没有, 上边这孙子当初还不如我呢, 我要去比他强. 那时候, 我孙子得问我: 你早干嘛去了? ……</p>
 </blockquote>
@@ -694,7 +717,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -734,6 +757,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/01/do-i-have-rich-knowledge-about-vc/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/01/do-i-have-rich-knowledge-about-vc/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -752,7 +786,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -760,22 +794,42 @@
       
         
           
-            <p>在网上玩了<a href="http://www.u2ipo.com/test.php?act=test&amp;test_id=1" target="_blank" rel="external">一个小测试, 关于风险投资融资的</a>.  测试完毕后提交, 竟然得了88分</p>
+            <p>在网上玩了<a href="http://www.u2ipo.com/test.php?act=test&amp;test_id=1" target="_blank" rel="noopener">一个小测试, 关于风险投资融资的</a>.  测试完毕后提交, 竟然得了88分</p>
 <blockquote>
 <p>恭喜您得了88分，通过了我们的初级测试。<br>看得出您对风险投资及产业经济是相当关注的，这非常关键，丰富的知识是成功融资的前提条件！<br>您现在可以：<br>1、认真阅读下面的批注；<br>2、看看别人的融资故事，学习更多的融资经验；<br>3、马上上传项目计划书，让投资人看到您的项目，您将有机会与投资人对话。<br>帮助创业，服务投资。希望蓝海创投伴随您公司的成长，希望蓝海创投帮助您成功融资！<br>最后全体蓝海人祝您新年快乐，猪年大吉！！</p>
 </blockquote>
 <p>另外还有给我的批注</p>
 <blockquote>
 <p>批注：  </p>
+</blockquote>
+<blockquote>
 <p>您已经认识到VC的本质是高风险高回报，以下我们对此观点作些补充。VC的高风险是相对于其他投资方式而言的。只有企业价值增长了VC的投资才能得到回报，如果企业倒闭，VC很有可能血本无归。它投资成功的可能性在国际上基本在1/5以内。然而值得注意的是，这一点在中国的情况却大不一样，有统计显示，中国风险投资成功的概率远远高于国际水准，也就是说国内风险投资多半会选择拥有较好现金流风险较小的公司投资。这应该是国内与国际上风险投资最大的不同点之一。至于高回报，准确地说应该是高预期回报，如果投资成功，风险投资得到的回报会在3倍、6倍甚至10倍以上更多，但是投资企业成功的毕竟是少数，有一大半的投资是无法实现高回报的。这就是风险投资的精髓，也就是说在少数项目获取暴利的情况下，可以允许大多数项目微利、持平或者亏损。</p>
+</blockquote>
+<blockquote>
 <p>您知道投资追求高回报，但可能还不知道即使是高回报也是有一定投资额度范围的。大多数VC投资基金的整体规模都较大，一般在数亿元以上；其次VC对不同投资金额的项目的考察花费的物力财力相差并不大。所以，VC如果投资数额太小的项目（如几十万或一两百万）即使有10倍的高回报率，其获得的利润也是相对也是微不足道的，而同样的时间和精力如果投资一笔数千万元的项目，哪怕只有2-3倍的回报，其数量也是可观的。当然，投资也是有上限的，依据每家投资机构的基金总量和投资策略而不同，如联想投资的单项投资金额控制在基金总额的10%以内。</p>
+</blockquote>
+<blockquote>
 <p>您说得很对，VC投资的根本性目的就是现金回报。很少有专业的VC会为了控制一家公司而投资。恰恰相反，VC在投资企业的过程中并不希望由于自身控股导致创业团队的积极性丢失，历史上由于VC控股导致公司CEO中途退出导致投资危机也不乏先例。无论如何，VC的最终目的就是通过资本的作实现资金的增值，而创业企业对于他们来说只是达成目的的一个手段，VC控股通常不是高明之举。</p>
+</blockquote>
+<blockquote>
 <p>您对于资本退出的认识是正确的，首次公开募股（IPO）的确是风险投资最佳退出途径，它能使投资者获得3-10倍或者更高的回报。当风险企业发展到一定程度之后必然选择在证券市场上市，首次进入证券市场发行股票称为IPO。美国最主要的风险投资上市渠道是NASDAQ。实现IPO的风险投资在度过一定期限的禁售期(NASDAQ是六个月)后可以将其持有的股份抛售变现获得收益，这是风险投资获得回报最高的退出方式。需要指出是，我们说IPO是最佳的退出方式是就其投资收益率而言的，但事实上就数量而言，IPO并不是主要的风险投资退出方式，即便是在美国大约也只有10％至20％左右的风险企业能够实现 IPO，其他超过６０％甚至更多的企业采取并购方式作为退出方式。</p>
+</blockquote>
+<blockquote>
 <p>在很多创业者还认为钱拿的越多越好的时候，您已经认识到够用就好的原则，这太棒了。一般来说，企业一次融资所参考的是企业一年左右时间扩张发展所需的资金量，经过2-3轮的融资后最终推动企业上市。</p>
+</blockquote>
+<blockquote>
 <p> 您已经知道选择合适投资商的重要性，挑选投资商时研究投资商的背景和实力是相当重要的，这其中包括关注行业的不同，本土与国际的不同，历史投资案例的不同，管理机制的不同等等，这些通通是企业家需要考虑在内的因素。而熟悉此行业的VC可能与创业者更有共同语言，更能理解创业思路，有更强的行业敏锐性。</p>
+</blockquote>
+<blockquote>
 <p> 您认为企业最重要的因素是人，而这与几乎所有的风险投资家的观点也是一致的：投钱就是投人。人或者说团队的优势其实是最重要的因素，模式是死的，产品是死的，只有人是活的。对的人能把不对的事情做对，不对的人会把对的事情做错。</p>
+</blockquote>
+<blockquote>
 <p>您清楚企业发展需要多少资金，并清楚这笔资金应该由您自己而不是投资商提出。我们这里补充一点，一般来说我们会参考企业阶段性发展（可能是1年左右）所需的资金数量，并且需要给投资人一个清晰的方案来说明如何使用这笔资金。</p>
+</blockquote>
+<blockquote>
 <p>您认为VC最终关心的就是现金回报而不是其他任何东西，没错，只要把握好这点就有了打开VC金库的第一把钥匙。一般照经验来看，VC做一笔投资会在2年- 5年左右的时间里获得应有的回报，而回报的数量也不一而同，行业平均值在2-3倍左右，10倍已经属于高回报，而历史中也有达到几十倍甚至上百倍回报案例（如Compaq达到38倍，Lotus达到63倍，苹果计算机的投资回报高达235倍）</p>
+</blockquote>
+<blockquote>
 <p>你过于看重商业模式，这是一个危险的信号。相比之下，企业更关注一个企业的历史经营状况和创业团队的素质，其中以后者更为关键。一个好的商业模式勾画出未来发展的美好蓝图，但是很多情况下商业模式不会是一成不变得，甚至有些企业还没有找到很好的商业模式，但只要行业前景是光明的，创业团队是优秀的，他们终将能找到适合自己发展的道路。所以真正决定企业价值的并不是商业模式或者是产品，而是富有创造力的企业团队创造商业模式的能力，也只有有了好的商业模式才会有商业价值。投资者希望创业者拥有敏锐的商业嗅觉、强烈的敬业精神、深厚的责任意识以及合作的团队观念，只有这样的领导人和团队才能在企业前进的道路上克服一切困难，而任何其他的不利因素也都可以通过人来改变。所以，人是投资家最看重的。 </p>
 </blockquote>
 <p>可别当真, 就当学习一些自己不了解的知识吧:)</p>
@@ -832,7 +886,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -872,6 +926,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/02/25/the-youth-we-can-not-put-down/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/02/25/the-youth-we-can-not-put-down/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -890,7 +955,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -904,12 +969,18 @@
 <p>故事写的挺细腻的, 人的感情流露的也挺自然…尤其是一些交叉着青涩青春的小插曲, 会让人看了以后会心的笑起来, 这些场景会让人看了上瘾的…但可能是已经知道了故事的结局, 当我刚笑了起来, 就不由的想到了后面, 这时就再也笑不出来……只是像一个预言家一样, 可悲剧中人的宿命, 顺便咒骂一下狠心的编剧和导演…</p>
 <p>看着剧中人的大学生活, 自然联想到自己的大学生活, 而且还会做比较…哥们大学的经历也不比电视剧差呵…真的, 要是咱有小说家那能耐, 把自己大学生活绘声绘色的写出来, 那也是一相当不错的剧本呢!</p>
 <p>电视剧还没有看完, 明天继续做功课…这礼拜就搞定! 生活也像演到一半的电视剧, 只是导演和编剧都是我们自己, 一辈子才能搞定……</p>
-<p>ps.找到这个电视剧的博客了: <a href="http://blog.sina.com.cn/m/wuchuanfang" target="_blank" rel="external">http://blog.sina.com.cn/m/wuchuanfang</a></p>
+<p>ps.找到这个电视剧的博客了: <a href="http://blog.sina.com.cn/m/wuchuanfang" target="_blank" rel="noopener">http://blog.sina.com.cn/m/wuchuanfang</a></p>
 <p><img src="http://album.sina.com.cn/pic/4bf92b4502000h74" alt="我们无处安放的青春"></p>
 <blockquote>
 <p>如果时间静止<br>让甜蜜的感觉继续<br>回忆的相片<br>渐渐的模糊了双眼</p>
+</blockquote>
+<blockquote>
 <p>有一种思念<br>不管走到哪里都能相见<br>你我回眸的瞬间<br>爱的终点还有多遥远<br>两颗心是否会疲倦</p>
+</blockquote>
+<blockquote>
 <p>哦，真的没关系，我爱你<br>让你自由的去呼吸<br>温柔的眼泪坚强的微笑<br>就这样守候在这里</p>
+</blockquote>
+<blockquote>
 <p>哦，真的没关系 谁叫我爱你<br>用尽生命所有的力气<br>时过境迁 转身你依然发现<br>还有我在这里<br>只是心甘情愿跟随你<br>爱你爱不爱我没关系</p>
 </blockquote>
 <p>下面是歌曲的试听</p>
@@ -967,7 +1038,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1007,6 +1078,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/02/18/my-fate-year-has-gone-away/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/02/18/my-fate-year-has-gone-away/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1025,7 +1107,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1089,7 +1171,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1129,6 +1211,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/02/17/a-poem-for-lp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/02/17/a-poem-for-lp/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1147,7 +1240,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1211,7 +1304,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1251,6 +1344,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/02/12/huntun-to-eat-heihei-20070212/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/02/12/huntun-to-eat-heihei-20070212/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1269,7 +1373,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1289,7 +1393,7 @@
 </ul>
 <p>软件装着不费劲, 关键是准备软件的时候费劲! 本想偷懒省劲从家里的电脑把这些软件复制过来, 可最后折腾了半天网络, 只完成了一半…最后还是把家里的电脑弄成了http server才把软件复制过来, 真他妈臭……</p>
 <p>软件安装的顺序就是上面我写的顺序, 装好以后做个小实验, 看看django是否能work. 最后再配置apache就ok了!</p>
-<p>具体参考我的文章: <a href="http://wiki.woodpecker.org.cn/moin/nickcheng/2007-02-06" target="_blank" rel="external">http://wiki.woodpecker.org.cn/moin/nickcheng/2007-02-06</a></p>
+<p>具体参考我的文章: <a href="http://wiki.woodpecker.org.cn/moin/nickcheng/2007-02-06" target="_blank" rel="noopener">http://wiki.woodpecker.org.cn/moin/nickcheng/2007-02-06</a></p>
 <p>明天要搞数据库!!</p>
 <p>考虑了一下, Trac&amp;SVN就不在这个虚机里装了! 配置管理和开发环境的稳定程度可不能同日而语, 还是分开保险一些:)</p>
 
@@ -1345,7 +1449,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1385,6 +1489,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/02/12/huntun-to-eat-heihei-20070211/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/02/12/huntun-to-eat-heihei-20070211/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1403,7 +1518,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1500,7 +1615,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1540,6 +1655,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/02/07/the-problem-of-the-changed-name-of-attachment-when-sending-chinese-attachment-in-thunderbird/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/02/07/the-problem-of-the-changed-name-of-attachment-when-sending-chinese-attachment-in-thunderbird/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1558,7 +1684,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1567,7 +1693,7 @@
         
           
             <p>一直没当成个事儿! 前段时间也碰到了这个情况, 只是把文件打了一个zip包重新发了一下, 也没有深究. 今天又有同事抱怨说我发的邮件的附件被改名, 于是Google之. 原来是因为Thunderbird太先进而导致没有考虑中文的一个bug.</p>
-<p>具体原因大家可以参考<a href="http://hi.baidu.com/jarryleo/blog/item/ee91bdfd95d4ed1609244d99.html" target="_blank" rel="external">这个文章</a>, 写的比较清楚了, 想更进一步了解的同学可以阅读<a href="http://rfc.net/rfc2231.html" target="_blank" rel="external">RFC2231</a>和<a href="http://rfc.net/rfc2047.html" target="_blank" rel="external">RFC2047</a></p>
+<p>具体原因大家可以参考<a href="http://hi.baidu.com/jarryleo/blog/item/ee91bdfd95d4ed1609244d99.html" target="_blank" rel="noopener">这个文章</a>, 写的比较清楚了, 想更进一步了解的同学可以阅读<a href="http://rfc.net/rfc2231.html" target="_blank" rel="noopener">RFC2231</a>和<a href="http://rfc.net/rfc2047.html" target="_blank" rel="noopener">RFC2047</a></p>
 <p>解决方法也很简单. 在Thunderbird中, 工具-&gt;首选项-&gt;高级-&gt;配置编辑器. 然后找到”mail.strictly_mime.parm_folding”, 把默认值2改为0就搞定了! 自己试试吧!</p>
 
           
@@ -1639,81 +1765,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1726,12 +1864,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1739,11 +1874,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1759,10 +1900,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1797,62 +1935,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1876,7 +2045,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1884,6 +2053,9 @@
 
   
 
+  
+
+  
   
 
   

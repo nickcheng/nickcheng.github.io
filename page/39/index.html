@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/11/its-bad-to-go-internet-at-home/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/11/its-bad-to-go-internet-at-home/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -379,7 +380,7 @@
             <p>要跑道网吧来,烂键盘,烂鼠标……还真怀念学校的一切…~  </p>
 <p>估计在家的是建里,blog的次数会少很多,而且字数也会少很多……~  </p>
 <p>大家好好过年喽…~</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -433,7 +434,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -473,6 +474,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/08/i-am-at-homes-netcafe/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/08/i-am-at-homes-netcafe/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -491,7 +503,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -503,7 +515,7 @@
 <p>在家上网好不方便!还要跑到网吧去,而且在网吧又用不了msn,好多朋友又联系不上了……  </p>
 <p>今天下午帮同学看了一下笔记本的市场情况,价格要比我想象的便宜,不过品种少…心里希望的sony 没有货,目前选择的范围就只能局限在ibm,asus,toshiba,3*了,国产的本儿就暂时不考虑了……  </p>
 <p>回来早了点儿,同学几乎都还没有回来,只有一个人先待着了……</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -557,7 +569,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -597,6 +609,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/06/yesterday-is-a-hard-day-will-go-back-this-noon/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/06/yesterday-is-a-hard-day-will-go-back-this-noon/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -615,7 +638,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -631,7 +654,7 @@
 <p>对了，昨晚还准备了自己回家要带的东西。大四的回家，带的东西可真不少… 当然，还有最重要的东西！和自己找工作相关的一些材料，呵呵… 这可是命根啊…  </p>
 <p>下个学期还不知道什么时候要过来，希望自己先有个好的“归宿”，那样的话，一切都会是超出意料的顺利！！  </p>
 <p>大家都为我祝福吧！！</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -685,7 +708,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -725,6 +748,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/04/do-my-best-to-do-homework/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/04/do-my-best-to-do-homework/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -743,7 +777,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -753,7 +787,7 @@
           
             <p>6号,也就是后天就要回家了… 不过手头的作业还没有搞定… 今晚一定要搞定了…~~  </p>
 <p>努力……</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -807,7 +841,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -847,6 +881,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/04/about-syntax-with-from-subsentence/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/04/about-syntax-with-from-subsentence/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -865,7 +910,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -880,7 +925,7 @@
 <p>原来,Access数据库中,”user”是一个关键字,所以这句话就会出现错误.解决的方法也很简单</p>
 <p><code>select * from [user]</code></p>
 <p>原来一切只是这么简单!</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -934,7 +979,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -974,6 +1019,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/03/aspnet-button-click-once-do-twice/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/03/aspnet-button-click-once-do-twice/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -992,7 +1048,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1024,7 +1080,7 @@ Session[&quot;BasketCount&quot;]=1;
 <p><code>this.Add.Click += new System.EventHandler(this.AddClick);</code></p>
 <p>我在添加这个Button控件的时候,已经写上了OnClick事件对应的方法,但是在我双击这个控件添加cs代码的时候,vs.net又在 InitializeComponent()方法里添加了如上的代码,这样一来,每次点击按钮,就会将这两段代码分别执行,就导致了Session变量在每次点击后增加2的情况.  </p>
 <p>vs.net是一个很强大的工具,但是我们要熟悉他,才能更好的让他为我们服务.像我这样对vs.net还不够熟悉,没有全面理解vs.net的工作方式,所以就导致了这个错误的发生.</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1078,7 +1134,7 @@ Session[&quot;BasketCount&quot;]=1;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1118,6 +1174,17 @@ Session[&quot;BasketCount&quot;]=1;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/01/03/got-ticket-will-go-home/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/01/03/got-ticket-will-go-home/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1136,7 +1203,7 @@ Session[&quot;BasketCount&quot;]=1;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1147,7 +1214,7 @@ Session[&quot;BasketCount&quot;]=1;
             <p>今天上午和LP去火车站买了回家的票… 6号就要离开了…… //shuang  </p>
 <p>手边还有一些工作没有处理完，这两天要抓紧时间了…  </p>
 <p>看来，毕业设计的开题报告要到寒假写了…</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1201,7 +1268,7 @@ Session[&quot;BasketCount&quot;]=1;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1241,6 +1308,17 @@ Session[&quot;BasketCount&quot;]=1;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2003/12/29/i-can-internet-now/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2003/12/29/i-can-internet-now/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1259,7 +1337,7 @@ Session[&quot;BasketCount&quot;]=1;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1269,7 +1347,7 @@ Session[&quot;BasketCount&quot;]=1;
           
             <p>前两天我们的电话由于欠费，导致两三天都无法上网，今天交了电话费，终于可以上网了//shuang……  </p>
 <p>我发现，现在的生活真的是有点儿离不开网络了……</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1323,7 +1401,7 @@ Session[&quot;BasketCount&quot;]=1;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1363,6 +1441,17 @@ Session[&quot;BasketCount&quot;]=1;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2003/12/29/senior-programmer-my-future/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2003/12/29/senior-programmer-my-future/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1381,7 +1470,7 @@ Session[&quot;BasketCount&quot;]=1;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1393,7 +1482,7 @@ Session[&quot;BasketCount&quot;]=1;
 <p>我猜中了结果，也猜中了过程…所以现在，我不是太郁闷…因为我的郁闷期已经过了…..就在我知道分数的那天  </p>
 <p>到现在,自己在计算机方面一个证书也没有,呵呵…下个学期怎么去找工作??在这个看重证书的年代,我还混得下去么?  </p>
 <p>不过自己天生是一个乐观者我最不缺乏的就是自信了……自己的路还需要自己来走,以后的路就靠自己吧……走成什么样,现在是不知道,但是我会努力的……</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1447,7 +1536,7 @@ Session[&quot;BasketCount&quot;]=1;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1487,6 +1576,17 @@ Session[&quot;BasketCount&quot;]=1;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2003/12/25/Xmas-eve-drawing-change/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2003/12/25/Xmas-eve-drawing-change/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1505,7 +1605,7 @@ Session[&quot;BasketCount&quot;]=1;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1517,7 +1617,7 @@ Session[&quot;BasketCount&quot;]=1;
 <p>Blog又加了一点儿小的变化，在首页中，“收藏”栏目的内容将不会显示内容，只会显示一个标题…这样，在收藏文章多的时候就不会喧宾夺主了！  </p>
 <p>毕业设计的题目已经下来了…不出意外的话，我就选事前准备好的题目了！……  </p>
 <p>另：和我一起开发系统的同学收到了深圳一个公司的电话，有签约的意向… 同学问我要不要去，嘿嘿… 我的目标还是北京！除非深圳给我开月薪7k… 估计是不可能，所以我就应该是不会去的…~</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=1" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1588,81 +1688,93 @@ Session[&quot;BasketCount&quot;]=1;
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1675,12 +1787,9 @@ Session[&quot;BasketCount&quot;]=1;
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1688,11 +1797,17 @@ Session[&quot;BasketCount&quot;]=1;
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1708,10 +1823,7 @@ Session[&quot;BasketCount&quot;]=1;
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1746,62 +1858,93 @@ Session[&quot;BasketCount&quot;]=1;
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1825,7 +1968,7 @@ Session[&quot;BasketCount&quot;]=1;
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1833,6 +1976,9 @@ Session[&quot;BasketCount&quot;]=1;
 
   
 
+  
+
+  
   
 
   

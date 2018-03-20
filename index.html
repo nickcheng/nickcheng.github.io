@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/23/201709231229-summary-from-the-iphone-8-by-john-gruber/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/09/23/201709231229-summary-from-the-iphone-8-by-john-gruber/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -376,7 +377,7 @@
       
         
           
-            <p>这次苹果发布会后, 大家的兴趣明显都在 iPhone X 上. 不过在 iPhone X 发布之前, John Gruber 发了一篇<a href="https://daringfireball.net/2017/09/the_iphones_8" target="_blank" rel="external">专门讲 iPhone 8 的文章</a>. 因为一些原因, 我这次没有选择 iPhone X, 所以我对这篇文章更感兴趣一些. 读了一遍, 记录了一些摘要如下.</p>
+            <p>这次苹果发布会后, 大家的兴趣明显都在 iPhone X 上. 不过在 iPhone X 发布之前, John Gruber 发了一篇<a href="https://daringfireball.net/2017/09/the_iphones_8" target="_blank" rel="noopener">专门讲 iPhone 8 的文章</a>. 因为一些原因, 我这次没有选择 iPhone X, 所以我对这篇文章更感兴趣一些. 读了一遍, 记录了一些摘要如下.</p>
 <ul>
 <li>John Gruber 感觉玻璃外壳比铝外壳更防滑, 所以 iPhone 8 Plus 比 iPhone 7 Plus 握持的感觉更好一些, 所以更容易操作.</li>
 <li>如果没有 iPhone X, 他有可能会考虑购买 iPhone 8 Plus.</li>
@@ -441,7 +442,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -481,6 +482,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/09/201611092251-my-colledge-life-3-from-miaomiao/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/11/09/201611092251-my-colledge-life-3-from-miaomiao/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -499,7 +511,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -518,7 +530,7 @@
 <p>后面的几个乐队都没有什么出色的，所以我们的分也一直是最高的，一直到最后一个乐队出唱。</p>
 <p>这是这次比赛最黑暗的时候，一上来，他们就换上了自己的键盘，按规定，这是要扣分的，他们唱的第一首歌是别对我说失去了 BABY，是个 PUNK 歌曲，很简单，可以说这是乐队排练最简单的歌曲了，第 2 首歌曲是首类似于 80 年代港台歌曲的东西，唱的很煽情，可我怎么听怎么难受，最后他们居然的了 9.30 分，我们都呆了，因为他们是最不可能比我们分高的乐队，后来知道他们是襄樊艺校的乐队，而这个比赛是襄樊艺校承办的，评委还有他们的老师，我们都明白了，在场的所有的观众也都明白了，我们都被这个社会个<em>**</em>了，这就是现实，这就是生活，我们只不过是个引子，我们再出色，No.1 只会是那个什么白痴的艺校乐队，后来我去领奖金的时候，主办者都说我们应该是第一名的，可是有什么用呢。</p>
 <p>从襄樊回来，乐队到达了顶峰期间，不过随后带来的就是衰败，直到我们都退出青鸟<del>~</del>~ </p>
-<p><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002us.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010002us.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010002ut.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002us.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010002us.html</a><br><a href="http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010002ur.html</a></p>
 
           
         
@@ -572,7 +584,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -612,6 +624,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/11/09/2003-band-life-record-in-shiyan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/11/09/2003-band-life-record-in-shiyan/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -630,7 +653,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -643,12 +666,12 @@
 <p>一首激烈的来自鲍家街的“我真的需要”让前排与会的几十名乐手和满堂吃客们很容易找<br>到了感觉，这反应是原始的，本能的。几个吃饭的客人也找到了感觉，爬起来站到门外面。这<br>反应也是原始的，本能的。</p>
 <p>接着是一首英伦歌曲“的士梦想”。动感的节奏，由静到失真的歌曲结构似乎在告诉所有<br>的朋友，这是 2003 年的“城市婴儿”。他们变了么？</p>
 <p>在热情洋溢婚礼祝福词叙述完毕，紧接着出场的是“青鸟”乐队，乐队同样也是翻唱一首<br>鲍家街的（鲍家街真是爷爷乐队，谁敢不唱他们的歌），带来自己的歌曲两首，青鸟是十堰的<br>新锐乐队，音乐干净、利索，编排很有层次。可以看的出每首歌曲都是下了功夫。</p>
-<p>记得很清楚，第一次看“青鸟”演出是 2001 年 10 月，唱的是黑豹的《靠近我》第二次是 20<br>01 年底在另一类酒吧，唱的是的哈狗帮的《操<em>*</em>比》，时隔 2 年，他们唱的是自己的歌曲<br>。认真的音乐好，有感情的音乐好，感觉很是不一般。这是再次听青鸟的感觉，希望能一往直<br>前。</p>
+<p>记得很清楚，第一次看“青鸟”演出是 2001 年 10 月，唱的是黑豹的《靠近我》第二次是 20<br>01 年底在另一类酒吧，唱的是的哈狗帮的《操***比》，时隔 2 年，他们唱的是自己的歌曲<br>。认真的音乐好，有感情的音乐好，感觉很是不一般。这是再次听青鸟的感觉，希望能一往直<br>前。</p>
 <p>接下来的乐队是反5，杨玉说主音吉他手是弹死亡金属的，说句真心话，我真想听听十堰<br>的死亡金属，这也许是这个城市最值得期待的事情之一了，可是他们今天的歌曲却是很抒情，<br>可能因为是在婚礼上，演出有所保留…….</p>
 <p>今天的主要地下乐队就三支，可今天来的音乐人却是不少，除了舞厅帮，基本上都来了。<br>熟悉的面孔在婚礼与演出场上交错，互相进行着毫不真实的问候……互相小心翼翼的侮辱着<br>对方的人格……大家笑着，互相看着对方眼角的皱纹……</p>
 <p>关于十堰的地下音乐，可以说是一直是暗地潜流。一次一次的演出，一个个自主的音乐圈<br>，一支支乐队的分娩到分裂。一个个所谓的音乐狠人的沉默，他们像夜之精灵与短暂的荧荧<br>星光邂逅，随即疾速消失在更加黑夜的深处。他们用手和伟大的想象力让自己寻找到超越身<br>体快乐以外的短暂快乐，他们像多年寻梦未果的孩子像一颗颗播在干涸土地上的失落的种子。</p>
 <p>也许，对于音乐，我们值得期待的还有很多。也许，我们做的还有很多。</p>
-<p><a href="http://blog.sina.com.cn/s/blog_564a2a0a010003pu.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_564a2a0a010003pu.html</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_564a2a0a010003pu.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_564a2a0a010003pu.html</a></p>
 
           
         
@@ -702,7 +725,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -742,6 +765,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/04/28/write-markdown-in-sublime/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/04/28/write-markdown-in-sublime/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -760,7 +794,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -780,14 +814,14 @@
 <p>其他一些如 IA Writer, Write Room, Writer Pro 等都不太满意, 就不细说了.</p>
 <p>于是最终还是转回到改造常用的 Text Editor. 这个重任就落在 Sublime Text 身上了.</p>
 <p>Sublime 的丰富的插件让这一切得以可行, 最终我的配置大概如下:</p>
-<p><a href="https://github.com/nvtkaszpir/MarkdownLight" target="_blank" rel="external">修改过颜色配置的 Markdown Light</a></p>
+<p><a href="https://github.com/nvtkaszpir/MarkdownLight" target="_blank" rel="noopener">修改过颜色配置的 Markdown Light</a></p>
 <p>这家默认的颜色都是亮色调的, 所以我用了这个模仿 Dracula 主题配色的 Fork</p>
-<p><a href="https://github.com/zenorocha/dracula-theme" target="_blank" rel="external">Dracula Theme</a></p>
+<p><a href="https://github.com/zenorocha/dracula-theme" target="_blank" rel="noopener">Dracula Theme</a></p>
 <p>用到了这个主题的语法配色, 主要是为了让打开其他类型的文件能有统一的体验</p>
-<p><a href="https://github.com/wesbos/cobalt2" target="_blank" rel="external">cobalt2</a></p>
+<p><a href="https://github.com/wesbos/cobalt2" target="_blank" rel="noopener">cobalt2</a></p>
 <p>这个是使用的编辑器主题. 主要目的是边栏美化</p>
 <p>所以最后我的配置文件中样式相关的部分是这样的, 字体搭配属于附赠:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",</div><div class="line">"theme": "Cobalt2.sublime-theme",</div><div class="line">"font_face": "InputMonoCompressed Thin",</div><div class="line">"font_size": 16.0,</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",</span><br><span class="line">"theme": "Cobalt2.sublime-theme",</span><br><span class="line">"font_face": "InputMonoCompressed Thin",</span><br><span class="line">"font_size": 16.0,</span><br></pre></td></tr></table></figure>
 <p>不得不提的还有 GitHub 家的 Atom Editor. 可能还是因为发展时间短, 他还是很多小细节的地方不是那么到位, 而且非 Native 的架构用起来的性能还是要比 Sublime 差上一些, 所以暂时还无法委以重任.</p>
 
           
@@ -842,7 +876,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -882,6 +916,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2014/08/28/renew-dropbox-pro/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2014/08/28/renew-dropbox-pro/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -900,7 +945,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -913,8 +958,8 @@
 <p>又怎知, 昨天 Dropbox 宣布 Pro 帐户的容量升级到 1TB. 这下我之前要转 iCloud Drive 的借口全都敌不过这个诱惑了. 毕竟是自己已经用了很久的服务了, 服务品质很满意, 而且自己日常许多工具链都依赖它.</p>
 <p>好吧, 老老实实续一年 Dropbox Pro. iCloud Drive 就先观察着.</p>
 <ul>
-<li>Dropbox Pro: <a href="https://www.dropbox.com/upgrade" target="_blank" rel="external">https://www.dropbox.com/upgrade</a></li>
-<li>注册 Dropbox: <a href="https://db.tt/ceJU2JX" target="_blank" rel="external">https://db.tt/ceJU2JX</a></li>
+<li>Dropbox Pro: <a href="https://www.dropbox.com/upgrade" target="_blank" rel="noopener">https://www.dropbox.com/upgrade</a></li>
+<li>注册 Dropbox: <a href="https://db.tt/ceJU2JX" target="_blank" rel="noopener">https://db.tt/ceJU2JX</a></li>
 </ul>
 
           
@@ -969,7 +1014,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1009,6 +1054,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2014/06/10/auto-increase-version-number-in-xcode-5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2014/06/10/auto-increase-version-number-in-xcode-5/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1027,7 +1083,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1044,7 +1100,7 @@
 <p>然后你可以在红框位置把名字给改了. 不过这不重要, 重要的是橙框里的内容!</p>
 <p><img src="http://nickcheng-blog.u.qiniudn.com/20140610/3.png" alt="Step 3"></p>
 <p>脚本如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">buildNumber=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleVersion&quot; &quot;$&#123;PROJECT_DIR&#125;/$&#123;INFOPLIST_FILE&#125;&quot;)</div><div class="line">buildNumber=$(($buildNumber + 1))</div><div class="line">/usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion $buildNumber&quot; &quot;$&#123;PROJECT_DIR&#125;/$&#123;INFOPLIST_FILE&#125;&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">buildNumber=$(/usr/libexec/PlistBuddy -c &quot;Print CFBundleVersion&quot; &quot;$&#123;PROJECT_DIR&#125;/$&#123;INFOPLIST_FILE&#125;&quot;)</span><br><span class="line">buildNumber=$(($buildNumber + 1))</span><br><span class="line">/usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion $buildNumber&quot; &quot;$&#123;PROJECT_DIR&#125;/$&#123;INFOPLIST_FILE&#125;&quot;</span><br></pre></td></tr></table></figure>
 <p>基本原理就是把你原本的 “Build” 里那个数取出来然后加一再放回去. 对了, 你原本的 Build 里如果是 “1.0” 要改为 “1”, 不然会报脚本错误的.</p>
 <p>最后一点要注意的就是这个新添加项的位置. 上图可以看到, 我是放在 “Link Binary…” 和 “Copy Bundle…” 中间的.</p>
 <p>到这里你就可以试试编译, 看看效果了.</p>
@@ -1101,7 +1157,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1141,6 +1197,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2014/04/20/use-custom-dns-in-appletv2-v61/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2014/04/20/use-custom-dns-in-appletv2-v61/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1159,7 +1226,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1168,7 +1235,7 @@
         
           
             <p>一直想把家里的 Apple TV2 重新启用给老婆看视频. 之前搞的时候一直没有找到合适的 DNS 地址, 今天偶然在 ip.cn 看到几个, 于是打算来试试看.</p>
-<p><a href="http://ip.cn/dns.html" target="_blank" rel="external">Apple TV DNS 服务器 IP 地址</a>:</p>
+<p><a href="http://ip.cn/dns.html" target="_blank" rel="noopener">Apple TV DNS 服务器 IP 地址</a>:</p>
 <ul>
 <li>南方电信: 180.153.225.136</li>
 <li>北方联通: 115.28.40.136    </li>
@@ -1179,12 +1246,12 @@
 <p>网上搜了一圈, 原来是苹果全面启用了 HTTPS 的缘故导致. 现在需要先利用苹果的配置工具来给 Apple TV 刷个配置, 然后才能使用.</p>
 <p>我在网上找到了教程和对应的文件, 有需要的可以自取, 按教程操作即可:</p>
 <ul>
-<li><a href="http://nickcheng-blog.u.qiniudn.com/20140420/readme.pdf" target="_blank" rel="external">教程</a></li>
-<li><a href="http://nickcheng-blog.u.qiniudn.com/20140420/appletv-fix.mobileconfig" target="_blank" rel="external">配置文件</a></li>
+<li><a href="http://nickcheng-blog.u.qiniudn.com/20140420/readme.pdf" target="_blank" rel="noopener">教程</a></li>
+<li><a href="http://nickcheng-blog.u.qiniudn.com/20140420/appletv-fix.mobileconfig" target="_blank" rel="noopener">配置文件</a></li>
 </ul>
 <p>参考链接:</p>
 <ul>
-<li><a href="http://nasyun.com/thread-1825-1-1.html" target="_blank" rel="external">【紧急更新】apple tv 3dns劫持被封解决方案：T大新版本ATV3劫持证书起死回生大法！</a></li>
+<li><a href="http://nasyun.com/thread-1825-1-1.html" target="_blank" rel="noopener">【紧急更新】apple tv 3dns劫持被封解决方案：T大新版本ATV3劫持证书起死回生大法！</a></li>
 </ul>
 
           
@@ -1239,7 +1306,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1279,6 +1346,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2013/10/20/unique-icons-for-your-app-in-different-state-in-xcode5-debug-release/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2013/10/20/unique-icons-for-your-app-in-different-state-in-xcode5-debug-release/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1297,7 +1375,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1306,18 +1384,18 @@
         
           
             <p>应用在发布到 App Store 之前, 大家都会把应用通过 Ad Hoc 形式发给内部人员进行小范围的测试, 我们把应用的这个状态称为 Staging. 这些人员大多都没有参与过应用, 目的是用来模拟真实用户的操作行为和流程, 以此来找到一些更不容易发现的 Bug.</p>
-<p>前段时间我们在准备发布 <a href="https://itunes.apple.com/app/nextday/id491352621?mt=8" target="_blank" rel="external">NextDay 4.0</a> 的时候, 也是这样. 但问题也随之而来了. 大家的 iPhone 上都装有 App Store 版本的 <a href="https://itunes.apple.com/app/nextday/id491352621?mt=8" target="_blank" rel="external">NextDay</a>, 内部测试的 Ad Hoc 版本装上去以后, 图标与名字都和正式版一样, 很难区分. 而我自己的手机上还有 Debug 版本的应用, 这一下就三个了.</p>
+<p>前段时间我们在准备发布 <a href="https://itunes.apple.com/app/nextday/id491352621?mt=8" target="_blank" rel="noopener">NextDay 4.0</a> 的时候, 也是这样. 但问题也随之而来了. 大家的 iPhone 上都装有 App Store 版本的 <a href="https://itunes.apple.com/app/nextday/id491352621?mt=8" target="_blank" rel="noopener">NextDay</a>, 内部测试的 Ad Hoc 版本装上去以后, 图标与名字都和正式版一样, 很难区分. 而我自己的手机上还有 Debug 版本的应用, 这一下就三个了.</p>
 <p>所以我就花时间找了一些方法来让不同版本 (不是版本号, 是 Debug, Staging, AppStore 这样的版本) 的同一个应用有各自不同的 Icon 和名字. 这样就避免了上面碰到的问题. 在这里记录一下, 一个是自己备忘, 另外还可以分享给大家:)</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>首先, 不同版本的应用要有不同的 Bundle ID. 这里推荐 <a href="http://swwritings.com" target="_blank" rel="external">Simon Wolf</a> 的命名方式. 如果你的应用原来的 Bundle ID 是 <code>com.mycompany.myapp</code>, 那么这几个版本你可以这么命名:</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>首先, 不同版本的应用要有不同的 Bundle ID. 这里推荐 <a href="http://swwritings.com" target="_blank" rel="noopener">Simon Wolf</a> 的命名方式. 如果你的应用原来的 Bundle ID 是 <code>com.mycompany.myapp</code>, 那么这几个版本你可以这么命名:</p>
 <ul>
 <li><code>com.mycompany.myapp.debug</code> Debug (Alpha) 版本</li>
 <li><code>com.mycompany.myapp.adhoc</code> Staging (Ad Hoc, Beta) 版本</li>
 <li><code>com.mycompany.myapp</code> App Store (Production) 版本</li>
 </ul>
 <p>然后对应的 Provisionng Profile 也都要准备好. 不用我说了吧.</p>
-<p>接下来准备几个不同的图标. 我是用 <a href="http://blog.consumedbycode.com/" target="_blank" rel="external">Curtis Herbert</a> 修改的 <a href="https://s3.amazonaws.com/consumedbycode/downloads/Icons+Template.zip" target="_blank" rel="external">PSD 文件</a> 做的.  效果可以看我的截图.</p>
+<p>接下来准备几个不同的图标. 我是用 <a href="http://blog.consumedbycode.com/" target="_blank" rel="noopener">Curtis Herbert</a> 修改的 <a href="https://s3.amazonaws.com/consumedbycode/downloads/Icons+Template.zip" target="_blank" rel="noopener">PSD 文件</a> 做的.  效果可以看我的截图.</p>
 <p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/01.PNG" alt="NextDay in different version"></p>
-<p>原始 PSD 来自 <a href="http://appicontemplate.com" target="_blank" rel="external">appicontemplate.com</a>. 使用方法也在原网站.</p>
+<p>原始 PSD 来自 <a href="http://appicontemplate.com" target="_blank" rel="noopener">appicontemplate.com</a>. 使用方法也在原网站.</p>
 <h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><p>接下来就是一步一步的设置了.</p>
 <h2 id="Build-Configurations"><a href="#Build-Configurations" class="headerlink" title="Build Configurations"></a>Build Configurations</h2><p>首先是添加 Configurations, 位置见下图所示. 项目之前已经有了 Debug 和 Release 两个配置, 可以分别对应咱们的 Debug 版本和 App Store 版本. 所以咱们只添加一个 Staging 版本就可以了. 我为了能让添加的版本按字母序排列在 Debug 和 Release 中间, 用的名字是 “ForBeta”.</p>
 <p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/02.png" alt=""></p>
@@ -1349,9 +1427,9 @@
 <p><img src="http://nickcheng-blog.u.qiniudn.com/20131020/11.png" alt=""></p>
 <p>经过上面的一系列设置, 我现在在 Xcode 里只需要在左上角简单切换一下 Scheme 就可以很方便的编译出各个我需要的应用版本. 妈妈再也不用担心我发布应用了!</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
-<li><a href="http://nilsou.com/blog/2013/07/29/how-to-have-two-versions-of-the-same-app-on-your-device/" target="_blank" rel="external">How to Have Two Versions of the Same App on Your Device</a></li>
-<li><a href="http://blog.consumedbycode.com/unique-icons-for-debug-beta-and-app-store-builds-in-xcode-5" target="_blank" rel="external">Unique icons for debug, beta, and App Store builds in Xcode 5</a></li>
-<li><a href="http://swwritings.com/post/2013-05-20-concurrent-debug-beta-app-store-builds" target="_blank" rel="external">Concurrent Debug, Beta and App Store Builds</a></li>
+<li><a href="http://nilsou.com/blog/2013/07/29/how-to-have-two-versions-of-the-same-app-on-your-device/" target="_blank" rel="noopener">How to Have Two Versions of the Same App on Your Device</a></li>
+<li><a href="http://blog.consumedbycode.com/unique-icons-for-debug-beta-and-app-store-builds-in-xcode-5" target="_blank" rel="noopener">Unique icons for debug, beta, and App Store builds in Xcode 5</a></li>
+<li><a href="http://swwritings.com/post/2013-05-20-concurrent-debug-beta-app-store-builds" target="_blank" rel="noopener">Concurrent Debug, Beta and App Store Builds</a></li>
 </ul>
 
           
@@ -1406,7 +1484,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1446,6 +1524,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2013/04/23/expose-a-gangster-kuaiyong/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2013/04/23/expose-a-gangster-kuaiyong/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1464,7 +1553,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1480,24 +1569,36 @@
 <p>还好能找到些快照, 我贴一下:</p>
 <blockquote>
 <p>“快用苹果助手”是如何实现不越狱即可安装正版APP的？</p>
+</blockquote>
+<blockquote>
 <p>最近一款名为”快用苹果助手”的苹果 PC 套件在行业内引起了较大讨论。除了可以将 iOS 设备连接电脑瞬间变身 U 盘外，快用最大的特点在于可帮助非越狱 iOS 设备安装正版付费应用，一度网友被称为”iPhone 神器”。</p>
+</blockquote>
+<blockquote>
 <p>有关快用的运行原理也在知乎上引起了大家的讨论。知乎上的一位 APP 开发者朱棋圣也正因为自己的应用”围棋之眼”曾经被”快用苹果助手”收录过，因此从技术上跟踪了快用的整个流程，了解到其盗版原理并且拍下视频作为证据。据朱棋圣分析：</p>
+</blockquote>
+<blockquote>
 <p>快用先采用企业级 (Enterprise) 开发者证书重新签名要盗版应用的 IPA，然后通过 Apple 的 itms 协议分发应用（见How to Distribute your iOS Apps Over the Air，这样可以通过 Web 浏览器直接下载应用)。最后，解决闪退是通过同步购买者信息 (也就是原来购买的正版签名文件）。</p>
+</blockquote>
+<blockquote>
 <p>简而言之，就是”快用苹果助手”采用了自己去 APP Store 上购买的权限，然后通过技术手段分享给普通用户，这一技术此前曾在国外流行过一阵。据知乎网友高笑楠透露，目前快用已在铺设自己的服务硬件在机场、商场等地，相当于一个硬件版的 App Store。而快用官方也正在和开发者合作签订授权，希望成为继 iTunes Store 之外的另一大应用平台。</p>
+</blockquote>
+<blockquote>
 <p>目前快用已经收录了超过 10 万款应用的授权。有开发者表示，将授权分享给其他用户，虽然方便了用户但却给开发者带来了毁灭性的打击，甚至有可能将 iOS 的生态圈变成 Android 那样开放，但同样的混乱。</p>
+</blockquote>
+<blockquote>
 <p>文章来自36氪</p>
 </blockquote>
-<p>快照来源: <a href="http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter" target="_blank" rel="external">http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter</a></p>
-<p>相关的讨论在知乎上也有展开: <a href="http://www.zhihu.com/question/20731947" target="_blank" rel="external">iOS 开发者对「快用苹果助手」这款软件怎么评价？</a> 文中也有提到具体的<a href="http://e-intuit.hk/kuaiyong-piracy.html" target="_blank" rel="external">技术实现</a>. </p>
+<p>快照来源: <a href="http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter" target="_blank" rel="noopener">http://cn.ibtimes.com/articles/26756/20130422/jailbreak.htm?utm_source=cnibtimes&amp;utm_medium=twitter</a></p>
+<p>相关的讨论在知乎上也有展开: <a href="http://www.zhihu.com/question/20731947" target="_blank" rel="noopener">iOS 开发者对「快用苹果助手」这款软件怎么评价？</a> 文中也有提到具体的<a href="http://e-intuit.hk/kuaiyong-piracy.html" target="_blank" rel="noopener">技术实现</a>. </p>
 <p>按理说, 这种灰色的技术, 一经披露就没有壁垒可言了. 你夹着尾巴闷头挣个灰色收入得了, 但可能人家急于变现, 反而很高调, 还和别人吵架呢</p>
 <p><img src="http://i.imgur.com/3L08lkk.png" alt="image"></p>
-<p>图片来源: <a href="https://twitter.com/hanmo93/status/325196664375758850" target="_blank" rel="external">https://twitter.com/hanmo93/status/325196664375758850</a></p>
+<p>图片来源: <a href="https://twitter.com/hanmo93/status/325196664375758850" target="_blank" rel="noopener">https://twitter.com/hanmo93/status/325196664375758850</a></p>
 <p>底气很足啊. 当然, 有后台老大的!</p>
 <p><img src="http://i.imgur.com/a4AwCnX.png" alt="image"></p>
-<p>网页地址: <a href="http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html" target="_blank" rel="external">http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html</a></p>
-<p>来源: <a href="https://twitter.com/Ratoo/status/325660911555723264" target="_blank" rel="external">https://twitter.com/Ratoo/status/325660911555723264</a></p>
+<p>网页地址: <a href="http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html" target="_blank" rel="noopener">http://www.btdonghe.gov.cn/Html/PuTongXinWen/2012-5/4/20120504152247494.html</a></p>
+<p>来源: <a href="https://twitter.com/Ratoo/status/325660911555723264" target="_blank" rel="noopener">https://twitter.com/Ratoo/status/325660911555723264</a></p>
 <p>注解一下, 这个”北京悠然天地科技有限公司”就是经营”快用苹果助手”的公司. 看起来是背后有人撑腰, 还来忽悠政府. 可怜政府为了税收背了这个黑锅啊…</p>
-<p>最近国外的媒体也盯上他们了, 丢人已经丢出国了! <a href="http://appadvice.com/appnn/2013/04/team-of-chinese-hackers-launch-pirated-app-store-for-ios" target="_blank" rel="external">Team Of Chinese Hackers Launches Pirated ‘App Store’ For iOS</a></p>
+<p>最近国外的媒体也盯上他们了, 丢人已经丢出国了! <a href="http://appadvice.com/appnn/2013/04/team-of-chinese-hackers-launch-pirated-app-store-for-ios" target="_blank" rel="noopener">Team Of Chinese Hackers Launches Pirated ‘App Store’ For iOS</a></p>
 
           
         
@@ -1551,7 +1652,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1591,6 +1692,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2013/04/23/a-bug-caused-by-the-update-of-afnetworking/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2013/04/23/a-bug-caused-by-the-update-of-afnetworking/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1609,7 +1721,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1617,10 +1729,10 @@
       
         
           
-            <p>昨天调试 <a href="https://github.com/nickcheng/NCMusicEngine" target="_blank" rel="external">NCMusicEngine</a> 的时候发现了一个 bug. 调试了半天才发现是引用的 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a> 模块新版本的更新引入的一个新功能导致的.</p>
-<p>之前在 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a> 里 cancel 掉一个 operation 是没有其他额外的影响的, 但是新版本里, operation 的 cancel 操作会导致 <code>CompletionBlockWithSuccess</code> 的 failure. Error Code 是 -999.</p>
-<p>所以在更新了 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="external">AFNetworking</a> 后, 如果之前的代码里有对 operation 的 cancel 操作, 那就要注意这一点了.</p>
-<p>Github 上这个新功能的 pull request: <a href="https://github.com/AFNetworking/AFNetworking/pull/693" target="_blank" rel="external">https://github.com/AFNetworking/AFNetworking/pull/693</a></p>
+            <p>昨天调试 <a href="https://github.com/nickcheng/NCMusicEngine" target="_blank" rel="noopener">NCMusicEngine</a> 的时候发现了一个 bug. 调试了半天才发现是引用的 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a> 模块新版本的更新引入的一个新功能导致的.</p>
+<p>之前在 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a> 里 cancel 掉一个 operation 是没有其他额外的影响的, 但是新版本里, operation 的 cancel 操作会导致 <code>CompletionBlockWithSuccess</code> 的 failure. Error Code 是 -999.</p>
+<p>所以在更新了 <a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a> 后, 如果之前的代码里有对 operation 的 cancel 操作, 那就要注意这一点了.</p>
+<p>Github 上这个新功能的 pull request: <a href="https://github.com/AFNetworking/AFNetworking/pull/693" target="_blank" rel="noopener">https://github.com/AFNetworking/AFNetworking/pull/693</a></p>
 
           
         
@@ -1691,81 +1803,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1778,12 +1902,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1791,11 +1912,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1811,10 +1938,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1849,62 +1973,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1928,7 +2083,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1936,6 +2091,9 @@
 
   
 
+  
+
+  
   
 
   

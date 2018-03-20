@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/09/try-firefox-again/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/09/try-firefox-again/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -444,7 +445,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -484,6 +485,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/06/update-of-audio-tools/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/06/update-of-audio-tools/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -502,7 +514,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -513,24 +525,24 @@
             <p>音乐一直是自己的爱好, 而且原来大学期间也玩过很长时间的乐队(可以看我2003-2004的日志, 这里都有). 当然, 同样对电脑有爱好的我当然不忘用电脑武装音乐. 各式各样的音乐软件也是我玩弄的对象, 厚厚!</p>
 <p>最近发现有几个软件升级了, 而且越来越不错了, 所以决定出来给大家介绍一下:)</p>
 <p><strong>Adobe Audition  V2</strong></p>
-<p><a href="http://nickcheng.zoto.com/img/original/ad21676b392439439c089ac00faa3029-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/45/ad21676b392439439c089ac00faa3029-.jpg" alt="auditionv2-1"></a></p>
+<p><a href="http://nickcheng.zoto.com/img/original/ad21676b392439439c089ac00faa3029-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/45/ad21676b392439439c089ac00faa3029-.jpg" alt="auditionv2-1"></a></p>
 <p>看着面熟么? 哈哈, 用过的朋友一定记得. 其实这就是原来大名鼎鼎的CoolEditPro. 后来, 这家公司被多媒体大腕Adobe收购, 原来的名字就一去不复返了, 就成了现在的Audition.</p>
 <p>之前出过一个Audition的版本, 不过那个版本感觉就是原来的CoolEditPro换了一个名字而已. 而这个版本是统一了Adobe的风格, 里面的UI都重新设计过了, 使用起来的感觉很不错! 不过容量也大了. 原来的CoolEditPro我记得就几十兆, 现在可好, 一张CD了!</p>
 <p>再放几张图, 点击可以放大的.(1280*1024) 后面放出eMule的下载链接.</p>
-<p><a href="http://nickcheng.zoto.com/img/original/df50b2372fb0d9f5040c07e19bce42b6-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/24/df50b2372fb0d9f5040c07e19bce42b6-.jpg" alt="auditionv2-2"></a>  <a href="http://nickcheng.zoto.com/img/original/7277643fb9713fcde7c38cb5d6c5286d-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/24/7277643fb9713fcde7c38cb5d6c5286d-.jpg" alt="auditionv2-3"></a>  <a href="http://nickcheng.zoto.com/img/original/21ae3ac300e65580399d8eb60c6d6f6c-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/24/21ae3ac300e65580399d8eb60c6d6f6c-.jpg" alt="auditionv2-3"></a></p>
+<p><a href="http://nickcheng.zoto.com/img/original/df50b2372fb0d9f5040c07e19bce42b6-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/24/df50b2372fb0d9f5040c07e19bce42b6-.jpg" alt="auditionv2-2"></a>  <a href="http://nickcheng.zoto.com/img/original/7277643fb9713fcde7c38cb5d6c5286d-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/24/7277643fb9713fcde7c38cb5d6c5286d-.jpg" alt="auditionv2-3"></a>  <a href="http://nickcheng.zoto.com/img/original/21ae3ac300e65580399d8eb60c6d6f6c-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/24/21ae3ac300e65580399d8eb60c6d6f6c-.jpg" alt="auditionv2-3"></a></p>
 <p>eMule:</p>
-<p><a href="ed2k://|file|zwtaa20m.bin|738144624|032032486255F47830984C3A9150FE2E|h=UYOWX575C2GOXDECMWHHITEKLRX3V5PV|/" target="_blank" rel="external">zwtaa20m.bin</a><br><a href="ed2k://|file|zwtaa20m.cue|74|2AED24B024B6AB24683B7C1C0584B6BD|h=3SGPMMHQAC7MU5ZYFM6D5A5Q3XABUCQX|/" target="_blank" rel="external">zwtaa20m.cue</a><br><a href="ed2k://|file|zwtiso.nfo|6536|04E467972B178D015C7FBEBD0E4F85A9|h=RZUHWTOSGN772YMYDPEU2AZLFXD63YRJ|/" target="_blank" rel="external">zwtiso.nfo</a><br><a href="ed2k://|file|zwtaa20m.md5|94|AEABCE54CCF795EABB495B800EABC97E|h=DMY55GOBRFDAC6CUTNMY6YOVGUGZNJIP|/" target="_blank" rel="external">zwtaa20m.md5</a></p>
+<p><a href="ed2k://|file|zwtaa20m.bin|738144624|032032486255F47830984C3A9150FE2E|h=UYOWX575C2GOXDECMWHHITEKLRX3V5PV|/" target="_blank" rel="noopener">zwtaa20m.bin</a><br><a href="ed2k://|file|zwtaa20m.cue|74|2AED24B024B6AB24683B7C1C0584B6BD|h=3SGPMMHQAC7MU5ZYFM6D5A5Q3XABUCQX|/" target="_blank" rel="noopener">zwtaa20m.cue</a><br><a href="ed2k://|file|zwtiso.nfo|6536|04E467972B178D015C7FBEBD0E4F85A9|h=RZUHWTOSGN772YMYDPEU2AZLFXD63YRJ|/" target="_blank" rel="noopener">zwtiso.nfo</a><br><a href="ed2k://|file|zwtaa20m.md5|94|AEABCE54CCF795EABB495B800EABC97E|h=DMY55GOBRFDAC6CUTNMY6YOVGUGZNJIP|/" target="_blank" rel="noopener">zwtaa20m.md5</a></p>
 <p><strong>Guitar Pro V5.0</strong></p>
-<p><a href="http://nickcheng.zoto.com/img/original/f55a45f63270b1f905e4ca1cf995d930-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/45/f55a45f63270b1f905e4ca1cf995d930-.jpg" alt="GuitarProV5-1"></a></p>
+<p><a href="http://nickcheng.zoto.com/img/original/f55a45f63270b1f905e4ca1cf995d930-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/45/f55a45f63270b1f905e4ca1cf995d930-.jpg" alt="GuitarProV5-1"></a></p>
 <p>这也是一个老字号的软件了. 我似乎是从3.0开始用的, 用他整出来的谱子很好看! 不过由于之前的版本都是使用MIDI作为音源, 所以出来的音色很假很假(当然, 还取决于音色). 最常用他的就是看一些谱子, 或印一些谱子.</p>
 <p>这个5.0我简单的用了一下, 印象最深的就是他用了一个叫做RSE(Realistic Sound Engine)的声音引擎. 在GP5中, RSE几乎可以完全取代MIDI. 播放出来的音色绝对可以拟真! 用GP5播放一下原来的GP4文件, 也能得到很不错的效果! 用过GP系列软件的朋友一定要试试!</p>
-<p><a href="http://nickcheng.zoto.com/img/original/4bea53b5c31d69dc687b044dccafc02d-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/45/4bea53b5c31d69dc687b044dccafc02d-.jpg" alt="GuitarProV5-2"></a></p>
+<p><a href="http://nickcheng.zoto.com/img/original/4bea53b5c31d69dc687b044dccafc02d-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/45/4bea53b5c31d69dc687b044dccafc02d-.jpg" alt="GuitarProV5-2"></a></p>
 <p>红框标出的就是RSE.</p>
-<p>另外再推荐一个下载GP歌谱的网站, 也是一个经典老站了. 国外的啊! 国内的流行歌曲是没有了:(<br><a href="http://www.mysongbook.com" target="_blank" rel="external">MySongBook</a></p>
+<p>另外再推荐一个下载GP歌谱的网站, 也是一个经典老站了. 国外的啊! 国内的流行歌曲是没有了:(<br><a href="http://www.mysongbook.com" target="_blank" rel="noopener">MySongBook</a></p>
 <p>再放两个截图, 点击放大(1280*1024)</p>
-<p><a href="http://nickcheng.zoto.com/img/original/7540d17638ee5c5b556e5b691f4e3d07-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/24/7540d17638ee5c5b556e5b691f4e3d07-.jpg" alt="GuitarProV5-3"></a>   <a href="http://nickcheng.zoto.com/img/original/21c7b6ec873fdb605416e979e9d6c4ad-.jpg" target="_blank" rel="external"><img src="http://nickcheng.zoto.com/img/24/21c7b6ec873fdb605416e979e9d6c4ad-.jpg" alt="GuitarProV5-4"></a></p>
+<p><a href="http://nickcheng.zoto.com/img/original/7540d17638ee5c5b556e5b691f4e3d07-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/24/7540d17638ee5c5b556e5b691f4e3d07-.jpg" alt="GuitarProV5-3"></a>   <a href="http://nickcheng.zoto.com/img/original/21c7b6ec873fdb605416e979e9d6c4ad-.jpg" target="_blank" rel="noopener"><img src="http://nickcheng.zoto.com/img/24/21c7b6ec873fdb605416e979e9d6c4ad-.jpg" alt="GuitarProV5-4"></a></p>
 <p>eMule下载链接:</p>
-<p><a href="ed2k://|file|Guitar.Pro.v5.0.rar|175292703|041324C6CB16CB281F6FF4E8FB89224C|h=EYBRLXPLN2RJGZDGONKCBTJLI3HMLC5B|/" target="_blank" rel="external">Guitar.Pro.v5.0.rar</a></p>
+<p><a href="ed2k://|file|Guitar.Pro.v5.0.rar|175292703|041324C6CB16CB281F6FF4E8FB89224C|h=EYBRLXPLN2RJGZDGONKCBTJLI3HMLC5B|/" target="_blank" rel="noopener">Guitar.Pro.v5.0.rar</a></p>
 
           
         
@@ -584,7 +596,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -624,6 +636,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/06/put-up-the-bookmarks-json/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/06/put-up-the-bookmarks-json/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -642,7 +665,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -650,8 +673,8 @@
       
         
           
-            <p>原来放过一段时间<a href="http://del.icio.us" target="_blank" rel="external">Del.icio.us</a>的网摘, 不过当时的方法有些笨, 因此, 后来一懒就懒得整了. 今天在看Del.icio.us的Help的时候发现原来他还有一个叫做JSON的东东, 所以又有了放网摘的想法.</p>
-<p>JSON说白了就是delicious帮你生成好的一个js的object. 这个object里面的内容就是你的网摘. 而且他还提供了例子来呈现这个object中的内容. 详细的内容大家可以看看去: <a href="http://del.icio.us/help/json" target="_blank" rel="external">http://del.icio.us/help/json</a></p>
+            <p>原来放过一段时间<a href="http://del.icio.us" target="_blank" rel="noopener">Del.icio.us</a>的网摘, 不过当时的方法有些笨, 因此, 后来一懒就懒得整了. 今天在看Del.icio.us的Help的时候发现原来他还有一个叫做JSON的东东, 所以又有了放网摘的想法.</p>
+<p>JSON说白了就是delicious帮你生成好的一个js的object. 这个object里面的内容就是你的网摘. 而且他还提供了例子来呈现这个object中的内容. 详细的内容大家可以看看去: <a href="http://del.icio.us/help/json" target="_blank" rel="noopener">http://del.icio.us/help/json</a></p>
 <p>其实这个东西应该比较适合用来放到自己Blog的Sidebar中. 而我的想法是让他能以一个post的形式发到我的blog上来. 所以我还是不能避免自己动手了. 下一步真应该有个东东来帮我发这样的post了.</p>
 <p>刚才发了一篇就是用的json. 看起来挺好的!</p>
 
@@ -707,7 +730,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -747,6 +770,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/06/bookmarks-20060206/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/06/bookmarks-20060206/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -765,7 +799,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -774,40 +808,40 @@
         
           
             <ul>
-<li><img src="http://blog.sohu.com/favicon.ico" alt=""><a href="http://blog.sohu.com/members/whm/808972.html" target="_blank" rel="external">传媒界流行的四个英文新词 - 吴海民的博客 | 搜狐博客</a></li>
+<li><img src="http://blog.sohu.com/favicon.ico" alt=""><a href="http://blog.sohu.com/members/whm/808972.html" target="_blank" rel="noopener">传媒界流行的四个英文新词 - 吴海民的博客 | 搜狐博客</a></li>
 </ul>
 <ul>
-<li><img src="http://www.blogcn.com/favicon.ico" alt=""><a href="http://www.blogcn.com/User5/omale/blog/28119593.html" target="_blank" rel="external">何宗键@BLOG</a></li>
+<li><img src="http://www.blogcn.com/favicon.ico" alt=""><a href="http://www.blogcn.com/User5/omale/blog/28119593.html" target="_blank" rel="noopener">何宗键@BLOG</a></li>
 </ul>
 <ul>
-<li><img src="http://board.verycd.com/favicon.ico" alt=""><a href="http://board.verycd.com/t281878.html" target="_blank" rel="external">VeryCD.com 分享互联网社区 &gt; [灌水][分享]3DM工作室将汉化靛蓝预言和GTA圣安地列斯两款大作！</a></li>
+<li><img src="http://board.verycd.com/favicon.ico" alt=""><a href="http://board.verycd.com/t281878.html" target="_blank" rel="noopener">VeryCD.com 分享互联网社区 &gt; [灌水][分享]3DM工作室将汉化靛蓝预言和GTA圣安地列斯两款大作！</a></li>
 </ul>
 <ul>
-<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2005/09/19/0000065631.html" target="_blank" rel="external">《靛蓝预言》(Fahrenheit )[ISO] | 游戏 → 光盘镜像 | VeryCD → 下载</a></li>
+<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2005/09/19/0000065631.html" target="_blank" rel="noopener">《靛蓝预言》(Fahrenheit )[ISO] | 游戏 → 光盘镜像 | VeryCD → 下载</a></li>
 </ul>
 <ul>
-<li><img src="http://www.chedong.com/favicon.ico" alt=""><a href="http://www.chedong.com/blog/archives/001117.html" target="_blank" rel="external">spoolsv.exe占cpu 99%的解决方法</a></li>
+<li><img src="http://www.chedong.com/favicon.ico" alt=""><a href="http://www.chedong.com/blog/archives/001117.html" target="_blank" rel="noopener">spoolsv.exe占cpu 99%的解决方法</a></li>
 </ul>
 <ul>
-<li><img src="http://www.lividecay.org/favicon.ico" alt=""><a href="http://www.lividecay.org/doc_view.php?doc_id=4252" target="_blank" rel="external">HTML 的进化</a></li>
+<li><img src="http://www.lividecay.org/favicon.ico" alt=""><a href="http://www.lividecay.org/doc_view.php?doc_id=4252" target="_blank" rel="noopener">HTML 的进化</a></li>
 </ul>
 <ul>
-<li><img src="http://edad.com.cn/favicon.ico" alt=""><a href="http://edad.com.cn/datou/2006/01/blog-post_113850602422062193.htm" target="_blank" rel="external">解决IE自动弹出广告的困扰</a></li>
+<li><img src="http://edad.com.cn/favicon.ico" alt=""><a href="http://edad.com.cn/datou/2006/01/blog-post_113850602422062193.htm" target="_blank" rel="noopener">解决IE自动弹出广告的困扰</a></li>
 </ul>
 <ul>
-<li><img src="http://bbs.verycd.com/favicon.ico" alt=""><a href="http://bbs.verycd.com/index.php?showtopic=283964&amp;hl=audition" target="_blank" rel="external">《Adobe Audition》(Adobe Audition)v2.0[Bin] - VeryCD.com 分享互联网社区</a></li>
+<li><img src="http://bbs.verycd.com/favicon.ico" alt=""><a href="http://bbs.verycd.com/index.php?showtopic=283964&amp;hl=audition" target="_blank" rel="noopener">《Adobe Audition》(Adobe Audition)v2.0[Bin] - VeryCD.com 分享互联网社区</a></li>
 </ul>
 <ul>
-<li><img src="http://www.wespoke.com/favicon.ico" alt=""><a href="http://www.wespoke.com/archives/001042.html" target="_blank" rel="external">Google’s BigTable:Source搜索引擎研究</a></li>
+<li><img src="http://www.wespoke.com/favicon.ico" alt=""><a href="http://www.wespoke.com/archives/001042.html" target="_blank" rel="noopener">Google’s BigTable:Source搜索引擎研究</a></li>
 </ul>
 <ul>
-<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2005/04/21/0000047528.html" target="_blank" rel="external">《Popcap/Gamehouse/Reflexive小游戏精品集》(Popcap/Gamehouse/Relfexive’s Games Depot)完美破解版[Full Version][更新中][现已更新至158个] | 游戏 → 其他游戏 | VeryCD → 下载</a></li>
+<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2005/04/21/0000047528.html" target="_blank" rel="noopener">《Popcap/Gamehouse/Reflexive小游戏精品集》(Popcap/Gamehouse/Relfexive’s Games Depot)完美破解版[Full Version][更新中][现已更新至158个] | 游戏 → 其他游戏 | VeryCD → 下载</a></li>
 </ul>
 <ul>
-<li><img src="http://edad.com.cn/favicon.ico" alt=""><a href="http://edad.com.cn/datou/2006/01/lightbox.htm" target="_blank" rel="external">2SIMPLE: 测试一下Lightbox</a></li>
+<li><img src="http://edad.com.cn/favicon.ico" alt=""><a href="http://edad.com.cn/datou/2006/01/lightbox.htm" target="_blank" rel="noopener">2SIMPLE: 测试一下Lightbox</a></li>
 </ul>
 <ul>
-<li><img src="http://www.blueidea.com/favicon.ico" alt=""><a href="http://www.blueidea.com/tech/web/2006/3183.asp" target="_blank" rel="external">蓝色理想 - 实时切换CSS样式</a></li>
+<li><img src="http://www.blueidea.com/favicon.ico" alt=""><a href="http://www.blueidea.com/tech/web/2006/3183.asp" target="_blank" rel="noopener">蓝色理想 - 实时切换CSS样式</a></li>
 </ul>
 
           
@@ -862,7 +896,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -902,6 +936,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/01/27/i-will-go-back/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/01/27/i-will-go-back/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -920,7 +965,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -984,7 +1029,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1024,6 +1069,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/01/27/the-update-of-msn-spaces/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/01/27/the-update-of-msn-spaces/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1042,7 +1098,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1126,7 +1182,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1166,6 +1222,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/01/23/ski-in-nanshan-again/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/01/23/ski-in-nanshan-again/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1184,7 +1251,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1193,7 +1260,7 @@
         
           
             <p><img src="http://nickcheng.zoto.com/img/30/8260e1c22418e2a187fdc84f260b42c0-.jpg" alt="Ski">哈哈, 这已经是偶第二次滑雪了, 还是在南山滑雪场. 本来第一次滑雪的时候就应该写一篇Blog来纪念一下, 不过当时偶LP已经写了一篇了, 所以为了避免人气分流, 我还是不写了, 厚厚… 这次看到老婆还没有来及写, 偶就偷偷先写一篇……</p>
-<p>自己滑雪也就去过南山, 不过听说南山是京郊最好的滑雪场(还有一说是华北), 所以也就没有去其他的雪场的心思了. 因为自己不熟悉滑雪的这条路子, 所以偶两次滑雪都是跟<a href="http://www.lvye.info" target="_blank" rel="external">lvye</a>一起的. 确定了滑雪的日期后就到网站论坛上看有没有人组织(一般都有),  然后就和大家一起了.  走绿野的一个好处是能便宜一些, 而且最关键的是可以乘大巴, 不用再自己想辙来怎么来回了.</p>
+<p>自己滑雪也就去过南山, 不过听说南山是京郊最好的滑雪场(还有一说是华北), 所以也就没有去其他的雪场的心思了. 因为自己不熟悉滑雪的这条路子, 所以偶两次滑雪都是跟<a href="http://www.lvye.info" target="_blank" rel="noopener">lvye</a>一起的. 确定了滑雪的日期后就到网站论坛上看有没有人组织(一般都有),  然后就和大家一起了.  走绿野的一个好处是能便宜一些, 而且最关键的是可以乘大巴, 不用再自己想辙来怎么来回了.</p>
 <p>因为两次都是周末去的, 所以价格是180/全天,  平日应该会更便宜一些, 不过自己平日实在是没有时间啊:(  再算上门票,雪柜和来回车费,  一个人的实际消费是220, 如果租用雪服的话还有30元雪服使用费.  另外就是要押金, 雪具,雪服都是200/套的押金,  雪柜要30押金.  呵呵,  这就是大概的价格了.  我都开始给南山做广告了.  希望大家能和我一起去玩啊!</p>
 <p>闲话少说, 先讲讲我第一次的滑雪.</p>
 <p>第一次就我和MM两人跟绿野一起.  到了雪场就是办理各种手续.  这第一次滑雪遇到的第一个问题就是穿鞋.  雪鞋的口特小,  我使了吃奶的劲儿把我那宽大的脚拼命往那里面塞,  塞到我脚都快抽筋了,  还是进不去.  这可已经是44的鞋了,  难道我的脚真的有那么大么? 一看MM那里, 呵呵, 和我遇到了同样的问题! 这可如何是好…来了总不能连鞋都穿不上吧, 我和MM怒了. 我们两个一个一个穿! 我先给MM把鞋用力的掰开, 然后MM使劲把脚往里送, 还是两个人的力气大, 终于把脚塞进去了. 我们就这样, 痛苦的穿上了4只鞋, 都穿好以后, 发现自己已经满头是汗了.</p>
@@ -1260,7 +1327,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1300,6 +1367,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/01/12/the-first-snow-of-2006/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/01/12/the-first-snow-of-2006/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1318,7 +1396,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1386,7 +1464,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1426,6 +1504,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/01/10/put-up-a-song-i-like/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/01/10/put-up-a-song-i-like/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1444,7 +1533,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1452,7 +1541,7 @@
       
         
           
-            <p><a href="http://lab.nickcheng.com/music/06-the_cure-there_is_no_if-tns.mp3" target="_blank" rel="external">The cure - There is no if</a></p>
+            <p><a href="http://lab.nickcheng.com/music/06-the_cure-there_is_no_if-tns.mp3" target="_blank" rel="noopener">The cure - There is no if</a></p>
 <p>这是The Cure的, There is no if. 很好听的音乐, 歌词也很好, 不过就是比较悲一些…大家自己欣赏吧:)</p>
 <blockquote>
 <p><em>remember the first time i told you i love you -<br>it was raining hard and you never heard -<br>you sneezed! and i had to say it over<br>i said i love you i said… you didn’t say a word<br>just held you hands to my shining eyes<br>and i watched as the rain ran through your fingers<br>held your hands to my shining eyes and smiled as you kissed me…<br>if you die you said so do i you said…<br>and it starts the day you make the sign<br>tell me i’m forever yours and you’re forever mine<br>forever mine…<br>if you die you said so do i you said…<br>and it starts the day you cross that line<br>swear i will always be yours and you’ll always be mine<br>you’ll ways be mine<br>always be mine…<br>remember the last time i told you i love you -<br>it was warm and safe in our perfect world -<br>you yawned and i had to say it over<br>i said i love you i said… you didn’t say a word<br>just held your hands to your shining eyes<br>and i watched as the tears ran through your fingers<br>held your hands to your shining eyes and cried…<br>if you die you said so do i you said…<br>but it ends the day you see how it is<br>there is no always forever… just this…<br>just this…<br>if you die you said so do i you said<br>but it ends the day you understand<br>there is no if… just and<br>there is no if… just and<br>there is no if…</em>  </p>
@@ -1510,7 +1599,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1550,6 +1639,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/01/09/forecast-of-06-internet/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/01/09/forecast-of-06-internet/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1568,7 +1668,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1660,81 +1760,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1747,12 +1859,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1760,11 +1869,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1780,10 +1895,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1818,62 +1930,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1897,7 +2040,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1905,6 +2048,9 @@
 
   
 
+  
+
+  
   
 
   

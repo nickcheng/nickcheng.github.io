@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/08/06/my-foolish-bookmark-list/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/08/06/my-foolish-bookmark-list/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -376,11 +377,11 @@
       
         
           
-            <p>自己虽然都在努力的写着Blog, 但是仍然不能达到每天一篇. 一直看到别人的Blog上有很多都是<a href="http://del.icio.us/" target="_blank" rel="external">del.icio.us</a>或者<a href="http://www.365key.com/" target="_blank" rel="external">365key</a>的网摘列表, 于是就想自己也来这么一招, 一来可以充实一下我那贫瘠的土地:), 二来也给为数不多的大家Share一下.  </p>
+            <p>自己虽然都在努力的写着Blog, 但是仍然不能达到每天一篇. 一直看到别人的Blog上有很多都是<a href="http://del.icio.us/" target="_blank" rel="noopener">del.icio.us</a>或者<a href="http://www.365key.com/" target="_blank" rel="noopener">365key</a>的网摘列表, 于是就想自己也来这么一招, 一来可以充实一下我那贫瘠的土地:), 二来也给为数不多的大家Share一下.  </p>
 <p>不知道别人的网摘都是怎么生成的, 看了一圈, 发现有好多人的都一样. 首先怀疑是不是书签服务商提供了这样的服务, 不过自己简单的搜了一下, 没有发现太明显得地方说这个事情, 也懒得去深入找下去. 然后想是不是某个知名的牛人提供了这样的程序, 然后大家都去用. 既然人家能自己动手, 那我也就自己动动手吧.  </p>
-<p>本来想是自己写个小程序通过调用del.icio.us的API来生成列表, 不过想到写个Blog还要再开一个程序就觉得麻烦, 就放弃了这个想法. 现在采用的方法巨简单. 因为我查看网页源代码的编辑器是<a href="http://www.editplus.com/" target="_blank" rel="external">Editplus</a>, 所以我就利用了一下他, 具体步骤如下:  </p>
+<p>本来想是自己写个小程序通过调用del.icio.us的API来生成列表, 不过想到写个Blog还要再开一个程序就觉得麻烦, 就放弃了这个想法. 现在采用的方法巨简单. 因为我查看网页源代码的编辑器是<a href="http://www.editplus.com/" target="_blank" rel="noopener">Editplus</a>, 所以我就利用了一下他, 具体步骤如下:  </p>
 <ol>
-<li>生成自己网摘的简易列表. del.icio.us提供了一个生成自己网摘简易列表的方法, 大家看看<a href="http://del.icio.us/doc/html" target="_blank" rel="external">帮助文档</a>就明白了. 我自己用的是这个 <a href="http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20" target="_blank" rel="external">http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20</a>  </li>
+<li>生成自己网摘的简易列表. del.icio.us提供了一个生成自己网摘简易列表的方法, 大家看看<a href="http://del.icio.us/doc/html" target="_blank" rel="noopener">帮助文档</a>就明白了. 我自己用的是这个 <a href="http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20" target="_blank" rel="noopener">http://del.icio.us/html/nickcheng?extended=body&amp;tags=no&amp;rssbutton=no&amp;count=20</a>  </li>
 <li>查看列表的源文件. 我的是在Editplus中查看得哦!  </li>
 <li>使用Editplus的宏功能转换代码. 我自己编辑了一个把列表html源代码转换为我Blog可以使用的代码的宏.  </li>
 </ol>
@@ -442,7 +443,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -482,6 +483,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/08/05/memo-20050805/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/08/05/memo-20050805/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -500,7 +512,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -509,13 +521,13 @@
         
           
             <ul>
-<li><a href="http://blueslugs.com/wordpress/index.php/archives/2005/07/12/tag1-delicious-style-file-tagging/" target="_blank" rel="external">blueslugs.com ? Blog Archive ? tag(1): del.icio.us-style file tagging</a><br>　像del.icio.us那样给本地文件加上tag, 可惜是Linux下的, 不过可以参考  </li>
-<li><a href="http://www.alvit.de/handbook/" target="_blank" rel="external">Web Developer’s Handbook: developing web-sites, exploring own imagination | CSS, Color Tools, SEO, Usability etc.</a><br>　一些很实用的link  </li>
-<li><a href="http://www.cnbeta.com/index.php" target="_blank" rel="external">cnBeta.COM - For your eyes only.</a><br>　中文软件资讯网  </li>
-<li><a href="http://www.flickr.com/explore/" target="_blank" rel="external">Flickr: Explore!</a><br>　Flickr精彩图片荟萃  </li>
-<li><a href="http://freshmeat.net/projects/wheeloyum/?branch_id=38968&amp;release_id=202171" target="_blank" rel="external">freshmeat.net: Project details for Wheel ‘O Yum</a><br>　搞笑的开源软件,大家投票去哪里吃饭. 还是有一定实用价值得  </li>
-<li><a href="http://www.sinoutopia.org/plog/post/1/419" target="_blank" rel="external">Windows下PSP软件的开发环境配置</a>  </li>
-<li><a href="http://www.badboy.ro/" target="_blank" rel="external">badboy.media.design</a><br>　关于Web开发得不错得站点</li>
+<li><a href="http://blueslugs.com/wordpress/index.php/archives/2005/07/12/tag1-delicious-style-file-tagging/" target="_blank" rel="noopener">blueslugs.com ? Blog Archive ? tag(1): del.icio.us-style file tagging</a><br>　像del.icio.us那样给本地文件加上tag, 可惜是Linux下的, 不过可以参考  </li>
+<li><a href="http://www.alvit.de/handbook/" target="_blank" rel="noopener">Web Developer’s Handbook: developing web-sites, exploring own imagination | CSS, Color Tools, SEO, Usability etc.</a><br>　一些很实用的link  </li>
+<li><a href="http://www.cnbeta.com/index.php" target="_blank" rel="noopener">cnBeta.COM - For your eyes only.</a><br>　中文软件资讯网  </li>
+<li><a href="http://www.flickr.com/explore/" target="_blank" rel="noopener">Flickr: Explore!</a><br>　Flickr精彩图片荟萃  </li>
+<li><a href="http://freshmeat.net/projects/wheeloyum/?branch_id=38968&amp;release_id=202171" target="_blank" rel="noopener">freshmeat.net: Project details for Wheel ‘O Yum</a><br>　搞笑的开源软件,大家投票去哪里吃饭. 还是有一定实用价值得  </li>
+<li><a href="http://www.sinoutopia.org/plog/post/1/419" target="_blank" rel="noopener">Windows下PSP软件的开发环境配置</a>  </li>
+<li><a href="http://www.badboy.ro/" target="_blank" rel="noopener">badboy.media.design</a><br>　关于Web开发得不错得站点</li>
 </ul>
 
           
@@ -570,7 +582,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -610,6 +622,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/08/03/bookmarks-20050802/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/08/03/bookmarks-20050802/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -628,7 +651,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -637,13 +660,13 @@
         
           
             <ul>
-<li><a href="http://www.synergymx.com/foss.asp" target="_blank" rel="external">SynergyMX.com - Freeware and Open Source Software</a><br>　免费又好用的开源软件啊!  </li>
-<li><a href="http://www.bleacheatingfreaks.com/science/OB2/bxmas/" target="_blank" rel="external">Office Bricolage2: Office Bow of Death</a><br>　用办公用具diy弓箭  </li>
-<li><a href="http://www.officeguns.com/gunadv_super_maul.html" target="_blank" rel="external">OfficeGuns - Guns Advanced - Super Maul</a><br>　用办公用具diy枪  </li>
-<li><a href="http://www.gotdotnet.com/workspaces/workspace.aspx?id=91936c5e-461f-4027-bdba-8a46f52fefdb" target="_blank" rel="external">NUnit Add-Ons: Workspace Home</a><br>　把Nunit的程序转换到VSTP中  </li>
-<li><a href="http://www.tspl.cn/Default.aspx" target="_blank" rel="external">图书漂流网 - 分享藏书，以书会友</a><br>　图书漂流, 一个不错的想法, 有资源大家一起分享!</li>
+<li><a href="http://www.synergymx.com/foss.asp" target="_blank" rel="noopener">SynergyMX.com - Freeware and Open Source Software</a><br>　免费又好用的开源软件啊!  </li>
+<li><a href="http://www.bleacheatingfreaks.com/science/OB2/bxmas/" target="_blank" rel="noopener">Office Bricolage2: Office Bow of Death</a><br>　用办公用具diy弓箭  </li>
+<li><a href="http://www.officeguns.com/gunadv_super_maul.html" target="_blank" rel="noopener">OfficeGuns - Guns Advanced - Super Maul</a><br>　用办公用具diy枪  </li>
+<li><a href="http://www.gotdotnet.com/workspaces/workspace.aspx?id=91936c5e-461f-4027-bdba-8a46f52fefdb" target="_blank" rel="noopener">NUnit Add-Ons: Workspace Home</a><br>　把Nunit的程序转换到VSTP中  </li>
+<li><a href="http://www.tspl.cn/Default.aspx" target="_blank" rel="noopener">图书漂流网 - 分享藏书，以书会友</a><br>　图书漂流, 一个不错的想法, 有资源大家一起分享!</li>
 </ul>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=4" target="_blank" rel="external"></a></p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=4" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -697,7 +720,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -737,6 +760,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/08/02/bookmarks-20050801/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/08/02/bookmarks-20050801/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -755,7 +789,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -764,24 +798,24 @@
         
           
             <ul>
-<li><p><a href="http://www.3ants.org/txtdb/index.php" target="_blank" rel="external">PHP Text DataBase API</a>  </p>
+<li><p><a href="http://www.3ants.org/txtdb/index.php" target="_blank" rel="noopener">PHP Text DataBase API</a>  </p>
 <p>  一个基于文本的超轻量级数据库  </p>
 </li>
-<li><p><a href="http://dark.supercn.net/111/" target="_blank" rel="external">雨吁 * 解决MSN7.X点击中文昵称好友字体变形</a>  </p>
+<li><p><a href="http://dark.supercn.net/111/" target="_blank" rel="noopener">雨吁 * 解决MSN7.X点击中文昵称好友字体变形</a>  </p>
 </li>
-<li><a href="http://blog.xfocus.net/index.php*%20op=ViewArticle&amp;articleId=1151&amp;blogId=1" target="_blank" rel="external">Xcon 大会</a>  </li>
-<li><a href="http://www.mikecat.net//blogview.asp*%20logID=1231" target="_blank" rel="external">欢迎光临 - 琳婕小筑－老猫的理想 - FlyTreeView for ASP.NET 3.2 破解攻略 -</a>  </li>
-<li><a href="http://blog.donews.com/demson/archive/2005/07/31/489657.aspx" target="_blank" rel="external">新版MSN Messenger/Spaces功能曝光 - 夏花 IT 资讯中心</a>  </li>
-<li><a href="http://booso.com/archives/tops/" target="_blank" rel="external">中文Blog联接 Top 100 走势分析</a>  </li>
-<li><a href="http://www.blogcn.com/User3/maddog/index.html*%20filelist=1" target="_blank" rel="external">blog about Emacs</a>  </li>
-<li><a href="http://pyrecord.freezope.org/" target="_blank" rel="external">python学习记录</a>  </li>
-<li><a href="http://www.ezlife.com.cn/" target="_blank" rel="external">简单生活</a>  </li>
-<li><a href="http://krafft.com/scripts/deluxe-calendar/lcid_chart.htm" target="_blank" rel="external">lcid_chart</a>  </li>
-<li><a href="http://www.donews.net/codez/archive/2004/08/06/61049.aspx" target="_blank" rel="external">玄幻经典小说杂记</a>  </li>
-<li><a href="http://www.hypothetic.org/docs/msn/index.php" target="_blank" rel="external">MSN Messenger Protocol</a>  </li>
-<li><a href="http://www.donews.net/codez/archive/2005/01/06/227803.aspx" target="_blank" rel="external">dotNET 相关网站大全</a>  </li>
-<li><a href="http://www.lomochina.net/" target="_blank" rel="external">LOMO中国</a>  </li>
-<li><a href="http://www.sdts.cn/bruce/default.asp" target="_blank" rel="external">Becky! 中文之家</a></li>
+<li><a href="http://blog.xfocus.net/index.php*%20op=ViewArticle&amp;articleId=1151&amp;blogId=1" target="_blank" rel="noopener">Xcon 大会</a>  </li>
+<li><a href="http://www.mikecat.net//blogview.asp*%20logID=1231" target="_blank" rel="noopener">欢迎光临 - 琳婕小筑－老猫的理想 - FlyTreeView for ASP.NET 3.2 破解攻略 -</a>  </li>
+<li><a href="http://blog.donews.com/demson/archive/2005/07/31/489657.aspx" target="_blank" rel="noopener">新版MSN Messenger/Spaces功能曝光 - 夏花 IT 资讯中心</a>  </li>
+<li><a href="http://booso.com/archives/tops/" target="_blank" rel="noopener">中文Blog联接 Top 100 走势分析</a>  </li>
+<li><a href="http://www.blogcn.com/User3/maddog/index.html*%20filelist=1" target="_blank" rel="noopener">blog about Emacs</a>  </li>
+<li><a href="http://pyrecord.freezope.org/" target="_blank" rel="noopener">python学习记录</a>  </li>
+<li><a href="http://www.ezlife.com.cn/" target="_blank" rel="noopener">简单生活</a>  </li>
+<li><a href="http://krafft.com/scripts/deluxe-calendar/lcid_chart.htm" target="_blank" rel="noopener">lcid_chart</a>  </li>
+<li><a href="http://www.donews.net/codez/archive/2004/08/06/61049.aspx" target="_blank" rel="noopener">玄幻经典小说杂记</a>  </li>
+<li><a href="http://www.hypothetic.org/docs/msn/index.php" target="_blank" rel="noopener">MSN Messenger Protocol</a>  </li>
+<li><a href="http://www.donews.net/codez/archive/2005/01/06/227803.aspx" target="_blank" rel="noopener">dotNET 相关网站大全</a>  </li>
+<li><a href="http://www.lomochina.net/" target="_blank" rel="noopener">LOMO中国</a>  </li>
+<li><a href="http://www.sdts.cn/bruce/default.asp" target="_blank" rel="noopener">Becky! 中文之家</a></li>
 </ul>
 
           
@@ -836,7 +870,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -876,6 +910,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/07/28/add-stat-to-my-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/07/28/add-stat-to-my-blog/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -894,7 +939,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -903,7 +948,7 @@
         
           
             <p>心血来潮，给自己的网站加上了统计功能，准备看看有多少人会来看俺的破萝卜！  </p>
-<p>统计模块已经放上去两天了，用的是<a href="http://xstats.org/" target="_blank" rel="external">Xstats.org</a>的东东，不过似乎只有我自己在访问，汗……</p>
+<p>统计模块已经放上去两天了，用的是<a href="http://xstats.org/" target="_blank" rel="noopener">Xstats.org</a>的东东，不过似乎只有我自己在访问，汗……</p>
 
           
         
@@ -957,7 +1002,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -997,6 +1042,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/07/27/blizzard-good-job-20050727/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/07/27/blizzard-good-job-20050727/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1015,7 +1071,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1082,7 +1138,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1122,6 +1178,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/07/20/google-is-good-20050720/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/07/20/google-is-good-20050720/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1140,7 +1207,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1152,11 +1219,23 @@
 <p>不过Google真的是不错, 要是我, 我想我也会去Google的, 看看下面的!  </p>
 <blockquote>
 <p>布林将“免费午餐”进行到底  </p>
+</blockquote>
+<blockquote>
 <p>如何让天才们在公司里工作得更加舒适，布林有自己独特的方式。  </p>
+</blockquote>
+<blockquote>
 <p>虽然西方有一句著名的谚语：世上没有免费的午餐。但在Google公司，布林将“免费”作为公司文化的一部分，实施起来达到细致入微的地步：员工用餐、健身、按摩、洗衣、洗澡、看病都100％免费；公司给员工最差的电脑显示器都是17英寸的液晶显示器；每层楼都有一个咖啡厅，可以随时冲咖啡、吃点心，大冰箱里有各种饮料，免费任喝。  </p>
+</blockquote>
+<blockquote>
 <p>布林还允许员工带孩子和宠物来公司上班，这在美国很多公司都是不可思议的。此外，公司任何一个重要员工都有自己的独立办公室，每个办公室可以按照自己的意愿来装修。  </p>
+</blockquote>
+<blockquote>
 <p>在这个充满自由和个性的公司，平等也同样重要。作为创始人之一和公司的灵魂人物，布林的办公室和其他人的区别不大，只是位置稍微好一点。  </p>
+</blockquote>
+<blockquote>
 <p>虽然布林至今还未能完成他的博士学业，但他非常倾向于招收那些有着博士学位的人。在Google公司2000名员工中，拥有博士学位的人超过100人。  </p>
+</blockquote>
+<blockquote>
 <p>除了最好的技术、最聪明的员工，布林还要求公司要有领先于时代的点子。他为Google的员工制定了一条不成文的规定：工程师必须用四分之一的时间来思考了不起的点子，即使这些点子可能给公司的财务前景造成不利。为了鼓励创新，布林允许员工有20％的时间从事自己感兴趣的任意工作，不过研究成果必须卖给公司。每年举办一次员工创新能力技术大赛，奖金是1万美元现金。  </p>
 </blockquote>
 <p>难道你不心动么?</p>
@@ -1213,7 +1292,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1253,6 +1332,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/07/17/memo-20050716/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/07/17/memo-20050716/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1271,7 +1361,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1279,12 +1369,12 @@
       
         
           
-            <p>Atom1.0发布啦, <a href="http://atompub.org/2005/07/11/draft-ietf-atompub-format-10.html" target="_blank" rel="external">规范</a>. 还有<a href="http://www.tbray.org/atom/RSS-and-Atom" target="_blank" rel="external">和RSS2.0的全面比较</a>  </p>
-<p>VoIP, <a href="http://www.gizmoproject.com/" target="_blank" rel="external">Gizmo Project</a>挑战skype. Gizmo使用SIP协议  </p>
-<p><a href="http://www.pixsy.com/" target="_blank" rel="external">PIXSY</a>, 一个基于Tag的图片搜索引擎  </p>
-<p><a href="http://www.sounddogs.com/" target="_blank" rel="external">SOUNDDOGS</a>, <a href="http://www.findsounds.com/" target="_blank" rel="external">FINDSOUNDS</a>. 两个找声音的网站, 作音效和Loop比较有用!  </p>
-<p>看看iRiver的这个<a href="http://www.engadget.com.cn/?p=203" target="_blank" rel="external">U10</a>, 看起来还是蛮酷的</p>
-<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="external"></a></p>
+            <p>Atom1.0发布啦, <a href="http://atompub.org/2005/07/11/draft-ietf-atompub-format-10.html" target="_blank" rel="noopener">规范</a>. 还有<a href="http://www.tbray.org/atom/RSS-and-Atom" target="_blank" rel="noopener">和RSS2.0的全面比较</a>  </p>
+<p>VoIP, <a href="http://www.gizmoproject.com/" target="_blank" rel="noopener">Gizmo Project</a>挑战skype. Gizmo使用SIP协议  </p>
+<p><a href="http://www.pixsy.com/" target="_blank" rel="noopener">PIXSY</a>, 一个基于Tag的图片搜索引擎  </p>
+<p><a href="http://www.sounddogs.com/" target="_blank" rel="noopener">SOUNDDOGS</a>, <a href="http://www.findsounds.com/" target="_blank" rel="noopener">FINDSOUNDS</a>. 两个找声音的网站, 作音效和Loop比较有用!  </p>
+<p>看看iRiver的这个<a href="http://www.engadget.com.cn/?p=203" target="_blank" rel="noopener">U10</a>, 看起来还是蛮酷的</p>
+<p><a href="http://www.icbean.com/nickcheng/default.asp?cat=2" target="_blank" rel="noopener"></a></p>
 
           
         
@@ -1338,7 +1428,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1378,6 +1468,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/07/05/move-blog-20050705/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/07/05/move-blog-20050705/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1396,7 +1497,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1461,7 +1562,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1501,6 +1602,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/07/02/a-joke-about-buying-house/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/07/02/a-joke-about-buying-house/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1519,7 +1631,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1601,81 +1713,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1688,12 +1812,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1701,11 +1822,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1721,10 +1848,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1759,62 +1883,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1838,7 +1993,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1846,6 +2001,9 @@
 
   
 
+  
+
+  
   
 
   

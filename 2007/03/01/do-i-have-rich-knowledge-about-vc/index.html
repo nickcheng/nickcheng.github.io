@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="life," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="在网上玩了一个小测试, 关于风险投资融资的.  测试完毕后提交, 竟然得了88分  恭喜您得了88分，通过了我们的初级测试。看得出您对风险投资及产业经济是相当关注的，这非常关键，丰富的知识是成功融资的前提条件！您现在可以：1、认真阅读下面的批注；2、看看别人的融资故事，学习更多的融资经验；3、马上上传项目计划书，让投资人看到您的项目，您将有机会与投资人对话。帮助创业，服务投资。希望蓝海创投伴随您公">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.164Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.809Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我竟然也有丰富的融资知识?">
 <meta name="twitter:description" content="在网上玩了一个小测试, 关于风险投资融资的.  测试完毕后提交, 竟然得了88分  恭喜您得了88分，通过了我们的初级测试。看得出您对风险投资及产业经济是相当关注的，这非常关键，丰富的知识是成功融资的前提条件！您现在可以：1、认真阅读下面的批注；2、看看别人的融资故事，学习更多的融资经验；3、马上上传项目计划书，让投资人看到您的项目，您将有机会与投资人对话。帮助创业，服务投资。希望蓝海创投伴随您公">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/01/do-i-have-rich-knowledge-about-vc/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/01/do-i-have-rich-knowledge-about-vc/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,28 +368,48 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
-        <p>在网上玩了<a href="http://www.u2ipo.com/test.php?act=test&amp;test_id=1" target="_blank" rel="external">一个小测试, 关于风险投资融资的</a>.  测试完毕后提交, 竟然得了88分</p>
+        <p>在网上玩了<a href="http://www.u2ipo.com/test.php?act=test&amp;test_id=1" target="_blank" rel="noopener">一个小测试, 关于风险投资融资的</a>.  测试完毕后提交, 竟然得了88分</p>
 <blockquote>
 <p>恭喜您得了88分，通过了我们的初级测试。<br>看得出您对风险投资及产业经济是相当关注的，这非常关键，丰富的知识是成功融资的前提条件！<br>您现在可以：<br>1、认真阅读下面的批注；<br>2、看看别人的融资故事，学习更多的融资经验；<br>3、马上上传项目计划书，让投资人看到您的项目，您将有机会与投资人对话。<br>帮助创业，服务投资。希望蓝海创投伴随您公司的成长，希望蓝海创投帮助您成功融资！<br>最后全体蓝海人祝您新年快乐，猪年大吉！！</p>
 </blockquote>
 <p>另外还有给我的批注</p>
 <blockquote>
 <p>批注：  </p>
+</blockquote>
+<blockquote>
 <p>您已经认识到VC的本质是高风险高回报，以下我们对此观点作些补充。VC的高风险是相对于其他投资方式而言的。只有企业价值增长了VC的投资才能得到回报，如果企业倒闭，VC很有可能血本无归。它投资成功的可能性在国际上基本在1/5以内。然而值得注意的是，这一点在中国的情况却大不一样，有统计显示，中国风险投资成功的概率远远高于国际水准，也就是说国内风险投资多半会选择拥有较好现金流风险较小的公司投资。这应该是国内与国际上风险投资最大的不同点之一。至于高回报，准确地说应该是高预期回报，如果投资成功，风险投资得到的回报会在3倍、6倍甚至10倍以上更多，但是投资企业成功的毕竟是少数，有一大半的投资是无法实现高回报的。这就是风险投资的精髓，也就是说在少数项目获取暴利的情况下，可以允许大多数项目微利、持平或者亏损。</p>
+</blockquote>
+<blockquote>
 <p>您知道投资追求高回报，但可能还不知道即使是高回报也是有一定投资额度范围的。大多数VC投资基金的整体规模都较大，一般在数亿元以上；其次VC对不同投资金额的项目的考察花费的物力财力相差并不大。所以，VC如果投资数额太小的项目（如几十万或一两百万）即使有10倍的高回报率，其获得的利润也是相对也是微不足道的，而同样的时间和精力如果投资一笔数千万元的项目，哪怕只有2-3倍的回报，其数量也是可观的。当然，投资也是有上限的，依据每家投资机构的基金总量和投资策略而不同，如联想投资的单项投资金额控制在基金总额的10%以内。</p>
+</blockquote>
+<blockquote>
 <p>您说得很对，VC投资的根本性目的就是现金回报。很少有专业的VC会为了控制一家公司而投资。恰恰相反，VC在投资企业的过程中并不希望由于自身控股导致创业团队的积极性丢失，历史上由于VC控股导致公司CEO中途退出导致投资危机也不乏先例。无论如何，VC的最终目的就是通过资本的作实现资金的增值，而创业企业对于他们来说只是达成目的的一个手段，VC控股通常不是高明之举。</p>
+</blockquote>
+<blockquote>
 <p>您对于资本退出的认识是正确的，首次公开募股（IPO）的确是风险投资最佳退出途径，它能使投资者获得3-10倍或者更高的回报。当风险企业发展到一定程度之后必然选择在证券市场上市，首次进入证券市场发行股票称为IPO。美国最主要的风险投资上市渠道是NASDAQ。实现IPO的风险投资在度过一定期限的禁售期(NASDAQ是六个月)后可以将其持有的股份抛售变现获得收益，这是风险投资获得回报最高的退出方式。需要指出是，我们说IPO是最佳的退出方式是就其投资收益率而言的，但事实上就数量而言，IPO并不是主要的风险投资退出方式，即便是在美国大约也只有10％至20％左右的风险企业能够实现 IPO，其他超过６０％甚至更多的企业采取并购方式作为退出方式。</p>
+</blockquote>
+<blockquote>
 <p>在很多创业者还认为钱拿的越多越好的时候，您已经认识到够用就好的原则，这太棒了。一般来说，企业一次融资所参考的是企业一年左右时间扩张发展所需的资金量，经过2-3轮的融资后最终推动企业上市。</p>
+</blockquote>
+<blockquote>
 <p> 您已经知道选择合适投资商的重要性，挑选投资商时研究投资商的背景和实力是相当重要的，这其中包括关注行业的不同，本土与国际的不同，历史投资案例的不同，管理机制的不同等等，这些通通是企业家需要考虑在内的因素。而熟悉此行业的VC可能与创业者更有共同语言，更能理解创业思路，有更强的行业敏锐性。</p>
+</blockquote>
+<blockquote>
 <p> 您认为企业最重要的因素是人，而这与几乎所有的风险投资家的观点也是一致的：投钱就是投人。人或者说团队的优势其实是最重要的因素，模式是死的，产品是死的，只有人是活的。对的人能把不对的事情做对，不对的人会把对的事情做错。</p>
+</blockquote>
+<blockquote>
 <p>您清楚企业发展需要多少资金，并清楚这笔资金应该由您自己而不是投资商提出。我们这里补充一点，一般来说我们会参考企业阶段性发展（可能是1年左右）所需的资金数量，并且需要给投资人一个清晰的方案来说明如何使用这笔资金。</p>
+</blockquote>
+<blockquote>
 <p>您认为VC最终关心的就是现金回报而不是其他任何东西，没错，只要把握好这点就有了打开VC金库的第一把钥匙。一般照经验来看，VC做一笔投资会在2年- 5年左右的时间里获得应有的回报，而回报的数量也不一而同，行业平均值在2-3倍左右，10倍已经属于高回报，而历史中也有达到几十倍甚至上百倍回报案例（如Compaq达到38倍，Lotus达到63倍，苹果计算机的投资回报高达235倍）</p>
+</blockquote>
+<blockquote>
 <p>你过于看重商业模式，这是一个危险的信号。相比之下，企业更关注一个企业的历史经营状况和创业团队的素质，其中以后者更为关键。一个好的商业模式勾画出未来发展的美好蓝图，但是很多情况下商业模式不会是一成不变得，甚至有些企业还没有找到很好的商业模式，但只要行业前景是光明的，创业团队是优秀的，他们终将能找到适合自己发展的道路。所以真正决定企业价值的并不是商业模式或者是产品，而是富有创造力的企业团队创造商业模式的能力，也只有有了好的商业模式才会有商业价值。投资者希望创业者拥有敏锐的商业嗅觉、强烈的敬业精神、深厚的责任意识以及合作的团队观念，只有这样的领导人和团队才能在企业前进的道路上克服一切困难，而任何其他的不利因素也都可以通过人来改变。所以，人是投资家最看重的。 </p>
 </blockquote>
 <p>可别当真, 就当学习一些自己不了解的知识吧:)</p>
@@ -404,7 +425,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -491,9 +512,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -516,81 +547,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -603,12 +646,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -616,11 +656,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -636,10 +682,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -674,62 +717,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2007/03/01/do-i-have-rich-knowledge-about-vc/';
+          this.page.identifier = '2007/03/01/do-i-have-rich-knowledge-about-vc/';
+          this.page.title = '我竟然也有丰富的融资知识?';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -753,7 +843,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -761,6 +851,9 @@
 
   
 
+  
+
+  
   
 
   

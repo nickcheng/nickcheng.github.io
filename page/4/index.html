@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/06/09/bicycle/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/06/09/bicycle/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -433,7 +434,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -473,6 +474,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/05/11/google-map-display-none/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/05/11/google-map-display-none/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -491,7 +503,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -559,7 +571,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -599,6 +611,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/04/07/the-damn-fucking-hair/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/04/07/the-damn-fucking-hair/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -617,7 +640,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -682,7 +705,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -722,6 +745,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/03/27/it-is-too-late-to-apologize/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/03/27/it-is-too-late-to-apologize/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -740,7 +774,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -752,10 +786,20 @@
 <blockquote>
 <p>Apologize - Timbaland</p>
 <p>I’m holding on your rope,<br>Got me ten feet off the ground<br>And I’m hearing  what you say but I just can’t make a sound<br>You tell me that you need  me<br>Then you go and cut me down, but wait<br>You tell me that you’re  sorry<br>Didn’t think I’d turn around, and say…  </p>
+</blockquote>
+<blockquote>
 <p>That it’s too late to  apologize, it’s too late<br>I said it’s too late to apologize, it’s too  late  </p>
+</blockquote>
+<blockquote>
 <p>I’d take another chance, take a fall<br>Take a shot for you<br>And I  need you like a heart needs a beat<br>But it’s nothing new - yeah yeah  </p>
+</blockquote>
+<blockquote>
 <p>I  loved you with the fire red-<br>Now it’s turning blue, and you  say…<br>&quot;Sorry&quot; like the angel heaven let me think was  you<br>But I’m afraid…  </p>
+</blockquote>
+<blockquote>
 <p>It’s too late to apologize, it’s too late<br>I  said it’s too late to apologize, it’s too late whoa…..  </p>
+</blockquote>
+<blockquote>
 <p>It’s too late to  apologize, it’s too late<br>I said it’s too late to apologize, it’s too  late<br>I said it’s too late to apologize, yeah-<br>I said it’s too late to  apologize, yeah-<br>I’m holding on your rope, got me ten feet off the  ground…  </p>
 </blockquote>
 
@@ -811,7 +855,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -851,6 +895,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/03/27/startup-spec-22/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/03/27/startup-spec-22/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -869,7 +924,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -955,7 +1010,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -995,6 +1050,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/03/27/remember-to-tunr-off-your-light-tonight/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/03/27/remember-to-tunr-off-your-light-tonight/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1013,7 +1079,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1076,7 +1142,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1116,6 +1182,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/03/23/a-new-approach-to-china-an-updatez/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/03/23/a-new-approach-to-china-an-updatez/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1134,7 +1211,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1144,10 +1221,10 @@
           
             <p>因为blogspot被墙, 为了让大家更方便看到, 我转帖了该文:</p>
 <p>3/22/2010 12:03:00 PM</p>
-<p>On January 12, we <a href="http://googleblog.blogspot.com/2010/01/new-approach-to-china.html" target="_blank" rel="external">announced on this blog</a> that Google and more than twenty other U.S. companies had been the victims of a sophisticated cyber attack originating from China, and that during our investigation into these attacks we had uncovered evidence to suggest that the Gmail accounts of dozens of human rights activists connected with China were being routinely accessed by third parties, most likely via phishing scams or malware placed on their computers. We also made clear that these attacks and the surveillance they uncovered—combined with attempts over the last year to further limit free speech on the web in China including the persistent blocking of websites such as Facebook, Twitter, YouTube, Google Docs and Blogger—had led us to conclude that we could no longer continue censoring our results on Google.cn.</p>
-<p>So earlier today we stopped censoring our search services—Google Search, Google News, and Google Images—on Google.cn. Users visiting Google.cn are now being redirected to <a href="http://www.google.com.hk/" target="_blank" rel="external">Google.com.hk</a>, where we are offering uncensored search in simplified Chinese, specifically designed for users in mainland China and delivered via our servers in Hong Kong. Users in Hong Kong will continue to receive their existing uncensored, traditional Chinese service, also from <a href="http://www.google.com.hk/" target="_blank" rel="external">Google.com.hk</a>. Due to the increased load on our Hong Kong servers and the complicated nature of these changes, users may see some slowdown in service or find some products temporarily inaccessible as we switch everything over.</p>
-<p>Figuring out how to make good on our promise to stop censoring search on Google.cn has been hard. We want as many people in the world as possible to have access to our services, including users in mainland China, yet the Chinese government has been crystal clear throughout our discussions that self-censorship is a non-negotiable legal requirement. We believe this new approach of providing uncensored search in simplified Chinese from <a href="http://www.google.com.hk/" target="_blank" rel="external">Google.com.hk</a> is a sensible solution to the challenges we’ve faced—it’s entirely legal and will meaningfully increase access to information for people in China. We very much hope that the Chinese government respects our decision, though we are well aware that it could at any time block access to our services. We will therefore be carefully monitoring access issues, and have created <a href="http://www.google.com/prc/report.html#hl=en" target="_blank" rel="external">this new web page</a>, which we will update regularly each day, so that everyone can see which Google services are available in China.</p>
-<p>In terms of Google’s wider business operations, we intend to continue R&amp;D work in China and also to maintain a sales presence there, though the size of the sales team will obviously be partially dependent on the ability of mainland Chinese users to access <a href="http://www.google.com.hk/" target="_blank" rel="external">Google.com.hk</a>. Finally, we would like to make clear that all these decisions have been driven and implemented by our executives in the United States, and that none of our employees in China can, or should, be held responsible for them. Despite all the uncertainty and difficulties they have faced since we made our announcement in January, they have continued to focus on serving our Chinese users and customers. We are immensely proud of them.</p>
+<p>On January 12, we <a href="http://googleblog.blogspot.com/2010/01/new-approach-to-china.html" target="_blank" rel="noopener">announced on this blog</a> that Google and more than twenty other U.S. companies had been the victims of a sophisticated cyber attack originating from China, and that during our investigation into these attacks we had uncovered evidence to suggest that the Gmail accounts of dozens of human rights activists connected with China were being routinely accessed by third parties, most likely via phishing scams or malware placed on their computers. We also made clear that these attacks and the surveillance they uncovered—combined with attempts over the last year to further limit free speech on the web in China including the persistent blocking of websites such as Facebook, Twitter, YouTube, Google Docs and Blogger—had led us to conclude that we could no longer continue censoring our results on Google.cn.</p>
+<p>So earlier today we stopped censoring our search services—Google Search, Google News, and Google Images—on Google.cn. Users visiting Google.cn are now being redirected to <a href="http://www.google.com.hk/" target="_blank" rel="noopener">Google.com.hk</a>, where we are offering uncensored search in simplified Chinese, specifically designed for users in mainland China and delivered via our servers in Hong Kong. Users in Hong Kong will continue to receive their existing uncensored, traditional Chinese service, also from <a href="http://www.google.com.hk/" target="_blank" rel="noopener">Google.com.hk</a>. Due to the increased load on our Hong Kong servers and the complicated nature of these changes, users may see some slowdown in service or find some products temporarily inaccessible as we switch everything over.</p>
+<p>Figuring out how to make good on our promise to stop censoring search on Google.cn has been hard. We want as many people in the world as possible to have access to our services, including users in mainland China, yet the Chinese government has been crystal clear throughout our discussions that self-censorship is a non-negotiable legal requirement. We believe this new approach of providing uncensored search in simplified Chinese from <a href="http://www.google.com.hk/" target="_blank" rel="noopener">Google.com.hk</a> is a sensible solution to the challenges we’ve faced—it’s entirely legal and will meaningfully increase access to information for people in China. We very much hope that the Chinese government respects our decision, though we are well aware that it could at any time block access to our services. We will therefore be carefully monitoring access issues, and have created <a href="http://www.google.com/prc/report.html#hl=en" target="_blank" rel="noopener">this new web page</a>, which we will update regularly each day, so that everyone can see which Google services are available in China.</p>
+<p>In terms of Google’s wider business operations, we intend to continue R&amp;D work in China and also to maintain a sales presence there, though the size of the sales team will obviously be partially dependent on the ability of mainland Chinese users to access <a href="http://www.google.com.hk/" target="_blank" rel="noopener">Google.com.hk</a>. Finally, we would like to make clear that all these decisions have been driven and implemented by our executives in the United States, and that none of our employees in China can, or should, be held responsible for them. Despite all the uncertainty and difficulties they have faced since we made our announcement in January, they have continued to focus on serving our Chinese users and customers. We are immensely proud of them.</p>
 <p>Posted by David Drummond, SVP, Corporate Development and Chief Legal Officer</p>
 
           
@@ -1202,7 +1279,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1242,6 +1319,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/03/15/recommend-iphont-itouch-game-space-raider/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/03/15/recommend-iphont-itouch-game-space-raider/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1260,7 +1348,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1273,13 +1361,19 @@
 <p>游戏本身也很有趣. 玩家用手指在屏幕上移动来控制飞机的移动. 前几关玩家是没有武器的, 只能靠闪避来躲开敌人的攻击. 过了几关以后, 玩家就可以拥有自己的各种武器和敌人一较高下了.</p>
 <p>作者自己的介绍</p>
 <blockquote>
-<p>这是我做的第一个游戏，用的是<a href="http://www.gamesalad.com/" target="_blank" rel="external">GameSalad</a>引擎，现在放出promotion code，欢迎试玩，希望大家多提宝贵意见：）</p>
+<p>这是我做的第一个游戏，用的是<a href="http://www.gamesalad.com/" target="_blank" rel="noopener">GameSalad</a>引擎，现在放出promotion code，欢迎试玩，希望大家多提宝贵意见：）</p>
+</blockquote>
+<blockquote>
 <p>这是一个控制飞机躲避敌人的游戏，你可以在屏幕上滑动手指来方便的控制飞机，然后用不同的武器消灭敌人，操作起来非常简单直观，同时还有动听的音乐和逼真的音效。游戏的每一关要收集一定数量的能量块才能过关，在游戏的前几关，你还没有武器，这时你需要躲开来犯的敌人来收集能量块完成任务，从第四关开始你就可以获得各种各样的武器，目前有三种：导弹，激光，超级炸弹。用你获得的武器来痛扁来犯的敌人吧，最后还有一个终极的boss在等着你，不要让他失望……  </p>
+</blockquote>
+<blockquote>
 <p>Space Raider is a game of controlling spaceship to avoid enemies, you can slide finger to control the spaceship easily on screen, and using different weapons to beat them.   </p>
+</blockquote>
+<blockquote>
 <p>To complete each level, you should collect numbers of power box in the level. In first levels, you don’t have weapons, and the only way to finish level is to avoid the enemies, but at the Level 4, you would start to use different kinds of weapons: Missile, Laser, Super Bomb. Beat them by using these weapon, further more, there is a Final BOSS waiting for you at the end of levels, try to don’t make him disappointed……</p>
 </blockquote>
 <p>这款游戏现在已经在 App Store 上出售, 请点击下面图标.</p>
-<p><a href="http://itunes.apple.com/us/app/space-raider/id354873425?mt=8" target="_blank" rel="external"><img src="http://a1.phobos.apple.com/us/r1000/049/Purple/15/0c/88/mzl.uvgovhgr.175x175-75.jpg" alt=""></a></p>
+<p><a href="http://itunes.apple.com/us/app/space-raider/id354873425?mt=8" target="_blank" rel="noopener"><img src="http://a1.phobos.apple.com/us/r1000/049/Purple/15/0c/88/mzl.uvgovhgr.175x175-75.jpg" alt=""></a></p>
 <p>另外, Nick 还给大家找来一些优惠代码可以免费使用, 先到先得啊! 下完别忘了打个5星或者好评;D</p>
 <p>7JR3NH34LH7F<br>4J9PP6EFWMWK<br>3WAEFRTA69PP<br>HT6937EHK4FY<br>ETFNXEXT67NJ<br>JAATY6APF9HX<br>XWXAFTPFKHPM<br>TMWF3WJX9A9F<br>MW9HM637N3YH<br>AR973L749LE7<br>AE9RKLJTHH3J<br>9X46NHXM3A9P<br>M7T3PXHTWKHR</p>
 <p>下面是一些游戏截图:</p>
@@ -1341,7 +1435,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1381,6 +1475,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/03/09/the-damn-spam-comment/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/03/09/the-damn-spam-comment/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1399,7 +1504,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1463,7 +1568,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1503,6 +1608,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/02/20/memo-on-using-pymssql/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/02/20/memo-on-using-pymssql/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1521,7 +1637,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1607,81 +1723,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1694,12 +1822,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1707,11 +1832,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1727,10 +1858,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1765,62 +1893,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1844,7 +2003,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1852,6 +2011,9 @@
 
   
 
+  
+
+  
   
 
   

@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/24/hit-by-django/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/24/hit-by-django/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -376,7 +377,7 @@
       
         
           
-            <p>这几天学习使用Python下的一个名叫Django的Web Framework的使用, 竟然看着<a href="http://www.woodpecker.org.cn/obp/django/django-stepbystep/newtest/doc/" target="_blank" rel="external">教程</a>也郁闷了两次, 讲讲经过吧!</p>
+            <p>这几天学习使用Python下的一个名叫Django的Web Framework的使用, 竟然看着<a href="http://www.woodpecker.org.cn/obp/django/django-stepbystep/newtest/doc/" target="_blank" rel="noopener">教程</a>也郁闷了两次, 讲讲经过吧!</p>
 <ol>
 <li><strong>版本</strong></li>
 </ol>
@@ -447,7 +448,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -487,6 +488,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/24/bookmark-of-2006-02-24/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/24/bookmark-of-2006-02-24/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -505,7 +517,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -514,14 +526,14 @@
         
           
             <ul>
-<li><p><strong><a href="http://www.omemo.net/neo/blog/?p=83" target="_blank" rel="external">Realazy » 优化移动XHTML 服务的主要指南</a></strong></p>
+<li><p><strong><a href="http://www.omemo.net/neo/blog/?p=83" target="_blank" rel="noopener">Realazy » 优化移动XHTML 服务的主要指南</a></strong></p>
 <p>  <img src="http://blogmarks.net/screenshots/2006/02/24/a5258fbe7bd08a136434e8e8d72b2086.png" alt="screenshot"></p>
 </li>
-<li><p><strong><a href="http://lumaqq.linuxsir.org/article/qqwry_format_detail.html" target="_blank" rel="external">纯真IP数据库格式详解</a></strong></p>
+<li><p><strong><a href="http://lumaqq.linuxsir.org/article/qqwry_format_detail.html" target="_blank" rel="noopener">纯真IP数据库格式详解</a></strong></p>
 <p>  <img src="http://blogmarks.net/screenshots/2006/02/24/720701064776c9f123cdc234b2fa4a3f.png" alt="screenshot"></p>
 </li>
 </ul>
-<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="external"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
+<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="noopener"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
 
           
         
@@ -575,7 +587,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -615,6 +627,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/23/bookmark-of-2006-02-23/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/23/bookmark-of-2006-02-23/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -633,7 +656,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -642,29 +665,29 @@
         
           
             <ul>
-<li><p><strong><a href="http://www.joinnow.com.cn/game/download_mame207.html" target="_blank" rel="external">中浪游戏霸王—游戏下载之MAME ROM 第２０７篇</a></strong></p>
+<li><p><strong><a href="http://www.joinnow.com.cn/game/download_mame207.html" target="_blank" rel="noopener">中浪游戏霸王—游戏下载之MAME ROM 第２０７篇</a></strong></p>
 </li>
-<li><p><strong><a href="http://forum.stock.sina.com.cn/cgi-bin/viewone.cgi?gid=6&amp;fid=4003&amp;itemid=73630" target="_blank" rel="external">原创]经典分析报告:不理财多久会变成穷光蛋<em>精英理财</em>新浪网 (树)</a></strong></p>
+<li><p><strong><a href="http://forum.stock.sina.com.cn/cgi-bin/viewone.cgi?gid=6&amp;fid=4003&amp;itemid=73630" target="_blank" rel="noopener">原创]经典分析报告:不理财多久会变成穷光蛋<em>精英理财</em>新浪网 (树)</a></strong></p>
 </li>
-<li><p><strong><a href="http://plod.popoever.com/archives/000838.html" target="_blank" rel="external">Plod: Google市场营销七大原则</a></strong></p>
+<li><p><strong><a href="http://plod.popoever.com/archives/000838.html" target="_blank" rel="noopener">Plod: Google市场营销七大原则</a></strong></p>
 </li>
-<li><p><strong><a href="http://www.chinaui.com/article/detail/20051011140727.html" target="_blank" rel="external">制作用户界面原型的艺术-ChinaUI.com&gt;&gt;中国UI设计先锋站</a></strong></p>
+<li><p><strong><a href="http://www.chinaui.com/article/detail/20051011140727.html" target="_blank" rel="noopener">制作用户界面原型的艺术-ChinaUI.com&gt;&gt;中国UI设计先锋站</a></strong></p>
 </li>
-<li><p><strong><a href="http://www.chinaui.com/news/detail/20060216093301.html" target="_blank" rel="external">Mozilla放出Camino浏览器 - ChinaUI.com 中国优艾</a></strong></p>
+<li><p><strong><a href="http://www.chinaui.com/news/detail/20060216093301.html" target="_blank" rel="noopener">Mozilla放出Camino浏览器 - ChinaUI.com 中国优艾</a></strong></p>
 </li>
 </ul>
 <hr>
 <pre><code>本来以为Mac下已经有Firefox了,谁知道原来没有...
 </code></pre><ul>
-<li><p><strong><a href="http://www.tinydust.net/prog/diary/2006/02/seo.html" target="_blank" rel="external">Tinyfool的开发日记(blog): 尝试在SEO中利用马太效应</a></strong></p>
+<li><p><strong><a href="http://www.tinydust.net/prog/diary/2006/02/seo.html" target="_blank" rel="noopener">Tinyfool的开发日记(blog): 尝试在SEO中利用马太效应</a></strong></p>
 </li>
-<li><p><strong><a href="http://www.havocstudios.com/articles/ajax/ajax_tabs/" target="_blank" rel="external">havocStudios: Ajax tabs</a></strong></p>
+<li><p><strong><a href="http://www.havocstudios.com/articles/ajax/ajax_tabs/" target="_blank" rel="noopener">havocStudios: Ajax tabs</a></strong></p>
 </li>
-<li><p><strong><a href="http://www.digave.com/videos/" target="_blank" rel="external">v i d e o g a l l e r y</a></strong></p>
+<li><p><strong><a href="http://www.digave.com/videos/" target="_blank" rel="noopener">v i d e o g a l l e r y</a></strong></p>
 <p>  一个爱骑自行车的老外的视频网站, 不少好视频</p>
 </li>
 </ul>
-<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="external"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
+<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="noopener"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
 
           
         
@@ -718,7 +741,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -758,6 +781,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/22/bookmark-of-20060222/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/22/bookmark-of-20060222/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -776,7 +810,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -785,16 +819,16 @@
         
           
             <ul>
-<li><p><strong><a href="http://www.cnbeta.com//modules.php?name=News&amp;file=article&amp;sid=10300" target="_blank" rel="external">cnBeta.COM - For your eyes only. - Foobar2000 v0.9 Release Candidate (2006-02-21)</a></strong>  </p>
+<li><p><strong><a href="http://www.cnbeta.com//modules.php?name=News&amp;file=article&amp;sid=10300" target="_blank" rel="noopener">cnBeta.COM - For your eyes only. - Foobar2000 v0.9 Release Candidate (2006-02-21)</a></strong>  </p>
 <p>  Foobar2k v0.9终于RC了! 不过那些插件的升级要等等了! 不过也应该快了! 过段时间升级!  </p>
 <p>  <img src="http://blogmarks.net/screenshots/2006/02/22/0ede4de98d4cffa9b26cb8e5c48c7a76.png" alt=""></p>
 </li>
-<li><p><strong><a href="http://www.postshow.net/2006/02/_psytec_qr_code_editorqr_code.php" target="_blank" rel="external">Psytec QR Code Editor：QR Code码图制作、破解软件 | PostShow</a></strong></p>
+<li><p><strong><a href="http://www.postshow.net/2006/02/_psytec_qr_code_editorqr_code.php" target="_blank" rel="noopener">Psytec QR Code Editor：QR Code码图制作、破解软件 | PostShow</a></strong></p>
 <p>  <img src="http://blogmarks.net/screenshots/2006/02/22/781ca82e142270b5cb892f4b4347aba6.png" alt=""></p>
 <p>  Cool uhh ?</p>
 </li>
 </ul>
-<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="external"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
+<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="noopener"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
 
           
         
@@ -848,7 +882,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -888,6 +922,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/21/bookmarks-for-2006-02-21/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/21/bookmarks-for-2006-02-21/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -906,7 +951,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -915,15 +960,15 @@
         
           
             <ul>
-<li><p><a href="http://my.opera.com/stlh/blog/show.dml/146766" target="_blank" rel="external">firefox总在tab中打开新页面 - Icewind Dale - Northern Land, Icewind Dale, Lefthand - by 蒋 森</a><br>(tags: <a href="http://blogmarks.net/tag/firefox" target="_blank" rel="external">firefox</a> <a href="http://blogmarks.net/tag/config" target="_blank" rel="external">config</a> <a href="http://blogmarks.net/tag/ff" target="_blank" rel="external">ff</a> <a href="http://blogmarks.net/tag/tab" target="_blank" rel="external">tab</a>)</p>
+<li><p><a href="http://my.opera.com/stlh/blog/show.dml/146766" target="_blank" rel="noopener">firefox总在tab中打开新页面 - Icewind Dale - Northern Land, Icewind Dale, Lefthand - by 蒋 森</a><br>(tags: <a href="http://blogmarks.net/tag/firefox" target="_blank" rel="noopener">firefox</a> <a href="http://blogmarks.net/tag/config" target="_blank" rel="noopener">config</a> <a href="http://blogmarks.net/tag/ff" target="_blank" rel="noopener">ff</a> <a href="http://blogmarks.net/tag/tab" target="_blank" rel="noopener">tab</a>)</p>
 </li>
-<li><p><a href="http://blog.csdn.net/aimingoo/archive/2006/01/09/574023.aspx" target="_blank" rel="external">JavaScript面向对象的支持(1) - aimingoo的专栏</a><br>(tags: <a href="http://blogmarks.net/tag/javascript" target="_blank" rel="external">javascript</a> <a href="http://blogmarks.net/tag/oo" target="_blank" rel="external">oo</a> <a href="http://blogmarks.net/tag/js" target="_blank" rel="external">js</a> <a href="http://blogmarks.net/tag/object" target="_blank" rel="external">object</a>)</p>
+<li><p><a href="http://blog.csdn.net/aimingoo/archive/2006/01/09/574023.aspx" target="_blank" rel="noopener">JavaScript面向对象的支持(1) - aimingoo的专栏</a><br>(tags: <a href="http://blogmarks.net/tag/javascript" target="_blank" rel="noopener">javascript</a> <a href="http://blogmarks.net/tag/oo" target="_blank" rel="noopener">oo</a> <a href="http://blogmarks.net/tag/js" target="_blank" rel="noopener">js</a> <a href="http://blogmarks.net/tag/object" target="_blank" rel="noopener">object</a>)</p>
 </li>
-<li><p><a href="http://www.oui-blog.com/rednicole/archives/009674.html" target="_blank" rel="external">紅色★妮可│用 BlogMarks.net 每日網摘</a><br>(tags: <a href="http://blogmarks.net/tag/bookmark" target="_blank" rel="external">bookmark</a> <a href="http://blogmarks.net/tag/blog" target="_blank" rel="external">blog</a> <a href="http://blogmarks.net/tag/blogmarks" target="_blank" rel="external">blogmarks</a>)</p>
+<li><p><a href="http://www.oui-blog.com/rednicole/archives/009674.html" target="_blank" rel="noopener">紅色★妮可│用 BlogMarks.net 每日網摘</a><br>(tags: <a href="http://blogmarks.net/tag/bookmark" target="_blank" rel="noopener">bookmark</a> <a href="http://blogmarks.net/tag/blog" target="_blank" rel="noopener">blog</a> <a href="http://blogmarks.net/tag/blogmarks" target="_blank" rel="noopener">blogmarks</a>)</p>
 </li>
 </ul>
 <hr>
-<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="external"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
+<p><a href="http://blogmarks.net/user/nickcheng" target="_blank" rel="noopener"><img src="http://blogmarks.net/img/button.png" alt="blogmarks.net"></a></p>
 
           
         
@@ -977,7 +1022,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1017,6 +1062,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/18/tmd-the-trojan/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/18/tmd-the-trojan/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1035,7 +1091,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1126,7 +1182,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1166,6 +1222,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/17/bookmark-20060217/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/17/bookmark-20060217/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1184,7 +1251,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1193,25 +1260,25 @@
         
           
             <ul>
-<li><p><img src="http://simon.incutio.com/favicon.ico" alt=""><a href="http://simon.incutio.com/archive/2006/02/08/summit" target="_blank" rel="external">Simon Willison: Notes from the summit</a></p>
+<li><p><img src="http://simon.incutio.com/favicon.ico" alt=""><a href="http://simon.incutio.com/archive/2006/02/08/summit" target="_blank" rel="noopener">Simon Willison: Notes from the summit</a></p>
 </li>
-<li><p><img src="http://www.neowin.net/favicon.ico" alt=""><a href="http://www.neowin.net/forum/index.php?showtopic=320017" target="_blank" rel="external">Neowin’s Freeware Alternative List - Neowin.net</a></p>
+<li><p><img src="http://www.neowin.net/favicon.ico" alt=""><a href="http://www.neowin.net/forum/index.php?showtopic=320017" target="_blank" rel="noopener">Neowin’s Freeware Alternative List - Neowin.net</a></p>
 </li>
-<li><p><img src="http://developer.yahoo.net/favicon.ico" alt=""><a href="http://developer.yahoo.net/ypatterns/" target="_blank" rel="external">Yahoo! Design Pattern Library</a></p>
+<li><p><img src="http://developer.yahoo.net/favicon.ico" alt=""><a href="http://developer.yahoo.net/ypatterns/" target="_blank" rel="noopener">Yahoo! Design Pattern Library</a></p>
 </li>
-<li><p><img src="http://www.ajaxmatters.com/favicon.ico" alt=""><a href="http://www.ajaxmatters.com/r/resources?id=17" target="_blank" rel="external">AJAX Matters - Asynchronous JavaScript and XML and XMLHTTP development information</a></p>
+<li><p><img src="http://www.ajaxmatters.com/favicon.ico" alt=""><a href="http://www.ajaxmatters.com/r/resources?id=17" target="_blank" rel="noopener">AJAX Matters - Asynchronous JavaScript and XML and XMLHTTP development information</a></p>
 </li>
-<li><p><img src="http://www.metaldudu.com/favicon.ico" alt=""><a href="http://www.metaldudu.com/blog/index.php/109" target="_blank" rel="external">Metaldudu@blog » 现在开始（译）</a></p>
+<li><p><img src="http://www.metaldudu.com/favicon.ico" alt=""><a href="http://www.metaldudu.com/blog/index.php/109" target="_blank" rel="noopener">Metaldudu@blog » 现在开始（译）</a></p>
 </li>
-<li><p><img src="http://goog-kongulo.sourceforge.net/favicon.ico" alt=""><a href="http://goog-kongulo.sourceforge.net/" target="_blank" rel="external">Google Könguló</a></p>
+<li><p><img src="http://goog-kongulo.sourceforge.net/favicon.ico" alt=""><a href="http://goog-kongulo.sourceforge.net/" target="_blank" rel="noopener">Google Könguló</a></p>
 </li>
-<li><p><img src="http://feh.holsman.net/favicon.ico" alt=""><a href="http://feh.holsman.net/articles/2006/02/15/starting-a-new-django-project-need-volunteers" target="_blank" rel="external">Starting a new Django Project – need volunteers</a></p>
+<li><p><img src="http://feh.holsman.net/favicon.ico" alt=""><a href="http://feh.holsman.net/articles/2006/02/15/starting-a-new-django-project-need-volunteers" target="_blank" rel="noopener">Starting a new Django Project – need volunteers</a></p>
 </li>
-<li><p><img src="http://blog.markplace.net/favicon.ico" alt=""><a href="http://blog.markplace.net/marks_place/1/2006/02/14/81" target="_blank" rel="external"> 幾個 AJAX Library 比較</a></p>
+<li><p><img src="http://blog.markplace.net/favicon.ico" alt=""><a href="http://blog.markplace.net/marks_place/1/2006/02/14/81" target="_blank" rel="noopener"> 幾個 AJAX Library 比較</a></p>
 </li>
-<li><p><img src="http://chn.blogbeta.com/favicon.ico" alt=""><a href="http://chn.blogbeta.com/114.html" target="_blank" rel="external">blog中文翻译 : Do It Now（第一部分）</a></p>
+<li><p><img src="http://chn.blogbeta.com/favicon.ico" alt=""><a href="http://chn.blogbeta.com/114.html" target="_blank" rel="noopener">blog中文翻译 : Do It Now（第一部分）</a></p>
 </li>
-<li><p><img src="http://tagriver.blog.tagriver.com/favicon.ico" alt=""><a href="http://tagriver.blog.tagriver.com/?p=932" target="_blank" rel="external">关于Web易用性设计的一些要点</a></p>
+<li><p><img src="http://tagriver.blog.tagriver.com/favicon.ico" alt=""><a href="http://tagriver.blog.tagriver.com/?p=932" target="_blank" rel="noopener">关于Web易用性设计的一些要点</a></p>
 </li>
 </ul>
 <hr>
@@ -1268,7 +1335,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1308,6 +1375,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/15/bookmark-20060215/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/15/bookmark-20060215/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1326,7 +1404,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1335,17 +1413,17 @@
         
           
             <ul>
-<li><a href="http://support.microsoft.com/kb/842793/en-us" target="_blank" rel="external">BUG: The Elapsed event of the System.Timers.Timer class is not raised in a Windows service</a></li>
-<li><img src="http://spaces.msn.com/favicon.ico" alt=""><a href="http://spaces.msn.com/tidexu/Blog/cns%211pHKA6-Z2d7e5ZnWcB1UGh8w%21177.entry" target="_blank" rel="external">WEB(Javascript)远程调用方案清单</a></li>
-<li><img src="http://xiecc.itpub.net/favicon.ico" alt=""><a href="http://xiecc.itpub.net/post/1476/52479" target="_blank" rel="external">天堂的阶梯</a></li>
-<li><img src="http://www.soxiam.com/favicon.ico" alt=""><a href="http://www.soxiam.com/Notes/Ajax" target="_blank" rel="external">Ajax</a></li>
-<li><img src="http://developer.yahoo.net/favicon.ico" alt=""><a href="http://developer.yahoo.net/yui/index.html" target="_blank" rel="external">Yahoo! UI Library</a></li>
-<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2006/01/27/0000086908.html" target="_blank" rel="external">《都灵冬奥会2006》(Torino 2006)破解版[Bin] | 游戏 → 光盘镜像 | VeryCD → 下载</a></li>
-<li><img src="http://argv0.net/favicon.ico" alt=""><a href="http://argv0.net/static/mochitut/1/" target="_blank" rel="external">http://argv0.net/static/mochitut/1/</a></li>
-<li><img src="http://mochikit.com/favicon.ico" alt=""><a href="http://mochikit.com/" target="_blank" rel="external">MochiKit – A lightweight Javascript library</a></li>
-<li><img src="http://www.woodpecker.org.cn:9081/favicon.ico" alt=""><a href="http://www.woodpecker.org.cn:9081/doc/zScrapBook/tree/" target="_blank" rel="external">ScrapBook</a></li>
-<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2005/10/08/0000068707.html" target="_blank" rel="external">《爱在哈佛》(Love Story In Harvard)【韩语中字】【DVD－RMVB】【20完】[RMVB]</a></li>
-<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2006/02/02/0000087755.html" target="_blank" rel="external">《僵尸新娘》(Corpse Bride)waf版[DVDRip]</a></li>
+<li><a href="http://support.microsoft.com/kb/842793/en-us" target="_blank" rel="noopener">BUG: The Elapsed event of the System.Timers.Timer class is not raised in a Windows service</a></li>
+<li><img src="http://spaces.msn.com/favicon.ico" alt=""><a href="http://spaces.msn.com/tidexu/Blog/cns%211pHKA6-Z2d7e5ZnWcB1UGh8w%21177.entry" target="_blank" rel="noopener">WEB(Javascript)远程调用方案清单</a></li>
+<li><img src="http://xiecc.itpub.net/favicon.ico" alt=""><a href="http://xiecc.itpub.net/post/1476/52479" target="_blank" rel="noopener">天堂的阶梯</a></li>
+<li><img src="http://www.soxiam.com/favicon.ico" alt=""><a href="http://www.soxiam.com/Notes/Ajax" target="_blank" rel="noopener">Ajax</a></li>
+<li><img src="http://developer.yahoo.net/favicon.ico" alt=""><a href="http://developer.yahoo.net/yui/index.html" target="_blank" rel="noopener">Yahoo! UI Library</a></li>
+<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2006/01/27/0000086908.html" target="_blank" rel="noopener">《都灵冬奥会2006》(Torino 2006)破解版[Bin] | 游戏 → 光盘镜像 | VeryCD → 下载</a></li>
+<li><img src="http://argv0.net/favicon.ico" alt=""><a href="http://argv0.net/static/mochitut/1/" target="_blank" rel="noopener">http://argv0.net/static/mochitut/1/</a></li>
+<li><img src="http://mochikit.com/favicon.ico" alt=""><a href="http://mochikit.com/" target="_blank" rel="noopener">MochiKit – A lightweight Javascript library</a></li>
+<li><img src="http://www.woodpecker.org.cn:9081/favicon.ico" alt=""><a href="http://www.woodpecker.org.cn:9081/doc/zScrapBook/tree/" target="_blank" rel="noopener">ScrapBook</a></li>
+<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2005/10/08/0000068707.html" target="_blank" rel="noopener">《爱在哈佛》(Love Story In Harvard)【韩语中字】【DVD－RMVB】【20完】[RMVB]</a></li>
+<li><img src="http://lib.verycd.com/favicon.ico" alt=""><a href="http://lib.verycd.com/2006/02/02/0000087755.html" target="_blank" rel="noopener">《僵尸新娘》(Corpse Bride)waf版[DVDRip]</a></li>
 </ul>
 <hr>
 
@@ -1401,7 +1479,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1441,6 +1519,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/13/lp-say-the-war/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/13/lp-say-the-war/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1459,7 +1548,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1526,7 +1615,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1566,6 +1655,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/02/10/bookmark-20060210/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/02/10/bookmark-20060210/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1584,7 +1684,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1593,34 +1693,34 @@
         
           
             <ul>
-<li><a href="http://home.donews.com/donews/forum/1/2006-01/19/590807.html" target="_blank" rel="external">全面精通Web  2.0，做互联网潮头人-IT论坛-DoNews.COM</a></li>
+<li><a href="http://home.donews.com/donews/forum/1/2006-01/19/590807.html" target="_blank" rel="noopener">全面精通Web  2.0，做互联网潮头人-IT论坛-DoNews.COM</a></li>
 </ul>
 <ul>
-<li><img src="http://www.earlzhang.com/favicon.ico" alt=""><a href="http://www.earlzhang.com/lblog/article.asp?id=328" target="_blank" rel="external">发展眼光算房贷 - 星张翼轸</a></li>
+<li><img src="http://www.earlzhang.com/favicon.ico" alt=""><a href="http://www.earlzhang.com/lblog/article.asp?id=328" target="_blank" rel="noopener">发展眼光算房贷 - 星张翼轸</a></li>
 </ul>
 <ul>
-<li><img src="http://wiki.ehow.com/favicon.ico" alt=""><a href="http://wiki.ehow.com/Fix-a-Stuck-Pixel-on-an-LCD-Monitor" target="_blank" rel="external">How to Fix a  Stuck Pixel on an LCD Monitor - WikiHow</a></li>
+<li><img src="http://wiki.ehow.com/favicon.ico" alt=""><a href="http://wiki.ehow.com/Fix-a-Stuck-Pixel-on-an-LCD-Monitor" target="_blank" rel="noopener">How to Fix a  Stuck Pixel on an LCD Monitor - WikiHow</a></li>
 </ul>
 <ul>
-<li><img src="http://www.earlzhang.com/favicon.ico" alt=""><a href="http://www.earlzhang.com/lblog/article.asp?id=327" target="_blank" rel="external">Gtalk支持在线保存聊天记录了 -  星张翼轸</a></li>
+<li><img src="http://www.earlzhang.com/favicon.ico" alt=""><a href="http://www.earlzhang.com/lblog/article.asp?id=327" target="_blank" rel="noopener">Gtalk支持在线保存聊天记录了 -  星张翼轸</a></li>
 </ul>
 <ul>
-<li><img src="http://flashempire.com/favicon.ico" alt=""><a href="http://flashempire.com/eastecho/blog/?p=323" target="_blank" rel="external">EASTECHO -</a></li>
+<li><img src="http://flashempire.com/favicon.ico" alt=""><a href="http://flashempire.com/eastecho/blog/?p=323" target="_blank" rel="noopener">EASTECHO -</a></li>
 </ul>
 <ul>
-<li><img src="http://publish.it168.com/favicon.ico" alt=""><a href="http://publish.it168.com/2005/1219/20051219009901.shtml?cChanNel=no&amp;cPositionCode=06_0" target="_blank" rel="external">国内现有主要电子支付模式比较分析_解决方案_IT168.com</a></li>
+<li><img src="http://publish.it168.com/favicon.ico" alt=""><a href="http://publish.it168.com/2005/1219/20051219009901.shtml?cChanNel=no&amp;cPositionCode=06_0" target="_blank" rel="noopener">国内现有主要电子支付模式比较分析_解决方案_IT168.com</a></li>
 </ul>
 <ul>
-<li><img src="http://www.cnsmartphone.com/favicon.ico" alt=""><a href="http://www.cnsmartphone.com/viewthread.php?tid=18378&amp;extra=page%3D1" target="_blank" rel="external">灵机网–智能手机all智能手机论坛  智能手机all，与您共精彩！做最好的智能手机论坛！ - 『 MS Smartphone 俱乐部 』 -  64M卡备份刷机（Q屏HURRICANE机器,行货586，566，水货SDA II可刷）全教程 - powered by D</a></li>
+<li><img src="http://www.cnsmartphone.com/favicon.ico" alt=""><a href="http://www.cnsmartphone.com/viewthread.php?tid=18378&amp;extra=page%3D1" target="_blank" rel="noopener">灵机网–智能手机all智能手机论坛  智能手机all，与您共精彩！做最好的智能手机论坛！ - 『 MS Smartphone 俱乐部 』 -  64M卡备份刷机（Q屏HURRICANE机器,行货586，566，水货SDA II可刷）全教程 - powered by D</a></li>
 </ul>
 <ul>
-<li><img src="http://www.tompda.com/favicon.ico" alt=""><a href="http://www.tompda.com/bbs/print.asp?forumID=1984667" target="_blank" rel="external">TomPda.com</a></li>
+<li><img src="http://www.tompda.com/favicon.ico" alt=""><a href="http://www.tompda.com/bbs/print.asp?forumID=1984667" target="_blank" rel="noopener">TomPda.com</a></li>
 </ul>
 <ul>
-<li><img src="http://www.ahwgallery.com/favicon.ico" alt=""><a href="http://www.ahwgallery.com/intro.html" target="_blank" rel="external">INTRODUCTION TO THE AHW  GALLERY</a></li>
+<li><img src="http://www.ahwgallery.com/favicon.ico" alt=""><a href="http://www.ahwgallery.com/intro.html" target="_blank" rel="noopener">INTRODUCTION TO THE AHW  GALLERY</a></li>
 </ul>
 <ul>
-<li><img src="http://www.wespoke.com/favicon.ico" alt=""><a href="http://www.wespoke.com/archives/001043.html" target="_blank" rel="external">搜索引擎spam的防止:Search  Engine搜索引擎研究</a></li>
+<li><img src="http://www.wespoke.com/favicon.ico" alt=""><a href="http://www.wespoke.com/archives/001043.html" target="_blank" rel="noopener">搜索引擎spam的防止:Search  Engine搜索引擎研究</a></li>
 </ul>
 
           
@@ -1692,81 +1792,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1779,12 +1891,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1792,11 +1901,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1812,10 +1927,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1850,62 +1962,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1929,7 +2072,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1937,6 +2080,9 @@
 
   
 
+  
+
+  
   
 
   

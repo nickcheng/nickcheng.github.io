@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="tech," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="大家都知道，我们在使用IE浏览器的时候，经常在地址框中输入类似“http://xxx.xxx.xxx”的信息来浏览网页（http可以省略）。那为什么要在地址的前面输入“http”呢？   稍有些互联网知识的朋友都知道，“http”含义就是“超文本传输协议”（Hypertext　Tranfer　Protocol）。IE浏览器就是通过超文本传输协议（HTTP），将Web服务器上站点中的网页源代码提取出">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.156Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="详解 Internet Explorer 的预定义协议">
 <meta name="twitter:description" content="大家都知道，我们在使用IE浏览器的时候，经常在地址框中输入类似“http://xxx.xxx.xxx”的信息来浏览网页（http可以省略）。那为什么要在地址的前面输入“http”呢？   稍有些互联网知识的朋友都知道，“http”含义就是“超文本传输协议”（Hypertext　Tranfer　Protocol）。IE浏览器就是通过超文本传输协议（HTTP），将Web服务器上站点中的网页源代码提取出">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2003/12/22/detailed-internet-explorer-predefine-protocol/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2003/12/22/detailed-internet-explorer-predefine-protocol/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,15 +368,15 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
-        <p>大家都知道，我们在使用IE浏览器的时候，经常在地址框中输入类似“<a href="http://xxx.xxx.xxx”的信息来浏览网页（http可以省略）。那为什么要在地址的前面输入“http”呢？" target="_blank" rel="external">http://xxx.xxx.xxx”的信息来浏览网页（http可以省略）。那为什么要在地址的前面输入“http”呢？</a>  </p>
+        <p>大家都知道，我们在使用IE浏览器的时候，经常在地址框中输入类似“<a href="http://xxx.xxx.xxx”的信息来浏览网页（http可以省略）。那为什么要在地址的前面输入“http”呢？" target="_blank" rel="noopener">http://xxx.xxx.xxx”的信息来浏览网页（http可以省略）。那为什么要在地址的前面输入“http”呢？</a>  </p>
 <p>稍有些互联网知识的朋友都知道，“http”含义就是“超文本传输协议”（Hypertext　Tranfer　Protocol）。IE浏览器就是通过超文本传输协议（HTTP），将Web服务器上站点中的网页源代码提取出来，并变成我们看到的漂亮的网页。  </p>
-<p>还有些朋友也许也用过“ftp”。在地址框中输入“ftp://xxx.xxx.xxx”，我们就可以进入到互联网上的一些主机中（必须是已设置的），来下载或者上传文件。这里的“ftp”也是一种协议，它叫做“文件传输协议”（File Transfer Protocol）。使用它，我们可以很方便的在网络上传输文件。  </p>
+<p>还有些朋友也许也用过“ftp”。在地址框中输入“<a href="ftp://xxx.xxx.xxx”，我们就可以进入到互联网上的一些主机中（必须是已设置的），来下载或者上传文件。这里的“ftp”也是一种协议，它叫做“文件传输协议”（File" target="_blank" rel="noopener">ftp://xxx.xxx.xxx”，我们就可以进入到互联网上的一些主机中（必须是已设置的），来下载或者上传文件。这里的“ftp”也是一种协议，它叫做“文件传输协议”（File</a> Transfer Protocol）。使用它，我们可以很方便的在网络上传输文件。  </p>
 <p>“http”和“ftp”是我们常用的两个协议，他们就是我们今天所说的“预定义协议”中的两员大将！除此之外，预定义协议还有其他的重要成员！下面我就为大家一一讲解：  </p>
 <p>1、file协议  </p>
 <p>他的作用是在本地或者网络上的一台计算机打开一个文件。  </p>
@@ -387,8 +388,8 @@
 <p>使用方法：gopher://Gopher服务器主机地址  </p>
 <p>3、https协议  </p>
 <p>这个协议的全称是Hypertext Transfer Protocol Secure，安全超文本传输协议。它最早是Netscape开发的，用于在网上需要保密的场合，比如网上交易时。  </p>
-<p>使用方法：<a href="https://主机地址" target="_blank" rel="external">https://主机地址</a>  </p>
-<p>例如：<a href="https://example.microsoft.com" target="_blank" rel="external">https://example.microsoft.com</a></p>
+<p>使用方法：https://主机地址  </p>
+<p>例如：<a href="https://example.microsoft.com" target="_blank" rel="noopener">https://example.microsoft.com</a></p>
 <p>4、javascript协议  </p>
 <p>这个协议可以让使用者在地址栏中运行一条Javascript语句。  </p>
 <p>使用方法：javascript:Javascript语句  </p>
@@ -403,7 +404,7 @@
 </blockquote>
 <p>我们举个例子，看看具体怎么使用。</p>
 <pre><code>mailto:aaa@bbb.ccc?cc=aa@bb.cc&amp;bcc=abc@bbb.ccc&amp;subject=This is only a test  
-</code></pre><p>在浏览器的地址栏中输入如上的命令以后，系统会自动调用默认邮件程序，并且自动建立一封新邮件。这时邮件的标题就是“This is only a test”；收信人地址是“aaa@bbb.ccc”；抄送地址是“aa@bb.cc”；密送地址是“abc@bbb.ccc”。  </p>
+</code></pre><p>在浏览器的地址栏中输入如上的命令以后，系统会自动调用默认邮件程序，并且自动建立一封新邮件。这时邮件的标题就是“This is only a test”；收信人地址是“<a href="mailto:aaa@bbb.ccc" target="_blank" rel="noopener">aaa@bbb.ccc</a>”；抄送地址是“<a href="mailto:aa@bb.cc" target="_blank" rel="noopener">aa@bb.cc</a>”；密送地址是“<a href="mailto:abc@bbb.ccc" target="_blank" rel="noopener">abc@bbb.ccc</a>”。  </p>
 <p>6、news协议  </p>
 <p>和mailto协议有些类似。他是使用系统默认的新闻组软件来打开一个新闻组  </p>
 <p>使用方法：news:新闻组服务器地址  </p>
@@ -418,12 +419,12 @@
 <p>用默认的超文本编辑器打开一个位于远端服务器上的一个超文本文件。  </p>
 <p>使用方法：view-source:地址  </p>
 <p>这一招有一个好用处，就是在一个网页禁止查看源文件的时候，我们就可以使用这个方法来突破他的限制来查看源文件。  </p>
-<p>例如：view-source:<a href="http://www.microsoft.com/default.asp" target="_blank" rel="external">HTTP://www.microsoft.com/default.asp</a>  </p>
+<p>例如：view-source:<a href="http://www.microsoft.com/default.asp" target="_blank" rel="noopener">HTTP://www.microsoft.com/default.asp</a>  </p>
 <p>以上就是IE所包括的所有预定义协议，这些协议在IE4.0以上版本都可以使用！  </p>
 <p>要注意一些问题  </p>
 <ol>
 <li>URL中要用%20来代替空格，%23来代替“#”  </li>
-<li>有的情况下协议说明是可以省略的。比如你的地址是“www.xxx.xxx”这样的，浏览器会自动当作“http”处理；“ftp.xxx.xxx”会自动处理成“ftp://ftp.xxx.xxx”。“news”也是这样！而“file”就可以直接省略了！！  </li>
+<li>有的情况下协议说明是可以省略的。比如你的地址是“<a href="http://www.xxx.xxx”这样的，浏览器会自动当作“http”处理；“ftp.xxx.xxx”会自动处理成“ftp://ftp.xxx.xxx”。“news”也是这样！而“file”就可以直接省略了！！" target="_blank" rel="noopener">www.xxx.xxx”这样的，浏览器会自动当作“http”处理；“ftp.xxx.xxx”会自动处理成“ftp://ftp.xxx.xxx”。“news”也是这样！而“file”就可以直接省略了！！</a>  </li>
 <li>本文的例子均需要在浏览器的地址栏中输入。</li>
 </ol>
 
@@ -438,7 +439,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -525,9 +526,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -550,81 +561,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -637,12 +660,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -650,11 +670,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -670,10 +696,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -708,62 +731,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2003/12/22/detailed-internet-explorer-predefine-protocol/';
+          this.page.identifier = '2003/12/22/detailed-internet-explorer-predefine-protocol/';
+          this.page.title = '详解 Internet Explorer 的预定义协议';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -787,7 +857,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -795,6 +865,9 @@
 
   
 
+  
+
+  
   
 
   

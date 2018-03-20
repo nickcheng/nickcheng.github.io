@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="tech," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -103,7 +93,7 @@
 <meta property="og:site_name" content="Nickcheng.LOG">
 <meta property="og:description" content="摘要 在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.   窗口类元素   • &amp;lt;OBJECT&amp;gt; 标志元素   • ActiveX 控件   • Plug-ins   • 动态 HTML (DHTML) Scriptlets   • SELECT 元素   • Internet Explorer 5.01">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.156Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML元素的Z-index属性是如何工作的">
 <meta name="twitter:description" content="摘要 在一个Web页面上有很多种方法去把元素分类. 基于本文的目的和z-index属性, 我们可以把他们分为两类: 窗口类和非窗口类.   窗口类元素   • &amp;lt;OBJECT&amp;gt; 标志元素   • ActiveX 控件   • Plug-ins   • 动态 HTML (DHTML) Scriptlets   • SELECT 元素   • Internet Explorer 5.01">
@@ -114,12 +104,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -209,29 +199,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -311,7 +301,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -349,6 +339,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2004/11/19/how-zindex-working/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2004/11/19/how-zindex-working/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -367,7 +368,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -439,7 +440,7 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 <p>当你把SELECT元素的z- index值设为5, IFRAME会在SELECT元素之上, 因为IFRAME是最后的元素, 因此, 它就会比SELECT优先. 如果SELECT元素在IFRAME后面, 那么在z-index值相同的时候, 它就会在IFRAME之上了.  </p>
 <p>在Internet Explorer 5.5中Z-index是如何工作的  </p>
 <p>在Internet Explorer 5.5中, z-index 被带到了一个新的水平. IFRAMEs不再是窗口类元素. 更多的相关信息请到以下地址查阅”Windowless IFRAME Elements”标题:  </p>
-<p><a href="http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames" target="_blank" rel="external">http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames</a>  </p>
+<p><a href="http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames" target="_blank" rel="noopener">http://msdn.microsoft.com/workshop/author/dhtml/overview/compat.asp#WindowlessFrames</a>  </p>
 <p>这使得SELECT元素变成了唯一的窗口类元素. 如果你在Internet Explorer 5.5中使用前面的代码, 当你把SELECT 元素的z-index值设的比5大的时候, 它会在IFRAME之上. 当你把SELECT 元素的z-index值设的比5小的时候, IFRAME会覆盖SELECT元, 即使他们都是非窗口类元素. 这就是IFRAME的独特性: 它按照z-index顺序和非窗口类元素排列在一起, 并且还可以按照z-index和窗口类元素排列在一起, 比如在这里和SELECT元素一起.  </p>
 <p>当你把DIV 元素的z-index值设置的比IFRAME大时 (比如6), DIV会覆盖IFRAME. 这符合我们上面的描述: IFRAMEs是非窗口的, 并且它按照z-index的顺序和其他非窗口类元素排列在一起. 当你设的z-index值和IFRAME相等时 (比如5), 它还是会在DIV之上, 这是因为元素的顺序在起作用. 当你把DIV 元素的z-index值设置为6, 同时使SELECT元素和IFRAME的z-index值为5, 那么SELECT元素将会一直在DIV之上, 因为它是窗口类的元素.  </p>
 <p>然而, IFRAME会在SELECT之上是因为它在顺序上是最后. 为了避免这样, SELECT元素的z-index值必须比IFRAME大, 或者SELECT元素必须排在最后来保证在z-index值一样的情况下它会在IFRAME 之上. Because of this, z-indexing similar content can be difficult. To work around this, use the following methods:  </p>
@@ -447,16 +448,16 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 <li>使用样式表的Style属性在需要的时候隐藏和显示元素.  </li>
 <li>Use DHTML Scriptlets. Although behaviors are usually preferred, this is one instance where scriptlets are preferred.  </li>
 <li><p>在Internet Explorer 5.5中, 你可以使用popup对象, 使用它你可以在任何元素之上显示丰富的内容. 这在菜单和工具提示功能上非常有用. 想了解更多, 请在下面的地址查阅”popup Object”:  </p>
-<p>  <a href="http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp" target="_blank" rel="external">http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp</a>  </p>
+<p>  <a href="http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp" target="_blank" rel="noopener">http://msdn.microsoft.com/workshop/author/dhtml/reference/objects/popup.asp</a>  </p>
 </li>
 <li><p>使用非窗口类的ActiveX控件来代替窗口类对象. 不幸的是, 所有ActiveX控件都没有非窗口类的实现.  </p>
 </li>
 </ul>
 <p>参考  </p>
 <p>想了解更多基于IE的Web开发解决方案, 请访问以下Web站点:  </p>
-<p><a href="http://msdn.microsoft.com/workshop/entry.asp" target="_blank" rel="external">http://msdn.microsoft.com/workshop/entry.asp</a>  </p>
-<p><a href="http://msdn.microsoft.com/ie/" target="_blank" rel="external">http://msdn.microsoft.com/ie/</a>  </p>
-<p><a href="http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn" target="_blank" rel="external">http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn</a>  </p>
+<p><a href="http://msdn.microsoft.com/workshop/entry.asp" target="_blank" rel="noopener">http://msdn.microsoft.com/workshop/entry.asp</a>  </p>
+<p><a href="http://msdn.microsoft.com/ie/" target="_blank" rel="noopener">http://msdn.microsoft.com/ie/</a>  </p>
+<p><a href="http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn" target="_blank" rel="noopener">http://support.microsoft.com/?scid=http%3a%2f%2fsupport.microsoft.com%2fhighlights%2fiep.asp%3ffr%3d0%26amp%3bsd%3dmsdn</a>  </p>
 <hr>
 <p>应用于  </p>
 <ul>
@@ -477,7 +478,7 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -564,9 +565,19 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -589,81 +600,93 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -676,12 +699,9 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -689,11 +709,17 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -709,10 +735,7 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -747,62 +770,109 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2004/11/19/how-zindex-working/';
+          this.page.identifier = '2004/11/19/how-zindex-working/';
+          this.page.title = 'HTML元素的Z-index属性是如何工作的';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -826,7 +896,7 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -834,6 +904,9 @@ left:400;top:300;border-color:green;z-index:5&quot;&gt;&lt;/iframe&gt;
 
   
 
+  
+
+  
   
 
   

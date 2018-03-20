@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="life," />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -104,7 +94,7 @@
 <meta property="og:description" content="最近似乎把自己所有的网络应用都放到Google上了, 也不知道是好是坏! 不过重要数据的备份手段还是需要有的, 日后考虑一下! 今天想聊聊Google的Calendar(日历) 动机很简单, 就是想用GCalendar来管理自己的日程, 没有多想, 就打开了http://www.google.com/calendar 自己曾经加过一些别人分享的有趣的日历, 象农历日历, F1日程, 节日等. 但">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://www.google.com/calendar/images/calendar_sm2.gif">
-<meta property="og:updated_time" content="2017-09-23T03:36:58.164Z">
+<meta property="og:updated_time" content="2018-03-20T14:05:20.809Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GoogleCalendar的多种用法">
 <meta name="twitter:description" content="最近似乎把自己所有的网络应用都放到Google上了, 也不知道是好是坏! 不过重要数据的备份手段还是需要有的, 日后考虑一下! 今天想聊聊Google的Calendar(日历) 动机很简单, 就是想用GCalendar来管理自己的日程, 没有多想, 就打开了http://www.google.com/calendar 自己曾经加过一些别人分享的有趣的日历, 象农历日历, F1日程, 节日等. 但">
@@ -116,12 +106,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -211,29 +201,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -313,7 +303,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -351,6 +341,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/08/25/many-usings-of-google-calendar/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/08/25/many-usings-of-google-calendar/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -369,7 +370,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -378,17 +379,17 @@
         <p><img src="http://www.google.com/calendar/images/calendar_sm2.gif" alt="Google Calendar"></p>
 <p>最近似乎把自己所有的网络应用都放到Google上了, 也不知道是好是坏! 不过重要数据的备份手段还是需要有的, 日后考虑一下!</p>
 <p>今天想聊聊Google的Calendar(日历)</p>
-<p>动机很简单, 就是想用GCalendar来管理自己的日程, 没有多想, 就打开了<a href="http://www.google.com/calendar" target="_blank" rel="external">http://www.google.com/calendar</a></p>
+<p>动机很简单, 就是想用GCalendar来管理自己的日程, 没有多想, 就打开了<a href="http://www.google.com/calendar" target="_blank" rel="noopener">http://www.google.com/calendar</a></p>
 <p>自己曾经加过一些别人分享的有趣的日历, 象农历日历, F1日程, 节日等. 但当时只是觉得这是一个展示的工具, 玩了一段时间就放下了. 但随着后来的了解, 觉得这个日历还是蛮有玩头的!</p>
 <p>随便在搜索栏中搜索了一些有趣的词语, 随即看到了许多别人分享的日历(也有可能是不小心分享的^_^), 也看到了许多不同的使用日历的方式.</p>
 <p>最常用的就是日程表了, 工作的日程, 生活的日程, 活动的日程. 都是对于未来的计划, 我使用的方式应该也是这样</p>
-<p>例子: <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x74;&#x74;&#x70;&#x3a;&#47;&#47;&#119;&#119;&#x77;&#x2e;&#x67;&#111;&#x6f;&#x67;&#108;&#101;&#46;&#99;&#111;&#109;&#47;&#x63;&#97;&#108;&#101;&#110;&#x64;&#x61;&#x72;&#47;&#x65;&#x6d;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#x6e;&#97;&#x73;&#x64;&#x61;&#113;&#x62;&#97;&#114;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;">&#x68;&#x74;&#x74;&#x70;&#x3a;&#47;&#47;&#119;&#119;&#x77;&#x2e;&#x67;&#111;&#x6f;&#x67;&#108;&#101;&#46;&#99;&#111;&#109;&#47;&#x63;&#97;&#108;&#101;&#110;&#x64;&#x61;&#x72;&#47;&#x65;&#x6d;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#x6e;&#97;&#x73;&#x64;&#x61;&#113;&#x62;&#97;&#114;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>例子: <a href="http://www.google.com/calendar/embed?src=nasdaqbar@gmail.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=nasdaqbar@gmail.com</a></p>
 <p>然后就是一些记录了</p>
-<p>例子: <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#116;&#x74;&#x70;&#58;&#47;&#47;&#x77;&#119;&#119;&#46;&#103;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#47;&#99;&#97;&#108;&#x65;&#x6e;&#100;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#102;&#104;&#x30;&#57;&#116;&#57;&#x63;&#x65;&#54;&#118;&#118;&#110;&#x32;&#55;&#99;&#x62;&#x75;&#x38;&#x74;&#52;&#51;&#107;&#x36;&#48;&#109;&#107;&#x40;&#x67;&#114;&#111;&#117;&#112;&#46;&#x63;&#97;&#x6c;&#101;&#110;&#100;&#x61;&#114;&#46;&#x67;&#111;&#111;&#103;&#108;&#x65;&#46;&#x63;&#111;&#x6d;&#38;&#x6d;&#111;&#x64;&#101;&#59;&#61;&#x4d;&#79;&#78;&#84;&#72;&#x26;&#100;&#97;&#116;&#x65;&#x73;&#59;&#x3d;&#50;&#48;&#48;&#54;&#x30;&#55;&#x30;&#x31;&#37;&#x32;&#70;&#50;&#x30;&#x30;&#x36;&#48;&#x38;&#x30;&#49;">&#x68;&#116;&#x74;&#x70;&#58;&#47;&#47;&#x77;&#119;&#119;&#46;&#103;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#47;&#99;&#97;&#108;&#x65;&#x6e;&#100;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#102;&#104;&#x30;&#57;&#116;&#57;&#x63;&#x65;&#54;&#118;&#118;&#110;&#x32;&#55;&#99;&#x62;&#x75;&#x38;&#x74;&#52;&#51;&#107;&#x36;&#48;&#109;&#107;&#x40;&#x67;&#114;&#111;&#117;&#112;&#46;&#x63;&#97;&#x6c;&#101;&#110;&#100;&#x61;&#114;&#46;&#x67;&#111;&#111;&#103;&#108;&#x65;&#46;&#x63;&#111;&#x6d;&#38;&#x6d;&#111;&#x64;&#101;&#59;&#61;&#x4d;&#79;&#78;&#84;&#72;&#x26;&#100;&#97;&#116;&#x65;&#x73;&#59;&#x3d;&#50;&#48;&#48;&#54;&#x30;&#55;&#x30;&#x31;&#37;&#x32;&#70;&#50;&#x30;&#x30;&#x36;&#48;&#x38;&#x30;&#49;</a></p>
-<p>例子: <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#104;&#116;&#116;&#112;&#x3a;&#x2f;&#47;&#x77;&#x77;&#119;&#46;&#x67;&#111;&#111;&#103;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;&#x2f;&#x63;&#97;&#108;&#101;&#110;&#100;&#x61;&#x72;&#x2f;&#x65;&#109;&#x62;&#101;&#100;&#x3f;&#x73;&#x72;&#99;&#x3d;&#113;&#x71;&#56;&#50;&#53;&#x39;&#x32;&#51;&#57;&#x39;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;">&#104;&#116;&#116;&#112;&#x3a;&#x2f;&#47;&#x77;&#x77;&#119;&#46;&#x67;&#111;&#111;&#103;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;&#x2f;&#x63;&#97;&#108;&#101;&#110;&#100;&#x61;&#x72;&#x2f;&#x65;&#109;&#x62;&#101;&#100;&#x3f;&#x73;&#x72;&#99;&#x3d;&#113;&#x71;&#56;&#50;&#53;&#x39;&#x32;&#51;&#57;&#x39;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;</a></p>
+<p>例子: <a href="http://www.google.com/calendar/embed?src=fh09t9ce6vvn27cbu8t43k60mk@group.calendar.google.com&mode;=MONTH&dates;=20060701%2F20060801" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=fh09t9ce6vvn27cbu8t43k60mk@group.calendar.google.com&mode;=MONTH&dates;=20060701%2F20060801</a></p>
+<p>例子: <a href="http://www.google.com/calendar/embed?src=qq82592399@gmail.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=qq82592399@gmail.com</a></p>
 <p>同样是记录, 还有人用它来写日记, 也是不错的使用方式! 如果支持发布到Blog也不错:)</p>
-<p><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x77;&#119;&#119;&#46;&#x67;&#111;&#111;&#x67;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;&#47;&#99;&#97;&#x6c;&#x65;&#x6e;&#100;&#x61;&#114;&#x2f;&#x65;&#x6d;&#98;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#61;&#121;&#x2e;&#x78;&#x69;&#x61;&#111;&#x78;&#105;&#x61;&#111;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#38;&#x64;&#x61;&#116;&#101;&#x73;&#59;&#x3d;&#x32;&#48;&#x30;&#54;&#x30;&#x34;&#48;&#49;&#37;&#x32;&#x46;&#50;&#x30;&#48;&#54;&#x30;&#53;&#48;&#49;">&#x68;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x77;&#119;&#119;&#46;&#x67;&#111;&#111;&#x67;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;&#47;&#99;&#97;&#x6c;&#x65;&#x6e;&#100;&#x61;&#114;&#x2f;&#x65;&#x6d;&#98;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#61;&#121;&#x2e;&#x78;&#x69;&#x61;&#111;&#x78;&#105;&#x61;&#111;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#38;&#x64;&#x61;&#116;&#101;&#x73;&#59;&#x3d;&#x32;&#48;&#x30;&#54;&#x30;&#x34;&#48;&#49;&#37;&#x32;&#x46;&#50;&#x30;&#48;&#54;&#x30;&#53;&#48;&#49;</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x68;&#116;&#116;&#112;&#58;&#47;&#x2f;&#x77;&#x77;&#x77;&#46;&#103;&#111;&#111;&#x67;&#108;&#x65;&#46;&#99;&#x6f;&#109;&#47;&#99;&#x61;&#x6c;&#x65;&#110;&#100;&#x61;&#x72;&#47;&#x65;&#109;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#57;&#x74;&#116;&#x62;&#109;&#105;&#54;&#53;&#48;&#x75;&#104;&#112;&#109;&#53;&#x39;&#x6f;&#x34;&#52;&#x66;&#x76;&#105;&#x6c;&#108;&#110;&#97;&#x67;&#x40;&#103;&#114;&#x6f;&#117;&#112;&#46;&#99;&#x61;&#108;&#101;&#x6e;&#x64;&#x61;&#x72;&#x2e;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#116;&#116;&#112;&#58;&#47;&#x2f;&#x77;&#x77;&#x77;&#46;&#103;&#111;&#111;&#x67;&#108;&#x65;&#46;&#99;&#x6f;&#109;&#47;&#99;&#x61;&#x6c;&#x65;&#110;&#100;&#x61;&#x72;&#47;&#x65;&#109;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#57;&#x74;&#116;&#x62;&#109;&#105;&#54;&#53;&#48;&#x75;&#104;&#112;&#109;&#53;&#x39;&#x6f;&#x34;&#52;&#x66;&#x76;&#105;&#x6c;&#108;&#110;&#97;&#x67;&#x40;&#103;&#114;&#x6f;&#117;&#112;&#46;&#99;&#x61;&#108;&#101;&#x6e;&#x64;&#x61;&#x72;&#x2e;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a></p>
-<p>还有是使用Google Calendar来做工作上的事情, 比如Bug追踪:<br><a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#x77;&#119;&#x77;&#x2e;&#103;&#x6f;&#111;&#103;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#x2f;&#99;&#x61;&#x6c;&#101;&#x6e;&#100;&#x61;&#114;&#x2f;&#101;&#x6d;&#98;&#101;&#100;&#63;&#115;&#114;&#x63;&#61;&#101;&#113;&#x70;&#101;&#x74;&#101;&#114;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#x68;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#x77;&#119;&#x77;&#x2e;&#103;&#x6f;&#111;&#103;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#x2f;&#99;&#x61;&#x6c;&#101;&#x6e;&#100;&#x61;&#114;&#x2f;&#101;&#x6d;&#98;&#101;&#100;&#63;&#115;&#114;&#x63;&#61;&#101;&#113;&#x70;&#101;&#x74;&#101;&#114;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p><a href="http://www.google.com/calendar/embed?src=y.xiaoxiao@gmail.com&dates;=20060401%2F20060501" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=y.xiaoxiao@gmail.com&dates;=20060401%2F20060501</a><br><a href="http://www.google.com/calendar/embed?src=9ttbmi650uhpm59o44fvillnag@group.calendar.google.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=9ttbmi650uhpm59o44fvillnag@group.calendar.google.com</a></p>
+<p>还有是使用Google Calendar来做工作上的事情, 比如Bug追踪:<br><a href="http://www.google.com/calendar/embed?src=eqpeter@gmail.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=eqpeter@gmail.com</a></p>
 <p>Google日历还支持RSS订阅和HTML输出, 用RSS Reader订阅和将HTML嵌入在自己网页上就是很好的应用!</p>
 <p>我也要想想自己要怎么使用这个灵活的工具!</p>
 
@@ -403,7 +404,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>您的支持将鼓励我继续创作</div>
+  <div>Donate 😘 您的支持将鼓励我继续创作</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>Donate</span>
   </button>
@@ -490,9 +491,19 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
 
 
         </div>
@@ -515,81 +526,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -602,12 +625,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -615,11 +635,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -635,10 +661,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -673,62 +696,109 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://nickcheng.com/2006/08/25/many-usings-of-google-calendar/';
+          this.page.identifier = '2006/08/25/many-usings-of-google-calendar/';
+          this.page.title = 'GoogleCalendar的多种用法';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nickcheng.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -752,7 +822,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -760,6 +830,9 @@
 
   
 
+  
+
+  
   
 
   

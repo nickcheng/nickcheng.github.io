@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/05/12/support-douwei/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/05/12/support-douwei/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -376,10 +377,10 @@
       
         
           
-            <p><a href="http://www.18mo.com/showlog.asp?log_id=2624" target="_blank" rel="external">请在您的Blog上保护窦唯</a></p>
+            <p><a href="http://www.18mo.com/showlog.asp?log_id=2624" target="_blank" rel="noopener">请在您的Blog上保护窦唯</a></p>
 <p>窦唯又被媒体给搞了! 新京报又开始胡说了!</p>
-<p><a href="http://www.18mo.com/showlog.asp?log_id=2627" target="_blank" rel="external">ZT有尊严的媒体应该学会感到羞惭――给《新京报》</a></p>
-<p><a href="http://www.18mo.com/showlog.asp?log_id=2628" target="_blank" rel="external">ZT一个曾经XJB娱乐记者的观点――老窦真牛逼</a></p>
+<p><a href="http://www.18mo.com/showlog.asp?log_id=2627" target="_blank" rel="noopener">ZT有尊严的媒体应该学会感到羞惭――给《新京报》</a></p>
+<p><a href="http://www.18mo.com/showlog.asp?log_id=2628" target="_blank" rel="noopener">ZT一个曾经XJB娱乐记者的观点――老窦真牛逼</a></p>
 
           
         
@@ -433,7 +434,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -473,6 +474,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/05/08/the-wombats/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/05/08/the-wombats/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -491,7 +503,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -499,14 +511,14 @@
       
         
           
-            <p><a href="http://www.flickr.com/photos/nickcheng/142734319/" target="_blank" rel="external"><img src="http://static.flickr.com/51/142734319_dcd01c12da_m.jpg" alt=""></a></p>
+            <p><a href="http://www.flickr.com/photos/nickcheng/142734319/" target="_blank" rel="noopener"><img src="http://static.flickr.com/51/142734319_dcd01c12da_m.jpg" alt=""></a></p>
 <p>老婆写了Midi, 我也随便写写吧! 就想说说介个袋熊乐队…上面的PP是我和他们鼓手的合影!</p>
 <p>这可是老婆力挺的乐队! 一个来自英国利物浦的年轻的摇滚乐队!  音乐风格主要是英式!</p>
 <p>他们在MySpaces上有自己的叶子! 而且貌似还有专人(他们自己?) 在维护! 当天晚上上他们在MySpaces的叶子, 顺便订阅了一把! 今天就收到了提醒邮件, 说他们的叶子有更新了, 连过去一看, 呵呵! 正是在写他们在中国之行的感受, 貌似他们倍儿激动! 呵呵, 看完文章, 又了解了一些这个乐队!</p>
 <p>这个乐队是两年前刚成立的!三个成员才22岁(年轻啊), 还是当地一个音乐学校的在校学生! 也算科班出身了:) 那个学校也有点儿意思, 是保罗.麦卡特尼开的! 用他们的话说: 滚石乐队熬了40年才在中国上海的4000人前面演出, 而我们才出道2年就在中国北京的10000多人面前演出了! 呵呵, 看来他们还是挺满意这次演出的!</p>
 <p>我还亲眼看到乐队主唱演出结束后把自己的合成器扔给了前排的观众! 当时和我那个哥们郁闷啊…早知道就挤前面了:(…..</p>
-<p>他们在MySpaces上的叶子: <a href="http://www.myspace.com/thewombatsuk" target="_blank" rel="external">The Wombats</a>. 里面有他们的歌可以下载或在线听! 还不错, 不过MySpaces里给他们的音乐分类是:  Indie / Pop Punk / Alternative</p>
-<p>另外, 他们中国之行的报道: <a href="http://arts.guardian.co.uk/news/story/0,,1769852,00.html" target="_blank" rel="external">The Wombats take China</a>.</p>
+<p>他们在MySpaces上的叶子: <a href="http://www.myspace.com/thewombatsuk" target="_blank" rel="noopener">The Wombats</a>. 里面有他们的歌可以下载或在线听! 还不错, 不过MySpaces里给他们的音乐分类是:  Indie / Pop Punk / Alternative</p>
+<p>另外, 他们中国之行的报道: <a href="http://arts.guardian.co.uk/news/story/0,,1769852,00.html" target="_blank" rel="noopener">The Wombats take China</a>.</p>
 <p>ps. 他们还特别骄傲一件事, 就是有好多人对他们说: “Niubi”…哈哈…可爱的孩子们…</p>
 
           
@@ -561,7 +573,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -601,6 +613,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/05/06/how-to-use-the-copy-of-idcard/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/05/06/how-to-use-the-copy-of-idcard/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -619,7 +642,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -691,7 +714,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -731,6 +754,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/27/psp-firmware-update-v270/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/27/psp-firmware-update-v270/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -749,7 +783,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -762,9 +796,9 @@
 <li>Flash的支持</li>
 <li>中文的UI</li>
 </ul>
-<p>另外ms对Podcast的支持也好了一些, 其他特性就看下面的链接吧!<br><a href="http://www.cnbeta.com//modules.php?name=News&amp;file=article&amp;sid=11361" target="_blank" rel="external">http://www.cnbeta.com//modules.php?name=News&file;=article&sid;=11361</a></p>
+<p>另外ms对Podcast的支持也好了一些, 其他特性就看下面的链接吧!<br><a href="http://www.cnbeta.com//modules.php?name=News&amp;file=article&amp;sid=11361" target="_blank" rel="noopener">http://www.cnbeta.com//modules.php?name=News&file;=article&sid;=11361</a></p>
 <p>最近也没时间跟着看自己的2.5版本的hack进展了! 不过还是想试试2.7的…可能离hack就更远了:(</p>
-<p>对了, PSP Firmware Update v2.70 - US的下载在下面的链接里<br><a href="http://dl.qj.net/PSP-Firmware-Update-v2.70-US-PSP/pg/12/fid/7177/catid/163" target="_blank" rel="external">http://dl.qj.net/PSP-Firmware-Update-v2.70-US-PSP/pg/12/fid/7177/catid/163</a></p>
+<p>对了, PSP Firmware Update v2.70 - US的下载在下面的链接里<br><a href="http://dl.qj.net/PSP-Firmware-Update-v2.70-US-PSP/pg/12/fid/7177/catid/163" target="_blank" rel="noopener">http://dl.qj.net/PSP-Firmware-Update-v2.70-US-PSP/pg/12/fid/7177/catid/163</a></p>
 
           
         
@@ -818,7 +852,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -858,6 +892,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/19/rss-was-repaired/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/19/rss-was-repaired/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -876,7 +921,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -887,7 +932,7 @@
             <p>因为自己在Bloglines里订阅了自己的RSS, 所以经常也看看自己的Blog, 呵呵…</p>
 <p>前段时间突然发现在Bloglines里看到自己的blog都成了评论! 当时就觉得奇怪, 后来不知道怎么就给忘了! 前两天有网友又提到这个问题, 嗯, 看来要重视一下了! 比较还是有人通过RSS订阅俺的blog滴:)</p>
 <p>网上搜了一下, 果然有结论</p>
-<p><a href="http://blog.istef.info/2006/02/08/wordpress-201-url-rewrite-bug" target="_blank" rel="external">http://blog.istef.info/2006/02/08/wordpress-201-url-rewrite-bug</a></p>
+<p><a href="http://blog.istef.info/2006/02/08/wordpress-201-url-rewrite-bug" target="_blank" rel="noopener">http://blog.istef.info/2006/02/08/wordpress-201-url-rewrite-bug</a></p>
 <p>原来是WordPress 2.0.1里的一个bug. 看评论说升级到2.0.2就没有这个问题了. 不过我升级以后还是问题依旧! 没办法, 只能尝试按照2.0.1的解决方法试试了!</p>
 <p>哈哈, 还真的管用! RSS修好了! 先这么用着吧!</p>
 
@@ -943,7 +988,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -983,6 +1028,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/17/little-post-django-sample-dojo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/17/little-post-django-sample-dojo/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1001,7 +1057,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1072,7 +1128,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1112,6 +1168,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/16/surgeon-dentist/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/16/surgeon-dentist/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1130,7 +1197,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1203,7 +1270,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1243,6 +1310,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/11/diary-20060411/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/11/diary-20060411/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1261,7 +1339,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1328,7 +1406,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1368,6 +1446,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/03/the-sakula/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/03/the-sakula/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1386,7 +1475,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1395,7 +1484,7 @@
         
           
             <p>上周末和LP一家去玉渊潭赏樱, 本来想写一篇Blog, 但意料之中的又被LP抢了先机, 偶就不写了, 贴两张照片, 然后大家都去偶MM那里看吧!</p>
-<p><a href="http://spaces.msn.com/beckylog/blog/cns!D908F0015A2196E!579.entry" target="_blank" rel="external">偶LP的樱花大赏篇</a></p>
+<p><a href="http://spaces.msn.com/beckylog/blog/cns!D908F0015A2196E!579.entry" target="_blank" rel="noopener">偶LP的樱花大赏篇</a></p>
 <p>上两张偶拍的图!</p>
 <p><img src="http://static.flickr.com/40/122573724_88d23f5760_m.jpg" alt="sakula"></p>
 <p><img src="http://static.flickr.com/1/122573542_4e089bfd9f_m.jpg" alt=""></p>
@@ -1454,7 +1543,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1494,6 +1583,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/04/03/links-for-2006-04-02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/04/03/links-for-2006-04-02/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1512,7 +1612,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1520,7 +1620,11 @@
       
         
           
-            <h2 id="可爱的动物图片"><a href="#可爱的动物图片" class="headerlink" title="* 可爱的动物图片"></a>* <a href="http://www.cuteoverload.com/" target="_blank" rel="external">可爱的动物图片</a></h2><p>(tags: <a href="http://del.icio.us/nickcheng/cute" target="_blank" rel="external">cute</a> <a href="http://del.icio.us/nickcheng/animals" target="_blank" rel="external">animals</a> <a href="http://del.icio.us/nickcheng/photos" target="_blank" rel="external">photos</a> <a href="http://del.icio.us/nickcheng/funny" target="_blank" rel="external">funny</a> <a href="http://del.icio.us/nickcheng/pictures" target="_blank" rel="external">pictures</a> <a href="http://del.icio.us/nickcheng/fun" target="_blank" rel="external">fun</a> <a href="http://del.icio.us/nickcheng/photo" target="_blank" rel="external">photo</a>)</p>
+            <ul>
+<li><a href="http://www.cuteoverload.com/" target="_blank" rel="noopener">可爱的动物图片</a></li>
+</ul>
+<hr>
+<p>(tags: <a href="http://del.icio.us/nickcheng/cute" target="_blank" rel="noopener">cute</a> <a href="http://del.icio.us/nickcheng/animals" target="_blank" rel="noopener">animals</a> <a href="http://del.icio.us/nickcheng/photos" target="_blank" rel="noopener">photos</a> <a href="http://del.icio.us/nickcheng/funny" target="_blank" rel="noopener">funny</a> <a href="http://del.icio.us/nickcheng/pictures" target="_blank" rel="noopener">pictures</a> <a href="http://del.icio.us/nickcheng/fun" target="_blank" rel="noopener">fun</a> <a href="http://del.icio.us/nickcheng/photo" target="_blank" rel="noopener">photo</a>)</p>
 
           
         
@@ -1591,81 +1695,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1678,12 +1794,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1691,11 +1804,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1711,10 +1830,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1749,62 +1865,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1828,7 +1975,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1836,6 +1983,9 @@
 
   
 
+  
+
+  
   
 
   

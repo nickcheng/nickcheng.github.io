@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/08/18/twitter-updates-for-2012-08-18/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/08/18/twitter-updates-for-2012-08-18/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -377,8 +378,8 @@
         
           
             <ul>
-<li>把自己的 Blog 给拾掇了一下. 好久没管他了… <a href="http://t.co/mO09rkSE" target="_blank" rel="external">http://t.co/mO09rkSE</a>  <a href="http://twitter.com/nickcheng/statuses/236818552718512128" target="_blank" rel="external">#</a></li>
-<li>老婆在看昨天的好声音  <a href="http://twitter.com/nickcheng/statuses/236646714721857536" target="_blank" rel="external">#</a></li>
+<li>把自己的 Blog 给拾掇了一下. 好久没管他了… <a href="http://t.co/mO09rkSE" target="_blank" rel="noopener">http://t.co/mO09rkSE</a>  <a href="http://twitter.com/nickcheng/statuses/236818552718512128" target="_blank" rel="noopener">#</a></li>
+<li>老婆在看昨天的好声音  <a href="http://twitter.com/nickcheng/statuses/236646714721857536" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -433,7 +434,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -473,6 +474,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/08/04/clean-up-the-unused-plugin-in-safari-6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/08/04/clean-up-the-unused-plugin-in-safari-6/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -491,7 +503,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -564,7 +576,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -604,6 +616,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2011/11/29/what-is-cyber-monday/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2011/11/29/what-is-cyber-monday/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -622,7 +645,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -631,13 +654,23 @@
         
           
             <p>这个周一收到好多国外网站得促销电子邮件, 邮件标题都是”Cyber Monday”开头得. 我就很好奇这也是个什么节日么? 于是研究了一番才得知其然.</p>
-<p>下面摘一下相关内容, 原文来自 <a href="http://www.gobunnybuy.com" target="_blank" rel="external">http://www.gobunnybuy.com</a></p>
+<p>下面摘一下相关内容, 原文来自 <a href="http://www.gobunnybuy.com" target="_blank" rel="noopener">http://www.gobunnybuy.com</a></p>
 <blockquote>
 <p>版主最近有機會到美麗溫暖的佛州走了一趟，轉機的時候，偌大的機場，看著人來人往的忙碌上班族，或是父母帶著小孩渡假的笑臉，突然想到，版上應該也有讀者朋友是在美國工作的上班族吧！也許你們已經知道甚麼叫做Cyber Monday，但是，不見得大家都知道。隨著黑色星期五步步逼近，也許應該向大家介紹一下甚麼叫做Cyber Monday。  </p>
+</blockquote>
+<blockquote>
 <p>其實Cyber Monday是最近幾年來，隨著網路購物日漸普及之後，逐漸流行起來的一個名詞。其中的Monday，指的是感恩節假期之後的第一個上班日，禮拜一。因為感恩節都是十一月的第四個禮拜四，很多上班族如果還有假期可以放，多半會選擇把禮拜五也請假，這樣就可以從禮拜四放到禮拜天，為期四天的長假了。至於Cyber，其實指的就是網路購物的意思。Cyber Monday，就是感恩節假期之後的第一個上班日的網購促銷活動。  </p>
+</blockquote>
+<blockquote>
 <p>那為什麼有這種活動？不是黑色星期五就已經夠hi了嘛？答案是，也不是。要看是哪一群消費族群。對很多有家有眷的上班族，感恩節假期，雖然有放假，不見得有時間跟學生一樣去店裡面搶東西。感恩節就像中國人的過年，是闔家團圓的時間，所以，不是要忙著煮飯，張羅吃一整天的感恩節火雞大餐，就是要與家人親戚朋友聊天打屁，看看Washington Chief與Dallas Cowboy的比賽。哪有時間去搶好deal呢。他們也知道黑色星期五的狂熱，但是也知道藍色星期五的憂鬱。沒時間去搶，去搶也不一定搶得到。  </p>
+</blockquote>
+<blockquote>
 <p>但是他們還是有shopping的熱血衝動阿。怎麼辦？於是，假期結束的禮拜一，往往就是這群具有比較高的消費力的上班族真正有時間好好的坐在電腦前面，專心購物，不是，專心上班，的第一個時段。累積了一個長週末的衝動與焦慮感，等於讓腦袋瓜處在最不清醒的血拼模式，殺紅了眼也不在乎的狀態，大買特買。而網路行銷的研究很快就發現，網購的很大比例成交金額都是發生在假期之後的第一個星期一白天。於是呢，廠商發現這個消費習慣的模式之後，開始針對這群購買力強的族群推出促銷活動，很多是從黑色星期五延續到隔週，有些甚至專門創造一個促銷活動，針對禮拜一的網購高潮。於是乎，開始有人用Cyber Monday來稱呼這個第二波的促銷活動。  </p>
+</blockquote>
+<blockquote>
 <p>可想而知，對公司老闆而言，Cyber Monday也是員工效率最差的一段時間。除了自己也投入戰局之外，大概就只能氣在心裡口難開吧。  </p>
+</blockquote>
+<blockquote>
 <p>所以，Cyber Monday其實也是感恩節購物促銷活動的延伸活動。下次看到這個名詞，可別搞不清楚狀況了。別說版主沒有教你們。</p>
 </blockquote>
 <p>现在知道了吧. Cyber Monday 其实就是感恩节后周一得网络促销.</p>
@@ -694,7 +727,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -734,6 +767,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2011/10/26/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2011/10/26/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -752,7 +796,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -774,8 +818,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 <p>Enjoy!</p>
 <p>Ref: </p>
 <ul>
-<li><a href="http://cydiahelp.com/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/" target="_blank" rel="external">http://cydiahelp.com/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/</a></li>
-<li><a href="http://modmyi.com/forums/ipad-jailbreaking/783541-ipad-1-gestures-display-mirroring-without-jailbreak.html" target="_blank" rel="external">http://modmyi.com/forums/ipad-jailbreaking/783541-ipad-1-gestures-display-mirroring-without-jailbreak.html</a>  </li>
+<li><a href="http://cydiahelp.com/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/" target="_blank" rel="noopener">http://cydiahelp.com/enable-multitasking-gestures-ipad-1-ios-5-and-display-mirroring-without-jailbreak/</a></li>
+<li><a href="http://modmyi.com/forums/ipad-jailbreaking/783541-ipad-1-gestures-display-mirroring-without-jailbreak.html" target="_blank" rel="noopener">http://modmyi.com/forums/ipad-jailbreaking/783541-ipad-1-gestures-display-mirroring-without-jailbreak.html</a>  </li>
 </ul>
 
           
@@ -830,7 +874,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -870,6 +914,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2011/10/12/how-to-obtain-the-rss-link-of-users-timeline-in-twitter/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2011/10/12/how-to-obtain-the-rss-link-of-users-timeline-in-twitter/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -888,7 +943,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -898,8 +953,8 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
             <p>Twitter 现在已经不公开提供用户 Timeline 的 RSS 地址了. 不过他们并没有封死, 通过方法还是可以拿到的. 步骤如下: </p>
 <ol>
-<li>到下面的地址输入你的用户名, 获得你的 Twitter ID. 这是一串数字<br><a href="http://www.idfromuser.com/" target="_blank" rel="external">http://www.idfromuser.com/</a> </li>
-<li>把下面链接中的数字换成你的 Twitter ID<br><a href="http://twitter.com/statuses/user_timeline/27260086.rss" target="_blank" rel="external">http://twitter.com/statuses/user_timeline/27260086.rss</a> (这是 Justin Bieber 的) </li>
+<li>到下面的地址输入你的用户名, 获得你的 Twitter ID. 这是一串数字<br><a href="http://www.idfromuser.com/" target="_blank" rel="noopener">http://www.idfromuser.com/</a> </li>
+<li>把下面链接中的数字换成你的 Twitter ID<br><a href="http://twitter.com/statuses/user_timeline/27260086.rss" target="_blank" rel="noopener">http://twitter.com/statuses/user_timeline/27260086.rss</a> (这是 Justin Bieber 的) </li>
 </ol>
 <p>好了. 现在你可以随便使用这个链接了.</p>
 
@@ -955,7 +1010,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -995,6 +1050,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2011/02/04/after-installed-ssd-to-your-mbp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2011/02/04/after-installed-ssd-to-your-mbp/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1013,7 +1079,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1029,7 +1095,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 <li>iTune Library</li>
 </ol>
 <p>1和2就是直接建立在硬盘上就ok. 我会把这几个目录拖到finder左侧的Places里, 方便随时访问.</p>
-<p>iTune Library的转移可以在设置里搞定. Preferences -&gt; Advanced -&gt; iTunes Media folder location 图在这里: <a href="http://d.pr/UUhv" target="_blank" rel="external">http://d.pr/UUhv</a></p>
+<p>iTune Library的转移可以在设置里搞定. Preferences -&gt; Advanced -&gt; iTunes Media folder location 图在这里: <a href="http://d.pr/UUhv" target="_blank" rel="noopener">http://d.pr/UUhv</a></p>
 <p>iTune Library的设置最好在使用前搞定, 因为你转移前下载和添加的东西是不会随着转移的.</p>
 <p>其实, 我还像把临时目录和浏览器的Cache弄到Ram Disk里. 不过内存还是小了点儿, 等升到8G再说吧.</p>
 
@@ -1085,7 +1151,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1125,6 +1191,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/12/01/notesite/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/12/01/notesite/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1143,7 +1220,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1153,9 +1230,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
           
             <p>最近突然流行起来这种设计极简的笔记网站. 罗列几个.</p>
 <ul>
-<li><a href="http://notepad.cc" target="_blank" rel="external">http://notepad.cc</a></li>
-<li><a href="http://tidypub.org/" target="_blank" rel="external">http://tidypub.org</a></li>
-<li><a href="http://wrttn.in/" target="_blank" rel="external">http://wrttn.in/</a></li>
+<li><a href="http://notepad.cc" target="_blank" rel="noopener">http://notepad.cc</a></li>
+<li><a href="http://tidypub.org/" target="_blank" rel="noopener">http://tidypub.org</a></li>
+<li><a href="http://wrttn.in/" target="_blank" rel="noopener">http://wrttn.in/</a></li>
 </ul>
 
           
@@ -1210,7 +1287,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1250,6 +1327,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/09/09/app-page-capture/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/09/09/app-page-capture/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1268,7 +1356,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1336,7 +1424,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1376,6 +1464,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/07/10/recommend-there-is-no-if-again/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/07/10/recommend-there-is-no-if-again/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1394,7 +1493,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1468,7 +1567,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1508,6 +1607,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/06/28/my-sense-to-foursquare/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/06/28/my-sense-to-foursquare/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1526,7 +1636,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1631,81 +1741,93 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1718,12 +1840,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1731,11 +1850,17 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1751,10 +1876,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1789,62 +1911,93 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1868,7 +2021,7 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1876,6 +2029,9 @@ MacOS:  http://localhostr.com/file/Akqdwni/redsn0w_mac_0.9.9b5_gestures_only.zip
 
   
 
+  
+
+  
   
 
   

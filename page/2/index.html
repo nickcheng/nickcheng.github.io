@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2013/02/05/little-or-mini-printer/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2013/02/05/little-or-mini-printer/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -377,12 +378,12 @@
         
           
             <p>之前一直名声大振的 Little Printer 终于开卖了, 不过这价格可真是… £199, 英镑啊, 我买个正儿八经的打印机好不好? 不过话虽这么说, 但是还是抵不住新玩意的诱惑, 是吧? 那咱就光看看 Review 吧, 然后…</p>
-<p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/P1020063_verge_super_wide.png" alt=""><br><a href="http://www.theverge.com/2013/1/29/3927228/little-printer-review" target="_blank" rel="external">Little Printer review: a design nerd fantasy</a></p>
+<p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/P1020063_verge_super_wide.png" alt=""><br><a href="http://www.theverge.com/2013/1/29/3927228/little-printer-review" target="_blank" rel="noopener">Little Printer review: a design nerd fantasy</a></p>
 <p>然后… 就想办法曲线救国呗</p>
-<p>其实 KickStarter 上也有一个类似的项目: <a href="http://www.kickstarter.com/projects/1953425088/mprinter-an-analog-printer-for-a-digital-world" target="_blank" rel="external">mPrinter - An analog printer for a digital world</a> </p>
+<p>其实 KickStarter 上也有一个类似的项目: <a href="http://www.kickstarter.com/projects/1953425088/mprinter-an-analog-printer-for-a-digital-world" target="_blank" rel="noopener">mPrinter - An analog printer for a digital world</a> </p>
 <p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/image-188025-full.jpg" alt=""></p>
-<p>价格便宜一些. 可惜 $100 的早鸟卖没了, 只有 $125 的了, 不过那也比 £199 便宜是吧! 而且还有配套网站和 API: <a href="http://themprinter.com" target="_blank" rel="external">mPrinter</a></p>
-<p>还嫌贵是吧? 那咱就别玩成品了, 自己老老实实攒吧! 而且还能体验 DIY 乐趣. 这儿就有一个简单的热感收据打印机模块: <a href="https://www.adafruit.com/products/597" target="_blank" rel="external">Mini Thermal Receipt Printer</a></p>
+<p>价格便宜一些. 可惜 $100 的早鸟卖没了, 只有 $125 的了, 不过那也比 £199 便宜是吧! 而且还有配套网站和 API: <a href="http://themprinter.com" target="_blank" rel="noopener">mPrinter</a></p>
+<p>还嫌贵是吧? 那咱就别玩成品了, 自己老老实实攒吧! 而且还能体验 DIY 乐趣. 这儿就有一个简单的热感收据打印机模块: <a href="https://www.adafruit.com/products/597" target="_blank" rel="noopener">Mini Thermal Receipt Printer</a></p>
 <p><img src="https://dl.dropbox.com/u/172923/ScriptogramImages/images/201302051800/thermalprinter_MED.jpg" alt=""></p>
 <p>看看这价格, 给力吧?! 不到 $50. 而且买多了还能便宜到 $39.96. 然后自己弄个板子一连, 想怎么搞怎么搞!</p>
 
@@ -438,7 +439,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -478,6 +479,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/10/14/twitter-weekly-updates-for-2012-10-14/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/10/14/twitter-weekly-updates-for-2012-10-14/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -496,7 +508,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -505,10 +517,10 @@
         
           
             <ul>
-<li>@<a href="http://twitter.com/jacob_bubu" target="_blank" rel="external">jacob_bubu</a> 过了这点儿,网站就不让用了  <a href="http://twitter.com/nickcheng/statuses/255927778099212288" target="_blank" rel="external">#</a></li>
-<li>想了一个 Node 的练手项目, 嘿嘿…  <a href="http://twitter.com/nickcheng/statuses/255605844467654657" target="_blank" rel="external">#</a></li>
-<li>iPhone 5 预约还只能朝九晚五…  <a href="http://twitter.com/nickcheng/statuses/255605712770723840" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-10-07: 刚花了1刀买了六个 Mac 应用,…Read moreRelated posts:Twitter Weekly… <a href="http://t.co/eaPcqqfQ" target="_blank" rel="external">http://t.co/eaPcqqfQ</a>  <a href="http://twitter.com/nickcheng/statuses/254972188808065024" target="_blank" rel="external">#</a></li>
+<li>@<a href="http://twitter.com/jacob_bubu" target="_blank" rel="noopener">jacob_bubu</a> 过了这点儿,网站就不让用了  <a href="http://twitter.com/nickcheng/statuses/255927778099212288" target="_blank" rel="noopener">#</a></li>
+<li>想了一个 Node 的练手项目, 嘿嘿…  <a href="http://twitter.com/nickcheng/statuses/255605844467654657" target="_blank" rel="noopener">#</a></li>
+<li>iPhone 5 预约还只能朝九晚五…  <a href="http://twitter.com/nickcheng/statuses/255605712770723840" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-10-07: 刚花了1刀买了六个 Mac 应用,…Read moreRelated posts:Twitter Weekly… <a href="http://t.co/eaPcqqfQ" target="_blank" rel="noopener">http://t.co/eaPcqqfQ</a>  <a href="http://twitter.com/nickcheng/statuses/254972188808065024" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -563,7 +575,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -603,6 +615,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/10/07/twitter-weekly-updates-for-2012-10-07/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/10/07/twitter-weekly-updates-for-2012-10-07/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -621,7 +644,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -630,8 +653,8 @@
         
           
             <ul>
-<li>刚花了1刀买了六个 Mac 应用, 其实主要是要里面的 Sparkbox. via @<a href="http://twitter.com/StackSocial" target="_blank" rel="external">StackSocial</a> #<a href="http://search.twitter.com/search?q=%23StackUp" target="_blank" rel="external">StackUp</a> <a href="https://t.co/vJIG3GM5" target="_blank" rel="external">https://t.co/vJIG3GM5</a>  <a href="http://twitter.com/nickcheng/statuses/254837817157488642" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-30: …Read moreRelated posts:Twitter Weekly Updates for 2012… <a href="http://t.co/7aVOptyC" target="_blank" rel="external">http://t.co/7aVOptyC</a>  <a href="http://twitter.com/nickcheng/statuses/252435357654736897" target="_blank" rel="external">#</a></li>
+<li>刚花了1刀买了六个 Mac 应用, 其实主要是要里面的 Sparkbox. via @<a href="http://twitter.com/StackSocial" target="_blank" rel="noopener">StackSocial</a> #<a href="http://search.twitter.com/search?q=%23StackUp" target="_blank" rel="noopener">StackUp</a> <a href="https://t.co/vJIG3GM5" target="_blank" rel="noopener">https://t.co/vJIG3GM5</a>  <a href="http://twitter.com/nickcheng/statuses/254837817157488642" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-30: …Read moreRelated posts:Twitter Weekly Updates for 2012… <a href="http://t.co/7aVOptyC" target="_blank" rel="noopener">http://t.co/7aVOptyC</a>  <a href="http://twitter.com/nickcheng/statuses/252435357654736897" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -686,7 +709,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -726,6 +749,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/09/30/twitter-weekly-updates-for-2012-09-30/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/09/30/twitter-weekly-updates-for-2012-09-30/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -744,7 +778,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -753,13 +787,13 @@
         
           
             <ul>
-<li>刚出境，还没来得及出去买iPhone5就又要入境了 (at @<a href="http://twitter.com/hkg" target="_blank" rel="external">hkg</a>) [pic] — <a href="http://t.co/h4gpdNic" target="_blank" rel="external">http://t.co/h4gpdNic</a>  <a href="http://twitter.com/nickcheng/statuses/251173881128292352" target="_blank" rel="external">#</a></li>
-<li>这家真不怎么样，东西一点都不好吃。可怜我没看到对面的Costa (with becky at Lei Cafe 北京机场T3航站楼) [pic] — <a href="http://t.co/pOw3E7AI" target="_blank" rel="external">http://t.co/pOw3E7AI</a>  <a href="http://twitter.com/nickcheng/statuses/251084523410956288" target="_blank" rel="external">#</a></li>
-<li>嘴角要烂, 赶紧VB泡腾片伺候!  <a href="http://twitter.com/nickcheng/statuses/250871111384965120" target="_blank" rel="external">#</a></li>
-<li>微信输入框的蓝牙键盘 Bug 还是没有改啊.  <a href="http://twitter.com/nickcheng/statuses/250764547336585216" target="_blank" rel="external">#</a></li>
-<li>我的目的就是一个人独占十兆带宽!  <a href="http://twitter.com/nickcheng/statuses/250036537167839233" target="_blank" rel="external">#</a></li>
-<li>早饭没落了…… (at NEXT.EXPERIENCES.Interactive) [pic] — <a href="http://t.co/lGri5oDp" target="_blank" rel="external">http://t.co/lGri5oDp</a>  <a href="http://twitter.com/nickcheng/statuses/250031353268170752" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-23: I’m at Sanya Phoenix International Airport…Read moreRel… <a href="http://t.co/vjncTZ0I" target="_blank" rel="external">http://t.co/vjncTZ0I</a>  <a href="http://twitter.com/nickcheng/statuses/249898570554155009" target="_blank" rel="external">#</a></li>
+<li>刚出境，还没来得及出去买iPhone5就又要入境了 (at @<a href="http://twitter.com/hkg" target="_blank" rel="noopener">hkg</a>) [pic] — <a href="http://t.co/h4gpdNic" target="_blank" rel="noopener">http://t.co/h4gpdNic</a>  <a href="http://twitter.com/nickcheng/statuses/251173881128292352" target="_blank" rel="noopener">#</a></li>
+<li>这家真不怎么样，东西一点都不好吃。可怜我没看到对面的Costa (with becky at Lei Cafe 北京机场T3航站楼) [pic] — <a href="http://t.co/pOw3E7AI" target="_blank" rel="noopener">http://t.co/pOw3E7AI</a>  <a href="http://twitter.com/nickcheng/statuses/251084523410956288" target="_blank" rel="noopener">#</a></li>
+<li>嘴角要烂, 赶紧VB泡腾片伺候!  <a href="http://twitter.com/nickcheng/statuses/250871111384965120" target="_blank" rel="noopener">#</a></li>
+<li>微信输入框的蓝牙键盘 Bug 还是没有改啊.  <a href="http://twitter.com/nickcheng/statuses/250764547336585216" target="_blank" rel="noopener">#</a></li>
+<li>我的目的就是一个人独占十兆带宽!  <a href="http://twitter.com/nickcheng/statuses/250036537167839233" target="_blank" rel="noopener">#</a></li>
+<li>早饭没落了…… (at NEXT.EXPERIENCES.Interactive) [pic] — <a href="http://t.co/lGri5oDp" target="_blank" rel="noopener">http://t.co/lGri5oDp</a>  <a href="http://twitter.com/nickcheng/statuses/250031353268170752" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-23: I’m at Sanya Phoenix International Airport…Read moreRel… <a href="http://t.co/vjncTZ0I" target="_blank" rel="noopener">http://t.co/vjncTZ0I</a>  <a href="http://twitter.com/nickcheng/statuses/249898570554155009" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -814,7 +848,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -854,6 +888,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/09/23/twitter-weekly-updates-for-2012-09-23/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/09/23/twitter-weekly-updates-for-2012-09-23/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -872,7 +917,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -881,10 +926,10 @@
         
           
             <ul>
-<li>I’m at Sanya Phoenix International Airport (SYX) 三亚凤凰国际机场 (三亚, 海南) <a href="http://t.co/dEwM5YUP" target="_blank" rel="external">http://t.co/dEwM5YUP</a>  <a href="http://twitter.com/nickcheng/statuses/249825861023449088" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/cosbeta" target="_blank" rel="external">cosbeta</a> @yegle <a href="http://t.co/M6Dv3x8I" target="_blank" rel="external">http://t.co/M6Dv3x8I</a> 算么？  <a href="http://twitter.com/nickcheng/statuses/249053817314893824" target="_blank" rel="external">#</a></li>
-<li>饿了，吃点儿。 (with Rong, John, and judy at Beijing Capital Int’l Airport T1) [pic] — <a href="http://t.co/QIcp9wfP" target="_blank" rel="external">http://t.co/QIcp9wfP</a>  <a href="http://twitter.com/nickcheng/statuses/248295915671146497" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-16: 升了 iOS 6 的, 你们怎么解决看不了…Read moreRelated posts:Twitter Up… <a href="http://t.co/QGWkmnHs" target="_blank" rel="external">http://t.co/QGWkmnHs</a>  <a href="http://twitter.com/nickcheng/statuses/247362227521323008" target="_blank" rel="external">#</a></li>
+<li>I’m at Sanya Phoenix International Airport (SYX) 三亚凤凰国际机场 (三亚, 海南) <a href="http://t.co/dEwM5YUP" target="_blank" rel="noopener">http://t.co/dEwM5YUP</a>  <a href="http://twitter.com/nickcheng/statuses/249825861023449088" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/cosbeta" target="_blank" rel="noopener">cosbeta</a> @yegle <a href="http://t.co/M6Dv3x8I" target="_blank" rel="noopener">http://t.co/M6Dv3x8I</a> 算么？  <a href="http://twitter.com/nickcheng/statuses/249053817314893824" target="_blank" rel="noopener">#</a></li>
+<li>饿了，吃点儿。 (with Rong, John, and judy at Beijing Capital Int’l Airport T1) [pic] — <a href="http://t.co/QIcp9wfP" target="_blank" rel="noopener">http://t.co/QIcp9wfP</a>  <a href="http://twitter.com/nickcheng/statuses/248295915671146497" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-16: 升了 iOS 6 的, 你们怎么解决看不了…Read moreRelated posts:Twitter Up… <a href="http://t.co/QGWkmnHs" target="_blank" rel="noopener">http://t.co/QGWkmnHs</a>  <a href="http://twitter.com/nickcheng/statuses/247362227521323008" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -939,7 +984,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -979,6 +1024,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/09/16/twitter-weekly-updates-for-2012-09-16/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/09/16/twitter-weekly-updates-for-2012-09-16/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -997,7 +1053,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1006,15 +1062,15 @@
         
           
             <ul>
-<li>升了 iOS 6 的, 你们怎么解决看不了 Google StreetView 的问题?  <a href="http://twitter.com/nickcheng/statuses/246817117071106048" target="_blank" rel="external">#</a></li>
-<li>今天大街上警力可充足了!  <a href="http://twitter.com/nickcheng/statuses/246816608771788801" target="_blank" rel="external">#</a></li>
-<li>iPhone  5 依旧不能在香港官网订. 难道一定要等到 21 号啊?  <a href="http://twitter.com/nickcheng/statuses/246798977389961216" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/sxzz" target="_blank" rel="external">sxzz</a> 乐乐贴  <a href="http://twitter.com/nickcheng/statuses/246586343516418048" target="_blank" rel="external">#</a></li>
-<li>连上了…不过还是 back soon. 更新失败了么?  <a href="http://twitter.com/nickcheng/statuses/246504438125178882" target="_blank" rel="external">#</a></li>
-<li>连不上服务器了…  <a href="http://twitter.com/nickcheng/statuses/246504168674697216" target="_blank" rel="external">#</a></li>
-<li>还打不开啊  <a href="http://twitter.com/nickcheng/statuses/246503925526700032" target="_blank" rel="external">#</a></li>
-<li>这个月流量肯定超!  <a href="http://twitter.com/nickcheng/statuses/245716917715861505" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-09: 不知道这个变态的地方谁是地主 (@…Read moreNo related posts. <a href="http://t.co/aBemKnwx" target="_blank" rel="external">http://t.co/aBemKnwx</a>  <a href="http://twitter.com/nickcheng/statuses/244825170970284032" target="_blank" rel="external">#</a></li>
+<li>升了 iOS 6 的, 你们怎么解决看不了 Google StreetView 的问题?  <a href="http://twitter.com/nickcheng/statuses/246817117071106048" target="_blank" rel="noopener">#</a></li>
+<li>今天大街上警力可充足了!  <a href="http://twitter.com/nickcheng/statuses/246816608771788801" target="_blank" rel="noopener">#</a></li>
+<li>iPhone  5 依旧不能在香港官网订. 难道一定要等到 21 号啊?  <a href="http://twitter.com/nickcheng/statuses/246798977389961216" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/sxzz" target="_blank" rel="noopener">sxzz</a> 乐乐贴  <a href="http://twitter.com/nickcheng/statuses/246586343516418048" target="_blank" rel="noopener">#</a></li>
+<li>连上了…不过还是 back soon. 更新失败了么?  <a href="http://twitter.com/nickcheng/statuses/246504438125178882" target="_blank" rel="noopener">#</a></li>
+<li>连不上服务器了…  <a href="http://twitter.com/nickcheng/statuses/246504168674697216" target="_blank" rel="noopener">#</a></li>
+<li>还打不开啊  <a href="http://twitter.com/nickcheng/statuses/246503925526700032" target="_blank" rel="noopener">#</a></li>
+<li>这个月流量肯定超!  <a href="http://twitter.com/nickcheng/statuses/245716917715861505" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-09: 不知道这个变态的地方谁是地主 (@…Read moreNo related posts. <a href="http://t.co/aBemKnwx" target="_blank" rel="noopener">http://t.co/aBemKnwx</a>  <a href="http://twitter.com/nickcheng/statuses/244825170970284032" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -1069,7 +1125,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1109,6 +1165,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/09/09/twitter-weekly-updates-for-2012-09-09/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/09/09/twitter-weekly-updates-for-2012-09-09/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1127,7 +1194,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1136,17 +1203,17 @@
         
           
             <ul>
-<li>不知道这个变态的地方谁是地主 (@ 北京西站 Beijing West Railway Station w/ 2 others) [pic]: <a href="http://t.co/gQRbqjhC" target="_blank" rel="external">http://t.co/gQRbqjhC</a>  <a href="http://twitter.com/nickcheng/statuses/244716143040921601" target="_blank" rel="external">#</a></li>
-<li>I just unlocked the “Trainspotter” badge on @<a href="http://twitter.com/foursquare" target="_blank" rel="external">foursquare</a> for checking in at trains and subway stations! <a href="http://t.co/XZhBD99J" target="_blank" rel="external">http://t.co/XZhBD99J</a>  <a href="http://twitter.com/nickcheng/statuses/244716129505906688" target="_blank" rel="external">#</a></li>
-<li>作为唱过 MJ 的 B&amp;W 的人, 我认为这人唱英文歌发音太烂了!  <a href="http://twitter.com/nickcheng/statuses/244082054369796096" target="_blank" rel="external">#</a></li>
-<li>I’m at hush (Beijing) [pic]: <a href="http://t.co/DU05JaUZ" target="_blank" rel="external">http://t.co/DU05JaUZ</a>  <a href="http://twitter.com/nickcheng/statuses/243930281160110081" target="_blank" rel="external">#</a></li>
-<li>现在千兆设备怎么还那么贵呢?  <a href="http://twitter.com/nickcheng/statuses/243508760247685120" target="_blank" rel="external">#</a></li>
-<li>等着看batman，吃这些不会一会儿上厕所吧？ (at 百丽宫影城) [pic] — <a href="http://t.co/be19lzmB" target="_blank" rel="external">http://t.co/be19lzmB</a>  <a href="http://twitter.com/nickcheng/statuses/243499482531131392" target="_blank" rel="external">#</a></li>
-<li>大家早上好！ (@ NEXT.EXPERIENCES.Interactive) [pic]: <a href="http://t.co/Ga8oluC2" target="_blank" rel="external">http://t.co/Ga8oluC2</a>  <a href="http://twitter.com/nickcheng/statuses/243499080729370624" target="_blank" rel="external">#</a></li>
-<li>V5版微博美化Stylish脚本 地址: <a href="http://t.co/HvdajaqE" target="_blank" rel="external">http://t.co/HvdajaqE</a> 请先安装插件. Safari: <a href="http://t.co/wNIILUMb" target="_blank" rel="external">http://t.co/wNIILUMb</a> Chrome: <a href="http://t.co/6HxLSp60" target="_blank" rel="external">http://t.co/6HxLSp60</a> <a href="http://t.co/slQJq4pT" target="_blank" rel="external">http://t.co/slQJq4pT</a>  <a href="http://twitter.com/nickcheng/statuses/242870301128540160" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/cnberg" target="_blank" rel="external">cnberg</a> 我感觉可能有问题的地方会是通关时候的目的地和实际目的地不同。不过既然代理那么说了，那就应该没问题了。  <a href="http://twitter.com/nickcheng/statuses/242517524359553024" target="_blank" rel="external">#</a></li>
-<li>Good! Mou.app 又更新啦!  <a href="http://twitter.com/nickcheng/statuses/242455737484337152" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-02: 早上订台湾高铁票就已经是这样了. //…Read moreNo related posts. <a href="http://t.co/kjRF1ker" target="_blank" rel="external">http://t.co/kjRF1ker</a>  <a href="http://twitter.com/nickcheng/statuses/242288458855481344" target="_blank" rel="external">#</a></li>
+<li>不知道这个变态的地方谁是地主 (@ 北京西站 Beijing West Railway Station w/ 2 others) [pic]: <a href="http://t.co/gQRbqjhC" target="_blank" rel="noopener">http://t.co/gQRbqjhC</a>  <a href="http://twitter.com/nickcheng/statuses/244716143040921601" target="_blank" rel="noopener">#</a></li>
+<li>I just unlocked the “Trainspotter” badge on @<a href="http://twitter.com/foursquare" target="_blank" rel="noopener">foursquare</a> for checking in at trains and subway stations! <a href="http://t.co/XZhBD99J" target="_blank" rel="noopener">http://t.co/XZhBD99J</a>  <a href="http://twitter.com/nickcheng/statuses/244716129505906688" target="_blank" rel="noopener">#</a></li>
+<li>作为唱过 MJ 的 B&amp;W 的人, 我认为这人唱英文歌发音太烂了!  <a href="http://twitter.com/nickcheng/statuses/244082054369796096" target="_blank" rel="noopener">#</a></li>
+<li>I’m at hush (Beijing) [pic]: <a href="http://t.co/DU05JaUZ" target="_blank" rel="noopener">http://t.co/DU05JaUZ</a>  <a href="http://twitter.com/nickcheng/statuses/243930281160110081" target="_blank" rel="noopener">#</a></li>
+<li>现在千兆设备怎么还那么贵呢?  <a href="http://twitter.com/nickcheng/statuses/243508760247685120" target="_blank" rel="noopener">#</a></li>
+<li>等着看batman，吃这些不会一会儿上厕所吧？ (at 百丽宫影城) [pic] — <a href="http://t.co/be19lzmB" target="_blank" rel="noopener">http://t.co/be19lzmB</a>  <a href="http://twitter.com/nickcheng/statuses/243499482531131392" target="_blank" rel="noopener">#</a></li>
+<li>大家早上好！ (@ NEXT.EXPERIENCES.Interactive) [pic]: <a href="http://t.co/Ga8oluC2" target="_blank" rel="noopener">http://t.co/Ga8oluC2</a>  <a href="http://twitter.com/nickcheng/statuses/243499080729370624" target="_blank" rel="noopener">#</a></li>
+<li>V5版微博美化Stylish脚本 地址: <a href="http://t.co/HvdajaqE" target="_blank" rel="noopener">http://t.co/HvdajaqE</a> 请先安装插件. Safari: <a href="http://t.co/wNIILUMb" target="_blank" rel="noopener">http://t.co/wNIILUMb</a> Chrome: <a href="http://t.co/6HxLSp60" target="_blank" rel="noopener">http://t.co/6HxLSp60</a> <a href="http://t.co/slQJq4pT" target="_blank" rel="noopener">http://t.co/slQJq4pT</a>  <a href="http://twitter.com/nickcheng/statuses/242870301128540160" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/cnberg" target="_blank" rel="noopener">cnberg</a> 我感觉可能有问题的地方会是通关时候的目的地和实际目的地不同。不过既然代理那么说了，那就应该没问题了。  <a href="http://twitter.com/nickcheng/statuses/242517524359553024" target="_blank" rel="noopener">#</a></li>
+<li>Good! Mou.app 又更新啦!  <a href="http://twitter.com/nickcheng/statuses/242455737484337152" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-09-02: 早上订台湾高铁票就已经是这样了. //…Read moreNo related posts. <a href="http://t.co/kjRF1ker" target="_blank" rel="noopener">http://t.co/kjRF1ker</a>  <a href="http://twitter.com/nickcheng/statuses/242288458855481344" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -1201,7 +1268,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1241,6 +1308,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/09/02/twitter-weekly-updates-for-2012-09-02/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/09/02/twitter-weekly-updates-for-2012-09-02/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1259,7 +1337,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1268,19 +1346,19 @@
         
           
             <ul>
-<li>早上订台湾高铁票就已经是这样了. // 我正在看: 网购动车票可辨别座位是否靠窗 不满意可重选 <a href="http://t.co/6Xhtj67G" target="_blank" rel="external">http://t.co/6Xhtj67G</a>  <a href="http://twitter.com/nickcheng/statuses/241870494364737536" target="_blank" rel="external">#</a></li>
-<li>这篇对 TDKR 的分析写的不错:) // 我正在看: 封闭环境下的人性博弈——长文纪念诺兰的蝙蝠侠三部曲 (蝙蝠侠：黑暗骑士崛起 影评) <a href="http://t.co/hB5xZqQI" target="_blank" rel="external">http://t.co/hB5xZqQI</a> <a href="http://t.co/GNApR7jg" target="_blank" rel="external">http://t.co/GNApR7jg</a>  <a href="http://twitter.com/nickcheng/statuses/241862505490702336" target="_blank" rel="external">#</a></li>
-<li>秘制牛腩饭吃的我很满足啊！ (@ Create Asian Gourmet) <a href="http://t.co/5BmbJdoJ" target="_blank" rel="external">http://t.co/5BmbJdoJ</a>  <a href="http://twitter.com/nickcheng/statuses/241774227798233088" target="_blank" rel="external">#</a></li>
-<li>国三停车场南口施工，进不去，要绕到光华路的北门进 (@ 百丽宫影城) <a href="http://t.co/SeHUUrpf" target="_blank" rel="external">http://t.co/SeHUUrpf</a>  <a href="http://twitter.com/nickcheng/statuses/241773942564610048" target="_blank" rel="external">#</a></li>
-<li>这两天家里的网络有点儿不太给力, 似乎网络设备快要有问题了. 只能靠不断的重启设备来解决问题…  <a href="http://twitter.com/nickcheng/statuses/241164435308306433" target="_blank" rel="external">#</a></li>
-<li>I’m at ole spanish restaurant (北京, 北京市) <a href="http://t.co/c2W0nZs8" target="_blank" rel="external">http://t.co/c2W0nZs8</a>  <a href="http://twitter.com/nickcheng/statuses/241145360964255746" target="_blank" rel="external">#</a></li>
-<li>垦丁和花莲的住宿也搞定了. 接下来就是九份和淡水的住宿了. 然后再搞交通. 要是能在台湾租辆车就好了, 可惜没有国际驾照啊~~~  <a href="http://twitter.com/nickcheng/statuses/240806922620657665" target="_blank" rel="external">#</a></li>
-<li>哟, 北京机场也收到威胁了~~~  <a href="http://twitter.com/nickcheng/statuses/240793237147746304" target="_blank" rel="external">#</a></li>
-<li>终于搞定台北的住宿了… 费劲!  <a href="http://twitter.com/nickcheng/statuses/240455774831255552" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/nickcheng" target="_blank" rel="external">nickcheng</a> @CatChen ft。。。 链接这样被转义很尴尬啊。 “<a href="http://t.co/tTnnRXMJ用户名”" target="_blank" rel="external">http://t.co/tTnnRXMJ用户名”</a>  <a href="http://twitter.com/nickcheng/statuses/239953944879714305" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/CatChen" target="_blank" rel="external">CatChen</a> 是的，相当讨厌。所以现在只能用 <a href="http://t.co/T64z760f用户名" target="_blank" rel="external">http://t.co/T64z760f用户名</a> 来给未登录用户看微博。  <a href="http://twitter.com/nickcheng/statuses/239930009463189504" target="_blank" rel="external">#</a></li>
-<li>Apple 关于对注册公司开发者账号时需要 D-U-N-S Number 的 FAQ. 但有意思的是, 上个月刚申请的一个公司开发者账号并没有管我要 DUNS Number 啊. <a href="https://t.co/cPKM1vcT" target="_blank" rel="external">https://t.co/cPKM1vcT</a>  <a href="http://twitter.com/nickcheng/statuses/239913690621698048" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-08-26: 原来是使用的一个新浪微博的 rss…Read moreRelated posts:Twitter Update… <a href="http://t.co/cguCsJA1" target="_blank" rel="external">http://t.co/cguCsJA1</a>  <a href="http://twitter.com/nickcheng/statuses/239751602133676032" target="_blank" rel="external">#</a></li>
+<li>早上订台湾高铁票就已经是这样了. // 我正在看: 网购动车票可辨别座位是否靠窗 不满意可重选 <a href="http://t.co/6Xhtj67G" target="_blank" rel="noopener">http://t.co/6Xhtj67G</a>  <a href="http://twitter.com/nickcheng/statuses/241870494364737536" target="_blank" rel="noopener">#</a></li>
+<li>这篇对 TDKR 的分析写的不错:) // 我正在看: 封闭环境下的人性博弈——长文纪念诺兰的蝙蝠侠三部曲 (蝙蝠侠：黑暗骑士崛起 影评) <a href="http://t.co/hB5xZqQI" target="_blank" rel="noopener">http://t.co/hB5xZqQI</a> <a href="http://t.co/GNApR7jg" target="_blank" rel="noopener">http://t.co/GNApR7jg</a>  <a href="http://twitter.com/nickcheng/statuses/241862505490702336" target="_blank" rel="noopener">#</a></li>
+<li>秘制牛腩饭吃的我很满足啊！ (@ Create Asian Gourmet) <a href="http://t.co/5BmbJdoJ" target="_blank" rel="noopener">http://t.co/5BmbJdoJ</a>  <a href="http://twitter.com/nickcheng/statuses/241774227798233088" target="_blank" rel="noopener">#</a></li>
+<li>国三停车场南口施工，进不去，要绕到光华路的北门进 (@ 百丽宫影城) <a href="http://t.co/SeHUUrpf" target="_blank" rel="noopener">http://t.co/SeHUUrpf</a>  <a href="http://twitter.com/nickcheng/statuses/241773942564610048" target="_blank" rel="noopener">#</a></li>
+<li>这两天家里的网络有点儿不太给力, 似乎网络设备快要有问题了. 只能靠不断的重启设备来解决问题…  <a href="http://twitter.com/nickcheng/statuses/241164435308306433" target="_blank" rel="noopener">#</a></li>
+<li>I’m at ole spanish restaurant (北京, 北京市) <a href="http://t.co/c2W0nZs8" target="_blank" rel="noopener">http://t.co/c2W0nZs8</a>  <a href="http://twitter.com/nickcheng/statuses/241145360964255746" target="_blank" rel="noopener">#</a></li>
+<li>垦丁和花莲的住宿也搞定了. 接下来就是九份和淡水的住宿了. 然后再搞交通. 要是能在台湾租辆车就好了, 可惜没有国际驾照啊~~~  <a href="http://twitter.com/nickcheng/statuses/240806922620657665" target="_blank" rel="noopener">#</a></li>
+<li>哟, 北京机场也收到威胁了~~~  <a href="http://twitter.com/nickcheng/statuses/240793237147746304" target="_blank" rel="noopener">#</a></li>
+<li>终于搞定台北的住宿了… 费劲!  <a href="http://twitter.com/nickcheng/statuses/240455774831255552" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/nickcheng" target="_blank" rel="noopener">nickcheng</a> @CatChen ft。。。 链接这样被转义很尴尬啊。 “<a href="http://t.co/tTnnRXMJ用户名”" target="_blank" rel="noopener">http://t.co/tTnnRXMJ用户名”</a>  <a href="http://twitter.com/nickcheng/statuses/239953944879714305" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/CatChen" target="_blank" rel="noopener">CatChen</a> 是的，相当讨厌。所以现在只能用 <a href="http://t.co/T64z760f用户名" target="_blank" rel="noopener">http://t.co/T64z760f用户名</a> 来给未登录用户看微博。  <a href="http://twitter.com/nickcheng/statuses/239930009463189504" target="_blank" rel="noopener">#</a></li>
+<li>Apple 关于对注册公司开发者账号时需要 D-U-N-S Number 的 FAQ. 但有意思的是, 上个月刚申请的一个公司开发者账号并没有管我要 DUNS Number 啊. <a href="https://t.co/cPKM1vcT" target="_blank" rel="noopener">https://t.co/cPKM1vcT</a>  <a href="http://twitter.com/nickcheng/statuses/239913690621698048" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Weekly Updates for 2012-08-26: 原来是使用的一个新浪微博的 rss…Read moreRelated posts:Twitter Update… <a href="http://t.co/cguCsJA1" target="_blank" rel="noopener">http://t.co/cguCsJA1</a>  <a href="http://twitter.com/nickcheng/statuses/239751602133676032" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -1335,7 +1413,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1375,6 +1453,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/08/26/twitter-weekly-updates-for-2012-08-26/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/08/26/twitter-weekly-updates-for-2012-08-26/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1393,7 +1482,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1402,23 +1491,23 @@
         
           
             <ul>
-<li>原来是使用的一个新浪微博的 rss 挂了. 说是超限了, 还得用什么新浪豆激活, 我找个别的得了.  <a href="http://twitter.com/nickcheng/statuses/239675637663670272" target="_blank" rel="external">#</a></li>
-<li>ifttt 里的一个菜谱挂了…  <a href="http://twitter.com/nickcheng/statuses/239672578527096832" target="_blank" rel="external">#</a></li>
-<li>现在桌面端的 Sparrow 已经完全不可用了! Y 丢我没写完的邮件! 话说 Google 搞走 Sparrow 的人以后真的不打算做自己的 Desktop Version 么?  <a href="http://twitter.com/nickcheng/statuses/238919814431776768" target="_blank" rel="external">#</a></li>
-<li>到台北住哪里好啊？W 真心贵啊！  <a href="http://twitter.com/nickcheng/statuses/238643302990237696" target="_blank" rel="external">#</a></li>
-<li>不小心又中了虾米的奖. 话说已经是第二次在虾米中奖了…  <a href="http://twitter.com/nickcheng/statuses/238522667953696768" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/fanweixiao" target="_blank" rel="external">fanweixiao</a> 哟, 你竟然找到这张了…  <a href="http://twitter.com/nickcheng/statuses/238521108352102400" target="_blank" rel="external">#</a></li>
-<li>@<a href="http://twitter.com/jacob_bubu" target="_blank" rel="external">jacob_bubu</a>  RT @<a href="http://twitter.com/chrisyipw" target="_blank" rel="external">chrisyipw</a>: st2-nil-theme 这个主题不错，连高亮配色也有，最赞的是 tab 的处理 看官方截图吧： <a href="https://t.co/Ynqr1IkY" target="_blank" rel="external">https://t.co/Ynqr1IkY</a> 地址： <a href="http://t.co/X2N7z9JK" target="_blank" rel="external">http://t.co/X2N7z9JK</a>  <a href="http://twitter.com/nickcheng/statuses/238474982139760640" target="_blank" rel="external">#</a></li>
-<li>一到下午就困啊! 办公室空气是有多不好啊!  <a href="http://twitter.com/nickcheng/statuses/238208503980900353" target="_blank" rel="external">#</a></li>
-<li>昨天看到了北京一景－－国贸观山！  <a href="http://twitter.com/nickcheng/statuses/238079057521168384" target="_blank" rel="external">#</a></li>
-<li>这两天开始喝泡腾片。泡腾片融化的时候起来的青烟是什么东西呢？  <a href="http://twitter.com/nickcheng/statuses/238078826209501184" target="_blank" rel="external">#</a></li>
-<li>iphone4 出来前用的最爽的手机！ RT @<a href="http://twitter.com/kDolphin" target="_blank" rel="external">kDolphin</a>: 今天抽空把650上Bonsai最后点笔记转移了出来，Palm Treo 650 永久关机了。 <a href="http://t.co/hPzC3fCK" target="_blank" rel="external">http://t.co/hPzC3fCK</a>  <a href="http://twitter.com/nickcheng/statuses/237555824782884865" target="_blank" rel="external">#</a></li>
-<li>公司的新电视终于 setup 好了。ps3 迷满足了。  <a href="http://twitter.com/nickcheng/statuses/237385769747099648" target="_blank" rel="external">#</a></li>
-<li>话说一个人还真的挺难把 55 寸的电视给装好的。  <a href="http://twitter.com/nickcheng/statuses/237348051289780224" target="_blank" rel="external">#</a></li>
-<li>刚才从桌面爬过一只小强。NND！瞬时燃起我的斗志！不过，话说小强爬过的痕迹会有味道么？  <a href="http://twitter.com/nickcheng/statuses/237347715942592512" target="_blank" rel="external">#</a></li>
-<li>公司在苏三大战的时候买的电视终于在三天后的前天送到了。  <a href="http://twitter.com/nickcheng/statuses/237347388497469440" target="_blank" rel="external">#</a></li>
-<li>把 Tweets 备份到 Blog 是你的自由，但是如果每天没发几个 Tweet 但还要每天生成 Blog，关键还要把 Blog 同步到 Twitter，那就不能忍了。这就变成了你天天在Twitter上说：我昨天没发推。。。好吧，我在说我自己。。。我改！  <a href="http://twitter.com/nickcheng/statuses/237345972345266177" target="_blank" rel="external">#</a></li>
-<li>[Nickcheng.LOG] Twitter Updates for 2012-08-19: Read moreRead moreNo related posts. <a href="http://t.co/ffk4mGCm" target="_blank" rel="external">http://t.co/ffk4mGCm</a>  <a href="http://twitter.com/nickcheng/statuses/237217393439559680" target="_blank" rel="external">#</a></li>
+<li>原来是使用的一个新浪微博的 rss 挂了. 说是超限了, 还得用什么新浪豆激活, 我找个别的得了.  <a href="http://twitter.com/nickcheng/statuses/239675637663670272" target="_blank" rel="noopener">#</a></li>
+<li>ifttt 里的一个菜谱挂了…  <a href="http://twitter.com/nickcheng/statuses/239672578527096832" target="_blank" rel="noopener">#</a></li>
+<li>现在桌面端的 Sparrow 已经完全不可用了! Y 丢我没写完的邮件! 话说 Google 搞走 Sparrow 的人以后真的不打算做自己的 Desktop Version 么?  <a href="http://twitter.com/nickcheng/statuses/238919814431776768" target="_blank" rel="noopener">#</a></li>
+<li>到台北住哪里好啊？W 真心贵啊！  <a href="http://twitter.com/nickcheng/statuses/238643302990237696" target="_blank" rel="noopener">#</a></li>
+<li>不小心又中了虾米的奖. 话说已经是第二次在虾米中奖了…  <a href="http://twitter.com/nickcheng/statuses/238522667953696768" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/fanweixiao" target="_blank" rel="noopener">fanweixiao</a> 哟, 你竟然找到这张了…  <a href="http://twitter.com/nickcheng/statuses/238521108352102400" target="_blank" rel="noopener">#</a></li>
+<li>@<a href="http://twitter.com/jacob_bubu" target="_blank" rel="noopener">jacob_bubu</a>  RT @<a href="http://twitter.com/chrisyipw" target="_blank" rel="noopener">chrisyipw</a>: st2-nil-theme 这个主题不错，连高亮配色也有，最赞的是 tab 的处理 看官方截图吧： <a href="https://t.co/Ynqr1IkY" target="_blank" rel="noopener">https://t.co/Ynqr1IkY</a> 地址： <a href="http://t.co/X2N7z9JK" target="_blank" rel="noopener">http://t.co/X2N7z9JK</a>  <a href="http://twitter.com/nickcheng/statuses/238474982139760640" target="_blank" rel="noopener">#</a></li>
+<li>一到下午就困啊! 办公室空气是有多不好啊!  <a href="http://twitter.com/nickcheng/statuses/238208503980900353" target="_blank" rel="noopener">#</a></li>
+<li>昨天看到了北京一景－－国贸观山！  <a href="http://twitter.com/nickcheng/statuses/238079057521168384" target="_blank" rel="noopener">#</a></li>
+<li>这两天开始喝泡腾片。泡腾片融化的时候起来的青烟是什么东西呢？  <a href="http://twitter.com/nickcheng/statuses/238078826209501184" target="_blank" rel="noopener">#</a></li>
+<li>iphone4 出来前用的最爽的手机！ RT @<a href="http://twitter.com/kDolphin" target="_blank" rel="noopener">kDolphin</a>: 今天抽空把650上Bonsai最后点笔记转移了出来，Palm Treo 650 永久关机了。 <a href="http://t.co/hPzC3fCK" target="_blank" rel="noopener">http://t.co/hPzC3fCK</a>  <a href="http://twitter.com/nickcheng/statuses/237555824782884865" target="_blank" rel="noopener">#</a></li>
+<li>公司的新电视终于 setup 好了。ps3 迷满足了。  <a href="http://twitter.com/nickcheng/statuses/237385769747099648" target="_blank" rel="noopener">#</a></li>
+<li>话说一个人还真的挺难把 55 寸的电视给装好的。  <a href="http://twitter.com/nickcheng/statuses/237348051289780224" target="_blank" rel="noopener">#</a></li>
+<li>刚才从桌面爬过一只小强。NND！瞬时燃起我的斗志！不过，话说小强爬过的痕迹会有味道么？  <a href="http://twitter.com/nickcheng/statuses/237347715942592512" target="_blank" rel="noopener">#</a></li>
+<li>公司在苏三大战的时候买的电视终于在三天后的前天送到了。  <a href="http://twitter.com/nickcheng/statuses/237347388497469440" target="_blank" rel="noopener">#</a></li>
+<li>把 Tweets 备份到 Blog 是你的自由，但是如果每天没发几个 Tweet 但还要每天生成 Blog，关键还要把 Blog 同步到 Twitter，那就不能忍了。这就变成了你天天在Twitter上说：我昨天没发推。。。好吧，我在说我自己。。。我改！  <a href="http://twitter.com/nickcheng/statuses/237345972345266177" target="_blank" rel="noopener">#</a></li>
+<li>[Nickcheng.LOG] Twitter Updates for 2012-08-19: Read moreRead moreNo related posts. <a href="http://t.co/ffk4mGCm" target="_blank" rel="noopener">http://t.co/ffk4mGCm</a>  <a href="http://twitter.com/nickcheng/statuses/237217393439559680" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -1473,7 +1562,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1513,6 +1602,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2012/08/19/twitter-updates-for-2012-08-19/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2012/08/19/twitter-updates-for-2012-08-19/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1531,7 +1631,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1540,7 +1640,7 @@
         
           
             <ul>
-<li>[Nickcheng.LOG] Twitter Updates for 2012-08-18: 把自己的 Blog 给拾掇了一下….Read moreNo related posts. <a href="http://t.co/CyyYWLBW" target="_blank" rel="external">http://t.co/CyyYWLBW</a>  <a href="http://twitter.com/nickcheng/statuses/236854782244057089" target="_blank" rel="external">#</a></li>
+<li>[Nickcheng.LOG] Twitter Updates for 2012-08-18: 把自己的 Blog 给拾掇了一下….Read moreNo related posts. <a href="http://t.co/CyyYWLBW" target="_blank" rel="noopener">http://t.co/CyyYWLBW</a>  <a href="http://twitter.com/nickcheng/statuses/236854782244057089" target="_blank" rel="noopener">#</a></li>
 </ul>
 
           
@@ -1612,81 +1712,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1699,12 +1811,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1712,11 +1821,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1732,10 +1847,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1770,62 +1882,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1849,7 +1992,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1857,6 +2000,9 @@
 
   
 
+  
+
+  
   
 
   

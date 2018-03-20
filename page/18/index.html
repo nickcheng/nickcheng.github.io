@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/22/move-almost-completed/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/22/move-almost-completed/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -377,7 +378,7 @@
         
           
             <p>Blog的搬家运动基本上完毕了, 昨天下午很顺利的用了不到半小时就完成了插件和皮肤的移植, 晚上就顺便把DB搬移的工作给做了!</p>
-<p>和我猜测的一样, DB的搬移是比较费时的工作! 原来在edong的空间的mysql版本是3.2, 而bluehost新空间的版本是4.2的, 这版本的跨越可不是数字的变化这么简单! mysql在跨越4.1版本的时候增加了数据库的Collection属性. 通俗的说, 这个属性控制了数据库中字符的编码类型, 如果配置的不当, 就会出现汉字变成乱码的情形! 呵呵, 我有幸遇到了! 不过还好网民的力量是无穷的, 在Google了一圈以后, 我还是找到了解决方法! 看<a href="http://tao.kaoart.info/cms-software-doc/wordpress-about/kunstao/2006/554/" target="_blank" rel="external">这篇文章</a></p>
+<p>和我猜测的一样, DB的搬移是比较费时的工作! 原来在edong的空间的mysql版本是3.2, 而bluehost新空间的版本是4.2的, 这版本的跨越可不是数字的变化这么简单! mysql在跨越4.1版本的时候增加了数据库的Collection属性. 通俗的说, 这个属性控制了数据库中字符的编码类型, 如果配置的不当, 就会出现汉字变成乱码的情形! 呵呵, 我有幸遇到了! 不过还好网民的力量是无穷的, 在Google了一圈以后, 我还是找到了解决方法! 看<a href="http://tao.kaoart.info/cms-software-doc/wordpress-about/kunstao/2006/554/" target="_blank" rel="noopener">这篇文章</a></p>
 <p>目前新空间的情况是, 数据完全和原来一样! 因为新空间支持不止一个MySQL数据库, 所以这个库很干净, 没有其他东西:) 还差的就是域名的绑定了!</p>
 <p>这域名绑定还费了一番周折! 这两天刚好新网被攻击, 搞得全国20%的网站无法访问, 呵呵, 俺的域名也是edong在新网注册的, 所以昨天晚上愣是不能更改DNS设置! 今天上午费了好大劲才通过客服把DNS给改到新空间, 这生效还要等24小时, 所以现在看到这篇blog的肯定不是通过<a href="http://nickcheng.com">http://nickcheng.com</a> 访问的!</p>
 <p>等到nickcheng.com可以访问到这里, 那就意味着我搬家结束了:) 希望能快一些:)</p>
@@ -434,7 +435,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -474,6 +475,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/21/will-move-my-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/21/will-move-my-blog/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -492,7 +504,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -507,14 +519,14 @@
 <li><strike>在新空间安装新版WordPress</strike></li>
 <li><strike>配置新空间的WordPress和原来一样</strike></li>
 <li><strike>在新WordPress中安装所有原来在使用的插件</strike><ul>
-<li><strong>**<strike></strike></strong><a href="http://blog.enargi.com/codesnippet/" target="_blank" rel="external">Code Snippet</a><strong></strong> 换用CoolCode这个插件了**  </li>
-<li><strong>**<strike></strike></strong><a href="http://www.gravatar.com/implement.php#section_2_2" target="_blank" rel="external">Gravatar</a>**</li>
-<li><strong>**<strike></strike></strong><a href="http://yanfeng.org/blog/wordpress/kit" target="_blank" rel="external">中文 WordPress 工具箱</a>**</li>
-<li><strong>**<strike></strike></strong><a href="http://www.mightyseek.com/podpress/" target="_blank" rel="external">podPress</a>**</li>
-<li><strike><strong><a href="http://www.arnebrachhold.de/2005/06/05/google-sitemaps-generator-v2-final" target="_blank" rel="external">Google Sitemaps</a></strong></strike></li>
-<li><strike><strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" target="_blank" rel="external">Spam Karma 2 - Reloaded</a></strong></strike></li>
-<li><strike><strong><a href="http://twilightuniverse.com/2005/04/twilight-autosave/" target="_blank" rel="external">Twilight AutoSave</a></strong></strike></li>
-<li><strike><strong><a href="http://www.neato.co.nz/ultimate-tag-warrior/" target="_blank" rel="external">Ultimate Tag Warrior</a></strong></strike><ol>
+<li><strong>**<strike></strike></strong><a href="http://blog.enargi.com/codesnippet/" target="_blank" rel="noopener">Code Snippet</a><strong></strong> 换用CoolCode这个插件了**  </li>
+<li><strong>**<strike></strike></strong><a href="http://www.gravatar.com/implement.php#section_2_2" target="_blank" rel="noopener">Gravatar</a>**</li>
+<li><strong>**<strike></strike></strong><a href="http://yanfeng.org/blog/wordpress/kit" target="_blank" rel="noopener">中文 WordPress 工具箱</a>**</li>
+<li><strong>**<strike></strike></strong><a href="http://www.mightyseek.com/podpress/" target="_blank" rel="noopener">podPress</a>**</li>
+<li><strike><strong><a href="http://www.arnebrachhold.de/2005/06/05/google-sitemaps-generator-v2-final" target="_blank" rel="noopener">Google Sitemaps</a></strong></strike></li>
+<li><strike><strong><a href="http://unknowngenius.com/blog/wordpress/spam-karma/" target="_blank" rel="noopener">Spam Karma 2 - Reloaded</a></strong></strike></li>
+<li><strike><strong><a href="http://twilightuniverse.com/2005/04/twilight-autosave/" target="_blank" rel="noopener">Twilight AutoSave</a></strong></strike></li>
+<li><strike><strong><a href="http://www.neato.co.nz/ultimate-tag-warrior/" target="_blank" rel="noopener">Ultimate Tag Warrior</a></strong></strike><ol>
 <li><strike>在新WordPress中安装原来的皮肤主题</strike></li>
 <li>导出原有DB数据, 导入到新DB中</li>
 <li>老域名绑定到新空间.</li>
@@ -580,7 +592,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -620,6 +632,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/19/five-harmful-sentences-to-children/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/19/five-harmful-sentences-to-children/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -638,7 +661,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -646,7 +669,7 @@
       
         
           
-            <p>从<a href="http://www.psytopic.com/mag" target="_blank" rel="external">Psytopic</a>看到的<a href="http://www.psytopic.com/mag/post/737.html" target="_blank" rel="external">这篇文章</a>, 感觉很有道理, 摘录如下</p>
+            <p>从<a href="http://www.psytopic.com/mag" target="_blank" rel="noopener">Psytopic</a>看到的<a href="http://www.psytopic.com/mag/post/737.html" target="_blank" rel="noopener">这篇文章</a>, 感觉很有道理, 摘录如下</p>
 <ol>
 <li><p><strong>你怎么越大越……</strong></p>
 <p> 孩子们总要经历那些固执，淘气，自我中心，多动等行为的年岁，这是他们成长的必需。这话只是你自己的感受!</p>
@@ -726,7 +749,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -766,6 +789,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/18/i-want-a-studio/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/18/i-want-a-studio/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -784,7 +818,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -793,11 +827,11 @@
         
           
             <p><img src="http://static.flickr.com/96/246254060_5da5172bb4_m.jpg" alt=""></p>
-<p>周末在鼎好的时候看到了这个小调音台, <a href="http://www.behringer.com/index.cfm?lang=CHN" target="_blank" rel="external">百灵达(BEHRINGER)</a>的MX602A, 问了一下价格, 大概400多人民币的样子, 很精致的感觉, 很想搞一个! 要是在大学的时候我肯定就搞一个了, 不过自己想想, 现在真的没多大的用处, 还是忍住了…</p>
+<p>周末在鼎好的时候看到了这个小调音台, <a href="http://www.behringer.com/index.cfm?lang=CHN" target="_blank" rel="noopener">百灵达(BEHRINGER)</a>的MX602A, 问了一下价格, 大概400多人民币的样子, 很精致的感觉, 很想搞一个! 要是在大学的时候我肯定就搞一个了, 不过自己想想, 现在真的没多大的用处, 还是忍住了…</p>
 <p>今天查了一下百灵达的网站, 还看到了不少好玩的东东! 都是小型的!</p>
-<p><a href="http://www.flickr.com/photos/nickcheng/246254200/" target="_blank" rel="external"><img src="http://static.flickr.com/96/246254200_1e8d27a792_m.jpg" alt=""></a></p>
-<p><a href="http://www.flickr.com/photos/nickcheng/246254130/" target="_blank" rel="external"></a></p>
-<p><a href="http://www.flickr.com/photos/nickcheng/246254130/" target="_blank" rel="external"><img src="http://static.flickr.com/79/246254130_96fbeccb51_m.jpg" alt=""></a></p>
+<p><a href="http://www.flickr.com/photos/nickcheng/246254200/" target="_blank" rel="noopener"><img src="http://static.flickr.com/96/246254200_1e8d27a792_m.jpg" alt=""></a></p>
+<p><a href="http://www.flickr.com/photos/nickcheng/246254130/" target="_blank" rel="noopener"></a></p>
+<p><a href="http://www.flickr.com/photos/nickcheng/246254130/" target="_blank" rel="noopener"><img src="http://static.flickr.com/79/246254130_96fbeccb51_m.jpg" alt=""></a></p>
 <p>哎…看到这些东西, 真有一种冲动! 等哥们儿事业小有成的时候, 一定要弄一套, 整个自己的Studio! 多年的梦想啊…也不知道什么时候能实现!</p>
 
           
@@ -852,7 +886,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -892,6 +926,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/15/wii-will-release/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/15/wii-will-release/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -910,7 +955,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -918,7 +963,7 @@
       
         
           
-            <p><a href="http://wii.com/" target="_blank" rel="external">Wii</a>终于要发布了! 看<a href="http://solidot.org/" target="_blank" rel="external">Solidot</a>上写, Wii将于11月19日在北美和南美出售, 售价为$250,  还捆绑了Wii Sports! 这个价格看起来还是比较不错的, 2000RMB嘛, 还是可以接受的! 到时候可以考虑弄一个玩玩了!</p>
+            <p><a href="http://wii.com/" target="_blank" rel="noopener">Wii</a>终于要发布了! 看<a href="http://solidot.org/" target="_blank" rel="noopener">Solidot</a>上写, Wii将于11月19日在北美和南美出售, 售价为$250,  还捆绑了Wii Sports! 这个价格看起来还是比较不错的, 2000RMB嘛, 还是可以接受的! 到时候可以考虑弄一个玩玩了!</p>
 <p>貌似自己从来没有给自己买过游戏机?? PSP也是买给老婆的…话说回来, 任天堂的东东可玩性还是很高的! 就拿掌机来说, 如果论可玩性, 我绝对会选择NDS/NDSL, 而不是PSP! 这个游戏机也是继承任天堂的一贯作风! 我喜欢它胜过喜欢PS3!!!</p>
 
           
@@ -973,7 +1018,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1013,6 +1058,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/13/expose-myself/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/13/expose-myself/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1031,7 +1087,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1137,11 +1193,11 @@
 </ol>
 <p>现在开始点名!</p>
 <ul>
-<li><a href="http://beckylog.spaces.live.com" target="_blank" rel="external">偶家LP</a>: 偶家LP可是相当能写! 而且质量相当高! 期待…… <a href="http://beckylog.spaces.live.com/blog/cns!D908F0015A2196E!996.entry" target="_blank" rel="external">答案</a></li>
-<li><a href="http://tonyleitian.spaces.live.com" target="_blank" rel="external">Tony</a>: 这家伙号称最近低迷, 就当给他点儿兴奋剂 <a href="http://tonyleitian.spaces.live.com/blog/cns!7D428C9B57BE1FCE!546.entry" target="_blank" rel="external">答案</a></li>
-<li><a href="http://songzf.spaces.live.com" target="_blank" rel="external">大脸</a>: 貌似此人已经N久没有更新过自己的Spaces了, 给他一个继续的理由 <a href="http://songzf.spaces.live.com/blog/cns!D4A037CEB383699B!351.entry" target="_blank" rel="external">答案</a></li>
-<li><a href="http://www.icbean.com/harry/default.asp" target="_blank" rel="external">HarryLee</a>: 最近刚搞定自己的Blog系统, 应该会比较有兴趣写 <a href="http://www.icbean.com/harry/article.asp?id=14" target="_blank" rel="external">答案</a></li>
-<li><a href="http://guizhongjing2000.spaces.live.com" target="_blank" rel="external">Bob</a>: 此公更新Spaces比较频繁, 不过大多是贴图和电影有关, 而且每次字数都不多</li>
+<li><a href="http://beckylog.spaces.live.com" target="_blank" rel="noopener">偶家LP</a>: 偶家LP可是相当能写! 而且质量相当高! 期待…… <a href="http://beckylog.spaces.live.com/blog/cns!D908F0015A2196E!996.entry" target="_blank" rel="noopener">答案</a></li>
+<li><a href="http://tonyleitian.spaces.live.com" target="_blank" rel="noopener">Tony</a>: 这家伙号称最近低迷, 就当给他点儿兴奋剂 <a href="http://tonyleitian.spaces.live.com/blog/cns!7D428C9B57BE1FCE!546.entry" target="_blank" rel="noopener">答案</a></li>
+<li><a href="http://songzf.spaces.live.com" target="_blank" rel="noopener">大脸</a>: 貌似此人已经N久没有更新过自己的Spaces了, 给他一个继续的理由 <a href="http://songzf.spaces.live.com/blog/cns!D4A037CEB383699B!351.entry" target="_blank" rel="noopener">答案</a></li>
+<li><a href="http://www.icbean.com/harry/default.asp" target="_blank" rel="noopener">HarryLee</a>: 最近刚搞定自己的Blog系统, 应该会比较有兴趣写 <a href="http://www.icbean.com/harry/article.asp?id=14" target="_blank" rel="noopener">答案</a></li>
+<li><a href="http://guizhongjing2000.spaces.live.com" target="_blank" rel="noopener">Bob</a>: 此公更新Spaces比较频繁, 不过大多是贴图和电影有关, 而且每次字数都不多</li>
 </ul>
 <p>再说一下规则:</p>
 <p>收到提示的人在自己的blog上写下答案，然后把题目丢给另外五个人，在文末附上这五个人的连结，并且到这些人的留言版上留下：“哈哈！你被贴了。”。这五个被通知到的人，在自己的blog注明(并附上连结)是从哪一个人那里传来的题目(这时候“引用”功能就很好用)，然后写下答 案，再去贴另外五个人。如此继续下去。</p>
@@ -1198,7 +1254,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1238,6 +1294,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/12/recently-20060913/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/12/recently-20060913/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1256,7 +1323,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1327,7 +1394,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1367,6 +1434,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/09/01/lp-humor/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/09/01/lp-humor/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1385,7 +1463,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1462,7 +1540,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1502,6 +1580,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/08/25/many-usings-of-google-calendar/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/08/25/many-usings-of-google-calendar/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1520,7 +1609,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1531,17 +1620,17 @@
             <p><img src="http://www.google.com/calendar/images/calendar_sm2.gif" alt="Google Calendar"></p>
 <p>最近似乎把自己所有的网络应用都放到Google上了, 也不知道是好是坏! 不过重要数据的备份手段还是需要有的, 日后考虑一下!</p>
 <p>今天想聊聊Google的Calendar(日历)</p>
-<p>动机很简单, 就是想用GCalendar来管理自己的日程, 没有多想, 就打开了<a href="http://www.google.com/calendar" target="_blank" rel="external">http://www.google.com/calendar</a></p>
+<p>动机很简单, 就是想用GCalendar来管理自己的日程, 没有多想, 就打开了<a href="http://www.google.com/calendar" target="_blank" rel="noopener">http://www.google.com/calendar</a></p>
 <p>自己曾经加过一些别人分享的有趣的日历, 象农历日历, F1日程, 节日等. 但当时只是觉得这是一个展示的工具, 玩了一段时间就放下了. 但随着后来的了解, 觉得这个日历还是蛮有玩头的!</p>
 <p>随便在搜索栏中搜索了一些有趣的词语, 随即看到了许多别人分享的日历(也有可能是不小心分享的^_^), 也看到了许多不同的使用日历的方式.</p>
 <p>最常用的就是日程表了, 工作的日程, 生活的日程, 活动的日程. 都是对于未来的计划, 我使用的方式应该也是这样</p>
-<p>例子: <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#x74;&#x74;&#x70;&#x3a;&#47;&#47;&#119;&#119;&#x77;&#x2e;&#x67;&#111;&#x6f;&#x67;&#108;&#101;&#46;&#99;&#111;&#109;&#47;&#x63;&#97;&#108;&#101;&#110;&#x64;&#x61;&#x72;&#47;&#x65;&#x6d;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#x6e;&#97;&#x73;&#x64;&#x61;&#113;&#x62;&#97;&#114;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;">&#x68;&#x74;&#x74;&#x70;&#x3a;&#47;&#47;&#119;&#119;&#x77;&#x2e;&#x67;&#111;&#x6f;&#x67;&#108;&#101;&#46;&#99;&#111;&#109;&#47;&#x63;&#97;&#108;&#101;&#110;&#x64;&#x61;&#x72;&#47;&#x65;&#x6d;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#x6e;&#97;&#x73;&#x64;&#x61;&#113;&#x62;&#97;&#114;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>例子: <a href="http://www.google.com/calendar/embed?src=nasdaqbar@gmail.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=nasdaqbar@gmail.com</a></p>
 <p>然后就是一些记录了</p>
-<p>例子: <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x68;&#116;&#x74;&#x70;&#58;&#47;&#47;&#x77;&#119;&#119;&#46;&#103;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#47;&#99;&#97;&#108;&#x65;&#x6e;&#100;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#102;&#104;&#x30;&#57;&#116;&#57;&#x63;&#x65;&#54;&#118;&#118;&#110;&#x32;&#55;&#99;&#x62;&#x75;&#x38;&#x74;&#52;&#51;&#107;&#x36;&#48;&#109;&#107;&#x40;&#x67;&#114;&#111;&#117;&#112;&#46;&#x63;&#97;&#x6c;&#101;&#110;&#100;&#x61;&#114;&#46;&#x67;&#111;&#111;&#103;&#108;&#x65;&#46;&#x63;&#111;&#x6d;&#38;&#x6d;&#111;&#x64;&#101;&#59;&#61;&#x4d;&#79;&#78;&#84;&#72;&#x26;&#100;&#97;&#116;&#x65;&#x73;&#59;&#x3d;&#50;&#48;&#48;&#54;&#x30;&#55;&#x30;&#x31;&#37;&#x32;&#70;&#50;&#x30;&#x30;&#x36;&#48;&#x38;&#x30;&#49;">&#x68;&#116;&#x74;&#x70;&#58;&#47;&#47;&#x77;&#119;&#119;&#46;&#103;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#47;&#99;&#97;&#108;&#x65;&#x6e;&#100;&#x61;&#114;&#47;&#101;&#109;&#x62;&#101;&#x64;&#x3f;&#x73;&#x72;&#99;&#x3d;&#102;&#104;&#x30;&#57;&#116;&#57;&#x63;&#x65;&#54;&#118;&#118;&#110;&#x32;&#55;&#99;&#x62;&#x75;&#x38;&#x74;&#52;&#51;&#107;&#x36;&#48;&#109;&#107;&#x40;&#x67;&#114;&#111;&#117;&#112;&#46;&#x63;&#97;&#x6c;&#101;&#110;&#100;&#x61;&#114;&#46;&#x67;&#111;&#111;&#103;&#108;&#x65;&#46;&#x63;&#111;&#x6d;&#38;&#x6d;&#111;&#x64;&#101;&#59;&#61;&#x4d;&#79;&#78;&#84;&#72;&#x26;&#100;&#97;&#116;&#x65;&#x73;&#59;&#x3d;&#50;&#48;&#48;&#54;&#x30;&#55;&#x30;&#x31;&#37;&#x32;&#70;&#50;&#x30;&#x30;&#x36;&#48;&#x38;&#x30;&#49;</a></p>
-<p>例子: <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#104;&#116;&#116;&#112;&#x3a;&#x2f;&#47;&#x77;&#x77;&#119;&#46;&#x67;&#111;&#111;&#103;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;&#x2f;&#x63;&#97;&#108;&#101;&#110;&#100;&#x61;&#x72;&#x2f;&#x65;&#109;&#x62;&#101;&#100;&#x3f;&#x73;&#x72;&#99;&#x3d;&#113;&#x71;&#56;&#50;&#53;&#x39;&#x32;&#51;&#57;&#x39;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;">&#104;&#116;&#116;&#112;&#x3a;&#x2f;&#47;&#x77;&#x77;&#119;&#46;&#x67;&#111;&#111;&#103;&#x6c;&#101;&#46;&#99;&#x6f;&#x6d;&#x2f;&#x63;&#97;&#108;&#101;&#110;&#100;&#x61;&#x72;&#x2f;&#x65;&#109;&#x62;&#101;&#100;&#x3f;&#x73;&#x72;&#99;&#x3d;&#113;&#x71;&#56;&#50;&#53;&#x39;&#x32;&#51;&#57;&#x39;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;</a></p>
+<p>例子: <a href="http://www.google.com/calendar/embed?src=fh09t9ce6vvn27cbu8t43k60mk@group.calendar.google.com&mode;=MONTH&dates;=20060701%2F20060801" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=fh09t9ce6vvn27cbu8t43k60mk@group.calendar.google.com&mode;=MONTH&dates;=20060701%2F20060801</a></p>
+<p>例子: <a href="http://www.google.com/calendar/embed?src=qq82592399@gmail.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=qq82592399@gmail.com</a></p>
 <p>同样是记录, 还有人用它来写日记, 也是不错的使用方式! 如果支持发布到Blog也不错:)</p>
-<p><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x77;&#119;&#119;&#46;&#x67;&#111;&#111;&#x67;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;&#47;&#99;&#97;&#x6c;&#x65;&#x6e;&#100;&#x61;&#114;&#x2f;&#x65;&#x6d;&#98;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#61;&#121;&#x2e;&#x78;&#x69;&#x61;&#111;&#x78;&#105;&#x61;&#111;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#38;&#x64;&#x61;&#116;&#101;&#x73;&#59;&#x3d;&#x32;&#48;&#x30;&#54;&#x30;&#x34;&#48;&#49;&#37;&#x32;&#x46;&#50;&#x30;&#48;&#54;&#x30;&#53;&#48;&#49;">&#x68;&#116;&#x74;&#112;&#x3a;&#47;&#x2f;&#x77;&#119;&#119;&#46;&#x67;&#111;&#111;&#x67;&#108;&#101;&#46;&#x63;&#x6f;&#x6d;&#47;&#99;&#97;&#x6c;&#x65;&#x6e;&#100;&#x61;&#114;&#x2f;&#x65;&#x6d;&#98;&#x65;&#x64;&#x3f;&#x73;&#x72;&#99;&#61;&#121;&#x2e;&#x78;&#x69;&#x61;&#111;&#x78;&#105;&#x61;&#111;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#38;&#x64;&#x61;&#116;&#101;&#x73;&#59;&#x3d;&#x32;&#48;&#x30;&#54;&#x30;&#x34;&#48;&#49;&#37;&#x32;&#x46;&#50;&#x30;&#48;&#54;&#x30;&#53;&#48;&#49;</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x68;&#116;&#116;&#112;&#58;&#47;&#x2f;&#x77;&#x77;&#x77;&#46;&#103;&#111;&#111;&#x67;&#108;&#x65;&#46;&#99;&#x6f;&#109;&#47;&#99;&#x61;&#x6c;&#x65;&#110;&#100;&#x61;&#x72;&#47;&#x65;&#109;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#57;&#x74;&#116;&#x62;&#109;&#105;&#54;&#53;&#48;&#x75;&#104;&#112;&#109;&#53;&#x39;&#x6f;&#x34;&#52;&#x66;&#x76;&#105;&#x6c;&#108;&#110;&#97;&#x67;&#x40;&#103;&#114;&#x6f;&#117;&#112;&#46;&#99;&#x61;&#108;&#101;&#x6e;&#x64;&#x61;&#x72;&#x2e;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;">&#x68;&#116;&#116;&#112;&#58;&#47;&#x2f;&#x77;&#x77;&#x77;&#46;&#103;&#111;&#111;&#x67;&#108;&#x65;&#46;&#99;&#x6f;&#109;&#47;&#99;&#x61;&#x6c;&#x65;&#110;&#100;&#x61;&#x72;&#47;&#x65;&#109;&#98;&#101;&#x64;&#x3f;&#x73;&#x72;&#x63;&#x3d;&#57;&#x74;&#116;&#x62;&#109;&#105;&#54;&#53;&#48;&#x75;&#104;&#112;&#109;&#53;&#x39;&#x6f;&#x34;&#52;&#x66;&#x76;&#105;&#x6c;&#108;&#110;&#97;&#x67;&#x40;&#103;&#114;&#x6f;&#117;&#112;&#46;&#99;&#x61;&#108;&#101;&#x6e;&#x64;&#x61;&#x72;&#x2e;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#101;&#46;&#x63;&#x6f;&#x6d;</a></p>
-<p>还有是使用Google Calendar来做工作上的事情, 比如Bug追踪:<br><a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#x77;&#119;&#x77;&#x2e;&#103;&#x6f;&#111;&#103;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#x2f;&#99;&#x61;&#x6c;&#101;&#x6e;&#100;&#x61;&#114;&#x2f;&#101;&#x6d;&#98;&#101;&#100;&#63;&#115;&#114;&#x63;&#61;&#101;&#113;&#x70;&#101;&#x74;&#101;&#114;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#x68;&#116;&#x74;&#x70;&#58;&#x2f;&#x2f;&#x77;&#119;&#x77;&#x2e;&#103;&#x6f;&#111;&#103;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;&#x2f;&#99;&#x61;&#x6c;&#101;&#x6e;&#100;&#x61;&#114;&#x2f;&#101;&#x6d;&#98;&#101;&#100;&#63;&#115;&#114;&#x63;&#61;&#101;&#113;&#x70;&#101;&#x74;&#101;&#114;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p><a href="http://www.google.com/calendar/embed?src=y.xiaoxiao@gmail.com&dates;=20060401%2F20060501" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=y.xiaoxiao@gmail.com&dates;=20060401%2F20060501</a><br><a href="http://www.google.com/calendar/embed?src=9ttbmi650uhpm59o44fvillnag@group.calendar.google.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=9ttbmi650uhpm59o44fvillnag@group.calendar.google.com</a></p>
+<p>还有是使用Google Calendar来做工作上的事情, 比如Bug追踪:<br><a href="http://www.google.com/calendar/embed?src=eqpeter@gmail.com" target="_blank" rel="noopener">http://www.google.com/calendar/embed?src=eqpeter@gmail.com</a></p>
 <p>Google日历还支持RSS订阅和HTML输出, 用RSS Reader订阅和将HTML嵌入在自己网页上就是很好的应用!</p>
 <p>我也要想想自己要怎么使用这个灵活的工具!</p>
 
@@ -1597,7 +1686,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1637,6 +1726,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2006/08/04/i-have-arrived-kunming/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2006/08/04/i-have-arrived-kunming/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1655,7 +1755,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1664,7 +1764,7 @@
         
           
             <p>哈哈，真是快啊！这上午还在单位解决问题，晚上就在昆明写Blog了！感叹一下科技的发达，呵呵~~</p>
-<p>住的地方很不错的！一个三人的大房子我们两个人住！还有电脑可以上网！环境好，干净，条件也好！还有两个大狗狗！真是可爱得不得了！说到这里，就不得不做一个广告了！真是情不自禁的作的广告！那就是<a href="http://www.km4x4.com" target="_blank" rel="external">http://www.km4x4.com</a></p>
+<p>住的地方很不错的！一个三人的大房子我们两个人住！还有电脑可以上网！环境好，干净，条件也好！还有两个大狗狗！真是可爱得不得了！说到这里，就不得不做一个广告了！真是情不自禁的作的广告！那就是<a href="http://www.km4x4.com" target="_blank" rel="noopener">http://www.km4x4.com</a></p>
 <p>这就是苏哥和红姐的小小旅行社！可能说旅行社有些不合适，他们这里是专门帮助自助游的朋友的，有住宿，还代订票！而且苏哥和红姐对人特热情！感觉像家一样！</p>
 <p>今天从机场出来就是苏哥开车来接的！明天一早出门，苏哥还要送我们去车站，真是太够意思了！所以有要来云南的朋友们，一定要到苏哥和红姐这里！不然我跟你们急啊！电话网站上有！</p>
 <p>明天一早，我们就要做高快去丽江了！到了那里估计就没有这么好条件来写Blog了！不过等回去，一定会写的！还有大量的PP呢！</p>
@@ -1739,81 +1839,93 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1826,12 +1938,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1839,11 +1948,17 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1859,10 +1974,7 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1897,62 +2009,93 @@
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1976,7 +2119,7 @@
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1984,6 +2127,9 @@
 
   
 
+  
+
+  
   
 
   

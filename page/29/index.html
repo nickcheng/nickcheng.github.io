@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/11/02/look-my-new-phone/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/11/02/look-my-new-phone/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -379,7 +380,7 @@
             <p>哈哈，偶得新手机已经在路上了！不知道什么时候可以拿到！期待啊！简直是迫不及待！</p>
 <p>先让大家看看偶得新手机的PP！等到真机到了，我再放新图：）</p>
 <p><img src="http://welectronics.com/gsm/I%20Mate/imate-sp5m.jpg" alt="i-Mate_SP5m"></p>
-<p><a href="http://www.expansys.com/zoompic.asp?type=item&amp;code=125726" target="_blank" rel="external">点击查看详细大图</a></p>
+<p><a href="http://www.expansys.com/zoompic.asp?type=item&amp;code=125726" target="_blank" rel="noopener">点击查看详细大图</a></p>
 <p>看起来还不错的样子吧：）</p>
 <p>这款机器其实在国内也有，就是Dopod的586。大家都是同属HTC的。不过因为国内政策的限制，586没有WIFI和，所以这也是我没有在国内的买的缘故。</p>
 <p>秀一下机器的参数：</p>
@@ -676,7 +677,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -716,6 +717,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/11/01/november-chopin-release/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/11/01/november-chopin-release/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -734,7 +746,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -803,7 +815,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -843,6 +855,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/30/foobar2000/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/30/foobar2000/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -861,7 +884,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -869,7 +892,7 @@
       
         
           
-            <p>一直以来使用的音频播放器就是<a href="http://www.foobar2000.org" target="_blank" rel="external">Foobar2000</a>，他的简洁和小巧以及可扩展性都是吸引我的地方。有了它以后，其它的播放器，如：Winamp、WMP的都不用了！</p>
+            <p>一直以来使用的音频播放器就是<a href="http://www.foobar2000.org" target="_blank" rel="noopener">Foobar2000</a>，他的简洁和小巧以及可扩展性都是吸引我的地方。有了它以后，其它的播放器，如：Winamp、WMP的都不用了！</p>
 <p>前段时间不知道为什么，我的Foobar2k突然启动不起来了（进程中有）。今天刚好周末，我就鼓捣了一阵子，呵呵，换了一个新版本的，算是搞定吧！</p>
 <p>MM一直想像我一样要在Foobar上显示歌词，这次刚好我有一个比较干净的版本，呵呵，送给MM！<br><del>@@Foobar2000下载@@</del></p>
 <p>这个版本主要就是加上了”歌词秀”!</p>
@@ -927,7 +950,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -967,6 +990,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/28/2005-universal-chinese-blog-competition/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/28/2005-universal-chinese-blog-competition/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -985,7 +1019,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -995,7 +1029,7 @@
           
             <p>sohu真的特能吹！真的！吹得还让你看不出破绽……</p>
 <p>这不，搞了一个什么大赛，煞有其事的样子。现在海选已经结束，到了公众投票的时候，呵呵，和超女似的。没想到我的Blog还被选上了。大家能找到么？呵呵……</p>
-<p><a href="http://it.sohu.com/s2005/9171/s240620429.shtml" target="_blank" rel="external">http://it.sohu.com/s2005/9171/s240620429.shtml</a></p>
+<p><a href="http://it.sohu.com/s2005/9171/s240620429.shtml" target="_blank" rel="noopener">http://it.sohu.com/s2005/9171/s240620429.shtml</a></p>
 <p>本来还想自己写个东西来做个小弊，提高自己的票数。后来就没了兴趣，还是那句话：一点儿技术含量都没有……最关键的是，还白白给sohu做了广告，他们正偷着乐呢！</p>
 <p>以效仿“百万网页”的形式开始，超女似的运作方式，还找了一堆的“嘉宾”来评选……哎，什么时候大家能再踏实一点呢？</p>
 
@@ -1051,7 +1085,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1091,6 +1125,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/28/wp-stattraq-optimization/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/28/wp-stattraq-optimization/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1109,7 +1154,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1117,17 +1162,17 @@
       
         
           
-            <p><a href="http://randypeterman.com/StatTraq/" target="_blank" rel="external">StatTraq</a>是我用的一个统计系统, 目前还是1.0alpha版本, 所以或多或少会有一些问题:) 不过有了问题我们还是要解决的!</p>
+            <p><a href="http://randypeterman.com/StatTraq/" target="_blank" rel="noopener">StatTraq</a>是我用的一个统计系统, 目前还是1.0alpha版本, 所以或多或少会有一些问题:) 不过有了问题我们还是要解决的!</p>
 <p>由于自己不懂php, 所以解决方法都是找到的, 这里给出Link, 并且感谢:)</p>
 <ol>
-<li><p>中文的乱码问题<br><a href="http://blog.tmd520.com/index.php/33" target="_blank" rel="external">http://blog.tmd520.com/index.php/33</a></p>
+<li><p>中文的乱码问题<br><a href="http://blog.tmd520.com/index.php/33" target="_blank" rel="noopener">http://blog.tmd520.com/index.php/33</a></p>
 </li>
 <li><p>添加新的搜索引擎</p>
 <p> 这个统计系统默认只是支持Google, Yahoo和MSN这三个搜索引擎, 而国内的一些搜索引擎就只有我们自己想办法了.</p>
 <p> 这个链接就给出了解决方法, 不过里面的代码有一点点问题</p>
 <pre><code>$baidu_count = 0;
 $sogou_count = 0;
-</code></pre><p> <a href="http://www.mengyan.org/blog/archives/2005/08/30/59.html" target="_blank" rel="external">http://www.mengyan.org/blog/archives/2005/08/30/59.html</a></p>
+</code></pre><p> <a href="http://www.mengyan.org/blog/archives/2005/08/30/59.html" target="_blank" rel="noopener">http://www.mengyan.org/blog/archives/2005/08/30/59.html</a></p>
 </li>
 </ol>
 
@@ -1183,7 +1228,7 @@ $sogou_count = 0;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1223,6 +1268,17 @@ $sogou_count = 0;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/28/jay-yequ/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/28/jay-yequ/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1241,7 +1297,7 @@ $sogou_count = 0;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1254,10 +1310,20 @@ $sogou_count = 0;
 <p>这是歌词:)</p>
 <blockquote>
 <p>一群嗜血的蚂蚁被腐肉所吸引<br>我面无表情看孤独的风景<br>失去你　爱开始分明<br>失去你　还有什么事好关心<br>那鸽子不再象征和平<br>我终于被提醒　捆着手我现在是奴隶<br>我用漂亮的押韵形容被掠夺一空的爱情</p>
+</blockquote>
+<blockquote>
 <p>啊<br>我应该藏这里　夜色不干净<br>还给你整夜的回忆　占满天的星<br>送你的白色玫瑰　在窗台的花前凋零<br>午夜在树枝上诡异的很安静　　<br>倾听　我黑色的大衣　像我的你<br>衣栉比鳞的鬼　走过的走过的生命<br>啊四周弥漫雾气<br>啊我在空旷的墓地<br>老去后还爱你</p>
+</blockquote>
+<blockquote>
 <p>－副歌－</p>
+</blockquote>
+<blockquote>
 <p>为你弹奏萧邦的夜曲<br>纪念我死去的爱情<br>跟夜风一样的声音<br>心碎的很好听<br>手在键盘敲钢琴<br>我给的思念太小心<br>你埋葬的地方就有你</p>
+</blockquote>
+<blockquote>
 <p>为你弹奏萧邦的夜曲<br>纪念我死去的爱情<br>而我为你隐姓埋名<br>在月光下弹琴<br>对你心跳的感应<br>还是如此温热清晰<br>怀念你那鲜红的唇印</p>
+</blockquote>
+<blockquote>
 <p>那些白色的蜻蜓　散落在这森林<br>而我的眼睛　没有丝毫同情<br>失去你　泪水混浊无情<br>失去你　我连笑容都有阴影<br>我站在满心期待的屋顶<br>嘲笑我的伤心<br>像一口没有水的枯井<br>我用尽我的自信<br>要我后悔莫及等待爱情 </p>
 </blockquote>
 <p>11月1日就发片了, 大家拭目以待吧:)</p>
@@ -1314,7 +1380,7 @@ $sogou_count = 0;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1354,6 +1420,17 @@ $sogou_count = 0;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/27/cms-album-rss-reader/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/27/cms-album-rss-reader/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1372,7 +1449,7 @@ $sogou_count = 0;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1382,11 +1459,11 @@ $sogou_count = 0;
           
             <p>有了PHP的空间以后, 对PHP的一些程序就格外的感兴趣. 而且PHP下的优秀程序还真的是不少! 这更勾起了我的无限欲望, 呵呵…</p>
 <p>之前在自己的站点上搭设了一个PHP的WIKI程序, 用的挺好的, 之前写过这个<a href="http://nickcheng.com/index.php/archives/162">Dokuwiki的文章</a>, 大家可以看看.</p>
-<p>CMS程序用的是<a href="http://www.joomla.org" target="_blank" rel="external">Joomla</a>, 这个CMS程序是异常的强大! 至今我都没有玩的很好, 呵呵, 大家可以来我这里搭的测试站点看看. <a href="http://nickcheng.com/joomla">http://nickcheng.com/joomla</a></p>
+<p>CMS程序用的是<a href="http://www.joomla.org" target="_blank" rel="noopener">Joomla</a>, 这个CMS程序是异常的强大! 至今我都没有玩的很好, 呵呵, 大家可以来我这里搭的测试站点看看. <a href="http://nickcheng.com/joomla">http://nickcheng.com/joomla</a></p>
 <p>不过, 至今还没有为这套程序找到合适的用途. 本想用来展示我们乐队的风采, 可是发现似乎有些大材小用. 哎…还在考虑中……</p>
-<p>相册我一直用的是<a href="http://www.flickr.com" target="_blank" rel="external">Flickr</a>, 这个相册相信没有人会说不好, 不好的话, <a href="http://www.yahoo.com.cn" target="_blank" rel="external">Yahoo</a>也就不会收购了, 呵呵…不过虽然这样, 我还是想在自己的空间搭一个相册系统, 最起码, 速度能比<a href="http://www.flickr.com" target="_blank" rel="external">Flickr</a>快一些吧…</p>
+<p>相册我一直用的是<a href="http://www.flickr.com" target="_blank" rel="noopener">Flickr</a>, 这个相册相信没有人会说不好, 不好的话, <a href="http://www.yahoo.com.cn" target="_blank" rel="noopener">Yahoo</a>也就不会收购了, 呵呵…不过虽然这样, 我还是想在自己的空间搭一个相册系统, 最起码, 速度能比<a href="http://www.flickr.com" target="_blank" rel="noopener">Flickr</a>快一些吧…</p>
 <p>今天已经下载了两个相册的程序, 不过暂时还没有时间去试用, 等到试用了以后再写些东西吧:)</p>
-<p>RSS Reader就和相册比较类似了, 我现在用的也是一个经典, <a href="http://www.bloglines.com" target="_blank" rel="external">Bloglines</a>. 呵呵, 没人说他不好吧! 还是一样的原因, 我也想自己搭一个. 原来打算用lilina的, 不过听说这个东东现在已经停止开发, 而且还有一些bug, 所以就暂时不考虑了. 自己又下了一个别的, 也是还没有时间试用, 所以, 也是等等吧……</p>
+<p>RSS Reader就和相册比较类似了, 我现在用的也是一个经典, <a href="http://www.bloglines.com" target="_blank" rel="noopener">Bloglines</a>. 呵呵, 没人说他不好吧! 还是一样的原因, 我也想自己搭一个. 原来打算用lilina的, 不过听说这个东东现在已经停止开发, 而且还有一些bug, 所以就暂时不考虑了. 自己又下了一个别的, 也是还没有时间试用, 所以, 也是等等吧……</p>
 
           
         
@@ -1440,7 +1517,7 @@ $sogou_count = 0;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1480,6 +1557,17 @@ $sogou_count = 0;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/27/next-station-is-heaven/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/27/next-station-is-heaven/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1498,7 +1586,7 @@ $sogou_count = 0;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1513,21 +1601,45 @@ $sogou_count = 0;
 <p><del>下载”下一站,天堂”(更新了下载链接)</del></p>
 <blockquote>
 <p>我们换上了虚无的新装<br>带着幸福的笑容<br>赶上了这趟命运的列车</p>
+</blockquote>
+<blockquote>
 <p>我们来不及回忆<br>来不及曝光上一幕的底片<br>疯狂前进回不到起点</p>
+</blockquote>
+<blockquote>
 <p>窗外有出卖灵魂的小贩<br>泪水灌溉的麦田<br>躯体燃烧的烟</p>
+</blockquote>
+<blockquote>
 <p>我们的生命就像个烟圈<br>离躯体越来越远<br>向着天堂渐渐的扩散</p>
+</blockquote>
+<blockquote>
 <p>越过了瞬间的蔚蓝<br>穿过了阴霾的虚幻<br>我们早已把回家的路永远的丢在地平线</p>
+</blockquote>
+<blockquote>
 <p>路过了反复的痛苦<br>经过了纯粹的感动<br>虽然不愿意但还得装的义无反顾</p>
+</blockquote>
+<blockquote>
 <p>我们不知道这是哪条路<br>我们看不清<br>这张模糊的地图</p>
+</blockquote>
+<blockquote>
 <p>我们的生命就像个烟圈<br>离躯体越来越远<br>向着天堂慢慢的扩散</p>
+</blockquote>
+<blockquote>
 <p>越过了瞬间的蔚蓝<br>穿过了阴霾的虚幻<br>我们早已把回家的路永远的丢在地平线</p>
+</blockquote>
+<blockquote>
 <p>路过了反复的痛苦<br>经过了纯粹的感动<br>虽然不愿意但还得装的义无反顾</p>
+</blockquote>
+<blockquote>
 <p>越过了瞬间的蔚蓝<br>穿过了阴霾的虚幻<br>我们早已把回家的路永远的丢在地平线</p>
+</blockquote>
+<blockquote>
 <p>路过了反复的痛苦<br>经过了纯粹的感动<br>虽然不愿意但还得装的义无反顾</p>
+</blockquote>
+<blockquote>
 <p>为了生活，为了幸福<br>我们沦为时光的俘虏<br>太多讽刺，太多尴尬<br>太多的珍贵被留在旅途<br>冲动的汽笛，欲望的速度<br>把我们送向那未知的路<br>我的生命，我的幸福<br>这原本是通向天堂的路</p>
 </blockquote>
-<p><a href="http://static.flickr.com/25/56307204_d3d1e38bf6.jpg" target="_blank" rel="external"><img src="http://static.flickr.com/25/56307204_d3d1e38bf6_m.jpg" alt="比赛演出现场"></a> </p>
-<p><a href="http://static.flickr.com/33/56307122_bff9cbc968.jpg" target="_blank" rel="external"><img src="http://static.flickr.com/33/56307122_bff9cbc968_m.jpg" alt="我们得奖了!"></a></p>
+<p><a href="http://static.flickr.com/25/56307204_d3d1e38bf6.jpg" target="_blank" rel="noopener"><img src="http://static.flickr.com/25/56307204_d3d1e38bf6_m.jpg" alt="比赛演出现场"></a> </p>
+<p><a href="http://static.flickr.com/33/56307122_bff9cbc968.jpg" target="_blank" rel="noopener"><img src="http://static.flickr.com/33/56307122_bff9cbc968_m.jpg" alt="我们得奖了!"></a></p>
 
           
         
@@ -1581,7 +1693,7 @@ $sogou_count = 0;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1621,6 +1733,17 @@ $sogou_count = 0;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/25/put-on-records-finally/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/25/put-on-records-finally/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1639,7 +1762,7 @@ $sogou_count = 0;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1702,7 +1825,7 @@ $sogou_count = 0;
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1742,6 +1865,17 @@ $sogou_count = 0;
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2005/10/20/build-dokuwiki/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2005/10/20/build-dokuwiki/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1760,7 +1894,7 @@ $sogou_count = 0;
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1772,10 +1906,10 @@ $sogou_count = 0;
 <p>其实只是想用Wiki来进行一下日常BrainStorm的记录. 在此分享一下架设这个wiki的经验:)</p>
 <p>首先说一下, Dokuwiki是使用php开发的轻量级wiki系统. 说它轻量级是因为它不需要专门的数据库系统支持, 它是使用文本文件作为数据源的. 所以只要你的空间支持php, 就基本上可以正常使用Dokuwiki了!</p>
 <p>过程是很简单滴^_^</p>
-<p>首先到<a href="http://wiki.splitbrain.org/wiki:dokuwiki" target="_blank" rel="external">Dokuwiki的老窝</a>下源程序, 然后解压缩, 上传到你的空间.</p>
-<p>完事儿以后, 你可以试着访问一下. 如果你的域名为www.abc.com, 你的wiki程序放在wiki目录下, 那么你就是需要访问<a href="http://www.abc.com/wiki" target="_blank" rel="external">http://www.abc.com/wiki</a></p>
+<p>首先到<a href="http://wiki.splitbrain.org/wiki:dokuwiki" target="_blank" rel="noopener">Dokuwiki的老窝</a>下源程序, 然后解压缩, 上传到你的空间.</p>
+<p>完事儿以后, 你可以试着访问一下. 如果你的域名为<a href="http://www.abc.com" target="_blank" rel="noopener">www.abc.com</a>, 你的wiki程序放在wiki目录下, 那么你就是需要访问<a href="http://www.abc.com/wiki" target="_blank" rel="noopener">http://www.abc.com/wiki</a></p>
 <p>这时可能会出现一个错误, 不过不要担心, 你只需要在你wiki目录下的data目录中建立一个名为changes.log的空白文件就ok了!</p>
-<p>这个时候, 你的wiki已经可以使用了! 你可以试着写一些东西, 这里有<a href="https://bbs.ilc.edu.tw/wiki/wiki:syntax" target="_blank" rel="external">一篇翻译好的dokuwiki语法说明</a>.</p>
+<p>这个时候, 你的wiki已经可以使用了! 你可以试着写一些东西, 这里有<a href="https://bbs.ilc.edu.tw/wiki/wiki:syntax" target="_blank" rel="noopener">一篇翻译好的dokuwiki语法说明</a>.</p>
 <p>默认装好的wiki系统的用户界面是英文的, 如果你不习惯的话, 可以通过修改配置文件来更换.</p>
 <p>这里就有些不方便了. dokuwiki没有一个方便的后台管理界面, 我们只能通过修改配置文件来达到配置的目的.(哪位达人有时间来写一个简单的后台程序?)</p>
 <p>打开conf目录下的dokuwiki.php文件, 把下面这行引号中的值改为zh</p>
@@ -1853,81 +1987,93 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1940,12 +2086,9 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1953,11 +2096,17 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1973,10 +2122,7 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -2011,62 +2157,93 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -2090,7 +2267,7 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -2098,6 +2275,9 @@ $conf[&apos;lang&apos;]        = &apos;en&apos;;              //your language
 
   
 
+  
+
+  
   
 
   

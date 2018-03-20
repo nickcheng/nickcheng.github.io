@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -392,7 +393,7 @@
 <p><strong>解决方法</strong></p>
 <p>既然MS现在没有提供解决方法, 我们只能自己想办法了. </p>
 <p>在Visual Studio的菜单中选择”Tools”-&gt;”Macros”-&gt;”Macros IDE”, 打开宏编辑器</p>
-<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9aa54c00" target="_blank" rel="external"><img src="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg" alt="宏编辑器"></a></p>
+<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9aa54c00" target="_blank" rel="noopener"><img src="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg" alt="宏编辑器"></a></p>
 <p>在Module1中添加如下代码</p>
 <pre><code>Sub CheckoutLatest()
     DTE.ExecuteCommand(&quot;File.TfsGetLatestVersion&quot;)
@@ -401,10 +402,10 @@ End Sub
 </code></pre><p>要让你那里看到的和我图上的一致, 然后保存关闭. </p>
 <p>这只是增加了宏, 如果每次需要运行的时候都打开宏浏览器, 那就太麻烦了, 所以我们还要给这个宏添加一个快捷键. </p>
 <p>在菜单中选择:”Tools”-&gt;”Options”, 然后选择”Environment”-&gt;”Keyboard”</p>
-<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9cf04c02" target="_blank" rel="external"><img src="http://photo5.yupoo.com/20071114/145404_279588783_m.jpg" alt="选项"></a></p>
+<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9cf04c02" target="_blank" rel="noopener"><img src="http://photo5.yupoo.com/20071114/145404_279588783_m.jpg" alt="选项"></a></p>
 <p>然后在”Show commands containing:”下的输入框中输入”checkoutlatest”, 就能定位到我们新建的宏了. </p>
 <p>在”Press shortcut keys”中输入你希望用的快捷键(我使用的是”Alt-O”), 然后点击”Assign”键, 点击”OK”, 完成. </p>
-<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9f2d4c06" target="_blank" rel="external"><img src="http://photo5.yupoo.com/20071114/145404_248546321_m.jpg" alt="选项完成"></a></p>
+<p><a href="http://www.yupoo.com/photos/view?id=ff8080811638374901163cef9f2d4c06" target="_blank" rel="noopener"><img src="http://photo5.yupoo.com/20071114/145404_248546321_m.jpg" alt="选项完成"></a></p>
 <p>以后, 在需要Check Out文件的时候, 就可以使用快捷键”Alt-O”来操作了, 这个操作可以保证你Check Out到Latest的文件.</p>
 
           
@@ -459,7 +460,7 @@ End Sub
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -499,6 +500,17 @@ End Sub
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/11/12/i-am-the-host-of-my-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/11/12/i-am-the-host-of-my-blog/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -517,7 +529,7 @@ End Sub
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -531,7 +543,7 @@ End Sub
 <p>这篇文章已经晚了一天了, 也算证明了主题, 我就是要晚一天, 管得着么?!!</p>
 <p>ps. 突然想到, 湖南XX台的一个XX节目里有一句经典台词叫什么”XXX我做主”…&gt;_&lt;</p>
 <p><img src="http://www.feedsky.com/challenge/art/64316/feedsky/nickcheng/~/rzsg/071111/7d856/pic.jpg" alt=""></p>
-<p><a href="http://www.feedsky.com/challenge/art/64316/feedsky/nickcheng/~/rzsg/071111/7d856/lnk.html" target="_blank" rel="external">http://www.feedsky.com/challenge/art/64316/feedsky/nickcheng/~/rzsg/071111/7d856/lnk.html</a></p>
+<p><a href="http://www.feedsky.com/challenge/art/64316/feedsky/nickcheng/~/rzsg/071111/7d856/lnk.html" target="_blank" rel="noopener">http://www.feedsky.com/challenge/art/64316/feedsky/nickcheng/~/rzsg/071111/7d856/lnk.html</a></p>
 
           
         
@@ -585,7 +597,7 @@ End Sub
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -625,6 +637,17 @@ End Sub
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/11/01/2007-11-1-twitters/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/11/01/2007-11-1-twitters/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -643,7 +666,7 @@ End Sub
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -653,9 +676,9 @@ End Sub
           
             <p>通过 SSH 完成 WordPress 的升级 1 minute ago from Twit   </p>
 <p>升级一下 WP 6 minutes ago from Twit   </p>
-<p>这篇文章就是 : 人民币升值之惑？ <a href="http://tinyurl.com/2d8z9n" target="_blank" rel="external">http://tinyurl.com/2d8z9n</a> 8 minutes ago from Twit   </p>
+<p>这篇文章就是 : 人民币升值之惑？ <a href="http://tinyurl.com/2d8z9n" target="_blank" rel="noopener">http://tinyurl.com/2d8z9n</a> 8 minutes ago from Twit   </p>
 <p>so 长的一篇以纯经济学角度分析人民币升值的文章让我看不下去了 … 9 minutes ago from Twit   </p>
-<p>一个餐馆老板的政治经济学 . <a href="http://tinyurl.com/24a44h" target="_blank" rel="external">http://tinyurl.com/24a44h</a> 10 minutes ago from Twit   </p>
+<p>一个餐馆老板的政治经济学 . <a href="http://tinyurl.com/24a44h" target="_blank" rel="noopener">http://tinyurl.com/24a44h</a> 10 minutes ago from Twit   </p>
 <p>这样的结构很合理啊 ! 大到整个国家 , 小到一个公司都可以比葫芦画瓢哈 ! 15 minutes ago from Twit   </p>
 <p>领袖 + 帮凶 + 盲从 = 变革 ? 16 minutes ago from Twit   </p>
 <p>中国历史的变革动力，不经常都是由一位鲁莽、果敢、富有魅力的领袖人物，配上一小群在原有秩序下的不得志的知识分子所造就的吗，至于那些跟随着揭竿而起的大众，则经常只是提供了茫然无序的、等待被引导的能量，他们是历史的音符，却不能提供旋律和节奏。 … 17 minutes ago from Twit   </p>
@@ -736,7 +759,7 @@ End Sub
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -776,6 +799,17 @@ End Sub
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/10/18/db-db-say-you-dont-love-me/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/10/18/db-db-say-you-dont-love-me/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -794,7 +828,7 @@ End Sub
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -805,8 +839,14 @@ End Sub
             <p>早上查看邮件, 收到一封标题为”<strong>You don’t love db-db…</strong>“的邮件. 打开一看, 原来是”db-db”这个服务把我的帐号给删了, 原因是我老也不用他们的东西. 原文如下</p>
 <blockquote>
 <p>Hello,</p>
+</blockquote>
+<blockquote>
 <p>It’s been a while since the first day you signed up for db-db. We’ve been waiting, waiting and waiting… but you never come back to create a page on us.</p>
+</blockquote>
+<blockquote>
 <p>We’re sorry but to remove your account…</p>
+</blockquote>
+<blockquote>
 <p>Love and Peace,<br>db-db Crew</p>
 </blockquote>
 <p>呵呵, 这是我见过的最有趣的服务提供商发的邮件了, 这语气写的有够幽怨, 呵呵…不过有一点, 他干嘛老是waiting啊? 应该主动来对我做一些营销动作嘛, 其实我早就忘了有这一码事了, 他怎么waiting也是徒劳啊!</p>
@@ -863,7 +903,7 @@ End Sub
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -903,6 +943,17 @@ End Sub
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/10/16/the-tiny-difference-between-django-server-and-apache-server/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/10/16/the-tiny-difference-between-django-server-and-apache-server/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -921,7 +972,7 @@ End Sub
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1002,7 +1053,7 @@ urlpatterns = patterns(&apos;&apos;,
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1042,6 +1093,17 @@ urlpatterns = patterns(&apos;&apos;,
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/10/15/translate-media-temple-dv-performance-tuning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/10/15/translate-media-temple-dv-performance-tuning/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1060,7 +1122,7 @@ urlpatterns = patterns(&apos;&apos;,
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1068,7 +1130,7 @@ urlpatterns = patterns(&apos;&apos;,
       
         
           
-            <p>原文见: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=771" target="_blank" rel="external">http://kb.mediatemple.net/article.php?id=771</a></p>
+            <p>原文见: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=771" target="_blank" rel="noopener">http://kb.mediatemple.net/article.php?id=771</a></p>
 <p>概述</p>
 <p>本文总结了优化 (dv) 服务器的方法. 包括运行程序时使用尽可能少的内存和资源, 逐渐提升的系统稳定性, 以及在高负载条件下的高可用性.</p>
 <p>征兆</p>
@@ -1081,26 +1143,26 @@ urlpatterns = patterns(&apos;&apos;,
 </ul>
 <p>需要的一些准备</p>
 <ul>
-<li>你(dv)服务器的<a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=110" target="_blank" rel="external">SSH权限</a>和<a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=625" target="_blank" rel="external">Root访问权</a>限 </li>
-<li>一些最基础的<a href="http://web.archive.org/web/20071111042750/http://www.vim.org/" target="_blank" rel="external">vim编辑器</a>的知识</li>
+<li>你(dv)服务器的<a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=110" target="_blank" rel="noopener">SSH权限</a>和<a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=625" target="_blank" rel="noopener">Root访问权</a>限 </li>
+<li>一些最基础的<a href="http://web.archive.org/web/20071111042750/http://www.vim.org/" target="_blank" rel="noopener">vim编辑器</a>的知识</li>
 </ul>
 <p>详细描述</p>
 <p>注意: 下面的几篇文章的难度是逐步提高的, 性能调优的力度也是逐渐增大. 所以我们建议你按照顺序来使用这些文章. 在使用每篇文章前, 最好先在前一篇的基础上进行服务器稳定性和功能性的测试!</p>
-<p>第一部分: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=246" target="_blank" rel="external">Apache 性能调优基础(httpd)(英文)</a></p>
+<p>第一部分: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=246" target="_blank" rel="noopener">Apache 性能调优基础(httpd)(英文)</a></p>
 <p>这篇文章指导你把 Apache 的 httpd.conf 文件中的 Timeout 和 MaxClients 参数调低. 这些参数可以降低 Apache 服务器的内存消耗并提高可用性.</p>
 <ul>
 <li>完成本文的操作大概需要的时间: 5-20 分钟 </li>
 <li>难度级别(1-5, 5最难): 2 </li>
 <li>可能的内存占用减少: 20兆-60兆</li>
 </ul>
-<p>第二部分: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=258" target="_blank" rel="external">MySQL 性能调优基础(mysqld)(英文)</a></p>
+<p>第二部分: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=258" target="_blank" rel="noopener">MySQL 性能调优基础(mysqld)(英文)</a></p>
 <p>这篇文章知道你修改 MySQL 的 my.cnf 配置文件来启用查询缓存. 虽然这样会增加 MySQL 的内存消耗, 但是性能却有很大程度的提高.</p>
 <ul>
 <li>完成本文的操作大概需要的时间: 5-15 分钟 </li>
 <li>难度级别(1-5, 5最难): 2 </li>
 <li>内存消耗增加: 16兆-32兆</li>
 </ul>
-<p>第三部分: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=770" target="_blank" rel="external">其他性能调优(英文)</a></p>
+<p>第三部分: <a href="http://web.archive.org/web/20071111042750/http://kb.mediatemple.net/article.php?id=770" target="_blank" rel="noopener">其他性能调优(英文)</a></p>
 <p>这篇文章指导你限制或关掉一些你服务器上不需要的服务. 也许你只需要本文的一部分内容, 所以有些操作可能和例子不太一样.</p>
 <ul>
 <li>完成本文的操作大概需要的时间: 5-15 分钟 </li>
@@ -1160,7 +1222,7 @@ urlpatterns = patterns(&apos;&apos;,
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1200,6 +1262,17 @@ urlpatterns = patterns(&apos;&apos;,
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/10/12/pay-attention-to-the-python-egg-when-use-modpython-and-django/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/10/12/pay-attention-to-the-python-egg-when-use-modpython-and-django/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1218,7 +1291,7 @@ urlpatterns = patterns(&apos;&apos;,
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1230,9 +1303,9 @@ urlpatterns = patterns(&apos;&apos;,
 <p>昨天在配置Django的数据库的时候, 发现了一个奇怪的问题.</p>
 <p>在我将数据库设置配置完成后, 在本地用manage.py runserver执行访问都没有问题, 但是放到服务器上用apache+mod_python的方式执行访问的时候, 就会报错. 而且更诡异的是每次报错都不一样. 我观察了一下, 发现基本就是两种错误在来回的报! 一个是说我的middleware有问题, 另一个说是在使用一些egg文件时有问题.</p>
 <p>连忙上网搜了一圈, 找到了一些类型的情形, 大家的基本解决方案都指向了django网站的一个网页(看来还是官网好啊).</p>
-<p><a href="http://web.archive.org/web/20071014010413/http://www.djangoproject.com/documentation/modpython/#using-eggs-with-mod-python" target="_blank" rel="external">using eggs with mod_python</a></p>
+<p><a href="http://web.archive.org/web/20071014010413/http://www.djangoproject.com/documentation/modpython/#using-eggs-with-mod-python" target="_blank" rel="noopener">using eggs with mod_python</a></p>
 <p>看完这个介绍以后, 终于明白了问题的所在,剩下的就是按步骤来做了! 不过这里还有一个小技巧.</p>
-<p>报egg使用有问题的错误时, 错误信息中写的很详细, 大概意思是说因为我没有配置<a href="http://web.archive.org/web/20071014010413/http://www.djangoproject.com/documentation/modpython/#using-eggs-with-mod-python" target="_blank" rel="external">using eggs with mod_python</a> 中所说的cache目录, 所以默认要使用”/.python-eggs”目录作为cache目录. 而我的服务器上并没有这个目录, 所以才会报错.</p>
+<p>报egg使用有问题的错误时, 错误信息中写的很详细, 大概意思是说因为我没有配置<a href="http://web.archive.org/web/20071014010413/http://www.djangoproject.com/documentation/modpython/#using-eggs-with-mod-python" target="_blank" rel="noopener">using eggs with mod_python</a> 中所说的cache目录, 所以默认要使用”/.python-eggs”目录作为cache目录. 而我的服务器上并没有这个目录, 所以才会报错.</p>
 <p>这样就简单了, 我就建一个这个目录呗, 再把权限一改, 再一试, 嘿嘿…齐活!</p>
 <p>不想麻烦的朋友, 如果遇到这个问题能看到他需要的目录, 可以采用我的方法:)</p>
 
@@ -1288,7 +1361,7 @@ urlpatterns = patterns(&apos;&apos;,
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1328,6 +1401,17 @@ urlpatterns = patterns(&apos;&apos;,
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/10/10/install-and-setup-django-on-media-temple-dvd/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/10/10/install-and-setup-django-on-media-temple-dvd/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1346,7 +1430,7 @@ urlpatterns = patterns(&apos;&apos;,
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1399,7 +1483,7 @@ django-admin.py startproject djangotest
     PythonDebug On          
 &lt;/location&gt;
 </code></pre><ul>
-<li>第一行, Location 后的路径不是指磁盘上的路径, 而是用户访问网站的路径. 我这里用 “/” 是指用户访问<a href="http://lab.nickcheng.com时的配置" target="_blank" rel="external">http://lab.nickcheng.com时的配置</a>. </li>
+<li>第一行, Location 后的路径不是指磁盘上的路径, 而是用户访问网站的路径. 我这里用 “/” 是指用户访问<a href="http://lab.nickcheng.com时的配置" target="_blank" rel="noopener">http://lab.nickcheng.com时的配置</a>. </li>
 <li>第二行, 指明这个路径下使用的Handler, 这里使用python </li>
 <li>第三行, 指明你的 Django 网站源码所在的路径. 需要注意的是, 这里的路径要写你执行 django-admin.py 文件时所在的目录. </li>
 <li>第五行, 要写完整你建立的 project 的 settings.</li>
@@ -1409,7 +1493,7 @@ django-admin.py startproject djangotest
 <pre><code>/usr/local/psa/admin/sbin/websrvmng -a -v
 </code></pre></li>
 </ul>
-<p>现在访问 <a href="http://lab.nickcheng.com" target="_blank" rel="external">http://lab.nickcheng.com</a>, 应该可以看到 “It worked!” 的字样了:) 我们成功了</p>
+<p>现在访问 <a href="http://lab.nickcheng.com" target="_blank" rel="noopener">http://lab.nickcheng.com</a>, 应该可以看到 “It worked!” 的字样了:) 我们成功了</p>
 
           
         
@@ -1463,7 +1547,7 @@ django-admin.py startproject djangotest
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1503,6 +1587,17 @@ django-admin.py startproject djangotest
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/09/28/finally-i-can-use-safari-normally-in-vistaf/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/09/28/finally-i-can-use-safari-normally-in-vistaf/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1521,7 +1616,7 @@ django-admin.py startproject djangotest
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1530,8 +1625,8 @@ django-admin.py startproject djangotest
         
           
             <p>所谓正常使用, 意思就是可以正常浏览, 并且输入中文都没什么问题了! </p>
-<p>今天从<a href="http://web.archive.org/web/20071108214352/http://www.cnbeta.com/articles/40026.htm" target="_blank" rel="external">新闻</a>中看到Apple更新了Windows下的Safari, 而且据说中文输入浏览都正常了, 所以特意试了一下! 果不其然, 还真的是这样!(Vista下有点小问题, 后文再说)</p>
-<p>首先需要在<a href="http://web.archive.org/web/20071108214352/http://hohodigidea.deviantart.com/art/Safari-CHS-for-Win-65199427" target="_blank" rel="external">&gt;&gt;这里&lt;&lt;</a>下载安装文件, 因为新闻说直接安装的中文显示还是有问题, 所以要按照他的步骤来操作才行.不过我在Vista下使用的时候, 直接安装就可以很好的支持中文了, 不用按新闻中说的那样要把安装目录删除再复制.</p>
+<p>今天从<a href="http://web.archive.org/web/20071108214352/http://www.cnbeta.com/articles/40026.htm" target="_blank" rel="noopener">新闻</a>中看到Apple更新了Windows下的Safari, 而且据说中文输入浏览都正常了, 所以特意试了一下! 果不其然, 还真的是这样!(Vista下有点小问题, 后文再说)</p>
+<p>首先需要在<a href="http://web.archive.org/web/20071108214352/http://hohodigidea.deviantart.com/art/Safari-CHS-for-Win-65199427" target="_blank" rel="noopener">&gt;&gt;这里&lt;&lt;</a>下载安装文件, 因为新闻说直接安装的中文显示还是有问题, 所以要按照他的步骤来操作才行.不过我在Vista下使用的时候, 直接安装就可以很好的支持中文了, 不用按新闻中说的那样要把安装目录删除再复制.</p>
 <p>只是在Vista中安装好后直接运行会出错(貌似是程序直接Crash, 但无法记录完整的dump文件), 我尝试着把程序的运行兼容性改为XP, 一下就都好了!</p>
 <p>现在这篇就是在Safari中写的, 感觉不错哦:) </p>
 
@@ -1587,7 +1682,7 @@ django-admin.py startproject djangotest
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1627,6 +1722,17 @@ django-admin.py startproject djangotest
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/09/26/how-to-modify-the-font-of-document-map-in-word/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/09/26/how-to-modify-the-font-of-document-map-in-word/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1645,7 +1751,7 @@ django-admin.py startproject djangotest
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1728,81 +1834,93 @@ django-admin.py startproject djangotest
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1815,12 +1933,9 @@ django-admin.py startproject djangotest
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1828,11 +1943,17 @@ django-admin.py startproject djangotest
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1848,10 +1969,7 @@ django-admin.py startproject djangotest
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1886,62 +2004,93 @@ django-admin.py startproject djangotest
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -1965,7 +2114,7 @@ django-admin.py startproject djangotest
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1973,6 +2122,9 @@ django-admin.py startproject djangotest
 
   
 
+  
+
+  
   
 
   

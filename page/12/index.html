@@ -2,18 +2,24 @@
 
 
 
+  
 
-<html class="theme-next mist" lang="en">
+
+<html class="theme-next gemini use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
+<meta name="theme-color" content="#222">
 
 
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -43,38 +49,27 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
 
 
   <meta name="keywords" content="nickcheng, ios, development, life" />
@@ -84,11 +79,6 @@
 
 
   <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -112,12 +102,12 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
-    tabs: ,
-    motion: "",
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: 'Author'
@@ -208,29 +198,29 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Archives
+            Tags
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Tags
+            Archives
           </a>
         </li>
       
@@ -310,7 +300,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,6 +340,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/04/26/solution-of-wlm-contacts-groups-in-a-mess/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/04/26/solution-of-wlm-contacts-groups-in-a-mess/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -368,7 +369,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -392,7 +393,7 @@
 <p>根据经验, 这类大厂出品的软件不太会犯太过恶劣的过错, 也许这次联系人的混乱只是我本地的一次”抽筋”. IM软件都会在本地机器中缓存一份联系人列表, 可能只是这缓存的列表出现了问题, 而在服务器那端, 我的分组信息应该还是正确的, 只不过我这边的软件还没有和服务器端同步. 如果是这样, 那我需要做的就是让我本地的联系人列表和服务器同步一下.</p>
 <p>有了这样的想法, 就要看怎么能做到了. 自然, WLM不会提供一个按钮叫做”和服务器端同步”(这样的东东普通用户是无法理解滴), 所以就要想其他方法. 回想刚装新系统的时候, 机器里自然不会有什么缓存的联系人列表一说, 那时软件能做的只能是从服务器端去取用户的联系人列表. 哈哈, 这么一来, 我只需把本地缓存的联系人列表给清除掉, 然后再启动一次WLM就ok了.</p>
 <p>说干就干, 先找本地联系人列表存放的地方.</p>
-<p>这个好办, 祭起”<a href="http://www.microsoft.com/technet/sysinternals/default.mspx" target="_blank" rel="external">Procmon</a>“(查看运行中的程序访问了哪些本地路径的小工具, 这是Vista系统下用的, XP下叫Filemon), 然后启动WLM. 分析Procmon抓到的内容, 很容易就看到联系人列表存放的位置了:</p>
+<p>这个好办, 祭起”<a href="http://www.microsoft.com/technet/sysinternals/default.mspx" target="_blank" rel="noopener">Procmon</a>“(查看运行中的程序访问了哪些本地路径的小工具, 这是Vista系统下用的, XP下叫Filemon), 然后启动WLM. 分析Procmon抓到的内容, 很容易就看到联系人列表存放的位置了:</p>
 <pre><code>C:\Users\nickcheng\AppData\Local\Microsoft\Windows Live Contacts
 </code></pre><p>剩下要做的就很简单了, 进入这个目录, 直接把你帐号对应的目录给干掉就好了! 再次登录WLM, 经过稍长时间的登录, 哈哈, 我的联系人分组又回来啦! 赞哦!</p>
 
@@ -448,7 +449,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -488,6 +489,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/04/11/update-of-my-bluehost-account/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/04/11/update-of-my-bluehost-account/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -506,7 +518,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -574,7 +586,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -614,6 +626,17 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/04/11/trans-curl-object/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/04/11/trans-curl-object/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -632,7 +655,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -652,7 +675,7 @@
 </blockquote>
 <p>setopt(option, value) 无返回值</p>
 <blockquote>
-<p>对应于libcurl的curl_easy<em>setopt方法.  option参数对应于libcurl的CURLOPT</em>*这一系列常量. 要注意的是, 在这个方法里要去掉CURLOPT_的前缀. value参数的取值类型取决于option参数, 它可以是字符串, 整型变量, 长整型变量, 文件对象, 列表对象或者方法.</p>
+<p>对应于libcurl的curl_easy_setopt方法.  option参数对应于libcurl的CURLOPT_*这一系列常量. 要注意的是, 在这个方法里要去掉CURLOPT_的前缀. value参数的取值类型取决于option参数, 它可以是字符串, 整型变量, 长整型变量, 文件对象, 列表对象或者方法.</p>
 </blockquote>
 <p>例子</p>
 <pre><code>import pycurl
@@ -669,7 +692,7 @@ print b.getvalue()
 ...
 </code></pre><p>getinfo(option) 返回值:Result</p>
 <blockquote>
-<p>对应于libcurl的curl_easy<em>getinfo方法. option参数对应于libcurl的CURLINFO</em>*常量, 使用的时候要去掉CURLINFO_前缀. 方法的返回值Result类型可能是整数, 浮点数或字符串, 这取决于option参数. getinfo方法应当在perform方法调用完毕后进行调用.</p>
+<p>对应于libcurl的curl_easy_getinfo方法. option参数对应于libcurl的CURLINFO_*常量, 使用的时候要去掉CURLINFO_前缀. 方法的返回值Result类型可能是整数, 浮点数或字符串, 这取决于option参数. getinfo方法应当在perform方法调用完毕后进行调用.</p>
 </blockquote>
 <p>例子</p>
 <pre><code>import pycurl
@@ -679,7 +702,7 @@ c.setopt(pycurl.FOLLOWLOCATION, 1)
 c.perform()
 print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
 ...
-</code></pre><p>–&gt; 200 “<a href="http://sourceforge.net/" target="_blank" rel="external">http://sourceforge.net/</a>“</p>
+</code></pre><p>–&gt; 200 “<a href="http://sourceforge.net/&quot;" target="_blank" rel="noopener">http://sourceforge.net/&quot;</a></p>
 <p>errstr() 无返回值</p>
 <blockquote>
 <p>以字符串形式返回当前示例的错误缓冲区内容</p>
@@ -737,7 +760,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -777,6 +800,17 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/04/11/try-pycurl/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/04/11/try-pycurl/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -795,7 +829,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -803,13 +837,13 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
       
         
           
-            <p>今天调试爬虫的时候在网上找文章, 恰巧找到了Pycurl的介绍文章, 大概看了一下并浏览了<a href="http://pycurl.sourceforge.net/" target="_blank" rel="external">项目主页</a>, 发现这个东西真的挺好的, 也挺适合我的. 我应该考虑在爬虫里使用这个东东:)</p>
+            <p>今天调试爬虫的时候在网上找文章, 恰巧找到了Pycurl的介绍文章, 大概看了一下并浏览了<a href="http://pycurl.sourceforge.net/" target="_blank" rel="noopener">项目主页</a>, 发现这个东西真的挺好的, 也挺适合我的. 我应该考虑在爬虫里使用这个东东:)</p>
 <blockquote>
 <p>supporting FTP, FTPS, HTTP, HTTPS, GOPHER, TELNET, DICT, FILE and LDAP. libcurl supports HTTPS certificates, HTTP POST, HTTP PUT, FTP uploading, kerberos, HTTP form based upload, proxies, cookies, user+password authentication, file transfer resume, http proxy tunneling and more!</p>
 </blockquote>
 <p>再看看人家的功能, 真是一个让人偷懒的东西啊! 这下子连代理服务器的功能都省了. 而且这个东东是用C写的, 效率自然也更高, 使用它? 何乐而不为呢?</p>
-<p>顺手从项目主页拉下来一个<a href="http://pycurl.sourceforge.net/download/pycurl-ssl-7.15.5.1.win32-py2.4.exe" target="_blank" rel="external">win32的版本</a> <a href="http://pycurl.sourceforge.net/download/pycurl-ssl-7.15.5.1.win32-py2.5.exe" target="_blank" rel="external">[2]</a>. 试了几个<a href="http://pycurl.cvs.sourceforge.net/pycurl/pycurl/tests/" target="_blank" rel="external">示例代码</a> <a href="http://pycurl.cvs.sourceforge.net/pycurl/pycurl/examples/" target="_blank" rel="external">[2]</a>, 还不错! 不过要想用好这个东西还是有一点门槛的! 因为Pycurl本身是<a href="http://curl.haxx.se/libcurl/" target="_blank" rel="external">libcurl</a>的一个封装, 所以在使用pycurl的时候还是需要参考<a href="http://curl.haxx.se/libcurl/c/" target="_blank" rel="external">libcurl的文档</a>的, 而那个文档又是针对c的, 这里就有那么一点曲线啦!</p>
-<p>对于Pycurl的Curl对象, 那个setopt方法是个重头戏, 需要好好研究<a href="http://curl.haxx.se/libcurl/c/curl_easy_setopt.html" target="_blank" rel="external">参考文档</a>才能玩得转!</p>
+<p>顺手从项目主页拉下来一个<a href="http://pycurl.sourceforge.net/download/pycurl-ssl-7.15.5.1.win32-py2.4.exe" target="_blank" rel="noopener">win32的版本</a> <a href="http://pycurl.sourceforge.net/download/pycurl-ssl-7.15.5.1.win32-py2.5.exe" target="_blank" rel="noopener">[2]</a>. 试了几个<a href="http://pycurl.cvs.sourceforge.net/pycurl/pycurl/tests/" target="_blank" rel="noopener">示例代码</a> <a href="http://pycurl.cvs.sourceforge.net/pycurl/pycurl/examples/" target="_blank" rel="noopener">[2]</a>, 还不错! 不过要想用好这个东西还是有一点门槛的! 因为Pycurl本身是<a href="http://curl.haxx.se/libcurl/" target="_blank" rel="noopener">libcurl</a>的一个封装, 所以在使用pycurl的时候还是需要参考<a href="http://curl.haxx.se/libcurl/c/" target="_blank" rel="noopener">libcurl的文档</a>的, 而那个文档又是针对c的, 这里就有那么一点曲线啦!</p>
+<p>对于Pycurl的Curl对象, 那个setopt方法是个重头戏, 需要好好研究<a href="http://curl.haxx.se/libcurl/c/curl_easy_setopt.html" target="_blank" rel="noopener">参考文档</a>才能玩得转!</p>
 
           
         
@@ -863,7 +897,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -903,6 +937,17 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/04/06/recording-notes-by-nickcheng-2001/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/04/06/recording-notes-by-nickcheng-2001/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -921,7 +966,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -929,7 +974,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
       
         
           
-            <p>看到标题进来的同学可能会失望哦:) 因为这篇文章不是我现在写的! 这篇文章是我2001年的时候在网易广社吉他版混的时候写的一篇文章, 写的是当时自己的一个录音经历. 今天试用<a href="http://www.yisou.com" target="_blank" rel="external">一搜</a>的搜索引擎搜索自己的名字(nickcheng)时, 突然发现了这篇文章, 呵呵, 出处竟然不是网易, 而是另一个小偷网站. 算了, 我大人有大量, 不去计较你偷我的文章, 让我找到我的老作品, 恩…抵消吧:)</p>
+            <p>看到标题进来的同学可能会失望哦:) 因为这篇文章不是我现在写的! 这篇文章是我2001年的时候在网易广社吉他版混的时候写的一篇文章, 写的是当时自己的一个录音经历. 今天试用<a href="http://www.yisou.com" target="_blank" rel="noopener">一搜</a>的搜索引擎搜索自己的名字(nickcheng)时, 突然发现了这篇文章, 呵呵, 出处竟然不是网易, 而是另一个小偷网站. 算了, 我大人有大量, 不去计较你偷我的文章, 让我找到我的老作品, 恩…抵消吧:)</p>
 <p>下面是文章了!</p>
 <p>好不容易自己录了一首歌，当然要写些东西来纪念一下咯！！只写录音过程，原因呀什么的就不写了，以后有必要的时候我再写出来！！ </p>
 <p>5月30日<br>早上7点左右醒来想到今天要录音，哦，那就赶快起床吧！不过只自己起床有些不甘心，对了！录音是整个乐队的事情，虽然制作是我，但是也不能他们几个闲着，于是我叫醒了和我同宿舍的鼓手，然后，刷牙，洗脸，没吃早饭！ </p>
@@ -1005,7 +1050,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1045,6 +1090,17 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/29/install-trac-11dev-in-python-25/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/29/install-trac-11dev-in-python-25/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1063,7 +1119,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1074,7 +1130,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
             <p>搞定了Apache和Subversion以后, 准备搞定Trac.</p>
 <p>照例是到网上搜了一大圈, 找了一堆的参考资料. 不过一篇一篇的看过以后发现所有的文章都是在讲基于Python 2.4的Trac安装, 我心里一悬, 也不知道这Python 2.5上安装会不会有问题! 先不管三七二十一, 比葫芦画瓢先!</p>
 <p>于是开始准备一些必须的软件, 果不其然, 这一步就遇到了问题! 我找不到对应Python 2.5的ClearSilver. TNND, 真是出师未捷身先死啊! 不甘心……</p>
-<p>继续在Trac官方网站翻阅资料……哈哈…功夫不负有心人, 被我找到了一篇<a href="http://trac.edgewall.org/wiki/TracOnWindows/Python2.5" target="_blank" rel="external">Trac with Python 2.5</a>. 这应该是Python 2.5下的东东了吧! 用劲看完了这份文档, 发现这讲的是更新潮的事情–安装正在开发的Trac 0.11dev版本.</p>
+<p>继续在Trac官方网站翻阅资料……哈哈…功夫不负有心人, 被我找到了一篇<a href="http://trac.edgewall.org/wiki/TracOnWindows/Python2.5" target="_blank" rel="noopener">Trac with Python 2.5</a>. 这应该是Python 2.5下的东东了吧! 用劲看完了这份文档, 发现这讲的是更新潮的事情–安装正在开发的Trac 0.11dev版本.</p>
 <p>想了一下, 自己也不是用Trac管理太重要的东西, 而且实在不行还可以一直跟着svn的trunk升级嘛! 于是乎, 下定了决心跟着dev版本走!</p>
 <p>这0.11dev版本的一大好处是不再使用ClearSilver, 而是使用Genshi来取而代之, 这Genshi是有Python 2.5版本滴!!赞!</p>
 <p>看到这里可别以为以后的道路都是平坦的. 这过程和人生是一样的, 一个坎坷接着一个坎坷……</p>
@@ -1164,7 +1220,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1204,6 +1260,17 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/29/install-and-config-subversion-143-in-apache-224/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/29/install-and-config-subversion-143-in-apache-224/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1222,7 +1289,7 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1233,20 +1300,20 @@ print c.getinfo(pycurl.HTTP_CODE), c.getinfo(pycurl.EFFECTIVE_URL)
             <p>中午吃完饭, 回来配置自己的Droupnir. 对于Droupnir, 计划在上面安装支持Subversion的Trac. 作为自己的项目管理平台和配置管理平台.</p>
 <p>一篇先写安装配置Subversion</p>
 <p>去Subversion的网站下载最新的Subversion, 我下载的是这个版本:</p>
-<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="external">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></p>
-<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="external"></a>因为Droupnir上已经安装好了Apache 2.2.4, 所以我就直接安装Subversion. 我以为一切都会很顺利, 可是…我错了…安装过程中出现了一个错误, 然后Apache就不能启动了! 查了半天Google, 终于知道了原因–最新的Subversion 1.4.3 不支持Apache 2.2.4. 除非自己去Build Apache所需的module.</p>
-<p>是又在网上找到了<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="external">别人build好的module</a>, 虽然有<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="external">一些已知的问题</a>, 但是应该还好! 这里需要注意, 这个编译好的module是用VC2005sp1编译的, 所以要求使用的Apache也是用VC2005sp1编译, <a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="external">VC2005sp1编译的Apache在这里</a>, 使用这个版本的Apache还需要<a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="external">Visual C++ 2005 Redistributable Package</a>. 安装的时候别忘了看readme哦!</p>
+<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="noopener">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></p>
+<p><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="noopener"></a>因为Droupnir上已经安装好了Apache 2.2.4, 所以我就直接安装Subversion. 我以为一切都会很顺利, 可是…我错了…安装过程中出现了一个错误, 然后Apache就不能启动了! 查了半天Google, 终于知道了原因–最新的Subversion 1.4.3 不支持Apache 2.2.4. 除非自己去Build Apache所需的module.</p>
+<p>是又在网上找到了<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="noopener">别人build好的module</a>, 虽然有<a href="http://www.apachelounge.com/forum/viewtopic.php?p=6610" target="_blank" rel="noopener">一些已知的问题</a>, 但是应该还好! 这里需要注意, 这个编译好的module是用VC2005sp1编译的, 所以要求使用的Apache也是用VC2005sp1编译, <a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="noopener">VC2005sp1编译的Apache在这里</a>, 使用这个版本的Apache还需要<a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="noopener">Visual C++ 2005 Redistributable Package</a>. 安装的时候别忘了看readme哦!</p>
 <p>装Subversion后, 他会自动修改Apache的conf. 不过你要是使用上面说的自己编译的Apache的话, 那就要自己去看看是不是在conf中加入了该加入的内容.</p>
-<p>后就是把自己的SVN版本库用Apache发布了, 这一步就是配置Apache的conf了, 没有什么特别的, <a href="http://svnbook.subversion.org.cn/1.2/svn.serverconfig.httpd.html" target="_blank" rel="external">SVNBook里写的很清楚</a>.</p>
-<p>果需要权限配置的话, 可以参考<a href="http://www.iusesvn.com/bbs/thread-158-1-1.html" target="_blank" rel="external">这篇帖子</a>, 里面写的很详细!</p>
+<p>后就是把自己的SVN版本库用Apache发布了, 这一步就是配置Apache的conf了, 没有什么特别的, <a href="http://svnbook.subversion.org.cn/1.2/svn.serverconfig.httpd.html" target="_blank" rel="noopener">SVNBook里写的很清楚</a>.</p>
+<p>果需要权限配置的话, 可以参考<a href="http://www.iusesvn.com/bbs/thread-158-1-1.html" target="_blank" rel="noopener">这篇帖子</a>, 里面写的很详细!</p>
 <p>下面附上我整理的步骤</p>
 <p>安装步骤</p>
 <ul>
 <li>下载<ul>
-<li><a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="external">http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip</a></li>
-<li><a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="external">http://www.apachelounge.com/download/vcredist_x86-sp1.exe</a></li>
-<li><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="external">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></li>
-<li><a href="http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip" target="_blank" rel="external">http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip</a></li>
+<li><a href="http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip" target="_blank" rel="noopener">http://www.apachelounge.com/download/binaries/httpd-2.2.4-win32-x86-ssl.zip</a></li>
+<li><a href="http://www.apachelounge.com/download/vcredist_x86-sp1.exe" target="_blank" rel="noopener">http://www.apachelounge.com/download/vcredist_x86-sp1.exe</a></li>
+<li><a href="http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe" target="_blank" rel="noopener">http://subversion.tigris.org/files/documents/15/36797/svn-1.4.3-setup.exe</a></li>
+<li><a href="http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip" target="_blank" rel="noopener">http://www.tomdonovan.net/download/mod_svn_143_apache_224.zip</a></li>
 </ul>
 </li>
 <li>安装Apache<ul>
@@ -1362,7 +1429,7 @@ Require valid-user
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1402,6 +1469,17 @@ Require valid-user
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/28/analyse-and-fix-the-bug-of-msnp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/28/analyse-and-fix-the-bug-of-msnp/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1420,7 +1498,7 @@ Require valid-user
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1428,9 +1506,9 @@ Require valid-user
       
         
           
-            <p>最近自己准备用python实现一个msn的机器人, google了一下, 找到了<a href="http://msnp.sourceforge.net" target="_blank" rel="external">msnp.py</a>这个项目. 项目的地址在</p>
-<p><a href="http://msnp.sourceforge.net" target="_blank" rel="external">http://msnp.sourceforge.net</a></p>
-<p>看了一下最后更新日期, 也已经是2004年1月的事情. 不知道现在还是不是好使! 那就试试吧! 于是按照<a href="http://msnp.sourceforge.net/tutorial.html" target="_blank" rel="external">教程</a>写了一个简单的例子, 于是问题也出现了:P</p>
+            <p>最近自己准备用python实现一个msn的机器人, google了一下, 找到了<a href="http://msnp.sourceforge.net" target="_blank" rel="noopener">msnp.py</a>这个项目. 项目的地址在</p>
+<p><a href="http://msnp.sourceforge.net" target="_blank" rel="noopener">http://msnp.sourceforge.net</a></p>
+<p>看了一下最后更新日期, 也已经是2004年1月的事情. 不知道现在还是不是好使! 那就试试吧! 于是按照<a href="http://msnp.sourceforge.net/tutorial.html" target="_blank" rel="noopener">教程</a>写了一个简单的例子, 于是问题也出现了:P</p>
 <p>自己先用帐号A登了一个msn, 然后用另外一个帐号B试例子(两个帐号互为好友). 运行例子. 过了4,5秒后, 从A帐号上看到B帐号登录了, 但就在这同时, 例子程序出现了异常!</p>
 <p>从异常信息来看, 是在msnp项目的command.py文件中出现了异常. 异常发生在一个类型转换语句上. 于是开始跟踪, 调试……结果被我发现了问题的所在!</p>
 <p>首先从程序的表征上来看. 程序的异常是紧接着登录发生的, 而从msn上的帐号A来看, B是有成功登录的(当然, 异常发生后帐号B就掉线了). 所以可以大致断定异常发生在登录操作之后, 而且离的比较近. 这个推断可以缩短我们的调试时间:)</p>
@@ -1493,7 +1571,7 @@ Require valid-user
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1533,6 +1611,17 @@ Require valid-user
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/23/dream-of-prague/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/23/dream-of-prague/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1551,7 +1640,7 @@ Require valid-user
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1563,28 +1652,74 @@ Require valid-user
 <p>我也不知道为什么自己会想去布拉格, 但第一次听到这个名字就喜欢上了! 今天刚好又看到一篇写布拉格的文章, 又勾起了我的向往, 哎……我要贴文章了!</p>
 <blockquote>
 <p>今天的布拉格</p>
+</blockquote>
+<blockquote>
 <p>作者：英国《金融时报》撰稿人 琳达·依偌基（Linda Inoki）<br>2007年3月23日 星期五</p>
+</blockquote>
+<blockquote>
 <p>神秘的城市</p>
+</blockquote>
+<blockquote>
 <p>虽然反对纵火，但我同意，布拉格抓得我心里发痒。它还在想象中蔓延，使人想知道，在一次访问之后这么久，为什么人们会设法结束自己最好的工作。</p>
+</blockquote>
+<blockquote>
 <p>一个人如何记录一个表面奢华、内里神秘的城市？走在鹅卵石街道上，一连串的宫殿、教堂、塔楼和尖顶，将你的眼睛指向天堂般的建筑风格。你的脚步声，在被世纪埋葬的房间中发出回响，那里停留着狂热的盲目恐惧，像是一层朦胧而又令人不安的薄雾。挥舞斧头的刽子手、复仇的幻影，以及希伯来神化中类似人类的假人，布拉格有足够的民间传说，多年来，它们让孩子们在睡梦中发抖。</p>
+</blockquote>
+<blockquote>
 <p>然而，在这座城市的第一个夜晚，大量的异国情调使一个敏感的成年人颤抖。一个下雨的春夜：丁香花盛开，河水很静，漆黑的街道上偶尔闪烁微光，然后是来自音乐厅、咖啡馆，以及波希米亚人为之高兴了数百年、无以计数的装饰细节中镀金窗饰的光亮。</p>
+</blockquote>
+<blockquote>
 <p>独特的布拉格建筑</p>
+</blockquote>
+<blockquote>
 <p>像飞蛾一样，我焦急地来到市政大厅(Obecni dum)明亮的窗前，人们正在闪光的、分离论者的大厅里用餐。树枝形的装饰灯造型像埃及珠宝，光芒射向绿松石和珍珠垂幕。侍者们端上各种菜肴，大概是肉和布丁、浓咖啡，以及甜香槟。在外面，在被宝石装饰得像蜻蜓一样的走廊下，一些人影在用沙哑的语言交谈，然后回去参加音乐会。</p>
+</blockquote>
+<blockquote>
 <p>这一幕适合马奈(Manet)或穆夏(Mucha)，并解释了为什么在1989年天鹅绒革命(Velvet Revolution)之后，有数千年轻的美国人蜂拥来到布拉格。回到亨利•詹姆斯(Henry James)的时代，这些新世界中涉世未深的人，被带到中欧文化朦胧的诱惑中，那里有退色的荣耀，和新诞生的自由。</p>
+</blockquote>
+<blockquote>
 <p>布拉格展示了一个个广场、一个个时代，这里充满了好奇。在河的左岸，城堡和哥特式圣维特大教堂(St. Vitus’s Cathedral)旋转跃入天空。在下面，小城区(Mala Strana)冲击着巴洛克建筑的陡峭的街道，与宽阔的伏尔塔瓦(Vltava)河和查理士桥(Charles Bridge)相遇。河的右岸，是中世纪老城区(Stare Mesto)的中心。向北是过去的犹太人地区(Josefov)，那里长满青苔，仍然留存着零星的犹太区。向南和向东是新城区(Nove Mesto)。“新”，是从查理十四(Charles IV)在14世纪设计温塞斯拉斯广场(Wenceslas Square)开始。温塞斯拉斯广场是欧洲最大的马匹交易市场。</p>
+</blockquote>
+<blockquote>
 <p>一眼望去，布拉格的地平线当然会很从容。但是要当心：除非你领会中世纪的历史、被革新释放的虔诚的复仇女神，以及奥匈帝国(Austro-Hungarian empire)的政治圆舞曲，否则，这个城市或许会淹没你和你的无知。</p>
+</blockquote>
+<blockquote>
 <p>然而，少量的阅读、舒适的鞋子以及一位当地的专家，可以重建你的自尊。多数旅行者从老城区开始他们的行程，从那里一直走到城堡，因此，我们的导游露西•奥利沃瓦(Lucie Olivova)博士领我们轻快地走着相反的方向。我们静静地从城堡以上、充满艺术气息的哈拉卡尼(Hradcany)区出发，几乎没有游客敢这样冒险。</p>
+</blockquote>
+<blockquote>
 <p>这里是建立于1140年的Strahov修道院，它的白墙伫立在那里，像下面宫殿丛上方正义的峭壁。一座纯粹的巴洛克教堂；古老的庭院；装饰华丽的图书馆，以及能够看到城市美景的咖啡露台：可以连续数小时愉快地享受这个平静的地区。</p>
+</blockquote>
+<blockquote>
 <p>朝臣自然将住宅建立在距离皇家城堡更近的地方，修道院下面座落着巨大的Cernin Palace。这座空虚的纪念碑由一位富有的公爵建造，但在这座雄心勃勃的建筑物竣工之前，他就死了，这座建筑物提示了与建筑师争论的荒唐事。多年来，没有人喜爱并使用它，但在二战期间，当纳粹看到它时，承认它有一点儿空洞的庄严，并将其作为他们的总部。脑海里很容易浮现出曾经飘扬在这幢建筑物正面的纳粹十字标志。正当我们转身离去时，优雅的洛雷托(Loreto)教堂里传出如民歌般动听的阵阵乐声，而导游告诉我们，这是教堂里传统的赞美诗。</p>
+</blockquote>
+<blockquote>
 <p>波希米亚文化</p>
+</blockquote>
+<blockquote>
 <p>为何波希米亚人会拥有这样的才能，让金属和玻璃那些最冰冷的物体唱出如此美妙的音乐呢？在圣维特大教堂入口高处，有一扇金丝边框装饰的窗户，无论在任何时候透过它向里张望，都会看到一个吹着银色号角的天使出现。我们前行的步伐非常缓慢，因为我会不时地跓足欣赏那些镶嵌精致金属工艺的门，各种稀奇古怪的符号，以及镀金花穗花束的栏杆。</p>
+</blockquote>
+<blockquote>
 <p>说到波希米亚玻璃，许多商店都有出售这种传统的玻璃制品，但做工最为精细的却陈列在19世纪装饰艺术博物馆(Museum of Decorative Arts)里。尽管这家博物馆的外表平淡无奇，但其入口却是一条通往艺术与工艺殿堂的台阶。</p>
+</blockquote>
+<blockquote>
 <p>在16世纪的欧洲，水晶制造被视为一门“艺术、技艺和秘密”，而雕刻有精美狩猎情景的波希米亚高脚杯，仍然会引起人们无限的憧憬。这些易碎的财富同样是那么的不可思议，在经历了500年人们可怕的贪欲之后，它们得以幸存下来。</p>
+</blockquote>
+<blockquote>
 <p>几个世纪以来，布拉格的文化生活一直由它与哈布斯堡王朝(Hapsburg)统治者的关系来决定。在这些形形色色的统治者中，有才华横溢的文艺复兴时期人物鲁道夫二世(Rudolph II)，他带来艺术家、炼金术士和豹子，使城堡充满了生机，还有不幸的费迪南一世(Ferdinand the Gracious)，他让世人记住的是，他在废纸篓里打滚，并高声宣称，“我是皇帝，我想要布丁。”</p>
+</blockquote>
+<blockquote>
 <p>波希米亚的民族主义者憎恨外来势力，他们大多信奉新教，但在经历数世纪的血腥战争之后，天主教和神圣罗马帝国最终消灭了这种抵抗。捷克语被禁止使用，新教叛乱者的头颅被悬挂在查理士桥上，任由它们腐烂，这暗示着异教徒危险的处境。进入耶稣会(Jesuits)：它们那些历史可追溯至17世纪50年代的高大的巴洛克式教堂、神学院和科学天文台，深深地表明了建筑物所具有的镇压和诱惑力量。</p>
+</blockquote>
+<blockquote>
 <p>但民族主义者的梦想终于实现，奥匈帝国在19世纪步入终结，波希米亚的布拉格再次挺起胸膛说话了。只要聆听斯美塔那(Smetana)的抒情音乐，你就会听出那种希望正在汹涌地苏醒。</p>
+</blockquote>
+<blockquote>
 <p>最终在1918年，在刚刚竣工的布拉格市政厅里，在那些气势磅礴、表达着爱国热情的壁画之间，捷克斯洛伐克共和国宣布成立。其余就是新闻影片里人们熟悉的情节了。就在20年后，希特勒(Hitler)的坦克轰隆隆地驶入捷克斯洛伐克，此后一个支离破碎、战后的布拉格脱离了共产党的统治数十年。</p>
+</blockquote>
+<blockquote>
 <p>自1989 年以来，许多长期被忽视的建筑物得以重建，但如潮水般涌来的大量游客却使当地人离开了城市心脏地区。屠夫、面包师和蜡烛工匠相继离去，咖啡吧台服务员、侍者和旅游针织品小贩比比皆是。尽管很难找到普通人，但皇帝、圣人、艺术家、骑士、少女、音乐家和愉快的农夫并不少见。在每一座建筑物的基石与山墙上，骄傲且具有象征意义的平民坚守在那里。</p>
+</blockquote>
+<blockquote>
 <p>当然，小贩们少找零钱、与游客人群挤在一堆，有些令人生厌，但我还是非常乐观。这位厉害的小妈妈肯定会把自己的孩子们抓回来：布拉格的时机尚未到来。</p>
 </blockquote>
 
@@ -1640,7 +1775,7 @@ Require valid-user
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="nickcheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1680,6 +1815,17 @@ Require valid-user
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2007/03/19/module-robotparser-in-python/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2007/03/19/module-robotparser-in-python/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -1698,7 +1844,7 @@ Require valid-user
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -1715,9 +1861,9 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
 </code></pre><p>程序很简单. 首先将类实例化, 然后用”set_url”方法设置”robots.txt”文件的路径, 这个文件一般都在网站的根目录. 接着调用”read”方法来解析这个文件. 最后就是用”can_fetch”方法来判断这个网站是否让你的程序(爬虫)访问某个网站内的链接了!</p>
 <p>如果这个网站没有”robots.txt”文件的话, 在”read”方法后查看”rp.errcode”属性, 会看到404的返回值, 如果有这个文件就是200的返回值了!</p>
 <p>相关链接</p>
-<p>官方文档: <a href="http://docs.python.org/lib/module-robotparser.html" target="_blank" rel="external">http://docs.python.org/lib/module-robotparser.html</a></p>
-<p>一个家伙不满意自带的这个东东, 自己又写了一个: <a href="http://nikitathespider.com/python/rerp/" target="_blank" rel="external">http://nikitathespider.com/python/rerp/</a></p>
-<p>robots.txt规范: <a href="http://www.robotstxt.org/wc/norobots.html" target="_blank" rel="external">http://www.robotstxt.org/wc/norobots.html</a></p>
+<p>官方文档: <a href="http://docs.python.org/lib/module-robotparser.html" target="_blank" rel="noopener">http://docs.python.org/lib/module-robotparser.html</a></p>
+<p>一个家伙不满意自带的这个东东, 自己又写了一个: <a href="http://nikitathespider.com/python/rerp/" target="_blank" rel="noopener">http://nikitathespider.com/python/rerp/</a></p>
+<p>robots.txt规范: <a href="http://www.robotstxt.org/wc/norobots.html" target="_blank" rel="noopener">http://www.robotstxt.org/wc/norobots.html</a></p>
 
           
         
@@ -1788,81 +1934,93 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <p class="site-author-name" itemprop="name">nickcheng</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <a href="/archives">
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="nickcheng" />
             
-                <span class="site-state-item-count">446</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">232</span>
-                <span class="site-state-item-name">tags</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+              <p class="site-author-name" itemprop="name">nickcheng</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">446</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">232</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
           
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-globe"></i>Twitter</a>
-              </span>
-            
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1875,12 +2033,9 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2003 &mdash; 
-  <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
@@ -1888,11 +2043,17 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.0.1</div>
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
 
 
         
@@ -1908,10 +2069,7 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+
     
 
   </div>
@@ -1946,62 +2104,93 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
 
 
   
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+    
+
+    
+
+  
+
+
+
+
+	
 
 
 
 
 
   
+
+
+
+
+
+
 
 
 
@@ -2025,7 +2214,7 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.0.1"></script>
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -2033,6 +2222,9 @@ rp.can_fetch(&quot;*&quot;, &quot;http://www.musi-cal.com/&quot;)  # return True
 
   
 
+  
+
+  
   
 
   
