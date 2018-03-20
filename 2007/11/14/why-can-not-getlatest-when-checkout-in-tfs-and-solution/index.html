@@ -9,7 +9,7 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
@@ -17,9 +17,8 @@
 
 
 
-  
-  
-  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
 
 
 
@@ -42,10 +41,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -54,53 +49,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.0.6" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.6">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.6">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.6">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="tech,solution,tfs," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.6" color="#222">
 
 
 
 
 
 
-<meta name="description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
-<meta name="keywords" content="tech,solution,tfs">
-<meta property="og:type" content="article">
-<meta property="og:title" content="关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)">
-<meta property="og:url" content="http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/index.html">
-<meta property="og:site_name" content="Nickcheng.LOG">
-<meta property="og:description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
-<meta property="og:locale" content="en">
-<meta property="og:image" content="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg">
-<meta property="og:image" content="http://photo5.yupoo.com/20071114/145404_279588783_m.jpg">
-<meta property="og:image" content="http://photo5.yupoo.com/20071114/145404_248546321_m.jpg">
-<meta property="og:updated_time" content="2018-03-20T14:05:20.813Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)">
-<meta name="twitter:description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
-<meta name="twitter:image" content="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg">
 
 
 
@@ -109,15 +76,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '5.1.4',
+    version: '6.0.6',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: 'K8MLGLUY7B',
       apiKey: 'c9ebe1b4c1bd794327271d452488feab',
@@ -129,12 +94,44 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta name="keywords" content="tech,solution,tfs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)">
+<meta property="og:url" content="http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/index.html">
+<meta property="og:site_name" content="Nickcheng.LOG">
+<meta property="og:description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg">
+<meta property="og:image" content="http://photo5.yupoo.com/20071114/145404_279588783_m.jpg">
+<meta property="og:image" content="http://photo5.yupoo.com/20071114/145404_248546321_m.jpg">
+<meta property="og:updated_time" content="2018-03-20T14:50:50.806Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)">
+<meta name="twitter:description" content="原因 TFS中, Check Out动作不会自动进行Get Latest的动作, 所以不能保证每次Check Out出来的东西都是最新的. 这个情况看似是个BUG, 但却是TFS的By Design. MSDN Forum中的blog有解释如下:   假定TFS Server上的代码总是一个完整的可用的Build，也就是说每个员工必须保证你的一个完整的Check In是必须可以Build成功的。">
+<meta name="twitter:image" content="http://photo11.yupoo.com/20071114/145403_1031657622_m.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Nickcheng.LOG" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文) | Nickcheng.LOG</title>
   
@@ -142,18 +139,46 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53032-1"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-53032-1', 'auto');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53032-1');
 </script>
 
 
 
 
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
@@ -168,12 +193,14 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Nickcheng.LOG</span>
         <span class="logo-line-after"><i></i></span>
@@ -185,7 +212,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -200,34 +227,31 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
+        
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+</li>
+
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+</li>
+
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
+        
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+</li>
+
       
 
       
@@ -236,13 +260,12 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            Search
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -276,13 +299,23 @@
 </nav>
 
 
+  
+
+
 
  </div>
     </header>
 
+    
+
+
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -293,6 +326,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-post" itemscope itemtype="http://schema.org/Article">
@@ -329,11 +364,10 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-11-14T15:15:11+09:00">
-                2007-11-14
-              </time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2007-11-14T15:15:11+09:00">2007-11-14</time>
             
 
+            
             
 
             
@@ -372,7 +406,7 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -411,6 +445,9 @@ End Sub
 
       
     </div>
+
+    
+
     
     
     
@@ -509,9 +546,6 @@ End Sub
           </div>
           
 
-
-          
-
   
     <div class="comments" id="comments">
       <div id="disqus_thread">
@@ -555,36 +589,502 @@ End Sub
                 alt="nickcheng" />
             
               <p class="site-author-name" itemprop="name">nickcheng</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">A place for logging something</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">446</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">446</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
 
-            
-
-            
               
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">232</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
 
-          </nav>
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">232</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -597,19 +1097,17 @@ End Sub
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/nickcheng" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/nickcheng" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/nickcheng" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
             </div>
           
 
@@ -619,6 +1117,9 @@ End Sub
           
           
 
+          
+            
+          
           
 
         </div>
@@ -652,10 +1153,16 @@ End Sub
   <span class="author" itemprop="copyrightHolder">nickcheng</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -663,12 +1170,13 @@ End Sub
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.6</div>
 
 
 
 
         
+
 
 
 
@@ -702,7 +1210,11 @@ End Sub
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -722,16 +1234,6 @@ End Sub
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -740,18 +1242,13 @@ End Sub
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.6"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.6"></script>
 
 
 
@@ -759,49 +1256,50 @@ End Sub
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.6"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.6"></script>
 
 
 
   
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.6"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.6"></script>
+
+
+
   
 
-    
-      <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
-    
+  
+    <script id="dsq-count-scr" src="https://nickcheng.disqus.com/count.js" async></script>
+  
 
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/';
-          this.page.identifier = '2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/';
-          this.page.title = '关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)';
-        };
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://nickcheng.com/2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/';
+        this.page.identifier = '2007/11/14/why-can-not-getlatest-when-checkout-in-tfs-and-solution/';
+        this.page.title = '关于TFS中Checkout不会自动Get Latest的解释和解决方法(图文)';
+      };
+      function loadComments () {
         var d = document, s = d.createElement('script');
         s.src = 'https://nickcheng.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
-      </script>
-    
-
+      }
+      
+        loadComments();
+      
+    </script>
   
+
 
 
 
@@ -813,8 +1311,6 @@ End Sub
 
 
   
-
-
 
 
 
@@ -842,7 +1338,7 @@ End Sub
   <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
   
 
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+  <script src="/js/src/algolia-search.js?v=6.0.6"></script>
 
 
 
@@ -853,6 +1349,10 @@ End Sub
   
 
   
+
+  
+  
+
   
 
   
