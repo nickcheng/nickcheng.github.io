@@ -63,10 +63,16 @@ In NexT `_config.yml`:
 ## PART X. Title of fixes and/or enhancements.
 Short description in several words here.
 
+Issue Number(s): #xxxx.
+
 ### Files modified:
 1.	Short description of modified file [1].			xxxxxxx
 2.	Short description of modified file [2].			xxxxxxx
 3.	Short description of modified file [3].			xxxxxxx
+
+### Global code changes:
+* ADD: `newFunction` in `utils.js`.
+* DEL: `oldFunction` from `utils.js`
 
 ### How it looks?
 ![image](https://user-images.githubusercontent.com/xxxxxxxx/xxxxxxxx-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx.png)
@@ -75,7 +81,7 @@ Live demo [here](http://site.com/).
 
 ### How to use?
 In Next `_config.yml`:
-```
+```yml
 ...
 ```
 -->
