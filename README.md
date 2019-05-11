@@ -16,6 +16,13 @@ Install Hexo
 
 `npm install hexo-cli -g`
 
+Some other tools
+
+```
+npm install -g npm-check
+npm install -g npm-upgrade
+```
+
 ## Dealing with Hexo
 
 Get code from GitHub. And switch to `admin` branch.
