@@ -80,7 +80,7 @@ theme: next-reloaded
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/nickcheng/nickcheng.github.io.git
+  repo: git@github.com:nickcheng/nickcheng.github.io.git
   branch: master
 
 # Analytics
