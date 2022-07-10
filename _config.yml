@@ -80,8 +80,10 @@ theme: next-reloaded
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:nickcheng/nickcheng.github.io.git
+  repo: git@github.com:nickcheng/nickcheng.github.io
   branch: master
+  name: nickcheng
+  email: n@nickcheng.com
 
 # Analytics
 google_analytics: UA-53032-1
