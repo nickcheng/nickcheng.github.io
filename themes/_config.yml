@@ -5,28 +5,33 @@
 
 # If false, merge configs from `_data/next.yml` into default configuration (rewrite).
 # If true, will fully override default configuration by options from `_data/next.yml` (override). Only for NexT settings.
-# And if true, all config from default NexT `_config.yml` must be copied into `next.yml`. Use if you know what you are doing.
+# And if true, all config from default NexT `_config.yml` have to be copied into `next.yml`. Use if you know what you are doing.
 # Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
 override: false
+
+# Console reminder if new version released.
+reminder: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
   enable: true
 
-# Redefine custom file paths. Introduced in NexT v6.0.2. If commented, will be used default custom file paths.
-# For example, you want to put your custom styles file outside theme directory in root `source/_data`, set `styles: source/_data/styles.styl`
-#custom_file_path:
-  # Default paths: layout/_custom/*
+# Remove unnecessary files after hexo generate.
+minify: false
+
+# Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
   #head: source/_data/head.swig
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
-
-  # Default path: source/css/_variables/custom.styl
-  #variables: source/_data/variables.styl
-  # Default path: source/css/_mixins/custom.styl
-  #mixins: source/_data/mixins.styl
-  # Default path: source/css/_custom/custom.styl
-  #styles: source/_data/styles.styl
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -53,44 +58,35 @@ footer:
 
   # Icon between year and copyright info.
   icon:
-    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
-    # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    # Icon name in Font Awesome. See: https://fontawesome.com/icons
+    name: fa fa-heart
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
-  # If not defined, `author` from Hexo main config will be used.
+  # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
 
-  powered:
-    # Hexo link (Powered by Hexo).
-    enable: true
-    # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+  # Powered by Hexo & NexT
+  powered: true
 
-  theme:
-    # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
-    # Version info of NexT after scheme info (vX.X.X).
-    version: true
-
-  # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
-  # http://www.beian.miit.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
     icp:
-
-  # Any custom text can be defined here.
-  #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
+    # The digit in the num of gongan beian.
+    gongan_id:
+    # The full num of gongan beian.
+    gongan_num:
+    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    gongan_icon_url:
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-# You can set a language value if you prefer a translated version of CC license.
-# CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
-# Valid values of language: deed.zh, deed.fr, deed.de, etc.
+# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
   sidebar: false
@@ -145,6 +141,16 @@ exturl: false
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
 baidu_push: false
 
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+# Schemes
+#scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+scheme: Gemini
+
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -153,8 +159,8 @@ baidu_push: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # Usage: `Key: /link/ || icon`
 # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
-# Value before `||` delimeter is the target link.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+# Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
+# When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
   home: / || home
@@ -172,80 +178,12 @@ menu_settings:
   badges: false
 
 
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
-
-# Schemes
-#scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-scheme: Gemini
-
 
 # ---------------------------------------------------------------
 # Sidebar Settings
 # See: https://theme-next.org/docs/theme-settings/sidebar
 # ---------------------------------------------------------------
 
-# Posts / Categories / Tags in sidebar.
-site_state: true
-
-# Social Links
-# Usage: `Key: permalink || icon`
-# Key is the link label showing to end users.
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-social:
-  GitHub: https://github.com/nickcheng || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
-  #Weibo: https://weibo.com/yourname || weibo
-  #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/nickcheng || twitter
-  #FB Page: https://www.facebook.com/yourname || facebook
-  #VK Group: https://vk.com/yourname || vk
-  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
-  #Instagram: https://instagram.com/yourname || instagram
-  #Skype: skype:yourname?call|chat || skype
-
-social_icons:
-  enable: true
-  icons_only: false
-  transition: false
-
-# Blog rolls
-#links_icon: link
-#links_title: Links
-#links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com
-
-# Sidebar Avatar
-avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: /images/avatar.jpg
-  # If true, the avatar would be dispalyed in circle.
-  rounded: true
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
-  # If true, the avatar would be rotated with the cursor.
-  rotated: false
-
-# Table Of Contents in the Sidebar
-toc:
-  enable: true
-  # Automatically add list number to toc.
-  number: true
-  # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
-  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
-  # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front-matter.
-  max_depth: 6
 
 sidebar:
   # Sidebar Position, available values: left | right (only for Pisces | Gemini).
@@ -278,14 +216,70 @@ back2top:
   # Scroll percent label in b2t button.
   scrollpercent: true
 
+# Sidebar Avatar
+avatar:
+  # Replace the default image and set the url here.
+  url: /images/avatar.jpg
+  # If true, the avatar will be dispalyed in circle.
+  rounded: true
+  # If true, the avatar will be rotated with the cursor.
+  rotated: false
+
+# Posts / Categories / Tags in sidebar.
+site_state: true
+
+# Social Links
+# Usage: `Key: permalink || icon`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
+social:
+  GitHub: https://github.com/nickcheng || fab fa-github
+  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  #Google: https://plus.google.com/yourname || fab fa-google
+  Twitter: https://twitter.com/nickcheng || fab fa-twitter
+  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  #Instagram: https://instagram.com/yourname || fab fa-instagram
+  #Skype: skype:yourname?call|chat || fab fa-skype
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+
+# Blog rolls
+links_settings:
+  icon: fa fa-link
+  title: Links
+  # Available values: block | inline
+  layout: block
+
+links:
+  #Title: http://yoursite.com
+
+# Table of Contents in the Sidebar
+# Front-matter variable (unsupport wrap expand_all).
+toc:
+  enable: true
+  # Automatically add list number to toc.
+  number: true
+  # If true, all words will placed on next lines if header width longer then sidebar width.
+  wrap: false
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: false
+  # Maximum heading depth of generated toc.
+  max_depth: 6
+
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
   enable: false
   #service: chatra
   #service: tidio
-  icon: comment # icon in Font Awesome 4, set false to disable icon
-  text: Chat # button text, change it as you wish
+  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
+  text: Chat # Button text, change it as you wish.
 
 
 # ---------------------------------------------------------------
@@ -315,7 +309,7 @@ auto_excerpt:
   length: 150
 
 # Read more button
-# If true, the read more button would be displayed in excerpt section.
+# If true, the read more button will be displayed in excerpt section.
 read_more_btn: true
 
 # Post meta display settings
@@ -323,7 +317,7 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: false
+    enable: true
     another_day: true
   categories: true
 
@@ -354,9 +348,9 @@ wechat_subscriber:
   #description: e.g. subscribe to my blog by scanning my public wechat account
 
 # Reward (Donate)
+# Front-matter variable (unsupport animation).
 reward_settings:
-  # If true, reward would be displayed in every article by default.
-  # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
+  # If true, reward will be displayed in every article by default.
   enable: true
   animation: false
   comment: Donate 😘 您的支持将鼓励我继续创作
@@ -364,13 +358,14 @@ reward_settings:
 reward:
   wechatpay: https://ws1.sinaimg.cn/large/006tNc79gy1fpld3y33g2j3074074q43.jpg
   alipay: https://ws1.sinaimg.cn/large/006tNc79ly1fpld8eewztj3074074wh1.jpg
+  #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: false
-  title: # custom header, leave empty to use the default one
+  title: # Custom header, leave empty to use the default one
   display_in_home: false
   params:
     maxCount: 5
@@ -383,8 +378,8 @@ related_posts:
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
   enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
-  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit.
+  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source
+  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit
 
 
 # ---------------------------------------------------------------
@@ -430,28 +425,30 @@ tagcloud:
 
 
 # ---------------------------------------------------------------
-# Font Settings. Introduced in NexT v5.0.1.
+# Font Settings
+# See: https://theme-next.org/docs/theme-settings/#Fonts-Customization
+# ---------------------------------------------------------------
 # Find fonts on Google Fonts (https://www.google.com/fonts)
 # All fonts set here will have the following styles:
-#   light, light italic, normal, normal italic, bold, bold italic
+#   light | light italic | normal | normal italic | bold | bold italic
 # Be aware that setting too much fonts will cause site running slowly
 # ---------------------------------------------------------------
-# To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `logo`):
+# To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `title`):
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 
 font:
   enable: false
 
-  # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
+  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
 
   # Font options:
   # `external: true` will load this font family from `host` above.
   # `family: Times New Roman`. Without any quotes.
-  # `size: xx`. Use `px` as unit.
+  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
 
-  # Global font settings used for all elements in <body>.
+  # Global font settings used for all elements inside <body>.
   global:
     external: true
     family: Lato
@@ -487,13 +484,14 @@ font:
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # See: https://theme-next.org/docs/third-party-services/
+# More plugins: https://github.com/theme-next/awesome-next
 # You may need to install dependencies or set CDN URLs in `vendors`
 # There are two different CDN providers by default:
 #   - jsDelivr (cdn.jsdelivr.net), works everywhere even in China
 #   - CDNJS (cdnjs.cloudflare.com), provided by cloudflare
 # ---------------------------------------------------------------
 
-# Math Equations Render Support
+# Math Formulas Render Support
 math:
   enable: false
 
@@ -608,17 +606,17 @@ disqus:
   lazyload: false
 
 # DisqusJS
-# Alternative Disqus - Render comment component using Disqus API
+# Alternative Disqus - Render comment component using Disqus API.
 # Demo: https://suka.js.org/DisqusJS/
+# For more information: https://github.com/SukkaW/DisqusJS
 disqusjs:
   enable: false
-  # API Endpoint of Disqus API (https://disqus.com/api/)
-  # leave api empty if you are able to connect to Disqus API
-  # otherwise you need a reverse proxy for Disqus API
+  # API Endpoint of Disqus API (https://disqus.com/api/).
+  # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
   # For example:
   # api: https://disqus.skk.moe/disqus/
   api:
-  apikey: # register new application from https://disqus.com/api/applications/
+  apikey: # Register new application from https://disqus.com/api/applications/
   shortname: # See: https://disqus.com/admin/settings/general/
 
 # Changyan
@@ -921,10 +919,9 @@ tabs:
     labels: true
   border_radius: 0
 
-# PDF tag, requires two plugins: pdfObject and pdf.js
-# pdfObject will try to load pdf files natively, if failed, pdf.js will be used.
-# The following `cdn` setting is only for pdfObject, because cdn for pdf.js might be blocked by CORS policy.
-# So, you must install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
+# PDF tag
+# NexT will try to load pdf files natively, if failed, pdf.js will be used.
+# So, you have to install the dependency of pdf.js if you want to use pdf tag and make it available to all browsers.
 # See: https://github.com/theme-next/theme-next-pdf
 pdf:
   enable: false
@@ -948,17 +945,18 @@ mermaid:
 # ---------------------------------------------------------------
 
 # Use velocity to animate everything.
+# For more information: http://velocityjs.org
 motion:
   enable: true
   async: false
   transition:
     # Transition variants:
-    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
-    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
-    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
-    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
-    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
-    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn
+    # swoopIn | whirlIn | shrinkIn | expandIn
+    # bounceIn | bounceUpIn | bounceDownIn | bounceLeftIn | bounceRightIn
+    # slideUpIn | slideDownIn | slideLeftIn | slideRightIn
+    # slideUpBigIn | slideDownBigIn | slideLeftBigIn | slideRightBigIn
+    # perspectiveUpIn | perspectiveDownIn | perspectiveLeftIn | perspectiveRightIn
     post_block: fadeIn
     post_header: slideDownIn
     post_body: slideDownIn

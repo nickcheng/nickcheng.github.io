@@ -5,7 +5,7 @@
 # Site
 title: Nickcheng.LOG
 subtitle: 
-description: A place for logging something
+description: Logging and sharing
 author: nickcheng
 language: en
 timezone:
@@ -31,7 +31,10 @@ skip_render:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link: 
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
 filename_case: 1
 render_drafts: false
 post_asset_folder: false
@@ -71,7 +74,7 @@ feed:
   path: atom.xml
   limit: 20
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
